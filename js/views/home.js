@@ -5,6 +5,8 @@ import { profile } from '../profile.js';
 import { listCourses, activeCourse, setActive, streakOf } from '../courses.js';
 import { greeting } from '../greet.js';
 import { esc, logo, icon, flip, sheet, closeSheet } from '../ui.js';
+import { cardsOf } from '../cards.js';
+import { todayQueue } from '../srs.js';
 
 const MODES = [
   ['review', 'reviser'], ['play', 'jouer'], ['discover', 'decouvrir'], ['create', 'creer'],
@@ -15,6 +17,8 @@ export async function render(el) {
   if (!course) { location.hash = '#/ajouter'; return; }
   const g = greeting(profile.name);
   const n = streakOf(course);
+  const due = (await todayQueue(await cardsOf(course.id), course)).length;
+  const sub = (k) => (k === 'review' ? (due ? t(due > 1 ? 'home.dueN' : 'home.due1', { n: due }) : t('home.dueNone')) : t(`home.${k}Sub`));
 
   el.innerHTML = `<div class="home enter">
     <header class="home-top">
@@ -27,12 +31,12 @@ export async function render(el) {
     </button>
     <div class="streak">${n ? `🔥 <b>${esc(t(n > 1 ? 'home.streaks' : 'home.streak', { n }))}</b>` : esc(t('home.streak0'))}</div>
     <div class="modes">${MODES.map(([k, route]) => `<button class="mode flip" data-route="${route}">
-      <span class="in"><span class="face front">${icon(k)}<b>${esc(t(`home.${k}`))}</b><small>${esc(t(`home.${k}Sub`))}</small></span>
-      <span class="face back"><b>${esc(t('home.soon'))}</b><small>${esc(t('home.soonHint'))}</small></span></span></button>`).join('')}</div>
+      <span class="in"><span class="face front">${icon(k)}${k === 'review' && due ? `<span class="due">${due}</span>` : ''}<b>${esc(t(`home.${k}`))}</b><small>${esc(sub(k))}</small></span>
+      <span class="face back">${logo('mode-logo')}</span></span></button>`).join('')}</div>
   </div>`;
 
-  // Les modes arrivent à l'étape 4 : en attendant, la carte se retourne et l'annonce
-  el.querySelectorAll('.mode').forEach((b) => b.onclick = () => flip(b));
+  // La carte du mode se retourne, puis on entre dans le mode
+  el.querySelectorAll('.mode').forEach((b) => b.onclick = () => { flip(b, true); setTimeout(() => (location.hash = `#/${b.dataset.route}`), 420); });
   el.querySelector('.course-pill').onclick = () => openCourses(el);
 }
 
