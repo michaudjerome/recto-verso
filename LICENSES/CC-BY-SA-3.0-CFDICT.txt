@@ -1,0 +1,12 @@
+CFDICT, le dictionnaire chinois-français libre
+Chine Informations (depuis 2010), fondateur : David Houstin
+Page officielle : https://chine.in/mandarin/dictionnaire/CFDICT/
+Version utilisée : 14/12/2024
+
+Licence : Creative Commons Attribution - Partage dans les mêmes conditions 3.0
+Texte de la licence : https://creativecommons.org/licenses/by-sa/3.0/legalcode
+Résumé en français : https://creativecommons.org/licenses/by-sa/3.0/deed.fr
+
+Les fichiers data/dict-fr.json et data/hsk.json de ce dépôt sont des adaptations
+de CFDICT (format compacté, croisement avec la liste HSK 3.0) et sont diffusés
+sous la même licence CC BY-SA 3.0.

@@ -1,0 +1,7 @@
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+› Pictogrammes (dossier pictos/) : « All emojis designed by OpenMoji – the open-source emoji and icon project. License: CC BY-SA 4.0 » (https://openmoji.org/). Fichiers allégés (métadonnées et décimales retirées), dessin inchangé.
+› CC-CEDICT (MDBG, https://www.mdbg.net/chinese/dictionary?page=cc-cedict), version du 07/11/2023 : utilisé pour vérifier les traductions anglaises.
+› CFDICT (chine.in, David Houstin, CC BY-SA 3.0) : base des traductions françaises du chinois.
+› Le contenu dérivé (data/notions.json, data/lang/*.json) est redistribué sous CC BY-SA 4.0, compatible avec CC BY-SA 3.0 pour les adaptations.
