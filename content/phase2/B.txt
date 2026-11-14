@@ -1,0 +1,230 @@
+周|-|D
+周年|anniversaire-evenement|temps|nom|l'anniversaire (d'un événement):m|anniversary|el aniversario|l'anniversario:m|der Jahrestag
+周末|week-end|temps|nom|le week-end|weekend|el fin de semana|il fine settimana|das Wochenende
+味道|gout-saveur|manger|nom|le goût|taste|el sabor|il sapore|der Geschmack
+咱|-|D
+咱们|nous-inclusif|liens|pron|nous (toi et moi)|we (including you)|nosotros|noi|wir
+响|sonner|verbes|verbe|sonner, retentir|to ring|sonar|suonare|klingeln
+哪些|lesquels|questions|pron|lesquels ?|which ones?|¿cuáles?|quali?|welche?
+哪里|-|D
+哭|pleurer|verbes|verbe|pleurer|to cry|llorar|piangere|weinen
+唱|-|D
+商人|commercant|liens|nom|le commerçant|merchant|el comerciante|il commerciante|der Händler
+商场|centre-commercial|lieux|nom|le centre commercial|shopping centre|el centro comercial|il centro commerciale|das Einkaufszentrum
+商量|discuter-se-concerter|verbes|verbe|discuter, se concerter|to talk over|consultar|consultarsi|besprechen
+喊|crier|verbes|verbe|crier|to shout|gritar|gridare|rufen
+回|rentrer|verbes|verbe|rentrer, retourner|to go back|regresar|ritornare|zurückgehen
+回去|-|D
+回国|rentrer-au-pays|lieux|verbe|rentrer dans son pays|to return to one's country|volver al país|tornare in patria|in die Heimat zurückkehren
+回家|rentrer-a-la-maison|maison|verbe|rentrer à la maison|to go home|volver a casa|tornare a casa|nach Hause gehen
+国|pays|lieux|nom|le pays|country|el país|il paese|das Land
+国家|-|D
+国际|international|adjectifs|adj|international|international|internacional|internazionale|international
+图书馆|bibliotheque|lieux|nom|la bibliothèque|library|la biblioteca|la biblioteca|die Bibliothek
+图片|image|loisirs|nom|l'image:f|picture|la imagen|l'immagine:f|das Bild
+在家|-|D
+地上|par-terre|lieux|adv|par terre|on the ground|en el suelo|per terra|auf dem Boden
+地图|carte-geographique|lieux|nom|la carte (géographique)|map|el mapa|la cartina|die Landkarte
+地球|terre-planete|meteo|nom|la Terre|the Earth|la Tierra|la Terra|die Erde
+地铁|metro|lieux|nom|le métro|underground|el metro|la metropolitana|die U-Bahn
+地铁站|station-de-metro|lieux|nom|la station de métro|underground station|la estación de metro|la stazione della metropolitana|die U-Bahn-Station
+场|-|G
+坏|mauvais-casse|adjectifs|adj|mauvais ; cassé|bad; broken|malo; roto|cattivo; rotto|schlecht; kaputt
+坏人|mechant|liens|nom|le méchant|bad guy|el malo|il cattivo|der Bösewicht
+坏处|inconvenient|liens|nom|l'inconvénient:m|disadvantage|la desventaja|lo svantaggio|der Nachteil
+坐下|s-asseoir-se-poser|verbes|verbe|s'asseoir (bouger)|to sit down|sentarse|sedersi|sich hinsetzen
+墙|mur|maison|nom|le mur|wall|la pared|il muro|die Wand
+声音|son-voix|corps|nom|le son, la voix|sound, voice|el sonido|il suono|die Stimme
+复习|reviser|ecole|verbe|réviser|to revise|repasar|ripassare|wiederholen
+外|-|D
+外卖|plat-a-emporter|manger|nom|le plat à emporter|takeaway|la comida para llevar|il cibo da asporto|das Essen zum Mitnehmen
+外地|-|R
+外语|langue-etrangere|ecole|nom|la langue étrangère|foreign language|la lengua extranjera|la lingua straniera|die Fremdsprache
+外边|dehors|lieux|adv|dehors|outside|fuera|fuori|draußen
+多久|combien-de-temps|questions|expr|combien de temps ?|how long?|¿cuánto tiempo?|quanto tempo?|wie lange?
+多么|comme-c-est|liens|adv|comme… !|how…!|¡qué…!|che…!|wie…!
+多云|nuageux|meteo|adj|nuageux|cloudy|nublado|nuvoloso|bewölkt
+多数|la-plupart|chiffres|nom|la plupart|most|la mayoría|la maggior parte|die meisten
+夜|nuit|temps|nom|la nuit|night|la noche|la notte|die Nacht
+夜里|la-nuit|temps|adv|la nuit, pendant la nuit|at night|por la noche|di notte|nachts
+够|assez|chiffres|adv|assez, suffisant|enough|suficiente|abbastanza|genug
+大人|adulte|famille|nom|l'adulte:m|adult|el adulto|l'adulto:m|der Erwachsene
+大声|a-voix-haute|liens|adv|à voix haute|loudly|en voz alta|ad alta voce|laut
+大多数|-|D
+大大|-|R
+大学|universite|ecole|nom|l'université:f|university|la universidad|l'università:f|die Universität
+大学生|etudiant-universite|ecole|nom|l'étudiant:m|university student|el universitario|lo studente universitario|der Student
+大家|tout-le-monde|liens|pron|tout le monde|everyone|todos|tutti|alle
+大小|taille-dimension|adjectifs|nom|la taille, la dimension|size|el tamaño|la misura|die Größe
+大海|mer|meteo|nom|la mer|sea|el mar|il mare|das Meer
+大自然|nature|meteo|nom|la nature|nature|la naturaleza|la natura|die Natur
+大部分|-|D
+大量|beaucoup-quantite|chiffres|adj|une grande quantité|a large amount|una gran cantidad|una grande quantità|eine große Menge
+大门|portail|maison|nom|le portail|main gate|la puerta principal|il portone|das Tor
+天上|dans-le-ciel|meteo|adv|dans le ciel|in the sky|en el cielo|in cielo|am Himmel
+太|trop|adjectifs|adv|trop|too|demasiado|troppo|zu
+太太|madame|salutations|nom|madame|Mrs|la señora|la signora|Frau
+头发|cheveux|corps|nom|les cheveux:m|hair|el pelo|i capelli|die Haare
+套|-|G
+女|feminin|adjectifs|adj|féminin, femme|female|femenino|femminile|weiblich
+女人|femme|famille|nom|la femme|woman|la mujer|la donna|die Frau
+女朋友|petite-amie|famille|nom|la petite amie|girlfriend|la novia|la ragazza|die Freundin
+女生|fille-eleve|ecole|nom|la fille (élève)|girl (student)|la chica|la ragazza|das Mädchen
+奶|-|D
+好久|longtemps-ca-fait|temps|adv|depuis longtemps|for a long time|mucho tiempo|da tanto|lange
+好事|-|R
+好人|quelqu-un-de-bien|liens|nom|quelqu'un de bien|good person|una buena persona|una brava persona|ein guter Mensch
+好像|on-dirait-que|liens|adv|on dirait que|it seems that|parece que|sembra che|anscheinend
+好处|avantage|liens|nom|l'avantage:m|advantage|la ventaja|il vantaggio|der Vorteil
+好多|plein-de|chiffres|adv|plein de|lots of|muchos|tanti|viele
+好看|beau-joli|adjectifs|adj|beau, joli|good-looking|bonito|bello|hübsch
+如果|si-condition|liens|mot|si (condition)|if|si|se|wenn
+妈|-|D
+妹|-|D
+姐|-|D
+姓|nom-de-famille|famille|nom|le nom de famille|surname|el apellido|il cognome|der Nachname
+姓名|nom-complet|famille|nom|le nom et prénom|full name|el nombre completo|il nome e cognome|der vollständige Name
+字典|dictionnaire|ecole|nom|le dictionnaire|dictionary|el diccionario|il dizionario|das Wörterbuch
+学期|semestre|ecole|nom|le semestre|term|el semestre|il semestre|das Semester
+学院|faculte-institut|ecole|nom|la faculté, l'institut|college, institute|la facultad|la facoltà|die Hochschule
+它|il-chose|liens|pron|il, elle (chose, animal)|it|ello|esso|es
+它们|-|D
+安全|securite|liens|nom|la sécurité|safety|la seguridad|la sicurezza|die Sicherheit
+安静|calme|adjectifs|adj|calme, silencieux|quiet|tranquilo|tranquillo|ruhig
+完|finir|verbes|verbe|finir, terminer|to finish|terminar|finire|beenden
+完全|completement|adjectifs|adv|complètement|completely|completamente|completamente|völlig
+完成|accomplir|verbes|verbe|accomplir, achever|to complete|completar|completare|abschließen
+实习|faire-un-stage|ecole|verbe|faire un stage|to do an internship|hacer prácticas|fare un tirocinio|ein Praktikum machen
+实在|vraiment-franchement|liens|adv|vraiment, franchement|really|realmente|davvero|wirklich
+实现|realiser|verbes|verbe|réaliser (un rêve)|to realize (a dream)|realizar|realizzare|verwirklichen
+实际|reel|adjectifs|adj|réel, concret|actual|real|reale|tatsächlich
+客人|invite|maison|nom|l'invité:m|guest|el invitado|l'ospite:m|der Gast
+家人|membre-de-la-famille|famille|nom|la famille (les proches)|family members|la familia|i familiari|die Familienangehörigen
+家庭|foyer|famille|nom|le foyer|household|el hogar|la famiglia|die Familie
+家长|parents-d-eleves|famille|nom|les parents (d'élève):m|parents|los padres|i genitori|die Eltern
+对话|dialogue|ecole|nom|le dialogue|dialogue|el diálogo|il dialogo|der Dialog
+对面|en-face|lieux|adv|en face|opposite|enfrente|di fronte|gegenüber
+封|-|G
+小声|a-voix-basse|liens|adv|à voix basse|quietly|en voz baja|a bassa voce|leise
+小姐|mademoiselle|salutations|nom|mademoiselle|Miss|la señorita|la signorina|Fräulein
+小学|ecole-primaire|ecole|nom|l'école primaire:f|primary school|la escuela primaria|la scuola elementare|die Grundschule
+小心|faire-attention|verbes|verbe|faire attention|to be careful|tener cuidado|fare attenzione|aufpassen
+小时候|dans-l-enfance|temps|adv|quand j'étais petit|as a child|de pequeño|da piccolo|als Kind
+小朋友|petit-enfant|famille|nom|l'enfant (petit):m|kid|el niño|il bambino|das Kind
+小组|groupe|ecole|nom|le groupe|group|el grupo|il gruppo|die Gruppe
+小说|roman|loisirs|nom|le roman|novel|la novela|il romanzo|der Roman
+少年|adolescent|famille|nom|l'adolescent:m|teenager|el adolescente|il ragazzo|der Jugendliche
+少数|minorite|chiffres|nom|la minorité|minority|la minoría|la minoranza|die Minderheit
+就要|-|G
+层|etage|maison|nom|l'étage:m|floor (storey)|la planta|il piano|das Stockwerk
+山|montagne|meteo|nom|la montagne|mountain|la montaña|la montagna|der Berg
+岁|ans-age|chiffres|nom|… ans (âge)|years old|años|anni|Jahre alt
+工人|ouvrier|liens|nom|l'ouvrier:m|worker|el obrero|l'operaio:m|der Arbeiter
+差不多|presque|chiffres|adv|presque, à peu près|almost|casi|quasi|fast
+已经|deja|temps|adv|déjà|already|ya|già|schon
+市|ville|lieux|nom|la ville|city|la ciudad|la città|die Stadt
+市长|maire|liens|nom|le maire|mayor|el alcalde|il sindaco|der Bürgermeister
+带|emporter|verbes|verbe|emporter, emmener|to take (along)|llevar|portare|mitnehmen
+带来|apporter|verbes|verbe|apporter|to bring|traer|portare|mitbringen
+帮助|aide|verbes|nom|l'aide:f|help|la ayuda|l'aiuto:m|die Hilfe
+常常|-|D
+常用|courant-usuel|adjectifs|adj|courant, usuel|commonly used|de uso común|di uso comune|gebräuchlich
+常见|frequent|adjectifs|adj|fréquent|common|frecuente|frequente|häufig
+干|faire|verbes|verbe|faire (familier)|to do|hacer|fare|machen
+干什么|qu-est-ce-que-tu-fais|questions|expr|qu'est-ce que tu fais ?|what are you doing?|¿qué haces?|che fai?|was machst du?
+干杯|sante-trinquer|salutations|expr|santé ! (trinquer)|cheers!|¡salud!|cin cin!|prost!
+平|plat|adjectifs|adj|plat|flat|plano|piatto|flach
+平安|sain-et-sauf|adjectifs|adj|sain et sauf|safe and sound|sano y salvo|sano e salvo|wohlbehalten
+平常|-|D
+平时|d-habitude|temps|adv|d'habitude|usually|normalmente|di solito|normalerweise
+平等|egalite|liens|nom|l'égalité:f|equality|la igualdad|l'uguaglianza:f|die Gleichheit
+年级|classe-annee|ecole|nom|la classe (année scolaire)|school year, grade|el curso|la classe|die Klasse
+年轻|jeune|adjectifs|adj|jeune|young|joven|giovane|jung
+广告|publicite|loisirs|nom|la publicité|advertisement|el anuncio|la pubblicità|die Werbung
+广场|place-publique|lieux|nom|la place (publique)|square|la plaza|la piazza|der Platz
+应该|devoir-falloir|verbes|verbe|devoir (il faut)|should|deber|dovere|sollen
+店|boutique|lieux|nom|la boutique|shop|la tienda|il negozio|der Laden
+度|degre|meteo|nom|le degré|degree|el grado|il grado|der Grad
+座|-|G
+座位|place-assise|lieux|nom|la place (assise)|seat|el asiento|il posto a sedere|der Sitzplatz
+开会|etre-en-reunion|liens|verbe|être en réunion|to have a meeting|tener una reunión|fare una riunione|eine Besprechung haben
+开学|rentree-scolaire|ecole|verbe|faire la rentrée|to start school|empezar las clases|iniziare la scuola|die Schule beginnt
+开心|joyeux|adjectifs|adj|joyeux, content|happy|contento|contento|fröhlich
+开机|allumer-appareil|loisirs|verbe|allumer (un appareil)|to switch on|encender|accendere|einschalten
+开玩笑|plaisanter|verbes|verbe|plaisanter|to joke|bromear|scherzare|scherzen
+弄|-|G
+当|-|G
+当时|a-l-epoque|temps|adv|à l'époque, alors|at that time|en aquel momento|allora|damals
+影响|influence|liens|nom|l'influence:f|influence|la influencia|l'influenza:f|der Einfluss
+影片|-|D
+往|-|D
+得出|-|R
+得到|recevoir-obtenir|verbes|verbe|recevoir, obtenir|to get|conseguir|ottenere|bekommen
+心中|-|D
+心情|humeur|corps|nom|l'humeur:f|mood|el humor|l'umore:m|die Laune
+心里|au-fond-de-soi|corps|adv|au fond de soi|in one's heart|en el fondo|dentro di sé|im Herzen
+必须|devoir-absolument|verbes|verbe|devoir absolument|must|tener que|dovere|müssen
+忘记|-|D
+快乐|heureux|adjectifs|adj|heureux|happy|feliz|felice|glücklich
+快要|-|G
+快餐|fast-food|manger|nom|la restauration rapide|fast food|la comida rápida|il fast food|das Fast Food
+忽然|soudain|temps|adv|soudain|suddenly|de repente|all'improvviso|plötzlich
+态度|attitude|liens|nom|l'attitude:f|attitude|la actitud|l'atteggiamento:m|die Haltung
+怎么办|que-faire|questions|expr|que faire ?|what can we do?|¿qué hacemos?|che si fa?|was tun?
+怎么样|comment-ca-va|questions|expr|comment ça va ? qu'en penses-tu ?|how is it? how about it?|¿qué tal?|come va?|wie ist es?
+怎样|-|D
+怕|avoir-peur|verbes|verbe|avoir peur|to be afraid|tener miedo|avere paura|Angst haben
+急|presse-urgent|adjectifs|adj|pressé, urgent|urgent; in a hurry|urgente|urgente|eilig
+您|vous-poli|liens|pron|vous (politesse)|you (polite)|usted|Lei|Sie
+想到|penser-a|verbes|verbe|penser à, avoir l'idée de|to think of|ocurrirse|pensare a|daran denken
+想法|idee-avis|liens|nom|l'idée:f|idea|la idea|l'idea:f|die Idee
+想起|se-rappeler|verbes|verbe|se rappeler|to recall|recordar|ricordarsi|sich erinnern an
+意思|sens|ecole|nom|le sens, la signification|meaning|el significado|il significato|die Bedeutung
+意见|avis|liens|nom|l'avis:m|opinion|la opinión|l'opinione:f|die Meinung
+感到|ressentir|verbes|verbe|ressentir|to feel|sentir|sentire|fühlen
+感动|emouvoir|verbes|verbe|émouvoir, être ému|to move (emotionally)|conmover|commuovere|rühren
+感觉|sensation|corps|nom|la sensation|feeling|la sensación|la sensazione|das Gefühl
+感谢|remercier|salutations|verbe|remercier|to thank|agradecer|ringraziare|danken
+愿意|vouloir-bien|verbes|verbe|vouloir bien|to be willing|estar dispuesto|essere disposto|bereit sein
+懂得|-|D
+成|-|G
+成为|-|D
+成绩|resultats-notes|ecole|nom|les résultats:m|results, grades|las notas|i voti|die Noten
+或者|ou|liens|mot|ou (bien)|or|o|o|oder
+所有|tous-les|chiffres|adj|tous les|all|todos los|tutti i|alle
+手表|montre|vetements|nom|la montre|watch|el reloj|l'orologio:m|die Armbanduhr
+打印|imprimer|loisirs|verbe|imprimer|to print|imprimir|stampare|drucken
+打工|faire-un-petit-boulot|verbes|verbe|faire un petit boulot|to do a part-time job|trabajar a tiempo parcial|fare lavoretti|jobben
+打球|jouer-au-ballon|loisirs|verbe|jouer au ballon|to play ball|jugar a la pelota|giocare a palla|Ball spielen
+打算|avoir-l-intention|verbes|verbe|avoir l'intention de|to plan to|pensar (hacer)|avere intenzione di|vorhaben
+打车|prendre-un-taxi|lieux|verbe|prendre un taxi|to take a taxi|coger un taxi|prendere un taxi|ein Taxi nehmen
+找出|-|D
+找到|trouver|verbes|verbe|trouver|to find|encontrar|trovare|finden
+护照|passeport|lieux|nom|le passeport|passport|el pasaporte|il passaporto|der Reisepass
+报名|s-inscrire|ecole|verbe|s'inscrire|to sign up|inscribirse|iscriversi|sich anmelden
+报纸|journal|loisirs|nom|le journal|newspaper|el periódico|il giornale|die Zeitung
+拉|tirer|verbes|verbe|tirer|to pull|tirar|tirare|ziehen
+拿|prendre-en-main|verbes|verbe|prendre (en main)|to take, to hold|coger|prendere|nehmen
+拿出|sortir-objet|verbes|verbe|sortir (un objet)|to take out|sacar|tirare fuori|herausnehmen
+拿到|-|D
+挺|-|G
+挺好|-|D
+换|changer-echanger|verbes|verbe|changer, échanger|to change, to exchange|cambiar|cambiare|wechseln
+掉|tomber-objet|verbes|verbe|tomber (objet)|to drop|caerse|cadere|herunterfallen
+排|-|G
+排球|volley-ball|loisirs|nom|le volley-ball|volleyball|el voleibol|la pallavolo|der Volleyball
+排队|faire-la-queue|verbes|verbe|faire la queue|to queue|hacer cola|fare la fila|Schlange stehen
+接|aller-chercher|verbes|verbe|aller chercher (qqn)|to pick up (someone)|recoger|andare a prendere|abholen
+接下来|ensuite|temps|adv|ensuite|next|a continuación|poi|als Nächstes
+接到|-|D
+接受|accepter|verbes|verbe|accepter|to accept|aceptar|accettare|annehmen
+接着|-|D
+推|pousser|verbes|verbe|pousser|to push|empujar|spingere|schieben
+提|porter-a-la-main|verbes|verbe|porter (à la main)|to carry (in the hand)|llevar en la mano|portare in mano|tragen
+提出|proposer|verbes|verbe|proposer, soulever|to put forward|proponer|proporre|vorschlagen
+提到|mentionner|verbes|verbe|mentionner|to mention|mencionar|menzionare|erwähnen
+提高|ameliorer|verbes|verbe|améliorer, augmenter|to improve|mejorar|migliorare|verbessern
+收|recevoir|verbes|verbe|recevoir, ranger|to receive|recibir|ricevere|empfangen
+收入|revenu|argent|nom|le revenu|income|los ingresos|il reddito|das Einkommen
+收到|-|D
+改|corriger-modifier|verbes|verbe|modifier, corriger|to change, to correct|corregir|correggere|ändern

@@ -1,0 +1,220 @@
+改变|-|D
+放|poser|verbes|verbe|poser, mettre|to put|poner|mettere|legen
+放下|-|D
+放学|sortie-de-l-ecole|ecole|verbe|sortir de l'école (fin des cours)|to finish school (for the day)|salir del colegio|uscire da scuola|Schulschluss
+放心|etre-rassure|verbes|verbe|être rassuré|to feel reassured|quedarse tranquilo|stare tranquillo|beruhigt sein
+故事|histoire-recit|loisirs|nom|l'histoire (récit):f|story|el cuento|la storia|die Geschichte
+故意|expres|liens|adv|exprès|on purpose|a propósito|apposta|absichtlich
+教学|-|D
+教学楼|batiment-scolaire|ecole|nom|le bâtiment scolaire|school building|el edificio escolar|l'edificio scolastico:m|das Schulgebäude
+教室|salle-de-classe|ecole|nom|la salle de classe|classroom|el aula|l'aula:f|das Klassenzimmer
+教师|-|D
+教育|education|ecole|nom|l'éducation:f|education|la educación|l'istruzione:f|die Bildung
+数|compter|chiffres|verbe|compter|to count|contar|contare|zählen
+数字|chiffre-nombre|chiffres|nom|le chiffre, le nombre|number, digit|el número|il numero|die Zahl
+斤|livre-poids|chiffres|nom|la livre (500 g)|jin (half a kilo)|el medio kilo|il mezzo chilo|das Pfund
+新年|nouvel-an|temps|nom|le nouvel an|New Year|el Año Nuevo|il Capodanno|das Neujahr
+新闻|actualites|loisirs|nom|les informations:f|news|las noticias|le notizie|die Nachrichten
+方便|pratique|adjectifs|adj|pratique|convenient|práctico|comodo|praktisch
+方便面|nouilles-instantanees|manger|nom|les nouilles instantanées:f|instant noodles|los fideos instantáneos|i noodles istantanei|die Instantnudeln
+方向|direction|lieux|nom|la direction|direction|la dirección|la direzione|die Richtung
+方法|-|D
+方面|aspect|liens|nom|l'aspect:m|aspect|el aspecto|l'aspetto:m|der Aspekt
+旅客|voyageur|lieux|nom|le voyageur|traveller|el viajero|il viaggiatore|der Reisende
+旅行|voyager|loisirs|verbe|voyager|to travel|viajar|viaggiare|reisen
+日|jour-date|temps|nom|le jour (date)|day (date)|el día|il giorno|der Tag (Datum)
+日子|jours-vie|temps|nom|les jours, la vie|days, life|los días|i giorni|die Tage
+日报|-|R
+日期|date|temps|nom|la date|date|la fecha|la data|das Datum
+早就|-|G
+早晨|-|D
+早餐|-|D
+早饭|petit-dejeuner|manger|nom|le petit-déjeuner|breakfast|el desayuno|la colazione|das Frühstück
+时候|moment|temps|nom|le moment|time, moment|el momento|il momento|der Zeitpunkt
+时间|temps-duree|temps|nom|le temps (durée)|time|el tiempo|il tempo|die Zeit
+明年|l-annee-prochaine|temps|adv|l'année prochaine|next year|el año que viene|l'anno prossimo|nächstes Jahr
+明星|star|loisirs|nom|la star|star (celebrity)|la estrella|la star|der Star
+明白|comprendre-clair|verbes|verbe|comprendre ; clair|to understand; clear|entender|capire|verstehen
+星星|etoile|meteo|nom|l'étoile:f|star|la estrella|la stella|der Stern
+晚|tard|temps|adj|tard ; le soir|late|tarde|tardi|spät
+晚会|soiree|loisirs|nom|la soirée (fête)|evening party|la fiesta|la festa|die Abendfeier
+晚安|bonne-nuit|salutations|expr|bonne nuit|good night|buenas noches|buonanotte|gute Nacht
+晚报|-|R
+晚餐|-|D
+普通|-|D
+普通话|mandarin|ecole|nom|le mandarin|Mandarin Chinese|el mandarín|il mandarino|das Hochchinesisch
+晴|ensoleille|meteo|adj|ensoleillé, dégagé|sunny, clear|despejado|sereno|heiter
+晴天|beau-temps|meteo|nom|le beau temps|sunny day|el día soleado|la giornata di sole|der sonnige Tag
+更|encore-plus|liens|adv|encore plus|even more|aún más|ancora più|noch mehr
+最|le-plus|liens|adv|le plus|the most|el más|il più|am meisten
+最后|finalement|temps|adv|finalement, en dernier|finally|al final|alla fine|schließlich
+最好|le-mieux|liens|adv|le mieux, mieux vaut|best, had better|lo mejor|la cosa migliore|am besten
+最近|recemment|temps|adv|récemment, ces temps-ci|recently|últimamente|ultimamente|in letzter Zeit
+月亮|lune|meteo|nom|la lune|moon|la luna|la luna|der Mond
+月份|-|D
+有一些|-|D
+有一点儿|-|D
+有些|certains|chiffres|pron|certains|some|algunos|alcuni|manche
+有人|quelqu-un|liens|pron|quelqu'un|someone|alguien|qualcuno|jemand
+有意思|interessant|adjectifs|adj|intéressant|interesting|interesante|interessante|interessant
+有点儿|un-peu-trop|chiffres|adv|un peu (trop)|a bit|un poco|un po'|ein bisschen
+有用|utile|adjectifs|adj|utile|useful|útil|utile|nützlich
+有的|-|D
+服务|service|liens|nom|le service|service|el servicio|il servizio|der Service
+本子|cahier|ecole|nom|le cahier|notebook|el cuaderno|il quaderno|das Heft
+机会|occasion-chance|liens|nom|l'occasion:f|chance, opportunity|la oportunidad|l'occasione:f|die Gelegenheit
+机票|billet-d-avion|lieux|nom|le billet d'avion|plane ticket|el billete de avión|il biglietto aereo|das Flugticket
+条|-|G
+条件|condition|liens|nom|la condition|condition|la condición|la condizione|die Bedingung
+来自|venir-de|lieux|verbe|venir de|to come from|venir de|venire da|kommen aus
+查|verifier-chercher|verbes|verbe|vérifier, chercher (une info)|to check, to look up|consultar|controllare|nachschlagen
+树|arbre|meteo|nom|l'arbre:m|tree|el árbol|l'albero:m|der Baum
+校园|campus|ecole|nom|le campus|campus|el campus|il campus|der Campus
+校长|directeur-ecole|ecole|nom|le directeur (d'école)|head teacher|el director|il preside|der Schulleiter
+样子|apparence|liens|nom|l'apparence:f|appearance|el aspecto|l'aspetto:m|das Aussehen
+检查|controler|verbes|verbe|contrôler, examiner|to check|revisar|controllare|kontrollieren
+楼|immeuble|maison|nom|l'immeuble:m|building|el edificio|il palazzo|das Gebäude
+楼上|en-haut-etage|maison|adv|en haut (à l'étage)|upstairs|arriba|di sopra|oben
+楼下|en-bas-etage|maison|adv|en bas (au rez-de-chaussée)|downstairs|abajo|di sotto|unten
+次|fois|chiffres|nom|la fois|time (occurrence)|la vez|la volta|das Mal
+歌|chanson|loisirs|nom|la chanson|song|la canción|la canzone|das Lied
+正在|en-train-de|temps|adv|en train de|in the middle of (doing)|estar haciendo|stare facendo|gerade
+正好|justement|liens|adv|justement, pile|just right|justo|proprio|genau richtig
+正常|normal|adjectifs|adj|normal|normal|normal|normale|normal
+正是|-|R
+正确|correct|adjectifs|adj|correct|correct|correcto|corretto|richtig
+段|-|G
+比如|-|D
+比如说|-|D
+气|-|A
+气温|temperature-air|meteo|nom|la température (de l'air)|air temperature|la temperatura|la temperatura|die Lufttemperatur
+水平|niveau|ecole|nom|le niveau|level|el nivel|il livello|das Niveau
+永远|pour-toujours|temps|adv|pour toujours|forever|para siempre|per sempre|für immer
+求|demander-supplier|verbes|verbe|demander (une faveur)|to ask for|pedir|chiedere|bitten
+汽车|voiture|lieux|nom|la voiture|car|el coche|la macchina|das Auto
+没|-|D
+没事儿|ce-n-est-rien-ca-va|salutations|expr|ce n'est rien, ça va|it's OK|no pasa nada|non fa niente|schon gut
+河|riviere|meteo|nom|la rivière|river|el río|il fiume|der Fluss
+油|huile|manger|nom|l'huile:f|oil|el aceite|l'olio:m|das Öl
+洗澡|prendre-une-douche|maison|verbe|prendre un bain, une douche|to have a shower|ducharse|fare la doccia|duschen
+洗衣机|machine-a-laver|maison|nom|la machine à laver|washing machine|la lavadora|la lavatrice|die Waschmaschine
+活动|activite|loisirs|nom|l'activité:f|activity|la actividad|l'attività:f|die Aktivität
+流|couler|verbes|verbe|couler|to flow|fluir|scorrere|fließen
+流利|couramment|ecole|adj|courant (langue)|fluent|fluido|fluente|fließend
+流行|populaire-a-la-mode|adjectifs|adj|à la mode|popular, trendy|de moda|di moda|beliebt
+海|-|D
+海边|bord-de-mer|lieux|nom|le bord de mer|seaside|la costa|il mare (la riva)|die Küste
+清楚|clair|adjectifs|adj|clair, net|clear|claro|chiaro|klar
+温度|temperature|meteo|nom|la température|temperature|la temperatura|la temperatura|die Temperatur
+渴|avoir-soif|manger|adj|avoir soif|thirsty|tener sed|avere sete|durstig
+游客|touriste|loisirs|nom|le touriste|tourist|el turista|il turista|der Tourist
+湖|lac|meteo|nom|le lac|lake|el lago|il lago|der See
+满|plein|adjectifs|adj|plein|full|lleno|pieno|voll
+满意|satisfait|adjectifs|adj|satisfait|satisfied|satisfecho|soddisfatto|zufrieden
+火车|train|lieux|nom|le train|train|el tren|il treno|der Zug
+灯|lampe|maison|nom|la lampe|lamp, light|la lámpara|la lampada|die Lampe
+点头|hocher-la-tete|corps|verbe|hocher la tête|to nod|asentir con la cabeza|annuire|nicken
+热情|chaleureux|adjectifs|adj|chaleureux|warm, enthusiastic|cariñoso|caloroso|herzlich
+然后|puis|temps|adv|puis, ensuite|then|luego|poi|dann
+照相|prendre-une-photo|loisirs|verbe|prendre une photo|to take a photo|hacer una foto|fare una foto|ein Foto machen
+照顾|s-occuper-de-qqn|verbes|verbe|s'occuper de (qqn)|to look after|cuidar|prendersi cura di|sich kümmern um
+熟|mur-cuit|adjectifs|adj|mûr ; cuit|ripe; cooked|maduro|maturo|reif
+爬|grimper|verbes|verbe|grimper, ramper|to climb, to crawl|trepar|arrampicarsi|klettern
+爬山|faire-de-la-montagne|loisirs|verbe|faire de la montagne|to go hiking|hacer montañismo|fare escursioni in montagna|wandern
+爱人|-|D
+爱好|loisir-passion|loisirs|nom|le loisir, la passion|hobby|la afición|l'hobby:m|das Hobby
+爱情|amour|liens|nom|l'amour:m|love|el amor|l'amore:m|die Liebe
+片|-|G
+特别|particulierement|liens|adv|particulièrement|especially|especialmente|soprattutto|besonders
+特点|particularite|liens|nom|la particularité|feature|la característica|la caratteristica|das Merkmal
+玩儿|-|D
+班|classe-groupe|ecole|nom|la classe (groupe d'élèves)|class (group)|la clase|la classe|die Klasse
+班长|delegue-de-classe|ecole|nom|le délégué de classe|class monitor|el delegado de clase|il capoclasse|der Klassensprecher
+球|ballon|loisirs|nom|le ballon|ball|la pelota|la palla|der Ball
+球场|terrain-de-sport|loisirs|nom|le terrain de sport|sports ground|la cancha|il campo sportivo|der Sportplatz
+球队|equipe|loisirs|nom|l'équipe:f|team|el equipo|la squadra|die Mannschaft
+球鞋|baskets|vetements|nom|les baskets:f|trainers|las zapatillas|le scarpe da ginnastica|die Turnschuhe
+理想|ideal-reve|liens|nom|l'idéal:m|ideal, dream|el ideal|l'ideale:m|das Ideal
+瓶|-|D
+瓶子|bouteille|maison|nom|la bouteille|bottle|la botella|la bottiglia|die Flasche
+生|-|A
+生日|anniversaire|famille|nom|l'anniversaire:m|birthday|el cumpleaños|il compleanno|der Geburtstag
+生气|se-facher|verbes|verbe|se fâcher|to get angry|enfadarse|arrabbiarsi|sich ärgern
+生活|vie-quotidienne|liens|nom|la vie (quotidienne)|life|la vida|la vita|das Leben
+生病|tomber-malade|corps|verbe|tomber malade|to fall ill|enfermar|ammalarsi|krank werden
+生词|mot-nouveau|ecole|nom|le mot nouveau|new word|la palabra nueva|la parola nuova|das neue Wort
+用|utiliser-se-servir|verbes|verbe|se servir de|to use|usar|usare|verwenden
+电|electricite|maison|nom|l'électricité:f|electricity|la electricidad|l'elettricità:f|der Strom
+电视机|-|D
+电话|telephone|maison|nom|le téléphone|telephone|el teléfono|il telefono|das Telefon
+男|masculin|adjectifs|adj|masculin, homme|male|masculino|maschile|männlich
+男人|homme|famille|nom|l'homme:m|man|el hombre|l'uomo:m|der Mann
+男朋友|petit-ami|famille|nom|le petit ami|boyfriend|el novio|il ragazzo|der Freund
+男生|garcon-eleve|ecole|nom|le garçon (élève)|boy (student)|el chico|il ragazzo|der Junge
+画|dessiner|loisirs|verbe|dessiner, peindre|to draw|dibujar|disegnare|zeichnen
+画儿|dessin-tableau|loisirs|nom|le dessin, le tableau|picture, painting|el cuadro|il quadro|das Bild (Gemälde)
+画家|peintre|loisirs|nom|le peintre|painter|el pintor|il pittore|der Maler
+留|rester-laisser|verbes|verbe|rester ; laisser|to stay; to leave (sth)|quedarse|restare|bleiben
+留下|-|D
+留学生|etudiant-etranger|ecole|nom|l'étudiant étranger:m|international student|el estudiante extranjero|lo studente straniero|der Auslandsstudent
+病人|malade-patient|corps|nom|le malade|patient|el paciente|il paziente|der Patient
+白色|-|D
+的话|-|G
+目的|but|liens|nom|le but|purpose|el objetivo|lo scopo|das Ziel
+直接|direct|adjectifs|adj|direct|direct|directo|diretto|direkt
+相信|croire|verbes|verbe|croire (qqn, en)|to believe|creer|credere|glauben
+相同|identique|adjectifs|adj|identique|identical|idéntico|identico|gleich
+相机|appareil-photo|loisirs|nom|l'appareil photo:m|camera|la cámara|la macchina fotografica|die Kamera
+省|province-economiser|lieux|nom|la province|province|la provincia|la provincia|die Provinz
+看到|-|D
+看法|point-de-vue|liens|nom|le point de vue|view, opinion|el punto de vista|il punto di vista|die Ansicht
+看病|aller-chez-le-medecin|corps|verbe|aller chez le médecin|to see a doctor|ir al médico|andare dal medico|zum Arzt gehen
+看见|voir|verbes|verbe|voir|to see|ver|vedere|sehen
+真正|veritable|adjectifs|adj|véritable|real, genuine|verdadero|vero|echt
+真的|-|D
+眼|-|D
+睡|dormir|verbes|verbe|dormir|to sleep|dormir|dormire|schlafen
+知识|connaissances|ecole|nom|les connaissances:f|knowledge|el conocimiento|la conoscenza|das Wissen
+短|court|adjectifs|adj|court|short|corto|corto|kurz
+短信|sms|loisirs|nom|le SMS|text message|el mensaje de texto|l'SMS:m|die SMS
+碗|bol|manger|nom|le bol|bowl|el cuenco|la ciotola|die Schüssel
+碰|toucher-heurter|verbes|verbe|toucher, heurter|to touch, to bump|tocar|toccare|berühren
+碰到|-|D
+碰见|croiser-qqn|verbes|verbe|croiser (qqn)|to run into|encontrarse con|incontrare per caso|zufällig treffen
+礼物|cadeau|loisirs|nom|le cadeau|present|el regalo|il regalo|das Geschenk
+票|billet|loisirs|nom|le billet, le ticket|ticket|el billete|il biglietto|die Fahrkarte
+离|loin-de|lieux|mot|loin de (distance)|from (distance)|de (distancia)|da (distanza)|von … entfernt
+离开|quitter|verbes|verbe|quitter, partir|to leave|irse|andarsene|verlassen
+科|-|R
+科学|science|ecole|nom|la science|science|la ciencia|la scienza|die Wissenschaft
+科学家|scientifique|ecole|nom|le scientifique|scientist|el científico|lo scienziato|der Wissenschaftler
+租|louer|maison|verbe|louer (prendre en location)|to rent|alquilar|prendere in affitto|mieten
+称|-|A
+空气|air|meteo|nom|l'air:m|air|el aire|l'aria:f|die Luft
+站|se-tenir-debout|verbes|verbe|être debout ; la station|to stand; station|estar de pie|stare in piedi|stehen
+站住|-|R
+笑|rire-sourire|verbes|verbe|rire, sourire|to laugh, to smile|reír|ridere|lachen
+笑话|blague|loisirs|nom|la blague|joke|el chiste|la barzelletta|der Witz
+笔|stylo|ecole|nom|le stylo|pen|el bolígrafo|la penna|der Stift
+笔记|notes|ecole|nom|les notes (de cours):f|notes|los apuntes|gli appunti|die Notizen
+笔记本|carnet-portable|ecole|nom|le carnet ; l'ordinateur portable|notebook; laptop|el cuaderno|il quaderno|das Notizbuch
+第二|deuxieme|chiffres|num|deuxième|second|segundo|secondo|zweite
+等于|egaler|chiffres|verbe|égaler (=)|to equal|ser igual a|essere uguale a|gleich sein
+等到|-|G
+答应|accepter-promettre|verbes|verbe|accepter, promettre|to agree, to promise|prometer|promettere|zusagen
+筷子|baguettes|manger|nom|les baguettes:f|chopsticks|los palillos|le bacchette|die Essstäbchen
+算|calculer|chiffres|verbe|calculer|to calculate|calcular|calcolare|rechnen
+篇|-|G
+篮球|basket|loisirs|nom|le basket|basketball|el baloncesto|la pallacanestro|der Basketball
+米|riz-cru|manger|nom|le riz (cru) ; le mètre|rice (uncooked); metre|el arroz|il riso|der Reis
+红色|-|D
+级|-|D
+纸|papier|ecole|nom|le papier|paper|el papel|la carta|das Papier
+练|-|D
+练习|s-exercer|ecole|verbe|s'exercer ; l'exercice|to practise; exercise|practicar|esercitarsi|üben
+组|-|D
+组成|composer|verbes|verbe|composer, former|to make up|formar|comporre|bilden
+组长|chef-de-groupe|ecole|nom|le chef de groupe|group leader|el jefe de grupo|il capogruppo|der Gruppenleiter
+经常|-|D
+经理|directeur-manager|liens|nom|le directeur, le manager|manager|el gerente|il direttore|der Geschäftsführer
+经过|passer-par|lieux|verbe|passer par|to pass through|pasar por|passare per|vorbeigehen an

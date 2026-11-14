@@ -1,0 +1,203 @@
+结果|resultat|liens|nom|le résultat|result|el resultado|il risultato|das Ergebnis
+给|donner|verbes|verbe|donner ; pour|to give; for|dar|dare|geben
+绿色|-|D
+网|-|D
+网上|en-ligne|loisirs|adv|en ligne|online|en línea|online|online
+网球|tennis|loisirs|nom|le tennis|tennis|el tenis|il tennis|das Tennis
+网站|site-web|loisirs|nom|le site web|website|el sitio web|il sito web|die Website
+老|vieux|adjectifs|adj|vieux, âgé|old|viejo|vecchio|alt
+老人|personne-agee|famille|nom|la personne âgée|elderly person|el anciano|l'anziano:m|der alte Mensch
+老年|-|D
+老是|tout-le-temps|temps|adv|tout le temps|all the time|siempre|sempre|ständig
+老朋友|vieil-ami|liens|nom|le vieil ami|old friend|el viejo amigo|il vecchio amico|der alte Freund
+考生|candidat|ecole|nom|le candidat (examen)|exam candidate|el candidato|il candidato|der Prüfling
+而且|en-plus|liens|mot|en plus, de plus|moreover|además|inoltre|außerdem
+背|dos-porter-sur-le-dos|corps|nom|le dos|back (body)|la espalda|la schiena|der Rücken
+能|pouvoir|verbes|verbe|pouvoir|can|poder|potere|können
+能够|-|D
+脏|sale|adjectifs|adj|sale|dirty|sucio|sporco|schmutzig
+脸|visage|corps|nom|le visage|face|la cara|la faccia|das Gesicht
+自己|soi-meme|liens|pron|soi-même|oneself|uno mismo|se stesso|selbst
+自由|liberte|liens|nom|la liberté|freedom|la libertad|la libertà|die Freiheit
+自行车|velo|lieux|nom|le vélo|bicycle|la bicicleta|la bicicletta|das Fahrrad
+舒服|confortable|adjectifs|adj|confortable, bien|comfortable|cómodo|comodo|bequem
+船|bateau|lieux|nom|le bateau|boat|el barco|la barca|das Schiff
+节|-|G
+节日|fete|loisirs|nom|la fête|festival, holiday|la fiesta|la festa|das Fest
+节目|emission|loisirs|nom|l'émission:f|programme (TV)|el programa|il programma|die Sendung
+花|fleur|meteo|nom|la fleur|flower|la flor|il fiore|die Blume
+花园|jardin|maison|nom|le jardin|garden|el jardín|il giardino|der Garten
+草|herbe|meteo|nom|l'herbe:f|grass|la hierba|l'erba:f|das Gras
+草地|pelouse|meteo|nom|la pelouse|lawn|el césped|il prato|die Wiese
+药店|pharmacie|lieux|nom|la pharmacie|pharmacy|la farmacia|la farmacia|die Apotheke
+药水|-|R
+药片|comprime|corps|nom|le comprimé|tablet (pill)|la pastilla|la compressa|die Tablette
+菜单|menu|manger|nom|le menu, la carte|menu|el menú|il menù|die Speisekarte
+蓝色|-|D
+虽然|bien-que|liens|mot|bien que|although|aunque|anche se|obwohl
+蛋|-|D
+行为|comportement|liens|nom|le comportement|behaviour|el comportamiento|il comportamento|das Verhalten
+行人|pieton|lieux|nom|le piéton|pedestrian|el peatón|il pedone|der Fußgänger
+行动|-|D
+街|-|D
+表|-|A
+表示|exprimer|verbes|verbe|exprimer|to express|expresar|esprimere|ausdrücken
+装|-|A
+西|ouest|lieux|nom|l'ouest:m|west|el oeste|l'ovest:m|der Westen
+西北|nord-ouest|lieux|nom|le nord-ouest|northwest|el noroeste|il nord-ovest|der Nordwesten
+西医|-|R
+西南|sud-ouest|lieux|nom|le sud-ouest|southwest|el suroeste|il sud-ovest|der Südwesten
+西边|-|D
+西餐|cuisine-occidentale|manger|nom|la cuisine occidentale|Western food|la comida occidental|la cucina occidentale|das westliche Essen
+要求|exiger|verbes|verbe|exiger, demander|to require|exigir|richiedere|verlangen
+见|-|D
+见到|rencontrer-voir|verbes|verbe|voir (qqn), rencontrer|to see (someone)|ver|vedere|treffen
+观点|-|D
+角|coin|lieux|nom|le coin|corner|la esquina|l'angolo:m|die Ecke
+角度|angle|chiffres|nom|l'angle:m|angle|el ángulo|l'angolo:m|der Winkel
+计划|projet-plan|liens|nom|le projet, le plan|plan|el plan|il piano|der Plan
+计算机|ordinateur|maison|nom|l'ordinateur:m|computer|el ordenador|il computer|der Computer
+认为|penser-estimer|verbes|verbe|estimer, penser|to think, to consider|considerar|ritenere|meinen
+认真|serieux-applique|adjectifs|adj|sérieux, appliqué|conscientious|serio|serio|gewissenhaft
+讨论|discuter|verbes|verbe|discuter|to discuss|discutir|discutere|diskutieren
+让|laisser-faire|verbes|verbe|laisser, faire (faire)|to let|dejar|lasciare|lassen
+记|noter|verbes|verbe|noter|to note down|apuntar|annotare|aufschreiben
+记住|retenir|verbes|verbe|retenir (par cœur)|to memorize|memorizar|memorizzare|sich merken
+讲|expliquer|verbes|verbe|expliquer, raconter|to explain|explicar|spiegare|erklären
+讲话|prendre-la-parole|verbes|verbe|prendre la parole|to give a speech|dar un discurso|tenere un discorso|eine Rede halten
+许多|beaucoup|chiffres|adj|beaucoup de|many|muchos|molti|viele
+词|mot|ecole|nom|le mot|word|la palabra|la parola|das Wort
+词典|-|D
+词语|-|D
+试|essayer|verbes|verbe|essayer|to try|probar|provare|probieren
+话|paroles|ecole|nom|les paroles:f|words (spoken)|las palabras|le parole|die Worte
+该|-|D
+语言|langue-langage|ecole|nom|la langue, le langage|language|el idioma|la lingua|die Sprache
+说明|expliquer-preciser|verbes|verbe|expliquer, préciser|to explain|explicar|illustrare|erläutern
+说话|parler|verbes|verbe|parler|to talk|hablar|parlare|sprechen
+请假|demander-un-conge|liens|verbe|demander un congé|to ask for leave|pedir permiso|chiedere un permesso|Urlaub beantragen
+请客|inviter-payer|loisirs|verbe|inviter (payer pour les autres)|to treat (someone)|invitar|offrire|einladen
+请求|demande-requete|liens|nom|la demande|request|la petición|la richiesta|die Bitte
+请问|excusez-moi|salutations|expr|excusez-moi, puis-je demander…|excuse me, may I ask…|disculpe…|scusi…|Entschuldigung, darf ich fragen…
+读书|etudier-lire|ecole|verbe|étudier, lire|to study|estudiar|studiare|lernen, lesen
+读音|prononciation|ecole|nom|la prononciation|pronunciation|la pronunciación|la pronuncia|die Aussprache
+课堂|-|D
+课文|texte-lecon|ecole|nom|le texte (de la leçon)|text (of a lesson)|el texto|il testo|der Lektionstext
+走|marcher-partir|verbes|verbe|marcher ; partir|to walk; to leave|andar; irse|camminare; andare via|gehen
+走开|-|D
+走过|-|D
+走进|-|D
+起床|se-lever-du-lit|maison|verbe|se lever (du lit)|to get up|levantarse|alzarsi|aufstehen
+起飞|decoller|lieux|verbe|décoller|to take off|despegar|decollare|abfliegen
+超过|depasser|verbes|verbe|dépasser|to exceed|superar|superare|übertreffen
+越|-|G
+越来越|de-plus-en-plus|liens|adv|de plus en plus|more and more|cada vez más|sempre più|immer mehr
+跑|courir|verbes|verbe|courir|to run|correr|correre|laufen
+路|chemin-route|lieux|nom|le chemin, la route|road, way|el camino|la strada|der Weg
+路上|en-chemin|lieux|adv|en chemin|on the way|en el camino|per strada|unterwegs
+路口|carrefour|lieux|nom|le carrefour|crossroads|el cruce|l'incrocio:m|die Kreuzung
+路边|bord-de-la-route|lieux|nom|le bord de la route|roadside|el borde de la carretera|il ciglio della strada|der Straßenrand
+身上|sur-soi|corps|adv|sur soi|on oneself|encima|addosso|bei sich
+身边|a-ses-cotes|liens|adv|à ses côtés|by one's side|al lado|accanto a sé|an der Seite
+车|vehicule|lieux|nom|le véhicule|vehicle|el vehículo|il veicolo|das Fahrzeug
+车票|billet-train-bus|lieux|nom|le billet (de train, de bus)|ticket (train, bus)|el billete|il biglietto|die Fahrkarte (Zug, Bus)
+车站|gare-arret|lieux|nom|la gare, l'arrêt|station, stop|la estación|la stazione|der Bahnhof
+车辆|-|D
+轻|leger|adjectifs|adj|léger|light (weight)|ligero|leggero|leicht
+边|bord|lieux|nom|le bord, le côté|side, edge|el borde|il bordo|der Rand
+过去|le-passe|temps|nom|le passé|the past|el pasado|il passato|die Vergangenheit
+过年|feter-nouvel-an|loisirs|verbe|fêter le nouvel an|to celebrate New Year|celebrar el Año Nuevo|festeggiare il Capodanno|Neujahr feiern
+过来|venir-par-ici|verbes|verbe|venir (par ici)|to come over|venir aquí|venire qui|herkommen
+近|proche|adjectifs|adj|proche, près|near|cerca|vicino|nah
+还是|ou-bien-question|questions|mot|ou (dans une question)|or (in a question)|o|oppure|oder
+还有|et-aussi|liens|mot|et aussi, en plus|also, and|además|inoltre|außerdem noch
+这|ce-ceci|liens|pron|ce, ceci|this|este|questo|dies
+这么|tellement|liens|adv|tellement, si|so (this much)|tan|così|so
+这些|ces-ci|liens|pron|ces… -ci|these|estos|questi|diese
+这时|-|D
+这样|ainsi|liens|adv|ainsi, comme ça|like this|así|così|so
+这边|par-ici|lieux|adv|par ici|this side|por aquí|da questa parte|hier entlang
+这里|-|D
+进|entrer|verbes|verbe|entrer|to enter|entrar|entrare|hineingehen
+进入|-|D
+进去|-|D
+进来|entrer-par-ici|verbes|verbe|entrer (vers ici)|to come in|entrar|entrare|hereinkommen
+进行|-|G
+送|offrir-raccompagner|verbes|verbe|offrir ; raccompagner|to give; to see off|regalar; acompañar|regalare; accompagnare|schenken; begleiten
+送给|-|D
+选|choisir|verbes|verbe|choisir|to choose|elegir|scegliere|wählen
+通|-|A
+通知|prevenir-avis|verbes|verbe|prévenir, informer|to notify|avisar|avvisare|benachrichtigen
+通过|reussir-passer|verbes|verbe|réussir (un examen) ; passer par|to pass|aprobar|superare|bestehen
+遍|-|G
+道|-|A
+道理|raison-logique|liens|nom|la raison, la logique|reason, sense|la razón|la ragione|der Sinn
+道路|-|D
+那么|alors-comme-ca|liens|adv|alors ; si, tellement|then; so|entonces|allora|dann
+那会儿|-|D
+那时|-|D
+那时候|a-ce-moment-la|temps|adv|à ce moment-là|at that time|en aquel entonces|a quel tempo|zu jener Zeit
+那样|comme-ca|liens|adv|comme ça, de cette façon|like that|así|in quel modo|so
+那边|de-ce-cote-la|lieux|adv|de ce côté-là|over there|por allí|da quella parte|dort drüben
+部分|partie|chiffres|nom|la partie|part|la parte|la parte|der Teil
+酒|alcool|manger|nom|l'alcool:m|alcohol|el alcohol|l'alcol:m|der Alkohol
+酒店|hotel|lieux|nom|l'hôtel:m|hotel|el hotel|l'albergo:m|das Hotel
+里头|-|D
+重|lourd|adjectifs|adj|lourd|heavy|pesado|pesante|schwer
+重复|repeter|verbes|verbe|répéter|to repeat|repetir|ripetere|wiederholen (sagen)
+重新|a-nouveau|temps|adv|à nouveau|again|de nuevo|di nuovo|erneut
+重点|point-essentiel|ecole|nom|le point essentiel|key point|el punto clave|il punto chiave|der Schwerpunkt
+重要|important|adjectifs|adj|important|important|importante|importante|wichtig
+重视|accorder-de-l-importance|verbes|verbe|accorder de l'importance à|to value|valorar|dare importanza a|Wert legen auf
+钱包|portefeuille|argent|nom|le portefeuille|wallet|la cartera|il portafoglio|die Geldbörse
+银行|banque|argent|nom|la banque|bank|el banco|la banca|die Bank
+银行卡|carte-bancaire|argent|nom|la carte bancaire|bank card|la tarjeta bancaria|il bancomat|die Bankkarte
+错|erreur-faux|adjectifs|adj|faux, erroné ; l'erreur|wrong; mistake|equivocado|sbagliato|falsch
+长大|grandir|famille|verbe|grandir|to grow up|crecer|crescere|aufwachsen
+门口|entree-pas-de-porte|maison|nom|l'entrée (devant la porte):f|doorway|la puerta|l'ingresso:m|der Eingang (an der Tür)
+问路|demander-son-chemin|lieux|verbe|demander son chemin|to ask the way|preguntar el camino|chiedere la strada|nach dem Weg fragen
+问题|question-probleme|questions|nom|la question, le problème|question, problem|la pregunta, el problema|la domanda, il problema|die Frage, das Problem
+间|-|G
+闻|sentir-odeur|corps|verbe|sentir (une odeur)|to smell|oler|annusare|riechen
+队|-|D
+队长|capitaine|loisirs|nom|le capitaine (d'équipe)|captain|el capitán|il capitano|der Kapitän
+阴|couvert-temps|meteo|adj|couvert (temps)|overcast|nublado|coperto|bedeckt
+阴天|temps-couvert|meteo|nom|le temps couvert|cloudy day|el día nublado|la giornata nuvolosa|der trübe Tag
+院|-|D
+院子|cour|maison|nom|la cour|courtyard|el patio|il cortile|der Hof
+院长|-|R
+随便|comme-tu-veux|liens|adv|comme tu veux|as you like|como quieras|come vuoi|wie du willst
+随时|a-tout-moment|temps|adv|à tout moment|at any time|en cualquier momento|in qualsiasi momento|jederzeit
+难受|se-sentir-mal|corps|adj|mal (se sentir mal)|unwell, upset|mal|male|unwohl
+难听|desagreable-a-entendre|adjectifs|adj|désagréable à entendre|unpleasant to hear|desagradable de oír|sgradevole da sentire|unangenehm anzuhören
+难看|laid|adjectifs|adj|laid|ugly|feo|brutto|hässlich
+难过|triste|adjectifs|adj|triste|sad|triste|triste|traurig
+难题|-|D
+雨|pluie|meteo|nom|la pluie|rain|la lluvia|la pioggia|der Regen
+雪|neige|meteo|nom|la neige|snow|la nieve|la neve|der Schnee
+零下|en-dessous-de-zero|meteo|adv|en dessous de zéro|below zero|bajo cero|sotto zero|unter null
+青少年|-|D
+青年|jeune-personne|famille|nom|le jeune|young person|el joven|il giovane|der junge Mensch
+靠|s-appuyer|verbes|verbe|s'appuyer contre|to lean on|apoyarse|appoggiarsi|sich lehnen
+面|-|D
+面前|devant-qqn|lieux|adv|devant (qqn)|in front of|delante de|davanti a|vor
+面包|pain|manger|nom|le pain|bread|el pan|il pane|das Brot
+音乐会|concert|loisirs|nom|le concert|concert|el concierto|il concerto|das Konzert
+音节|syllabe|ecole|nom|la syllabe|syllable|la sílaba|la sillaba|die Silbe
+页|page|ecole|nom|la page|page|la página|la pagina|die Seite
+顺利|sans-encombre|adjectifs|adv|sans encombre|smoothly|sin problemas|senza intoppi|reibungslos
+顾客|client|argent|nom|le client|customer|el cliente|il cliente|der Kunde
+题|-|D
+食物|nourriture|manger|nom|la nourriture|food|la comida|il cibo|das Essen
+饭馆|restaurant|manger|nom|le restaurant|restaurant|el restaurante|il ristorante|das Restaurant
+饱|rassasie|manger|adj|rassasié|full (after eating)|lleno|sazio|satt
+饺子|raviolis-chinois|manger|nom|les raviolis chinois:m|dumplings|las empanadillas chinas|i ravioli cinesi|die Teigtaschen
+马上|tout-de-suite|temps|adv|tout de suite|right away|enseguida|subito|sofort
+骑|monter-a-cheval-velo|verbes|verbe|monter (à vélo, à cheval)|to ride|montar|andare (in bici, a cavallo)|reiten, fahren
+骑车|faire-du-velo|loisirs|verbe|faire du vélo|to ride a bike|ir en bici|andare in bici|Rad fahren
+高中|lycee|ecole|nom|le lycée|high school|el bachillerato|il liceo|die Oberstufe
+高级|avance-superieur|adjectifs|adj|supérieur, avancé|advanced|avanzado|avanzato|fortgeschritten
+鸡|poulet|animaux|nom|le poulet|chicken|el pollo|il pollo|das Huhn
+黄色|-|D
+黑板|tableau-noir|ecole|nom|le tableau (noir)|blackboard|la pizarra|la lavagna|die Tafel
+黑色|-|D

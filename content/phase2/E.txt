@@ -1,0 +1,246 @@
+bonjour|hola|ciao|hallo
+bonjour-poli|buenos días (formal)|buongiorno (formale)|guten Tag (höflich)
+bonjour-matin|buenos días|buongiorno|guten Morgen
+bonsoir|buenas noches|buonasera|guten Abend
+au-revoir|adiós|arrivederci|auf Wiedersehen
+merci|gracias|grazie|danke
+de-rien|de nada|prego|bitte sehr
+pardon|perdón, lo siento|scusa|Entschuldigung
+pas-grave|no pasa nada|non importa|macht nichts
+s-il-vous-plait|por favor ; invitar|per favore ; invitare|bitte ; einladen
+bienvenue|bienvenido|benvenuto|willkommen
+etre|ser ; sí|essere ; sì|sein ; ja
+ne-pas|no|non|nicht ; nein
+famille|la familia ; la casa|la famiglia ; la casa|die Familie ; das Zuhause
+papa|papá|papà|Papa
+maman|mamá|mamma|Mama
+grand-frere|el hermano mayor|il fratello maggiore|der ältere Bruder
+grande-soeur|la hermana mayor|la sorella maggiore|die ältere Schwester
+petit-frere|el hermano menor|il fratello minore|der jüngere Bruder
+petite-soeur|la hermana menor|la sorella minore|die jüngere Schwester
+fils|el hijo|il figlio|der Sohn
+fille-enfant|la hija|la figlia|die Tochter
+enfant|el niño|il bambino|das Kind
+mari|el marido|il marito|der Ehemann
+epouse|la esposa|la moglie|die Ehefrau
+grand-pere|el abuelo (paterno)|il nonno (paterno)|der Großvater (väterlicherseits)
+grand-mere|la abuela (paterna)|la nonna (paterna)|die Großmutter (väterlicherseits)
+ami|el amigo, la amiga|l'amico, l'amica:m|der Freund, die Freundin
+un|uno|uno|eins
+deux|dos|due|zwei
+trois|tres|tre|drei
+quatre|cuatro|quattro|vier
+cinq|cinco|cinque|fünf
+six|seis|sei|sechs
+sept|siete|sette|sieben
+huit|ocho|otto|acht
+neuf|nueve|nove|neun
+dix|diez|dieci|zehn
+zero|cero|zero|null
+deux-devant-nom|dos (delante de un nombre)|due (davanti a un nome)|zwei (vor einem Nomen)
+cent|cien|cento|hundert
+mille|mil|mille|tausend
+combien-petit|¿cuántos? ; unos|quanti? ; alcuni|wie viele? ; einige
+maintenant|ahora|adesso|jetzt
+aujourd-hui|hoy|oggi|heute
+demain|mañana|domani|morgen
+hier|ayer|ieri|gestern
+matin|la mañana (temprano)|il mattino|der Morgen
+matinee|la mañana|la mattinata|der Vormittag
+midi|el mediodía|mezzogiorno|der Mittag
+apres-midi|la tarde|il pomeriggio|der Nachmittag
+soir|la noche|la sera|der Abend
+semaine|la semana|la settimana|die Woche
+mois|el mes ; la luna|il mese ; la luna|der Monat ; der Mond
+annee|el año|l'anno:m|das Jahr
+heure|la hora (… horas)|l'ora (le … ):f|die Uhr (… Uhr)
+minute|el minuto|il minuto|die Minute
+manger|comer|mangiare|essen
+boire|beber|bere|trinken
+eau|el agua|l'acqua:f|das Wasser
+the|el té|il tè|der Tee
+cafe|el café|il caffè|der Kaffee
+lait|la leche|il latte|die Milch
+riz|el arroz (cocido)|il riso (cotto)|der Reis (gekocht)
+nouilles|los fideos|i noodles|die Nudeln
+plat|el plato ; la verdura|il piatto ; la verdura|das Gericht ; das Gemüse
+viande|la carne|la carne|das Fleisch
+poisson|el pescado|il pesce|der Fisch
+oeuf|el huevo|l'uovo:m|das Ei
+fruit|la fruta|la frutta|das Obst
+pomme|la manzana|la mela|der Apfel
+bon-a-manger|rico|buono (da mangiare)|lecker
+restaurant|el restaurante ; el hotel|il ristorante ; l'hotel|das Restaurant ; das Hotel
+couleur|el color|il colore|die Farbe
+rouge|rojo|rosso|rot
+blanc|blanco|bianco|weiß
+noir|negro|nero|schwarz
+vert|verde|verde|grün
+bleu|azul|blu|blau
+jaune|amarillo|giallo|gelb
+chine|China|la Cina|China
+france|Francia|la Francia|Frankreich
+pekin|Pekín|Pechino|Peking
+ecole|la escuela|la scuola|die Schule
+hopital|el hospital|l'ospedale:m|das Krankenhaus
+magasin|la tienda|il negozio|das Geschäft
+aeroport|el aeropuerto|l'aeroporto:m|der Flughafen
+gare|la estación de tren|la stazione|der Bahnhof
+taxi|el taxi|il taxi|das Taxi
+avion|el avión|l'aereo:m|das Flugzeug
+aller|ir|andare|gehen
+venir|venir|venire|kommen
+se-trouver|estar en|trovarsi|sich befinden
+ou|¿dónde?|dove?|wo?
+ici|aquí|qui|hier
+la-bas|allí|là|dort
+je|yo|io|ich
+tu|tú|tu|du
+il|él|lui|er
+elle|ella|lei|sie
+nous|nosotros|noi|wir
+personne|la persona, la gente|la persona, la gente|der Mensch, die Leute
+professeur|el profesor|il professore|der Lehrer
+eleve|el alumno, el estudiante|lo studente|der Schüler, der Student
+nom|el nombre|il nome|der Name
+s-appeler|llamarse ; llamar|chiamarsi ; chiamare|heißen ; rufen
+quoi|¿qué?|che cosa?|was?
+qui|¿quién?|chi?|wer?
+comment|¿cómo?|come?|wie?
+pourquoi|¿por qué?|perché?|warum?
+combien|¿cuánto?|quanto?|wie viel?
+faire|hacer|fare|machen
+regarder|mirar ; leer|guardare ; leggere|schauen ; lesen
+ecouter|escuchar|ascoltare|hören
+parler|hablar, decir|parlare, dire|sprechen, sagen
+lire-voix-haute|leer (en voz alta)|leggere (ad alta voce)|(laut) lesen
+ecrire|escribir|scrivere|schreiben
+etudier|estudiar, aprender|studiare, imparare|lernen
+travailler|trabajar ; el trabajo|lavorare ; il lavoro|arbeiten ; die Arbeit
+dormir|dormir|dormire|schlafen
+acheter|comprar|comprare|kaufen
+s-asseoir|sentarse ; tomar (un transporte)|sedersi ; prendere (un mezzo)|sich setzen ; fahren mit
+aimer-bien|gustar|piacere|mögen
+aimer|amar|amare|lieben
+penser|pensar ; tener ganas de|pensare ; avere voglia di|denken ; Lust haben
+vouloir|querer ; tener que|volere ; dovere|wollen ; müssen
+corps|el cuerpo ; la salud|il corpo ; la salute|der Körper ; die Gesundheit
+tete|la cabeza|la testa|der Kopf
+yeux|los ojos|gli occhi|die Augen
+oreilles|las orejas|le orecchie|die Ohren
+nez|la nariz|il naso|die Nase
+bouche|la boca|la bocca|der Mund
+main|la mano|la mano|die Hand
+pied|el pie|il piede|der Fuß
+jambe|la pierna|la gamba|das Bein
+ventre|la barriga|la pancia|der Bauch
+maladie|la enfermedad ; estar enfermo|la malattia ; essere malato|die Krankheit ; krank sein
+medecin|el médico|il medico|der Arzt
+medicament|el medicamento|la medicina|das Medikament
+avoir-mal|doler|fare male|wehtun
+fatigue|cansado|stanco|müde
+piece|la habitación|la stanza|das Zimmer
+porte|la puerta|la porta|die Tür
+fenetre|la ventana|la finestra|das Fenster
+table|la mesa, el escritorio|il tavolo, la scrivania|der Tisch
+chaise|la silla|la sedia|der Stuhl
+lit|la cama|il letto|das Bett
+ordinateur|el ordenador|il computer|der Computer
+portable|el móvil|il cellulare|das Handy
+television|la televisión|la televisione|der Fernseher
+livre|el libro|il libro|das Buch
+verre|el vaso, la taza|il bicchiere, la tazza|das Glas, die Tasse
+cle|la llave|la chiave|der Schlüssel
+chose|la cosa|la cosa|die Sache, das Ding
+cuisine|la cocina|la cucina|die Küche
+toilettes|el baño|il bagno|die Toilette
+vetement|la ropa|i vestiti|die Kleidung
+porter|llevar, ponerse (ropa)|indossare, mettersi|tragen, anziehen
+pantalon|los pantalones|i pantaloni|die Hose
+jupe|la falda|la gonna|der Rock
+chaussure|el zapato|la scarpa|der Schuh
+chapeau|el sombrero, el gorro|il cappello|der Hut, die Mütze
+sac|el bolso|la borsa|die Tasche
+manteau|el abrigo|il cappotto|der Mantel
+chemise|la camisa|la camicia|das Hemd
+chaussettes|los calcetines|i calzini|die Socken
+animal|el animal|l'animale:m|das Tier
+chat|el gato|il gatto|die Katze
+chien|el perro|il cane|der Hund
+oiseau|el pájaro|l'uccello:m|der Vogel
+cheval|el caballo|il cavallo|das Pferd
+vache|la vaca, el buey|la mucca, il bue|die Kuh, der Ochse
+mouton|la oveja, la cabra|la pecora, la capra|das Schaf, die Ziege
+cochon|el cerdo|il maiale|das Schwein
+panda|el panda|il panda|der Panda
+meteo|el tiempo (meteorología)|il tempo (meteo)|das Wetter
+pleuvoir|llover|piovere|regnen
+neiger|nevar|nevicare|schneien
+froid|frío|freddo|kalt
+chaud|caliente, caluroso|caldo|heiß
+vent|el viento|il vento|der Wind
+soleil|el sol|il sole|die Sonne
+printemps|la primavera|la primavera|der Frühling
+ete|el verano|l'estate:f|der Sommer
+automne|el otoño|l'autunno:m|der Herbst
+hiver|el invierno|l'inverno:m|der Winter
+grand|grande|grande|groß
+petit|pequeño|piccolo|klein
+beaucoup|mucho|molto|viel
+peu|poco|poco|wenig
+long|largo|lungo|lang
+haut|alto|alto|hoch, groß
+nouveau|nuevo|nuovo|neu
+vieux|viejo, usado|vecchio, usato|alt
+rapide|rápido|veloce|schnell
+lent|lento|lento|langsam
+cher|caro|caro|teuer
+bon-marche|barato|economico|billig
+joli|bonito|bello|schön
+occupe|ocupado|occupato|beschäftigt
+content|contento, feliz|contento, felice|froh
+argent|el dinero|i soldi|das Geld
+morceau|el trozo ; yuan (oral)|il pezzo ; yuan (parlato)|das Stück ; Yuan (mündlich)
+vendre|vender|vendere|verkaufen
+combien-ca-coute|¿cuánto cuesta?|quanto costa?|wie viel kostet das?
+supermarche|el supermercado|il supermercato|der Supermarkt
+monnaie|el cambio (monedas)|gli spiccioli|das Kleingeld
+payer|pagar|pagare|bezahlen
+apprendre|aprender|imparare|lernen
+enseigner|enseñar|insegnare|unterrichten
+demander|preguntar|chiedere|fragen
+repondre|responder|rispondere|antworten
+comprendre|entender|capire|verstehen
+savoir|saber|sapere|wissen
+connaitre|conocer ; reconocer|conoscere ; riconoscere|kennen ; erkennen
+chinois-langue|el chino (idioma)|il cinese (lingua)|das Chinesisch
+caractere-chinois|el carácter chino|il carattere cinese|das chinesische Schriftzeichen
+caractere|el carácter, la palabra escrita|il carattere|das Schriftzeichen
+examen|el examen|l'esame:m|die Prüfung
+entreprise|la empresa|l'azienda:f|die Firma
+aller-au-travail|ir al trabajo|andare al lavoro|zur Arbeit gehen
+se-reposer|descansar|riposarsi|sich ausruhen
+s-amuser|divertirse, jugar|divertirsi, giocare|spielen, Spaß haben
+chanter|cantar|cantare|singen
+danser|bailar|ballare|tanzen
+nager|nadar|nuotare|schwimmen
+courir|correr|correre|laufen
+film|la película|il film|der Film
+musique|la música|la musica|die Musik
+voyager|viajar ; el turismo|viaggiare ; il turismo|reisen ; der Tourismus
+photo|la foto|la foto|das Foto
+sport|el deporte ; hacer deporte|lo sport ; fare sport|der Sport ; Sport treiben
+aussi|también|anche|auch
+tres|muy|molto|sehr
+tous|todos ; todo|tutti ; tutto|alle ; alles
+encore|todavía ; también|ancora ; anche|noch ; auch
+et|y (entre dos nombres)|e (tra due nomi)|und (zwischen Nomen)
+mais|pero|ma|aber
+parce-que|porque|perché|weil
+donc|así que, por eso|quindi|deshalb
+pouvoir|poder (permiso)|potere (permesso)|dürfen, können
+savoir-faire|saber hacer ; ir a (futuro)|sapere fare ; stare per|können ; werden
+ne-pas-avoir|no tener ; no hay|non avere ; non c'è|nicht haben ; es gibt nicht
+avoir|tener ; hay|avere ; c'è|haben ; es gibt
+ensemble|juntos|insieme|zusammen
+un-peu|un poco|un po'|ein bisschen
