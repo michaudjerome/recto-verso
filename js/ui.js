@@ -8,6 +8,7 @@ const P = {
   chevron: '<path d="M9 5l7 7-7 7"/>',
   plus: '<path d="M12 5v14M5 12h14"/>',
   check: '<path d="M5 12.5l4.5 4.5L19 7"/>',
+  search: '<circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/>',
   review: '<rect x="5" y="4" width="11" height="15" rx="2"/><path d="M19 8v10a2 2 0 0 1-2 2H9"/>',
   play: '<rect x="3" y="6" width="8" height="12" rx="1.6" transform="rotate(-10 7 12)"/><rect x="13" y="6" width="8" height="12" rx="1.6" transform="rotate(10 17 12)"/>',
   discover: '<rect x="6" y="3" width="12" height="17" rx="2"/><path d="M12 8.5l1.2 2.5 2.6.3-1.9 1.8.5 2.6-2.4-1.3-2.4 1.3.5-2.6-1.9-1.8 2.6-.3z"/>',
