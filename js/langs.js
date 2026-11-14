@@ -48,7 +48,13 @@ FLAGS.pt = FLAGS['pt-PT'];
 
 export const flag = (tag, cls = '') => `<svg class="flag ${cls}" viewBox="0 0 30 20" aria-hidden="true">${FLAGS[tag] || FLAGS[base(tag)] || ''}</svg>`;
 
-// Langues proposées à l'apprentissage : toutes sauf la sienne
+// Langues dont le contenu (data/lang/<code>.json) existe déjà : les autres arrivent en phase 2
+export const CONTENT = ['fr', 'en', 'zh'];
+export const hasContent = (tag) => CONTENT.includes(base(tag));
+// Un parcours est possible si la langue maternelle et la langue apprise ont toutes deux leur contenu
+export const ready = (native, target) => hasContent(native) && hasContent(target);
+
+// Langues proposées à l'apprentissage : toutes sauf la sienne (celles sans contenu s'affichent « Bientôt »)
 export const learnable = (native) => LANGS.filter((l) => l.code !== base(native));
 
 // Niveaux : CECRL pour les langues européennes, HSK pour le chinois
