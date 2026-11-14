@@ -5,8 +5,10 @@ Des cartes qui se retournent pour apprendre les langues. Quatre modes : Réviser
 Application web installable (PWA), 100 % hors ligne, sans compte ni serveur : tout reste sur le téléphone.
 
 ## Langues
-› Disponibles (phase 1) : français, anglais (GB et US), chinois simplifié, dans tous les sens (par exemple français vers chinois, anglais vers français). 246 mots du quotidien, 156 illustrés.
-› En préparation (phase 2) : espagnol, italien, portugais (Portugal et Brésil), allemand. L'interface existe déjà dans ces langues ; elles s'affichent « Bientôt » tant que leur contenu n'est pas prêt.
+› Six langues, dans tous les sens : français, anglais (GB et US), espagnol, italien, allemand, chinois simplifié.
+› 1 020 notions du quotidien (vocabulaire HSK 1 et 2 pour le chinois, niveaux A1 et A2 pour les autres), 246 illustrées.
+› Chaque mot est rédigé puis vérifié dans le Wiktionnaire anglais et le Wiktionnaire français ; un mot qu'aucun ne confirme porte la mention « non relue ».
+› Portugais : retiré pour le moment.
 
 ## Installer
 Ouvrir https://michaudjerome.github.io/recto-verso/ puis :
@@ -20,13 +22,13 @@ Ouvrir https://michaudjerome.github.io/recto-verso/ puis :
 
 ## Pour modifier
 › Textes de l'interface : `tools/build_ui.py`, puis `python tools/build_ui.py`.
-› Contenu : `content/author.py` et `content/build_content.py` (génèrent `data/`).
+› Contenu : `content/author.py` et `content/build_content.py` (246 notions d'origine), puis `content/phase2/` (774 notions ajoutées et traductions espagnol, italien, allemand).
 › Avant chaque publication : `python tools/stamp.py` (empreinte des fichiers pour le hors ligne).
 
 ## Sources et licences
 › Code de l'application : licence MIT.
 › ts-fsrs (répétition espacée) : MIT.
 › Polices Fraunces, Inter, LXGW WenKai : SIL Open Font License 1.1.
-› Contenu (data/) et pictogrammes OpenMoji (pictos/) : CC BY-SA 4.0 ; traductions françaises issues de CFDICT (CC BY-SA 3.0), anglaises vérifiées avec CC-CEDICT (CC BY-SA 4.0) ; niveaux HSK 3.0 (ivankra/hsk30, MIT).
+› Contenu (data/) et pictogrammes OpenMoji (pictos/) : CC BY-SA 4.0 ; traductions françaises issues de CFDICT (CC BY-SA 3.0), anglaises vérifiées avec CC-CEDICT (CC BY-SA 4.0) ; niveaux HSK 3.0 (ivankra/hsk30 et harukicoder/hsk30, MIT) ; vérification avec le Wiktionary et le Wiktionnaire (CC BY-SA 4.0).
 
 Les textes de licence sont dans le dossier LICENSES.
