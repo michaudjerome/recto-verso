@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Recto Verso</title>
+<meta name="description" content="Des cartes qui se retournent pour apprendre les langues. 100 % hors ligne.">
+<meta name="theme-color" content="#F4EEE2">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Recto Verso">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="css/base.css?v=ec86c3ba">
+<script>
+  // Réglage d'animations appliqué avant le premier rendu
+  try { const s = JSON.parse(localStorage.getItem('rv-look') || '{}'); if (s.anim === 'calm') document.documentElement.classList.add('calm'); } catch (e) {}
+</script>
+</head>
+<body>
+<main id="app" aria-live="polite"></main>
+<script type="importmap" id="stamp">{"imports":{"./js/app.js":"./js/app.js?v=ec86c3ba","./js/content.js":"./js/content.js?v=ec86c3ba","./js/courses.js":"./js/courses.js?v=ec86c3ba","./js/db.js":"./js/db.js?v=ec86c3ba","./js/greet.js":"./js/greet.js?v=ec86c3ba","./js/i18n.js":"./js/i18n.js?v=ec86c3ba","./js/langs.js":"./js/langs.js?v=ec86c3ba","./js/profile.js":"./js/profile.js?v=ec86c3ba","./js/ui.js":"./js/ui.js?v=ec86c3ba","./js/update.js":"./js/update.js?v=ec86c3ba","./js/version.js":"./js/version.js?v=ec86c3ba","./js/views/home.js":"./js/views/home.js?v=ec86c3ba","./js/views/onboarding.js":"./js/views/onboarding.js?v=ec86c3ba","./js/views/settings.js":"./js/views/settings.js?v=ec86c3ba","./js/views/sources.js":"./js/views/sources.js?v=ec86c3ba","./js/vendor/ts-fsrs.mjs":"./js/vendor/ts-fsrs.mjs?v=ec86c3ba"}}</script>
+<script>window.APP_STAMP = "ec86c3ba";</script>
+<script type="module" src="js/app.js?v=ec86c3ba"></script>
+</body>
+</html>
