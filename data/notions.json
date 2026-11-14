@@ -1,0 +1,56 @@
+{
+ "v": 1,
+ "note": "Échantillon de l'étape 1 : remplacé par la conversion des 19 paquets à l'étape 6.",
+ "themes": [
+  {
+   "id": "nourriture",
+   "picto": "1F34E"
+  },
+  {
+   "id": "animaux",
+   "picto": "1F436"
+  },
+  {
+   "id": "ville",
+   "picto": "1F68C"
+  }
+ ],
+ "notions": [
+  {
+   "id": "pomme",
+   "theme": "nourriture",
+   "pos": "nom",
+   "cefr": "A1",
+   "hsk": 1,
+   "picto": "1F34E",
+   "sens": "le fruit"
+  },
+  {
+   "id": "chien",
+   "theme": "animaux",
+   "pos": "nom",
+   "cefr": "A1",
+   "hsk": 1,
+   "picto": "1F436",
+   "sens": "l'animal"
+  },
+  {
+   "id": "bus",
+   "theme": "ville",
+   "pos": "nom",
+   "cefr": "A1",
+   "hsk": 2,
+   "picto": "1F68C",
+   "sens": "le transport en commun"
+  },
+  {
+   "id": "maison",
+   "theme": "ville",
+   "pos": "nom",
+   "cefr": "A1",
+   "hsk": 2,
+   "picto": "1F3E0",
+   "sens": "le logement"
+  }
+ ]
+}
