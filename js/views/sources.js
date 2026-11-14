@@ -4,8 +4,8 @@ import { esc, icon } from '../ui.js';
 
 const ITEMS = [
   ['OpenMoji', 'Pictogrammes · All emojis designed by OpenMoji – the open-source emoji and icon project', 'CC BY-SA 4.0', 'https://openmoji.org/', 'LICENSES/CC-BY-SA-4.0-OpenMoji-CC-CEDICT-contenu.txt'],
-  ['CFDICT', 'Dictionnaire chinois-français · chine.in (David Houstin)', 'CC BY-SA 3.0', 'https://chine.in/mandarin/open/CFDICT/', 'LICENSES/CC-BY-SA-3.0-CFDICT.txt'],
-  ['CC-CEDICT', 'Dictionnaire chinois-anglais · MDBG, vérification des traductions anglaises', 'CC BY-SA 4.0', 'https://www.mdbg.net/chinese/dictionary?page=cc-cedict', 'LICENSES/CC-BY-SA-4.0-OpenMoji-CC-CEDICT-contenu.txt'],
+  ['CFDICT', 'Dictionnaire chinois-français (recherche dans Créer) · chine.in (David Houstin)', 'CC BY-SA 3.0', 'https://chine.in/mandarin/open/CFDICT/', 'LICENSES/CC-BY-SA-3.0-CFDICT.txt'],
+  ['CC-CEDICT', 'Dictionnaire chinois-anglais (recherche dans Créer) · MDBG, vérification des traductions anglaises', 'CC BY-SA 4.0', 'https://www.mdbg.net/chinese/dictionary?page=cc-cedict', 'LICENSES/CC-BY-SA-4.0-OpenMoji-CC-CEDICT-contenu.txt'],
   ['HSK 3.0', 'Liste de vocabulaire et niveaux · ivankra/hsk30', 'MIT', 'https://github.com/ivankra/hsk30', 'LICENSES/MIT-hsk30.txt'],
   ['hsk30 (Python)', 'Niveaux HSK 1 et 2 des 774 notions ajoutées · harukicoder/hsk30', 'MIT', 'https://github.com/harukicoder/hsk30', 'LICENSES/MIT-hsk30-harukicoder.txt'],
   ['Wiktionary · Wiktionnaire', 'Vérification des traductions (anglais, français, espagnol, italien, allemand)', 'CC BY-SA 4.0', 'https://www.wiktionary.org/', 'LICENSES/CC-BY-SA-4.0-OpenMoji-CC-CEDICT-contenu.txt'],

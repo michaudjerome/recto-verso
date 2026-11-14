@@ -1,11 +1,15 @@
-// Créer : on remplit le recto, la carte se retourne, on remplit le verso (traduction, photo ou émoji)
+// Créer : un seul champ cherche le mot (langue apprise, sa langue ou pinyin) dans l'app puis, pour le chinois,
+// dans le dictionnaire ; sinon on remplit le recto, la carte se retourne, on remplit le verso (photo ou émoji)
 import { base } from '../langs.js';
 import { t, langName } from '../i18n.js';
-import { cardsOf, savePerso, deleteCard } from '../cards.js';
+import { cardsOf, savePerso, deleteCard, addNotion, cardId } from '../cards.js';
+import { searchNotions, loadDict, dictReady, searchDict, shortDefs, dictLang } from '../dict.js';
+import { toneHtml } from '../pinyin.js';
+import { get } from '../db.js';
 import { word, visual } from '../face.js';
 import { compress, savePhoto, photoUrl, deletePhoto } from '../photos.js';
 import { requireCourse, topBar } from '../play-kit.js';
-import { esc, flip, toast } from '../ui.js';
+import { esc, flip, toast, icon, nav } from '../ui.js';
 
 export async function render(el) {
   const course = await requireCourse();
@@ -15,7 +19,10 @@ export async function render(el) {
   const thumbs = await Promise.all(mine.map(async (c) => visual({ photoUrl: await photoUrl(c.perso?.photo), picto: c.perso?.picto }, 'thumb')));
   let photo = null; // blob compressé en attente d'enregistrement
 
+  const ph = t(zh ? 'create.searchPy' : 'create.search', { a: langName(course.target), b: langName(course.native) });
   el.innerHTML = `<div class="page create">${topBar(t('create.title'))}
+    <label class="searchbox">${icon('search')}<input id="q" type="search" placeholder="${esc(ph)}" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"></label>
+    <div class="results" id="res"></div>
     <div class="stage form-stage"><div class="card flip"><div class="in">
       <div class="face front"><div class="corner">Recto</div>
         <label class="lbl">${esc(t('create.front', { lang: langName(course.target) }))}</label>
@@ -38,6 +45,56 @@ export async function render(el) {
 
   const card = el.querySelector('.card');
   const $ = (id) => el.querySelector(`#${id}`);
+
+  // Recherche : notions de l'app d'abord, puis dictionnaire chinois (téléchargé une fois, puis hors ligne)
+  const res = $('res'), gen = nav.gen;
+  let timer, lastQ = '', dictRows = [];
+  if (zh) loadDict(course.native).then(() => { if (lastQ && nav.gen === gen) run(lastQ); }).catch(() => {});
+  const run = async (q) => {
+    lastQ = q;
+    if (!q.trim()) { res.innerHTML = ''; return; }
+    const found = await searchNotions(q, course, 8);
+    const have = await Promise.all(found.map((it) => get('cards', cardId(course.id, it.n.id))));
+    if (q !== lastQ || nav.gen !== gen) return;
+    const ids = new Set(found.map((it) => it.hz));
+    dictRows = zh && dictReady() ? searchDict(q).filter((g) => !ids.has(g.hanzi)).slice(0, 12) : [];
+    let html = '';
+    if (found.length) html += `<div class="set-label">${esc(t('create.inApp'))}</div><div class="list">${found.map((it, i) => `<button class="row app-hit" data-id="${esc(it.n.id)}" ${have[i] ? 'disabled' : ''}>
+      ${visual({ picto: it.n.picto }, 'thumb') || '<span class="thumb-empty"></span>'}
+      <span class="grow"><b>${word(it.tg, course.target)}</b>${zh && it.tg.py ? ` <span class="py">${toneHtml(it.tg.py)}</span>` : ''}<small>${esc(it.nt.art ? `${it.nt.art}${it.nt.art.endsWith("'") ? '' : ' '}${it.nt.w}` : it.nt.w)}</small></span>
+      <span class="tag">${esc(t(have[i] ? 'create.have' : 'create.add'))}</span></button>`).join('')}</div>`;
+    if (zh) {
+      if (!dictReady()) html += `<p class="hint small">${esc(t('create.loading'))}</p>`;
+      else if (dictRows.length) html += `<div class="set-label">${esc(t('create.dict'))}</div><div class="list">${dictRows.map((g, gi) => g.readings.slice(0, 3).map((r, ri) => `<button class="row dict-hit" data-g="${gi}" data-r="${ri}">
+        <span class="hz zh">${esc(g.hanzi)}</span><span class="grow"><span class="py">${toneHtml(r.pinyin)}</span><small>${esc(shortDefs(r.defs, 3))}</small></span>${g.level ? `<span class="tag hsk">HSK ${g.level}</span>` : ''}</button>`).join('')).join('')}</div>`;
+    }
+    if (!found.length && !(zh && dictRows.length) && (dictReady() || !zh)) html += `<p class="hint small">${esc(t('create.noResult'))}</p>`;
+    html += `<button class="btn ghost manual">${esc(t('create.manual'))}</button>`;
+    res.innerHTML = html;
+  };
+  $('q').oninput = () => { clearTimeout(timer); timer = setTimeout(() => run($('q').value), 180); };
+  res.onclick = async (e) => {
+    const b = e.target.closest('button');
+    if (!b) return;
+    if (b.classList.contains('app-hit')) {
+      await addNotion(course, b.dataset.id);
+      toast(t('disc.kept'));
+      b.disabled = true; b.querySelector('.tag').textContent = t('create.have');
+      return;
+    }
+    if (b.classList.contains('dict-hit')) {
+      const g = dictRows[+b.dataset.g], r = g.readings[+b.dataset.r];
+      $('fw').value = g.hanzi; if ($('fpy')) $('fpy').value = r.pinyin;
+      $('bw').value = shortDefs(r.defs, 2);
+      if (dictLang(course.native) !== base(course.native)) toast(t('create.translate'));
+    } else if (b.classList.contains('manual')) {
+      const q = $('q').value.trim();
+      if (q && !$('fw').value) $('fw').value = q;
+    }
+    card.classList.contains('flipped') && flip(card, false);
+    el.querySelector('.form-stage').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    setTimeout(() => $('fw').focus({ preventScroll: true }), 350);
+  };
   el.querySelectorAll('.turn').forEach((b) => b.onclick = () => {
     flip(card);
     setTimeout(() => (card.classList.contains('flipped') ? $('bw') : $('fw')).focus(), 400);
