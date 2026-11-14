@@ -176,6 +176,21 @@ T = {
  'bk.save':        ['Sauvegarder', 'Back up', 'Guardar copia', 'Fai un backup', 'Guardar cópia', 'Sichern', '备份'],
  'bk.last':        ['Dernière sauvegarde : {d}', 'Last backup: {d}', 'Última copia: {d}', 'Ultimo backup: {d}', 'Última cópia: {d}', 'Letzte Sicherung: {d}', '上次备份：{d}'],
  'bk.never':       ['Aucune sauvegarde pour l\'instant', 'No backup yet', 'Aún no hay copias', 'Ancora nessun backup', 'Ainda sem cópias', 'Noch keine Sicherung', '还没有备份'],
+ # Accueil 0.6.0 : bloc du jour, objectif, compteurs
+ 'today.lbl':      ['cartes à réviser aujourd\'hui', 'cards to review today', 'tarjetas para repasar hoy', 'carte da ripassare oggi', 'cartas para rever hoje', 'Karten für heute', '今天要复习的卡片'],
+ 'today.lbl1':     ['carte à réviser aujourd\'hui', 'card to review today', 'tarjeta para repasar hoy', 'carta da ripassare oggi', 'carta para rever hoje', 'Karte für heute', '今天要复习的卡片'],
+ 'today.new':      ['dont {n} nouvelles', 'including {n} new', '{n} de ellas nuevas', 'di cui {n} nuove', 'das quais {n} novas', 'davon {n} neu', '其中 {n} 张新卡'],
+ 'today.min':      ['environ {n} min', 'about {n} min', 'unos {n} min', 'circa {n} min', 'cerca de {n} min', 'etwa {n} Min.', '约 {n} 分钟'],
+ 'today.start':    ['Commencer la révision', 'Start reviewing', 'Empezar el repaso', 'Inizia il ripasso', 'Começar a revisão', 'Wiederholung starten', '开始复习'],
+ 'today.done':     ['Tout est révisé pour aujourd\'hui ✨', 'All done for today ✨', 'Todo repasado por hoy ✨', 'Tutto ripassato per oggi ✨', 'Tudo revisto por hoje ✨', 'Für heute alles wiederholt ✨', '今天的都复习完了 ✨'],
+ 'today.first':    ['Commence par découvrir tes premiers mots 🌱', 'Start by discovering your first words 🌱', 'Empieza descubriendo tus primeras palabras 🌱', 'Inizia scoprendo le tue prime parole 🌱', 'Começa por descobrir as tuas primeiras palavras 🌱', 'Entdecke zuerst deine ersten Wörter 🌱', '先来发现你的第一批单词吧 🌱'],
+ 'today.discover': ['Découvrir de nouveaux mots', 'Discover new words', 'Descubrir palabras nuevas', 'Scopri parole nuove', 'Descobrir palavras novas', 'Neue Wörter entdecken', '发现新词'],
+ 'today.goal':     ['Objectif du jour : {a} / {b}', 'Today\'s goal: {a} / {b}', 'Objetivo del día: {a} / {b}', 'Obiettivo del giorno: {a} / {b}', 'Objetivo do dia: {a} / {b}', 'Tagesziel: {a} / {b}', '今日目标：{a} / {b}'],
+ 'stats.streak':   ['jours de suite', 'day streak', 'días seguidos', 'giorni di fila', 'dias seguidos', 'Tage in Folge', '连续天数'],
+ 'stats.cards':    ['cartes', 'cards', 'tarjetas', 'carte', 'cartas', 'Karten', '卡片'],
+ 'stats.mastered': ['maîtrisées', 'mastered', 'dominadas', 'padroneggiate', 'dominadas', 'sicher', '已掌握'],
+ 'set.goal':       ['Objectif du jour', 'Daily goal', 'Objetivo diario', 'Obiettivo giornaliero', 'Objetivo diário', 'Tagesziel', '每日目标'],
+ 'set.goalHint':   ['Nombre de cartes à réviser chaque jour, pour la langue en cours.', 'Number of cards to review each day, for the current language.', 'Número de tarjetas que repasar cada día, para el idioma actual.', 'Numero di carte da ripassare ogni giorno, per la lingua attuale.', 'Número de cartas para rever por dia, para a língua atual.', 'Anzahl der Karten pro Tag für die aktuelle Sprache.', '当前语言每天复习的卡片数量。'],
 }
 # Noms des langues, écrits dans chaque langue d'interface (minuscules en français, espagnol, italien, portugais)
 NAMES = {
@@ -217,6 +232,7 @@ PT_BR = {
  'inst.done': 'O Recto Verso está instalado ✨', 'set.install': 'Adicionar à tela inicial', 'inst.title': 'Instale o Recto Verso',
  'bk.remind': 'Proteja suas cartas', 'bk.remindHint': 'Tudo fica neste celular. Com um backup, nada se perde, mesmo trocando de aparelho.',
  'bk.save': 'Fazer backup', 'bk.last': 'Último backup: {d}', 'bk.never': 'Nenhum backup ainda',
+ 'today.first': 'Comece descobrindo suas primeiras palavras 🌱', 'today.lbl': 'cartas para revisar hoje', 'today.lbl1': 'carta para revisar hoje', 'today.done': 'Tudo revisado por hoje ✨', 'set.goalHint': 'Número de cartas para revisar por dia, para a língua atual.',
  'win.again': 'Jogar de novo', 'play.memorySub': 'Encontre os pares', 'grade.again': 'Errei',
 }
 root = pathlib.Path(__file__).resolve().parent.parent
