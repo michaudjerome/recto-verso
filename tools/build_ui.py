@@ -105,6 +105,16 @@ T = {
  'create.delete':  ['Supprimer', 'Delete', 'Eliminar', 'Elimina', 'Apagar', 'Löschen', '删除'],
  'create.confirm': ['Toucher encore pour supprimer', 'Tap again to delete', 'Toca otra vez para eliminar', 'Tocca di nuovo per eliminare', 'Toca outra vez para apagar', 'Nochmal tippen zum Löschen', '再点一次即可删除'],
  'create.need':    ['Remplis le recto et le verso 🌱', 'Fill in the front and the back 🌱', 'Rellena el anverso y el reverso 🌱', 'Compila fronte e retro 🌱', 'Preenche a frente e o verso 🌱', 'Füll Vorder- und Rückseite aus 🌱', '请填写正面和背面 🌱'],
+ 'create.photo':   ['Photo', 'Photo', 'Foto', 'Foto', 'Foto', 'Foto', '照片'],
+ 'create.photoChange': ['Changer', 'Change', 'Cambiar', 'Cambia', 'Mudar', 'Ändern', '更换'],
+ 'create.emojiShort': ['Émoji', 'Emoji', 'Emoji', 'Emoji', 'Emoji', 'Emoji', '表情'],
+ 'backup.title':   ['Sauvegarde', 'Backup', 'Copia de seguridad', 'Backup', 'Cópia de segurança', 'Sicherung', '备份'],
+ 'backup.hint':    ['Un fichier qui contient tout : cartes, progression et photos. Tu peux aussi importer ici la sauvegarde de « J\'apprends le chinois ».', 'One file with everything: cards, progress and photos.', 'Un archivo con todo: cartas, progreso y fotos.', 'Un file con tutto: carte, progressi e foto.', 'Um ficheiro com tudo: cartas, progresso e fotos.', 'Eine Datei mit allem: Karten, Fortschritt und Fotos.', '一个文件包含全部内容：卡片、进度和照片。'],
+ 'backup.export':  ['Exporter', 'Export', 'Exportar', 'Esporta', 'Exportar', 'Exportieren', '导出'],
+ 'backup.import':  ['Importer', 'Import', 'Importar', 'Importa', 'Importar', 'Importieren', '导入'],
+ 'backup.exported':['Sauvegarde téléchargée ✨', 'Backup downloaded ✨', 'Copia descargada ✨', 'Backup scaricato ✨', 'Cópia descarregada ✨', 'Sicherung heruntergeladen ✨', '备份已下载 ✨'],
+ 'backup.done':    ['{n} cartes importées ✨', '{n} cards imported ✨', '{n} cartas importadas ✨', '{n} carte importate ✨', '{n} cartas importadas ✨', '{n} Karten importiert ✨', '已导入 {n} 张卡片 ✨'],
+ 'backup.bad':     ['Ce fichier n\'est pas une sauvegarde reconnue.', 'This file is not a recognised backup.', 'Este archivo no es una copia reconocida.', 'Questo file non è un backup riconosciuto.', 'Este ficheiro não é uma cópia reconhecida.', 'Diese Datei ist keine gültige Sicherung.', '无法识别此备份文件。'],
  # Langues
  'courses.title':  ['Tes langues', 'Your languages', 'Tus idiomas', 'Le tue lingue', 'As tuas línguas', 'Deine Sprachen', '你的语言'],
  'courses.add':    ['Ajouter une langue', 'Add a language', 'Añadir un idioma', 'Aggiungi una lingua', 'Acrescentar uma língua', 'Sprache hinzufügen', '添加语言'],
@@ -175,7 +185,7 @@ PT_BR = {
  'write.ph': 'Sua resposta', 'write.yours': 'Sua resposta: {w}', 'write.noPicto': 'Este jogo precisa de palavras com imagem. Descubra algumas primeiro 🌱',
  'disc.tap': 'Toque para descobrir', 'disc.kept': 'Adicionada às suas cartas ✨', 'disc.empty': 'Você descobriu todas as palavras disponíveis ✨',
  'create.ex': 'Um exemplo (opcional)', 'create.emoji': 'Um emoji para ilustrar (opcional)', 'create.saved': 'Carta salva ✨', 'create.mine': 'As cartas que você criou',
- 'create.none': 'Você ainda não criou nenhuma carta.', 'create.confirm': 'Toque de novo para apagar', 'create.need': 'Preencha a frente e o verso 🌱',
+ 'create.none': 'Você ainda não criou nenhuma carta.', 'create.confirm': 'Toque de novo para apagar', 'create.need': 'Preencha a frente e o verso 🌱', 'backup.title': 'Backup', 'backup.hint': 'Um arquivo com tudo: cartas, progresso e fotos.', 'backup.exported': 'Backup baixado ✨', 'backup.bad': 'Este arquivo não é um backup reconhecido.', 'backup.import': 'Importar',
  'win.again': 'Jogar de novo', 'play.memorySub': 'Encontre os pares', 'grade.again': 'Errei',
 }
 root = pathlib.Path(__file__).resolve().parent.parent
