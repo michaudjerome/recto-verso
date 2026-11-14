@@ -428,3 +428,26 @@ body { background-image: radial-gradient(var(--dots) 1px, transparent 1px); back
 .stats + .notice { margin: 16px 0 0; }
 .mode .face, .course-pill .face, .pick .face { border-radius: 18px; }
 .flip .in { border-radius: inherit; }
+
+/* 0.7.0 : recherche dans Créer */
+.searchbox { display: flex; align-items: center; gap: 10px; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 0 14px; margin: 4px 0 6px; }
+.searchbox:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.searchbox .i { color: var(--ink2); width: 20px; height: 20px; }
+.searchbox input { flex: 1; min-width: 0; border: 0; background: none; outline: none; font-size: 16px; padding: 14px 0; color: var(--ink); }
+.results { margin-bottom: 14px; }
+.results .set-label { margin-top: 14px; }
+.results .btn.manual { margin-top: 12px; }
+.list { background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
+.list .row { display: flex; align-items: center; gap: 12px; width: 100%; padding: 11px 14px; min-height: 56px; border: 0; background: none; text-align: left; cursor: pointer; color: var(--ink); }
+.list .row + .row { border-top: 1px solid var(--line); }
+.list .row:active:not(:disabled) { background: var(--paper2); }
+.list .row:disabled { cursor: default; opacity: .6; }
+.list .row .grow { flex: 1; min-width: 0; }
+.list .row .grow b { font-size: 16px; }
+.list .row .grow small { display: block; color: var(--ink2); font-size: 13px; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.list .row .py { font-size: 14px; font-weight: 600; }
+.list .row .hz { font-size: 28px; min-width: 44px; text-align: center; }
+.list .row .tag { font-size: 12px; font-weight: 600; color: var(--accent); white-space: nowrap; }
+.list .row .tag.hsk { color: var(--ink2); }
+.list .row .thumb, .list .row .thumb-empty { width: 36px; height: 36px; flex: none; }
+.list .row .w, .list .row .w.big { font-size: 16px; font-family: var(--sans); font-weight: 700; }
