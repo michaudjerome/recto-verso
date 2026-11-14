@@ -1,9 +1,14 @@
 // Cartes d'un parcours : une notion du contenu publié, ou une carte créée de toutes pièces
 import { get, put, del, getAllByIndex, uid } from './db.js';
+import { notions } from './content.js';
 
 export const cardId = (course, notion, dir = 't>n') => `${course}|${notion}|${dir}`;
 
-export const cardsOf = (courseId) => getAllByIndex('cards', 'course', courseId);
+// Cartes d'un parcours ; celles dont la notion a disparu du contenu publié sont ignorées
+export async function cardsOf(courseId) {
+  const [all, d] = await Promise.all([getAllByIndex('cards', 'course', courseId), notions()]);
+  return all.filter((c) => !c.notion || d._byId.has(c.notion));
+}
 export const getCard = (id) => get('cards', id);
 
 export async function addNotion(course, notion, deck = 'default') {
