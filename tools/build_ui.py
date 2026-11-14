@@ -191,6 +191,17 @@ T = {
  'stats.mastered': ['maîtrisées', 'mastered', 'dominadas', 'padroneggiate', 'dominadas', 'sicher', '已掌握'],
  'set.goal':       ['Objectif du jour', 'Daily goal', 'Objetivo diario', 'Obiettivo giornaliero', 'Objetivo diário', 'Tagesziel', '每日目标'],
  'set.goalHint':   ['Nombre de cartes à réviser chaque jour, pour la langue en cours.', 'Number of cards to review each day, for the current language.', 'Número de tarjetas que repasar cada día, para el idioma actual.', 'Numero di carte da ripassare ogni giorno, per la lingua attuale.', 'Número de cartas para rever por dia, para a língua atual.', 'Anzahl der Karten pro Tag für die aktuelle Sprache.', '当前语言每天复习的卡片数量。'],
+ # Créer 0.7.0 : recherche
+ 'create.search':  ['Un mot en {a} ou en {b}', 'A word in {a} or {b}', 'Una palabra en {a} o en {b}', 'Una parola in {a} o in {b}', 'Uma palavra em {a} ou em {b}', 'Ein Wort auf {a} oder {b}', '输入{a}或{b}单词'],
+ 'create.searchPy':['Un mot en {a}, en {b} ou en pinyin', 'A word in {a}, {b} or pinyin', 'Una palabra en {a}, en {b} o en pinyin', 'Una parola in {a}, in {b} o in pinyin', 'Uma palavra em {a}, em {b} ou em pinyin', 'Ein Wort auf {a}, {b} oder Pinyin', '输入{a}、{b}或拼音'],
+ 'create.inApp':   ['Dans l\'app', 'In the app', 'En la app', 'Nell\'app', 'Na app', 'In der App', '应用词库'],
+ 'create.dict':    ['Dictionnaire', 'Dictionary', 'Diccionario', 'Dizionario', 'Dicionário', 'Wörterbuch', '词典'],
+ 'create.add':     ['Ajouter', 'Add', 'Añadir', 'Aggiungi', 'Adicionar', 'Hinzufügen', '添加'],
+ 'create.have':    ['Déjà dans tes cartes', 'Already in your cards', 'Ya está en tus tarjetas', 'Già nelle tue carte', 'Já está nas tuas cartas', 'Schon in deinen Karten', '已在卡片中'],
+ 'create.loading': ['Chargement du dictionnaire…', 'Loading the dictionary…', 'Cargando el diccionario…', 'Caricamento del dizionario…', 'A carregar o dicionário…', 'Wörterbuch wird geladen…', '正在加载词典…'],
+ 'create.noResult':['Aucun mot trouvé.', 'No word found.', 'No se encontró ninguna palabra.', 'Nessuna parola trovata.', 'Nenhuma palavra encontrada.', 'Kein Wort gefunden.', '没有找到单词。'],
+ 'create.manual':  ['Créer ma carte', 'Create my card', 'Crear mi tarjeta', 'Crea la mia carta', 'Criar a minha carta', 'Meine Karte erstellen', '自己制作卡片'],
+ 'create.translate':['Définition en anglais : remplace-la par ta langue avant d\'enregistrer.', 'English definition: replace it with your language before saving.', 'Definición en inglés: cámbiala a tu idioma antes de guardar.', 'Definizione in inglese: sostituiscila con la tua lingua prima di salvare.', 'Definição em inglês: substitui-a pela tua língua antes de guardar.', 'Englische Definition: Ersetze sie vor dem Speichern durch deine Sprache.', '英文释义：保存前请换成你的语言。'],
 }
 # Noms des langues, écrits dans chaque langue d'interface (minuscules en français, espagnol, italien, portugais)
 NAMES = {
@@ -232,6 +243,7 @@ PT_BR = {
  'inst.done': 'O Recto Verso está instalado ✨', 'set.install': 'Adicionar à tela inicial', 'inst.title': 'Instale o Recto Verso',
  'bk.remind': 'Proteja suas cartas', 'bk.remindHint': 'Tudo fica neste celular. Com um backup, nada se perde, mesmo trocando de aparelho.',
  'bk.save': 'Fazer backup', 'bk.last': 'Último backup: {d}', 'bk.never': 'Nenhum backup ainda',
+ 'create.have': 'Já está nas suas cartas', 'create.loading': 'Carregando o dicionário…', 'create.manual': 'Criar minha carta', 'create.translate': 'Definição em inglês: substitua pela sua língua antes de salvar.',
  'today.first': 'Comece descobrindo suas primeiras palavras 🌱', 'today.lbl': 'cartas para revisar hoje', 'today.lbl1': 'carta para revisar hoje', 'today.done': 'Tudo revisado por hoje ✨', 'set.goalHint': 'Número de cartas para revisar por dia, para a língua atual.',
  'win.again': 'Jogar de novo', 'play.memorySub': 'Encontre os pares', 'grade.again': 'Errei',
 }
