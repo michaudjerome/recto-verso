@@ -61,3 +61,7 @@ export function closeSheet() {
   w.classList.remove('open');
   setTimeout(() => w.remove(), 250);
 }
+
+// Minuteries liées à l'écran : si on change d'écran entre-temps, elles ne font plus rien
+export const nav = { gen: 0 };
+export function later(fn, ms) { const g = nav.gen; return setTimeout(() => { if (g === nav.gen) fn(); }, ms); }

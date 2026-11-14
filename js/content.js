@@ -36,7 +36,7 @@ export function reviewedPair(a, b, ea, eb) {
 
 // Texte d'une carte : contenu publié, puis ce que la personne a modifié elle-même (perso)
 export async function cardText(card, course) {
-  if (!card.notion) return { ...card.perso, perso: true };
+  if (!card.notion) return { notion: null, front: card.perso?.front || {}, back: card.perso?.back || {}, ex: card.perso?.ex, picto: card.perso?.picto, perso: true, check: { label: 'perso' } };
   const [n, front, back] = await Promise.all([notion(card.notion), entry(card.notion, course.target), entry(card.notion, course.native)]);
   return { notion: n, front: { ...front, ...(card.perso?.front || {}) }, back: { ...back, ...(card.perso?.back || {}) }, check: reviewedPair(course.target, course.native, front, back) };
 }
