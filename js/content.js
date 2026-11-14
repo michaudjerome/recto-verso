@@ -26,13 +26,12 @@ export async function entry(id, tag) {
   return { ...rest, ...(variants?.[tag] || {}) };
 }
 
-// Une paire est « vérifiée » si les deux mots sont confirmés par rapport au français.
-// Sans le français dans la paire, la carte porte la mention « non relue ».
+// Une paire est « vérifiée » si les deux mots ont au moins deux sources concordantes
+// (le français historique, sans liste de sources, fait référence). Sinon : « non relue ».
 export function reviewedPair(a, b, ea, eb) {
-  const ok = (code, e) => code === 'fr' || (e?.ok?.length ?? 0) >= 2;
+  const ok = (code, e) => (code === 'fr' && !e?.ok) || (e?.ok?.length ?? 0) >= 2;
   const verified = ok(base(a), ea) && ok(base(b), eb);
-  const viaFrench = base(a) === 'fr' || base(b) === 'fr';
-  return { verified, label: verified && viaFrench ? 'verified' : 'unreviewed' };
+  return { verified, label: verified ? 'verified' : 'unreviewed' };
 }
 
 // Texte d'une carte : contenu publié, puis ce que la personne a modifié elle-même (perso)

@@ -6,7 +6,6 @@ export const LANGS = [
   { code: 'en', name: 'English', variants: [{ tag: 'en-GB', name: 'United Kingdom' }, { tag: 'en-US', name: 'United States' }] },
   { code: 'es', name: 'Español', gender: true },
   { code: 'it', name: 'Italiano', gender: true },
-  { code: 'pt', name: 'Português', gender: true, variants: [{ tag: 'pt-PT', name: 'Portugal' }, { tag: 'pt-BR', name: 'Brasil' }] },
   { code: 'de', name: 'Deutsch', gender: true },
   { code: 'zh', name: '中文', sub: '简体', script: 'hans' },
 ];
@@ -48,8 +47,8 @@ FLAGS.pt = FLAGS['pt-PT'];
 
 export const flag = (tag, cls = '') => `<svg class="flag ${cls}" viewBox="0 0 30 20" aria-hidden="true">${FLAGS[tag] || FLAGS[base(tag)] || ''}</svg>`;
 
-// Langues dont le contenu (data/lang/<code>.json) existe déjà : les autres arrivent en phase 2
-export const CONTENT = ['fr', 'en', 'zh'];
+// Langues dont le contenu (data/lang/<code>.json) existe (le portugais est retiré pour le moment)
+export const CONTENT = ['fr', 'en', 'zh', 'es', 'it', 'de'];
 export const hasContent = (tag) => CONTENT.includes(base(tag));
 // Un parcours est possible si la langue maternelle et la langue apprise ont toutes deux leur contenu
 export const ready = (native, target) => hasContent(native) && hasContent(target);
