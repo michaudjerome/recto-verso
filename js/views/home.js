@@ -1,12 +1,13 @@
-// Accueil : salutation, parcours en cours (pastille drapeau), série et les quatre modes
-import { flag } from '../langs.js';
+// Accueil (esthétique « J'apprends le chinois ») : salutation, parcours, bloc du jour avec objectif, quatre modes, compteurs
+import { flag, base } from '../langs.js';
 import { t, langName } from '../i18n.js';
 import { profile } from '../profile.js';
 import { listCourses, activeCourse, setActive, streakOf } from '../courses.js';
 import { greeting } from '../greet.js';
-import { esc, logo, icon, flip, sheet, closeSheet } from '../ui.js';
+import { esc, logo, icon, flip, sheet, closeSheet, dayKey } from '../ui.js';
 import { cardsOf } from '../cards.js';
-import { todayQueue } from '../srs.js';
+import { todayQueue, isNew, State } from '../srs.js';
+import { getAllByIndex } from '../db.js';
 import { pickNotice, noticeHTML, bindNotice } from '../notice.js';
 
 const MODES = [
@@ -17,10 +18,18 @@ export async function render(el) {
   const course = await activeCourse();
   if (!course) { location.hash = '#/ajouter'; return; }
   const g = greeting(profile.name);
-  const n = streakOf(course);
-  const due = (await todayQueue(await cardsOf(course.id), course)).length;
+  const streak = streakOf(course);
+  const cards = await cardsOf(course.id);
+  const queue = await todayQueue(cards, course);
+  const due = queue.length, fresh = queue.filter(isNew).length;
+  const logs = await getAllByIndex('logs', 'day', dayKey());
+  const doneToday = logs.filter((l) => l.course === course.id && l.mode === 'review').length;
+  const goal = course.goal || 20;
+  const mastered = cards.filter((c) => c.fsrs && c.fsrs.state === State.Review && (c.fsrs.scheduled_days || 0) >= 21).length;
   const notice = await pickNotice();
-  const sub = (k) => (k === 'review' ? (due ? t(due > 1 ? 'home.dueN' : 'home.due1', { n: due }) : t('home.dueNone')) : t(`home.${k}Sub`));
+  const zh = base(course.target) === 'zh';
+  const minutes = Math.max(1, Math.ceil(due * 10 / 60));
+  const sub = [fresh ? t('today.new', { n: fresh }) : '', due ? t('today.min', { n: minutes }) : ''].filter(Boolean).join(' · ');
 
   el.innerHTML = `<div class="home enter">
     <header class="home-top">
@@ -31,11 +40,18 @@ export async function render(el) {
     <button class="course-pill flip" aria-label="${esc(t('courses.title'))}">
       <span class="in"><span class="face front">${pillInner(course)}</span><span class="face back">${pillInner(course)}</span></span>
     </button>
-    ${noticeHTML(notice)}
-    <div class="streak">${n ? `🔥 <b>${esc(t(n > 1 ? 'home.streaks' : 'home.streak', { n }))}</b>` : esc(t('home.streak0'))}</div>
-    <div class="modes">${MODES.map(([k, route]) => `<button class="mode flip" data-route="${route}">
-      <span class="in"><span class="face front">${icon(k)}${k === 'review' && due ? `<span class="due">${due}</span>` : ''}<b>${esc(t(`home.${k}`))}</b><small>${esc(sub(k))}</small></span>
+    <section class="today">
+      ${due ? `<div class="n">${due}</div><div class="l">${esc(t(due > 1 ? 'today.lbl' : 'today.lbl1'))}${sub ? ` ${esc(sub)}` : ''}</div>
+        <a class="btn accent go" href="#/reviser">${esc(t('today.start'))}</a>`
+      : `<div class="l done">${esc(t(cards.length ? 'today.done' : 'today.first'))}</div><a class="btn accent go" href="#/decouvrir">${esc(t('today.discover'))}</a>`}
+      <div class="goal"><div class="goal-bar"><i style="width:${Math.min(100, Math.round(100 * doneToday / goal))}%"></i></div>
+        <small>${esc(t('today.goal', { a: Math.min(doneToday, 999), b: goal }))}</small></div>
+    </section>
+    <div class="modes">${MODES.map(([k, route]) => `<button class="mode flip" data-route="${route}" aria-label="${esc(t(`home.${k}`))}">
+      <span class="in"><span class="face front">${zh ? `<span class="zh glyph">${GLYPH[k]}</span>` : icon(k)}<b>${esc(t(`home.${k}`))}</b></span>
       <span class="face back">${logo('mode-logo')}</span></span></button>`).join('')}</div>
+    <div class="stats"><div><b>${streak}</b>${esc(t('stats.streak'))}</div><div><b>${cards.length}</b>${esc(t('stats.cards'))}</div><div><b>${mastered}</b>${esc(t('stats.mastered'))}</div></div>
+    ${noticeHTML(notice)}
   </div>`;
 
   // La carte du mode se retourne, puis on entre dans le mode
@@ -43,6 +59,8 @@ export async function render(el) {
   el.querySelector('.course-pill').onclick = () => openCourses(el);
   bindNotice(el);
 }
+
+const GLYPH = { review: '复', play: '玩', discover: '探', create: '写' };
 
 const pillInner = (c) => `${flag(c.native)}<span class="arrow">→</span>${flag(c.target)}
   <span class="pill-txt"><small>${esc(t('home.learning'))}</small><b>${esc(cap(langName(c.target)))}</b></span>${icon('chevron')}`;

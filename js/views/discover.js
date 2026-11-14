@@ -39,6 +39,7 @@ export async function render(el) {
 
   // La carte arrive face cachée (dos au logo) : on la retourne pour découvrir le mot et sa traduction
   function deal() {
+    if (!el.querySelector('.left')) return; // on a quitté l'écran pendant l'animation
     cur = order.shift();
     el.querySelector('.left').textContent = `${order.length + (cur ? 1 : 0)}`;
     stage.querySelector('.card')?.remove();

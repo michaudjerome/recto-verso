@@ -26,7 +26,7 @@ export async function render(el, params = {}) {
         ${flag(l.variants ? l.variants[0].tag : l.code)}<span class="ln">${esc(l.name)}${l.sub ? ` <small>${esc(l.sub)}</small>` : ''}</span>${icon('chevron')}</button>`).join('')}</div>`, 'first');
     let k = 0;
     const ask = el.querySelector('.ask');
-    timer = setInterval(() => { k = (k + 1) % ASK.length; ask.classList.remove('swap'); void ask.offsetWidth; ask.classList.add('swap'); setTimeout(() => { ask.textContent = ASK[k]; }, 180); }, 2400);
+    timer = setInterval(() => { if (!ask.isConnected) { clearInterval(timer); return; } k = (k + 1) % ASK.length; ask.classList.remove('swap'); void ask.offsetWidth; ask.classList.add('swap'); setTimeout(() => { ask.textContent = ASK[k]; }, 180); }, 2400);
     el.querySelectorAll('.lang-row').forEach((b) => b.onclick = async () => {
       const l = lang(b.dataset.code);
       if (l.variants) return stepVariant(l, async (tag) => { st.native = tag; await setLocale(tag); stepTargets(); }, stepNative);

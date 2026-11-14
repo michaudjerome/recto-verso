@@ -7,6 +7,7 @@ import { todayQueue, grade, preview, human, GRADES, Rating } from '../srs.js';
 import { frontHTML, backHTML, cardShell } from '../face.js';
 import { requireCourse, topBar, emptyState, victory } from '../play-kit.js';
 import { esc, flip, later } from '../ui.js';
+import { markActivity } from '../courses.js';
 
 const OUT = { [Rating.Again]: 'out-0', [Rating.Hard]: 'out-1', [Rating.Good]: 'out-2', [Rating.Easy]: 'out-3' };
 
@@ -34,6 +35,7 @@ export async function render(el) {
     if (!cur) return victory(el, course, done, { sub: t('win.cards', { n: done.length }) });
     txt = await cardText(cur, course);
     stage = 0;
+    if (!el.querySelector('.cnt')) return; // écran quitté
     el.querySelector('.cnt').textContent = `${Math.min(done.length + 1, total)} / ${total}`;
     el.querySelector('.bar i').style.width = `${(done.length / total) * 100}%`;
     stageEl.querySelector('.card')?.remove();
@@ -65,6 +67,7 @@ export async function render(el) {
     rates.classList.remove('show');
     stageEl.querySelector('.card').classList.add(OUT[g]);
     const updated = await grade(cur, g, 'review');
+    if (!done.length) markActivity(course); // la série compte dès la première carte révisée du jour
     if (g === Rating.Again) queue.push(updated); // revient plus tard dans la séance
     else done.push({ card: updated, txt });
     later(async () => { busy = false; await deal(); }, g === Rating.Easy ? 820 : 600);
