@@ -153,6 +153,29 @@ T = {
  'greet.l2':       ['Un mot de plus aujourd\'hui ✨', 'One more word today ✨', 'Una palabra más hoy ✨', 'Una parola in più oggi ✨', 'Mais uma palavra hoje ✨', 'Heute ein Wort mehr ✨', '今天再多学一个词 ✨'],
  'greet.l3':       ['Chaque carte compte 🌞', 'Every card counts 🌞', 'Cada carta cuenta 🌞', 'Ogni carta conta 🌞', 'Cada carta conta 🌞', 'Jede Karte zählt 🌞', '每张卡片都算数 🌞'],
  'greet.l4':       ['Content de te revoir 💛', 'Good to see you again 💛', 'Qué alegría verte 💛', 'Che bello rivederti 💛', 'Que bom ver-te outra vez 💛', 'Schön, dich wiederzusehen 💛', '很高兴又见到你 💛'],
+ # Langues pas encore prêtes (phase 2)
+ 'ob.soon':        ['Bientôt', 'Soon', 'Pronto', 'Presto', 'Em breve', 'Bald', '即将推出'],
+ 'ob.soonNative':  ['Les cours depuis ta langue arrivent bientôt. Pour l\'instant, Recto Verso fonctionne depuis le français, l\'anglais ou le chinois.', 'Courses from your language are coming soon. For now, Recto Verso works from French, English or Chinese.', 'Los cursos desde el español llegan pronto. Por ahora, Recto Verso funciona desde el francés, el inglés o el chino.', 'I corsi dall\'italiano arrivano presto. Per ora Recto Verso funziona dal francese, dall\'inglese o dal cinese.', 'Os cursos a partir do português chegam em breve. Por agora, o Recto Verso funciona a partir do francês, do inglês ou do chinês.', 'Kurse auf Deutsch kommen bald. Im Moment funktioniert Recto Verso ab Französisch, Englisch oder Chinesisch.', '从你的语言出发的课程即将推出。目前 Recto Verso 支持从法语、英语或中文出发学习。'],
+ 'ob.soonPick':    ['Choisir une autre langue', 'Choose another language', 'Elegir otro idioma', 'Scegli un\'altra lingua', 'Escolher outra língua', 'Andere Sprache wählen', '选择其他语言'],
+ # Installation sur l'écran d'accueil
+ 'inst.title':     ['Installe Recto Verso', 'Install Recto Verso', 'Instala Recto Verso', 'Installa Recto Verso', 'Instala o Recto Verso', 'Installiere Recto Verso', '安装 Recto Verso'],
+ 'inst.hint':      ['Une icône sur ton écran d\'accueil, en plein écran, même sans réseau.', 'An icon on your home screen, full screen, even offline.', 'Un icono en tu pantalla de inicio, a pantalla completa, incluso sin conexión.', 'Un\'icona nella schermata Home, a schermo intero, anche offline.', 'Um ícone no ecrã principal, em ecrã inteiro, mesmo sem rede.', 'Ein Symbol auf deinem Startbildschirm, im Vollbild, auch offline.', '主屏幕上的图标，全屏使用，离线也能用。'],
+ 'inst.btn':       ['Installer', 'Install', 'Instalar', 'Installa', 'Instalar', 'Installieren', '安装'],
+ 'inst.how':       ['Comment faire', 'How to', 'Cómo hacerlo', 'Come fare', 'Como fazer', 'So geht\'s', '怎么做'],
+ 'inst.android1':  ['Ouvre le menu ⋮ de Chrome, en haut à droite.', 'Open the Chrome menu ⋮ at the top right.', 'Abre el menú ⋮ de Chrome, arriba a la derecha.', 'Apri il menu ⋮ di Chrome, in alto a destra.', 'Abre o menu ⋮ do Chrome, no canto superior direito.', 'Öffne das Chrome-Menü ⋮ oben rechts.', '打开 Chrome 右上角的菜单 ⋮。'],
+ 'inst.android2':  ['Touche « Ajouter à l\'écran d\'accueil » ou « Installer l\'application ».', 'Tap “Add to Home screen” or “Install app”.', 'Toca «Añadir a pantalla de inicio» o «Instalar aplicación».', 'Tocca «Aggiungi a schermata Home» o «Installa app».', 'Toca em «Adicionar ao ecrã principal» ou «Instalar app».', 'Tippe auf „Zum Startbildschirm hinzufügen“ oder „App installieren“.', '点「添加到主屏幕」或「安装应用」。'],
+ 'inst.ios1':      ['Touche le bouton Partager, en bas de Safari.', 'Tap the Share button at the bottom of Safari.', 'Toca el botón Compartir, abajo en Safari.', 'Tocca il pulsante Condividi, in basso in Safari.', 'Toca no botão Partilhar, em baixo no Safari.', 'Tippe unten in Safari auf „Teilen“.', '点 Safari 底部的「分享」按钮。'],
+ 'inst.ios2':      ['Choisis « Sur l\'écran d\'accueil », puis « Ajouter ».', 'Choose “Add to Home Screen”, then “Add”.', 'Elige «Añadir a pantalla de inicio» y luego «Añadir».', 'Scegli «Aggiungi alla schermata Home», poi «Aggiungi».', 'Escolhe «Adicionar ao ecrã principal» e depois «Adicionar».', 'Wähle „Zum Home-Bildschirm“ und dann „Hinzufügen“.', '选择「添加到主屏幕」，再点「添加」。'],
+ 'inst.iosOther':  ['Sur iPhone, seul Safari sait installer l\'app : ouvre ce lien dans Safari.', 'On iPhone, only Safari can install the app: open this link in Safari.', 'En iPhone, solo Safari puede instalar la app: abre este enlace en Safari.', 'Su iPhone solo Safari può installare l\'app: apri questo link in Safari.', 'No iPhone, só o Safari instala a app: abre este link no Safari.', 'Auf dem iPhone kann nur Safari die App installieren: Öffne diesen Link in Safari.', '在 iPhone 上只有 Safari 能安装：请用 Safari 打开这个链接。'],
+ 'inst.desktop':   ['Sur ordinateur, cherche l\'icône d\'installation à droite de la barre d\'adresse. Recto Verso est surtout pensé pour le téléphone.', 'On a computer, look for the install icon on the right of the address bar. Recto Verso is designed mainly for phones.', 'En el ordenador, busca el icono de instalación a la derecha de la barra de direcciones. Recto Verso está pensado sobre todo para el móvil.', 'Sul computer, cerca l\'icona di installazione a destra della barra degli indirizzi. Recto Verso è pensato soprattutto per il telefono.', 'No computador, procura o ícone de instalação à direita da barra de endereço. O Recto Verso foi pensado sobretudo para o telemóvel.', 'Am Computer findest du das Installationssymbol rechts in der Adressleiste. Recto Verso ist vor allem fürs Handy gedacht.', '在电脑上，地址栏右侧有安装图标。Recto Verso 主要为手机设计。'],
+ 'inst.done':      ['Recto Verso est installé ✨', 'Recto Verso is installed ✨', 'Recto Verso está instalada ✨', 'Recto Verso è installata ✨', 'O Recto Verso está instalado ✨', 'Recto Verso ist installiert ✨', 'Recto Verso 已安装 ✨'],
+ 'set.install':    ['Installer sur l\'écran d\'accueil', 'Add to home screen', 'Añadir a la pantalla de inicio', 'Aggiungi alla schermata Home', 'Adicionar ao ecrã principal', 'Zum Startbildschirm hinzufügen', '添加到主屏幕'],
+ # Rappel de sauvegarde
+ 'bk.remind':      ['Mets tes cartes à l\'abri', 'Keep your cards safe', 'Pon tus cartas a salvo', 'Metti al sicuro le tue carte', 'Põe as tuas cartas a salvo', 'Bring deine Karten in Sicherheit', '给卡片做个备份'],
+ 'bk.remindHint':  ['Tout reste sur ce téléphone. Avec une sauvegarde, rien ne se perd, même en changeant d\'appareil.', 'Everything stays on this phone. With a backup, nothing gets lost, even if you change devices.', 'Todo se queda en este teléfono. Con una copia no se pierde nada, aunque cambies de aparato.', 'Tutto resta su questo telefono. Con un backup non perdi nulla, anche cambiando dispositivo.', 'Tudo fica neste telemóvel. Com uma cópia, nada se perde, mesmo ao mudar de aparelho.', 'Alles bleibt auf diesem Handy. Mit einer Sicherung geht nichts verloren, auch wenn du das Gerät wechselst.', '所有内容只保存在这部手机上。备份一下，换手机也不会丢。'],
+ 'bk.save':        ['Sauvegarder', 'Back up', 'Guardar copia', 'Fai un backup', 'Guardar cópia', 'Sichern', '备份'],
+ 'bk.last':        ['Dernière sauvegarde : {d}', 'Last backup: {d}', 'Última copia: {d}', 'Ultimo backup: {d}', 'Última cópia: {d}', 'Letzte Sicherung: {d}', '上次备份：{d}'],
+ 'bk.never':       ['Aucune sauvegarde pour l\'instant', 'No backup yet', 'Aún no hay copias', 'Ancora nessun backup', 'Ainda sem cópias', 'Noch keine Sicherung', '还没有备份'],
 }
 # Noms des langues, écrits dans chaque langue d'interface (minuscules en français, espagnol, italien, portugais)
 NAMES = {
@@ -186,6 +209,14 @@ PT_BR = {
  'disc.tap': 'Toque para descobrir', 'disc.kept': 'Adicionada às suas cartas ✨', 'disc.empty': 'Você descobriu todas as palavras disponíveis ✨',
  'create.ex': 'Um exemplo (opcional)', 'create.emoji': 'Um emoji para ilustrar (opcional)', 'create.saved': 'Carta salva ✨', 'create.mine': 'As cartas que você criou',
  'create.none': 'Você ainda não criou nenhuma carta.', 'create.confirm': 'Toque de novo para apagar', 'create.need': 'Preencha a frente e o verso 🌱', 'backup.title': 'Backup', 'backup.hint': 'Um arquivo com tudo: cartas, progresso e fotos.', 'backup.exported': 'Backup baixado ✨', 'backup.bad': 'Este arquivo não é um backup reconhecido.', 'backup.import': 'Importar',
+ 'ob.soonNative': 'Os cursos a partir do português chegam em breve. Por enquanto, o Recto Verso funciona a partir do francês, do inglês ou do chinês.',
+ 'inst.hint': 'Um ícone na tela inicial, em tela cheia, mesmo sem internet.', 'inst.android1': 'Abra o menu ⋮ do Chrome, no canto superior direito.',
+ 'inst.android2': 'Toque em “Adicionar à tela inicial” ou “Instalar app”.', 'inst.ios1': 'Toque no botão Compartilhar, na parte de baixo do Safari.',
+ 'inst.ios2': 'Escolha “Adicionar à Tela de Início” e depois “Adicionar”.', 'inst.iosOther': 'No iPhone, só o Safari instala o app: abra este link no Safari.',
+ 'inst.desktop': 'No computador, procure o ícone de instalação à direita da barra de endereço. O Recto Verso foi pensado sobretudo para o celular.',
+ 'inst.done': 'O Recto Verso está instalado ✨', 'set.install': 'Adicionar à tela inicial', 'inst.title': 'Instale o Recto Verso',
+ 'bk.remind': 'Proteja suas cartas', 'bk.remindHint': 'Tudo fica neste celular. Com um backup, nada se perde, mesmo trocando de aparelho.',
+ 'bk.save': 'Fazer backup', 'bk.last': 'Último backup: {d}', 'bk.never': 'Nenhum backup ainda',
  'win.again': 'Jogar de novo', 'play.memorySub': 'Encontre os pares', 'grade.again': 'Errei',
 }
 root = pathlib.Path(__file__).resolve().parent.parent
@@ -194,6 +225,9 @@ out.mkdir(parents=True, exist_ok=True)
 for i, code in enumerate(L):
     d = {k: v[i] for k, v in T.items()}
     d.update({f'lname.{k}': v for k, v in NAMES[code].items()})
+    if code == 'fr':
+        import re
+        d = {k: re.sub(r'«\s*', '«\u202f', re.sub(r'\s*»', '\u202f»', re.sub(r' ([?!:;])', '\u202f\\1', v))) for k, v in d.items()}
     if code == 'pt':
         d['_var'] = {'pt-BR': PT_BR}
     (out / f'{code}.json').write_text(json.dumps(d, ensure_ascii=False, indent=0), encoding='utf-8')
