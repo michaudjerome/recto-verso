@@ -346,3 +346,85 @@ label.btn { cursor: pointer; }
 .steps { list-style: none; padding: 0; margin: 4px 0 6px; display: grid; gap: 10px; }
 .steps li { display: flex; gap: 12px; align-items: flex-start; font-size: 15px; line-height: 1.4; }
 .steps .n { flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--ink); color: var(--paper); display: grid; place-items: center; font-weight: 700; font-size: 13px; }
+
+/* ===== 0.6.0 : esthétique « J'apprends le chinois » (couleurs, formes, accueil) ===== */
+:root {
+  --line: #DCD2BF; --ink2: #857C6E; --shadow: rgba(80,60,30,.08); --dots: rgba(120,100,70,.06);
+  --block-bg: #1E1B17; --block-fg: #F4EEE2; --accent: #B3352B; --accent-soft: #F1DDD6; --on-accent: #fff;
+}
+:root[data-theme="dark"] {
+  --paper: #16140F; --paper2: #1F1C16; --card: #221F19; --ink: #EFE7D6; --ink2: #A39A8A; --line: #3A342B;
+  --shadow: rgba(0,0,0,.35); --dots: rgba(255,240,210,.035); --block-bg: #2C2820; --block-fg: #EFE7D6;
+  --accent: #D2584C; --accent-soft: #3B2420; --seal: #D2584C;
+}
+body { background-image: radial-gradient(var(--dots) 1px, transparent 1px); background-size: 6px 6px; font-size: 15px; -webkit-font-smoothing: antialiased; }
+/* Boutons : l'action principale est rouge, les autres sont des cartes */
+.btn { border: 1px solid var(--line); background: var(--card); border-radius: 15px; padding: 14px; font-size: 15px; }
+.btn.primary, .btn.accent { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+.btn.ghost { border-color: var(--line); background: var(--card); color: var(--ink); }
+.btn:active:not(:disabled) { transform: none; filter: brightness(.92); }
+.mini-btn { border-width: 1px; border-radius: 999px; padding: 7px 12px; }
+.field { border-width: 1px; font-size: 16px; padding: 13px 14px; }
+.field:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+/* Cartes, listes et tuiles : bord fin, coins plus ronds */
+.lang-row, .lvl, .set-row, .course-row { border-width: 1px; border-radius: 18px; }
+.lang-row:active, .course-row.on, .lvl.on { border-color: var(--ink); }
+.lvl.on { box-shadow: 0 0 0 1px var(--ink); }
+.pick .face { border-width: 1px; }
+.icon-btn { border-radius: 50%; color: var(--ink2); }
+.top .ttl { font-family: var(--sans); font-weight: 600; font-size: 15px; }
+.set-label { font-size: 11.5px; letter-spacing: .07em; color: var(--ink2); }
+/* Sélecteurs : boutons séparés, le choix est plein */
+.seg { background: transparent; padding: 0; gap: 8px; }
+.seg button { border: 1px solid var(--line); background: var(--card); border-radius: 14px; padding: 12px 8px; }
+.seg button.on, :root[data-theme="dark"] .seg button.on { background: var(--ink); color: var(--paper); border-color: var(--ink); box-shadow: none; }
+/* Barres de progression */
+.bar { height: 6px; border-radius: 3px; background: var(--line); }
+.bar i { background: var(--accent); }
+/* Notes de révision : pastilles pleines aux couleurs des tons */
+.rate { border: 0; border-radius: 16px; color: #fff; padding: 10px 2px; }
+.rate b { font-size: 14.5px; font-weight: 700; }
+.rate small { color: rgba(255,255,255,.85); font-size: 12px; }
+.rate.r-again { background: var(--t1); color: #fff; } .rate.r-hard { background: var(--t2); } .rate.r-good { background: var(--t3); } .rate.r-easy { background: var(--t4); color: #fff; }
+.rate.r-easy small { color: rgba(255,255,255,.85); }
+:root[data-theme="dark"] .rate { color: #16140F; } :root[data-theme="dark"] .rate small { color: rgba(22,20,15,.75); }
+/* Panneau et messages */
+.sheet { border-radius: 26px 26px 0 0; }
+.toast { border-radius: 14px; padding: 11px 18px; }
+.notice { border: 1px dashed var(--accent); }
+
+/* Accueil */
+.hello h1 { font-size: 28px; margin: 14px 0 2px; }
+.hello p { color: var(--ink2); margin: 0 0 14px; }
+.course-pill { height: 58px; }
+.course-pill .face { border: 1px solid var(--line); background: var(--card); }
+.today { margin: 14px 0 0; background: var(--block-bg); color: var(--block-fg); border-radius: 24px; padding: 20px; }
+.today .n { font-family: var(--serif); font-size: 46px; font-weight: 700; line-height: 1; }
+.today .l { font-size: 14px; opacity: .8; margin-top: 6px; line-height: 1.4; }
+.today .l.done { font-family: var(--serif); font-size: 19px; opacity: 1; margin-top: 2px; }
+.today .btn { margin-top: 16px; }
+.goal { margin-top: 14px; }
+.goal small { display: block; font-size: 12.5px; margin-top: 6px; opacity: .75; }
+.goal-bar { height: 8px; border-radius: 4px; background: rgba(255,255,255,.18); overflow: hidden; }
+.goal-bar i { display: block; height: 100%; background: var(--accent); border-radius: 4px; transition: width .4s; }
+.modes { grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 16px; }
+.mode { height: 86px; border-radius: 18px; }
+.mode .face { justify-content: center; align-items: center; gap: 4px; padding: 10px 4px; border: 1px solid var(--line); background: var(--card); box-shadow: none; text-align: center; }
+.mode .face .i { width: 28px; height: 28px; margin: 0; }
+.mode .face .glyph { font-family: var(--zh); font-size: 28px; line-height: 1.1; }
+.mode .face b { font-family: var(--sans); font-size: 13px; font-weight: 600; }
+.mode:first-child .face.front { background: var(--card); color: var(--ink); }
+.mode .face.back { border: 2px solid var(--seal); }
+.mode .face.back .mode-logo { width: 40px; height: 40px; }
+.stats { display: flex; justify-content: space-around; margin-top: 16px; padding: 14px; border-radius: 18px; background: var(--paper2); }
+.stats div { text-align: center; font-size: 11.5px; color: var(--ink2); }
+.stats b { display: block; font-size: 20px; color: var(--ink); font-family: var(--serif); }
+/* Cartes de jeu : recto clair au bord fin, verso inchangé (signature Recto Verso) */
+.card { border-radius: 28px; }
+.card .face { border: 1px solid var(--line); box-shadow: 0 10px 30px var(--shadow); }
+.card .face.back { border: 2px solid var(--seal); }
+.answer .face, .m-card .face { border-width: 1px; border-color: var(--line); }
+.answer .face { border-radius: 16px; }
+.stats + .notice { margin: 16px 0 0; }
+.mode .face, .course-pill .face, .pick .face { border-radius: 18px; }
+.flip .in { border-radius: inherit; }
