@@ -451,3 +451,10 @@ body { background-image: radial-gradient(var(--dots) 1px, transparent 1px); back
 .list .row .tag.hsk { color: var(--ink2); }
 .list .row .thumb, .list .row .thumb-empty { width: 36px; height: 36px; flex: none; }
 .list .row .w, .list .row .w.big { font-size: 16px; font-family: var(--sans); font-weight: 700; }
+
+/* 0.8.0 : Découvrir par thème */
+.disc-mode { margin: 0 0 12px; }
+.lots-hint { color: var(--ink2); font-size: 13px; margin: 0 2px 4px; }
+.list.lots .row .grow small.have { color: var(--accent); white-space: normal; }
+.list.lots .row:disabled .tag { color: var(--ink2); }
+.list.lots { margin-bottom: 4px; }
