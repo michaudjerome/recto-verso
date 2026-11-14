@@ -2,7 +2,7 @@
 import { base } from '../langs.js';
 import { t } from '../i18n.js';
 import { log, Rating } from '../srs.js';
-import { word, picto, pinyinHtml, frontHTML, cardShell } from '../face.js';
+import { word, visual, pinyinHtml, frontHTML, cardShell } from '../face.js';
 import { strip } from '../pinyin.js';
 import { pool, shuffle, requireCourse, topBar, emptyState, victory } from '../play-kit.js';
 import { esc, icon, flip, logo, later } from '../ui.js';
@@ -69,7 +69,7 @@ async function memory(el, course) {
   let moves = 0, found = 0, open = [], lock = false;
   const face = (d) => d.side === 'f'
     ? `${word(d.p.txt.front, course.target)}${base(course.target) === 'zh' ? pinyinHtml(d.p.txt.front) : ''}`
-    : `${picto(d.p.txt.picto || d.p.txt.notion?.picto) ? `<span class="m-pict">${picto(d.p.txt.picto || d.p.txt.notion?.picto)}</span>` : ''}${word(d.p.txt.back, course.native)}`;
+    : `${visual(d.p.txt, 'm-pict')}${word(d.p.txt.back, course.native)}`;
 
   el.innerHTML = `<div class="page memory">${topBar(t('play.memory'), '#/jouer')}
     <div class="meta"><span class="mv">${esc(t('memory.moves', { n: 0 }))}</span><span class="pf">${esc(t('memory.pairs', { n: 0 }))}</span></div>
@@ -130,7 +130,7 @@ async function write(el, course) {
   function next() {
     const it = items[k];
     if (!it) return victory(el, course, done, { sub: t('win.cards', { n: done.length }), againHref: '#/jouer?jeu=ecris&r=' + Date.now() });
-    const p = picto(it.txt.picto || it.txt.notion?.picto);
+    const p = visual(it.txt);
     el.innerHTML = `<div class="page write">${topBar(t('play.write'), '#/jouer')}
       <div class="meta"><span>${k + 1} / ${items.length}</span></div><div class="bar"><i style="width:${(k / items.length) * 100}%"></i></div>
       <div class="stage tall">${cardShell(`<div class="corner">Recto</div><div class="pict huge">${p}</div>

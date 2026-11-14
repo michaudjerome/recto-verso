@@ -4,6 +4,7 @@ import { t, setLocale, langName } from '../i18n.js';
 import { profile, saveProfile } from '../profile.js';
 import { listCourses, removeCourse, addCourse, setActive } from '../courses.js';
 import { checkForUpdate } from '../update.js';
+import { exportBackup, importBackup } from '../backup.js';
 import { APP_VERSION } from '../version.js';
 import { esc, icon, toast, sheet, closeSheet } from '../ui.js';
 
@@ -34,6 +35,11 @@ export async function render(el) {
     <div class="course-list">${courses.map((c) => `<div class="course-row static">${flag(c.target, 'big')}<span><b>${esc(cap(langName(c.target)))}</b></span>
       <button class="mini-btn rm" data-id="${esc(c.id)}">${esc(t('courses.remove'))}</button></div>`).join('')}</div>
     <a class="btn ghost" href="#/ajouter">${icon('plus')} ${esc(t('courses.add'))}</a>
+
+    <div class="set-label">${esc(t('backup.title'))}</div>
+    <p class="hint small">${esc(t('backup.hint'))}</p>
+    <div class="duo"><button class="btn ghost exp">${esc(t('backup.export'))}</button>
+      <label class="btn ghost imp">${esc(t('backup.import'))}<input type="file" accept="application/json,.json" hidden></label></div>
 
     <div class="set-label">${esc(t('set.version'))}</div>
     <div class="set-row static"><span>Recto Verso ${APP_VERSION}</span><button class="mini-btn upd">${esc(t('set.update'))}</button></div>
@@ -66,6 +72,16 @@ export async function render(el) {
   };
 
   el.querySelector('.native').onclick = () => pickNative(el);
+
+  el.querySelector('.exp').onclick = async () => { await exportBackup(); toast(t('backup.exported')); };
+  const inp = el.querySelector('.imp input');
+  inp.onchange = async () => {
+    const f = inp.files?.[0];
+    if (!f) return;
+    try { const n = await importBackup(f); toast(t('backup.done', { n })); render(el); }
+    catch { toast(t('backup.bad')); }
+    inp.value = '';
+  };
 }
 
 // Changer de langue maternelle : l'interface bascule ; les parcours de l'ancienne langue sont gardés de côté
