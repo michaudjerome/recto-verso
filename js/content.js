@@ -1,6 +1,7 @@
 // Contenu publié avec l'app : les notions (data/notions.json) et les mots de chaque langue
 // (data/lang/<langue>.json). Les cartes ne recopient pas le texte : elles le lisent ici.
 import { base } from './langs.js';
+import { photoUrl } from './photos.js';
 
 const v = () => (window.APP_STAMP ? `?v=${window.APP_STAMP}` : '');
 const cache = new Map();
@@ -36,7 +37,16 @@ export function reviewedPair(a, b, ea, eb) {
 
 // Texte d'une carte : contenu publié, puis ce que la personne a modifié elle-même (perso)
 export async function cardText(card, course) {
-  if (!card.notion) return { notion: null, front: card.perso?.front || {}, back: card.perso?.back || {}, ex: card.perso?.ex, picto: card.perso?.picto, perso: true, check: { label: 'perso' } };
+  if (!card.notion) return { notion: null, front: card.perso?.front || {}, back: card.perso?.back || {}, ex: card.perso?.ex, picto: card.perso?.picto, photoUrl: await photoUrl(card.perso?.photo), perso: true, check: { label: 'perso' } };
   const [n, front, back] = await Promise.all([notion(card.notion), entry(card.notion, course.target), entry(card.notion, course.native)]);
   return { notion: n, front: { ...front, ...(card.perso?.front || {}) }, back: { ...back, ...(card.perso?.back || {}) }, check: reviewedPair(course.target, course.native, front, back) };
+}
+
+// Pictos des cartes de la personne : téléchargés en arrière-plan pour être disponibles hors ligne
+export async function warmPictos(cards) {
+  try {
+    const d = await notions();
+    const codes = new Set(cards.map((c) => d._byId.get(c.notion)?.picto).filter(Boolean));
+    for (const code of codes) await fetch(`pictos/${code}.svg`).catch(() => {});
+  } catch {}
 }

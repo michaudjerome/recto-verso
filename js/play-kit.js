@@ -2,7 +2,7 @@
 import { cardsOf } from './cards.js';
 import { notions, cardText } from './content.js';
 import { activeCourse, markActivity } from './courses.js';
-import { picto, word } from './face.js';
+import { visual, hasVisual, word } from './face.js';
 import { t } from './i18n.js';
 import { esc, icon, later } from './ui.js';
 
@@ -22,7 +22,7 @@ export async function pool(course, { withPicto = false } = {}) {
     const txt = await cardText({ notion: n.id }, course);
     if (txt.front?.w && txt.back?.w) extra.push({ card: null, txt });
   }
-  const keep = (i) => !withPicto || !!(i.txt.picto || i.txt.notion?.picto);
+  const keep = (i) => !withPicto || hasVisual(i.txt);
   return { mine: shuffle(mine.filter(keep)), extra: shuffle(extra.filter(keep)) };
 }
 
@@ -43,7 +43,7 @@ export async function victory(el, course, items, { sub = '', againHref = '' } = 
   const tiles = items.slice(0, 5);
   el.innerHTML = `<div class="win enter">
     <div class="win-grid">${tiles.map((i) => `<div class="tile flip"><div class="in"><div class="face front"></div>
-      <div class="face back">${picto(i.txt.picto || i.txt.notion?.picto) || word(i.txt.front, course.target)}</div></div></div>`).join('')}
+      <div class="face back">${visual(i.txt) || word(i.txt.front, course.target)}</div></div></div>`).join('')}
       <div class="tile flip seal-tile"><div class="in"><div class="face front"></div><div class="face back">${icon('check')}</div></div></div></div>
     <h2>${esc(t('win.title'))}</h2><p class="hint">${esc(sub)}</p>
     ${againHref ? `<a class="btn ghost" href="${againHref}">${esc(t('win.again'))}</a>` : ''}

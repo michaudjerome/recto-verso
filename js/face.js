@@ -4,18 +4,24 @@ import { t } from './i18n.js';
 import { esc } from './ui.js';
 import { toneHtml } from './pinyin.js';
 
-// Code OpenMoji / Unicode (« 1F34E ») → émoji affiché par le téléphone, en attendant les pictos de l'étape 5
-export const picto = (code) => {
+// Image d'une carte : photo perso, sinon pictogramme OpenMoji (téléchargé à la demande, gardé hors ligne),
+// sinon l'émoji du téléphone si le picto ne charge pas, ou un émoji saisi à la main
+const emoji = (code) => { try { return String.fromCodePoint(...code.split('-').map((h) => parseInt(h, 16))); } catch { return ''; } };
+export const hasVisual = (txt) => !!(txt?.photoUrl || txt?.picto || txt?.notion?.picto);
+export function visual(txt, cls = '') {
+  if (txt?.photoUrl) return `<img class="vis ph ${cls}" src="${esc(txt.photoUrl)}" alt="">`;
+  const code = txt?.picto || txt?.notion?.picto;
   if (!code) return '';
-  if (!/^[0-9A-F-]+$/i.test(code)) return esc(code); // émoji saisi à la main dans une carte perso
-  try { return String.fromCodePoint(...code.split('-').map((h) => parseInt(h, 16))); } catch { return ''; }
-};
+  if (!/^[0-9A-F-]+$/i.test(code)) return `<span class="vis em ${cls}">${esc(code)}</span>`;
+  return `<img class="vis pm ${cls}" src="pictos/${code}.svg" alt="" data-e="${emoji(code)}" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:this.className.replace('pm','em'),textContent:this.dataset.e}))">`;
+}
 
 // Mot avec son article coloré selon le genre (der Apfel, la pomme), ou caractères chinois
 export function word(e, tag, { big = false } = {}) {
   if (!e?.w) return '';
   if (base(tag) === 'zh') return `<span class="hz zh ${big ? 'big' : ''}">${esc(e.w)}</span>`;
-  const art = e.art ? `<span class="art g-${esc(e.g || '')}">${esc(e.art)}</span> ` : '';
+  const elided = /['’]$/.test(e.art || ''); // l'école : pas d'espace après l'apostrophe
+  const art = e.art ? `<span class="art g-${esc(e.g || '')}">${esc(e.art)}</span>${elided ? '' : ' '}` : '';
   return `<span class="w ${big ? 'big' : ''}">${art}${esc(e.w)}</span>`;
 }
 
@@ -30,7 +36,7 @@ export function frontHTML(txt, course, { showPy = false, hint = '' } = {}) {
 }
 
 export function backHTML(txt, course) {
-  const p = picto(txt.picto || txt.notion?.picto);
+  const p = visual(txt);
   const zh = base(course.target) === 'zh';
   const ex = txt.front?.ex || txt.ex;
   return `<div class="corner r">Verso</div>

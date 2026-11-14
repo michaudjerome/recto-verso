@@ -43,4 +43,9 @@ async function route() {
   addEventListener('hashchange', route);
   route();
   registerSW();
+  // Pictos des cartes déjà gardées : préchargés quand le téléphone est libre
+  setTimeout(async () => {
+    try { const { activeCourse } = await import('./courses.js'); const { cardsOf } = await import('./cards.js'); const { warmPictos } = await import('./content.js');
+      const c = await activeCourse(); if (c) warmPictos(await cardsOf(c.id)); } catch {}
+  }, 4000);
 })();

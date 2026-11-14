@@ -17,9 +17,9 @@ export async function addNotion(course, notion, deck = 'default') {
 }
 
 // Carte perso : front = langue apprise, back = langue maternelle
-export async function savePerso(course, { front, back, ex, picto }, existing) {
+export async function savePerso(course, { front, back, ex, picto, photo }, existing) {
   const now = Date.now();
-  const perso = { front, back, ex: ex || '', picto: picto || '' };
+  const perso = { front, back, ex: ex || '', picto: picto || '', photo: photo || '' };
   const c = existing
     ? { ...existing, perso, updated: now }
     : { id: cardId(course.id, `p:${uid()}`), course: course.id, notion: null, dir: 't>n', deck: 'default', perso, created: now, updated: now, due: now, state: 0 };
