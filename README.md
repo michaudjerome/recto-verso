@@ -13,4 +13,4 @@ Ouvrir https://michaudjerome.github.io/recto-verso/ puis :
 › Code de l'application : licence MIT.
 › ts-fsrs (répétition espacée) : MIT.
 › Polices Fraunces, Inter, LXGW WenKai : SIL Open Font License 1.1.
-Les textes de licence sont dans le dossier LICENSES. Les dictionnaires et pictogrammes seront ajoutés ici à leur intégration.
+Les textes de licence sont dans le dossier LICENSES. Contenu (data/) et pictogrammes OpenMoji (pictos/) : CC BY-SA 4.0 ; traductions françaises issues de CFDICT (CC BY-SA 3.0), anglaises vérifiées avec CC-CEDICT (CC BY-SA 4.0).
