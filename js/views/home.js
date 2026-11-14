@@ -7,6 +7,7 @@ import { greeting } from '../greet.js';
 import { esc, logo, icon, flip, sheet, closeSheet } from '../ui.js';
 import { cardsOf } from '../cards.js';
 import { todayQueue } from '../srs.js';
+import { pickNotice, noticeHTML, bindNotice } from '../notice.js';
 
 const MODES = [
   ['review', 'reviser'], ['play', 'jouer'], ['discover', 'decouvrir'], ['create', 'creer'],
@@ -18,6 +19,7 @@ export async function render(el) {
   const g = greeting(profile.name);
   const n = streakOf(course);
   const due = (await todayQueue(await cardsOf(course.id), course)).length;
+  const notice = await pickNotice();
   const sub = (k) => (k === 'review' ? (due ? t(due > 1 ? 'home.dueN' : 'home.due1', { n: due }) : t('home.dueNone')) : t(`home.${k}Sub`));
 
   el.innerHTML = `<div class="home enter">
@@ -29,6 +31,7 @@ export async function render(el) {
     <button class="course-pill flip" aria-label="${esc(t('courses.title'))}">
       <span class="in"><span class="face front">${pillInner(course)}</span><span class="face back">${pillInner(course)}</span></span>
     </button>
+    ${noticeHTML(notice)}
     <div class="streak">${n ? `🔥 <b>${esc(t(n > 1 ? 'home.streaks' : 'home.streak', { n }))}</b>` : esc(t('home.streak0'))}</div>
     <div class="modes">${MODES.map(([k, route]) => `<button class="mode flip" data-route="${route}">
       <span class="in"><span class="face front">${icon(k)}${k === 'review' && due ? `<span class="due">${due}</span>` : ''}<b>${esc(t(`home.${k}`))}</b><small>${esc(sub(k))}</small></span>
@@ -38,6 +41,7 @@ export async function render(el) {
   // La carte du mode se retourne, puis on entre dans le mode
   el.querySelectorAll('.mode').forEach((b) => b.onclick = () => { flip(b, true); setTimeout(() => (location.hash = `#/${b.dataset.route}`), 420); });
   el.querySelector('.course-pill').onclick = () => openCourses(el);
+  bindNotice(el);
 }
 
 const pillInner = (c) => `${flag(c.native)}<span class="arrow">→</span>${flag(c.target)}

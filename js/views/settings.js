@@ -1,10 +1,11 @@
 // Réglages : prénom, langue, animations, langues apprises, version
-import { LANGS, flag, endonym, lang } from '../langs.js';
+import { LANGS, flag, endonym, lang, hasContent, ready } from '../langs.js';
 import { t, setLocale, langName } from '../i18n.js';
 import { profile, saveProfile } from '../profile.js';
 import { listCourses, removeCourse, addCourse, setActive } from '../courses.js';
 import { checkForUpdate } from '../update.js';
-import { exportBackup, importBackup } from '../backup.js';
+import { exportBackup, importBackup, lastBackup } from '../backup.js';
+import { isInstalled, install } from '../notice.js';
 import { APP_VERSION } from '../version.js';
 import { esc, icon, toast, sheet, closeSheet } from '../ui.js';
 
@@ -12,6 +13,8 @@ const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 
 export async function render(el) {
   const courses = await listCourses();
+  const lb = await lastBackup();
+  const when = lb ? new Intl.DateTimeFormat(profile.native, { day: 'numeric', month: 'long', year: 'numeric' }).format(lb) : '';
   el.innerHTML = `<div class="page enter">
     <div class="top"><a class="icon-btn" href="#/" aria-label="${esc(t('ui.back'))}">${icon('back')}</a><span class="ttl">${esc(t('set.title'))}</span><span style="width:40px"></span></div>
 
@@ -40,9 +43,13 @@ export async function render(el) {
     <p class="hint small">${esc(t('backup.hint'))}</p>
     <div class="duo"><button class="btn ghost exp">${esc(t('backup.export'))}</button>
       <label class="btn ghost imp">${esc(t('backup.import'))}<input type="file" accept="application/json,.json" hidden></label></div>
-
+    <p class="hint small last-bk">${esc(lb ? t('bk.last', { d: when }) : t('bk.never'))}</p>
+${isInstalled() ? '' : `
+    <div class="set-label">${esc(t('inst.title'))}</div>
+    <button class="set-row inst">${icon('plus')}<span>${esc(t('set.install'))}</span>${icon('chevron')}</button>
+`}
     <div class="set-label">${esc(t('set.version'))}</div>
-    <div class="set-row static"><span>Recto Verso ${APP_VERSION}</span><button class="mini-btn upd">${esc(t('set.update'))}</button></div>
+    <div class="set-row static"><span class="nowrap">Recto Verso ${APP_VERSION}</span><button class="mini-btn upd">${esc(t('set.update'))}</button></div>
     <a class="set-row" href="#/sources"><span>${esc(t('set.sources'))}</span>${icon('chevron')}</a>
   </div>`;
 
@@ -73,7 +80,8 @@ export async function render(el) {
 
   el.querySelector('.native').onclick = () => pickNative(el);
 
-  el.querySelector('.exp').onclick = async () => { await exportBackup(); toast(t('backup.exported')); };
+  el.querySelector('.exp').onclick = async () => { await exportBackup(); toast(t('backup.exported')); render(el); };
+  el.querySelector('.inst')?.addEventListener('click', () => install());
   const inp = el.querySelector('.imp input');
   inp.onchange = async () => {
     const f = inp.files?.[0];
@@ -87,7 +95,7 @@ export async function render(el) {
 // Changer de langue maternelle : l'interface bascule ; les parcours de l'ancienne langue sont gardés de côté
 function pickNative(el) {
   const rows = LANGS.flatMap((l) => (l.variants ? l.variants.map((v) => v.tag) : [l.code]));
-  const sh = sheet(`<h2>${esc(t('set.native'))}</h2><div class="course-list">${rows.map((tag) => `<button class="course-row ${tag === profile.native ? 'on' : ''}" data-tag="${tag}">${flag(tag, 'big')}<span><b>${esc(endonym(tag))}</b></span>${tag === profile.native ? icon('check') : ''}</button>`).join('')}</div>`);
+  const sh = sheet(`<h2>${esc(t('set.native'))}</h2><div class="course-list">${rows.map((tag) => `<button class="course-row ${tag === profile.native ? 'on' : ''}" data-tag="${tag}" ${hasContent(tag) ? '' : 'disabled'}>${flag(tag, 'big')}<span><b>${esc(endonym(tag))}</b>${hasContent(tag) ? '' : `<small>${esc(t('ob.soon'))}</small>`}</span>${tag === profile.native ? icon('check') : ''}</button>`).join('')}</div>`);
   sh.querySelectorAll('.course-row').forEach((b) => b.onclick = async () => {
     const tag = b.dataset.tag;
     closeSheet();
@@ -96,7 +104,7 @@ function pickNative(el) {
     await saveProfile({ native: tag, activeCourse: '' });
     await setLocale(tag);
     // Reprend les mêmes langues apprises depuis la nouvelle langue maternelle (sauf la langue elle-même)
-    for (const c of old) if (lang(c.target).code !== lang(tag).code) await addCourse(c.target, c.level);
+    for (const c of old) if (lang(c.target).code !== lang(tag).code && ready(tag, c.target)) await addCourse(c.target, c.level);
     const list = await listCourses();
     if (list[0]) await setActive(list[0].id);
     render(el);

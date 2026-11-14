@@ -1,5 +1,5 @@
 // Premier lancement (et ajout d'une langue) : ta langue, les langues à apprendre, le niveau, le prénom
-import { LANGS, lang, flag, endonym, learnable, levelsFor, base } from '../langs.js';
+import { LANGS, lang, flag, endonym, learnable, levelsFor, base, ready, hasContent } from '../langs.js';
 import { t, setLocale, langName } from '../i18n.js';
 import { profile, saveProfile, prefersReducedMotion } from '../profile.js';
 import { addCourse, listCourses, setActive } from '../courses.js';
@@ -46,12 +46,24 @@ export async function render(el, params = {}) {
   async function stepTargets() {
     const have = adding ? new Set((await listCourses()).map((c) => base(c.target))) : new Set();
     const list = learnable(st.native).filter((l) => !have.has(l.code));
+    const ok = list.filter((l) => ready(st.native, l.code));
     if (!list.length) { go(`${backBtn()}<p class="empty">${t('courses.none')}</p>`); el.querySelector('.back').onclick = () => (location.hash = '#/'); return; }
+    // Langue maternelle sans contenu : on le dit tout de suite, sans faire choisir une langue vide
+    if (!hasContent(st.native)) {
+      go(`${backBtn()}<h1>${t('ob.targets')}</h1><p class="hint">${t('ob.soonNative')}</p>
+        <button class="btn primary next">${t('ob.soonPick')}</button>`);
+      el.querySelector('.back').onclick = adding ? () => (location.hash = '#/') : stepNative;
+      el.querySelector('.next').onclick = adding ? () => (location.hash = '#/reglages') : stepNative;
+      return;
+    }
+    const soon = list.filter((l) => !ok.includes(l));
+    const tile = (l) => `${flag(l.variants ? l.variants[0].tag : l.code, 'big')}<b>${esc(langName(l.code))}</b>`;
     go(`${backBtn()}<h1>${t('ob.targets')}</h1><p class="hint">${t('ob.targetsHint')}</p>
-      <div class="pick-grid">${list.map((l) => `<button class="pick flip ${st.targets.includes(l.code) ? 'flipped' : ''}" data-code="${l.code}" aria-pressed="${st.targets.includes(l.code)}">
-        <span class="in"><span class="face front">${flag(l.variants ? l.variants[0].tag : l.code, 'big')}<b>${esc(langName(l.code))}</b><small>${esc(l.name)}</small></span>
-        <span class="face back">${flag(l.variants ? l.variants[0].tag : l.code, 'big')}<b>${esc(langName(l.code))}</b><span class="tick">${icon('check')}</span></span></span></button>`).join('')}</div>
-      <button class="btn primary next" ${st.targets.length ? '' : 'disabled'}>${t('ob.next')}</button>`);
+      <div class="pick-grid">${ok.map((l) => `<button class="pick flip ${st.targets.includes(l.code) ? 'flipped' : ''}" data-code="${l.code}" aria-pressed="${st.targets.includes(l.code)}">
+        <span class="in"><span class="face front">${tile(l)}<small>${esc(l.name)}</small></span>
+        <span class="face back">${tile(l)}<span class="tick">${icon('check')}</span></span></span></button>`).join('')}
+        ${soon.map((l) => `<div class="pick soon" aria-disabled="true"><span class="face front">${tile(l)}<small class="soon-tag">${esc(t('ob.soon'))}</small></span></div>`).join('')}</div>
+      <div class="sticky-act"><button class="btn primary next" ${st.targets.length ? '' : 'disabled'}>${t('ob.next')}</button></div>`);
     el.querySelector('.back').onclick = adding ? () => (location.hash = '#/') : stepNative;
     const next = el.querySelector('.next');
     el.querySelectorAll('.pick').forEach((b) => b.onclick = () => {
@@ -74,7 +86,7 @@ export async function render(el, params = {}) {
     go(`${backBtn()}<div class="lvl-flag">${flag(tag, 'huge')}</div><h1>${t('ob.level', { lang: langName(code) })}</h1>
       ${l.variants ? `<div class="seg">${l.variants.map((v) => `<button data-tag="${v.tag}" class="${v.tag === tag ? 'on' : ''}">${flag(v.tag)}${esc(v.name)}</button>`).join('')}</div>` : ''}
       <div class="levels">${levelsFor(code).map((x) => `<button class="lvl ${x === lv ? 'on' : ''}" data-l="${x}">${esc(label(x))}</button>`).join('')}</div>
-      <button class="btn primary next">${t('ob.next')}</button>`);
+      <div class="sticky-act"><button class="btn primary next">${t('ob.next')}</button></div>`);
     el.querySelector('.back').onclick = () => (st.i ? (st.i--, stepLevel()) : stepTargets());
     el.querySelectorAll('.seg button').forEach((b) => b.onclick = () => { st.variants[code] = b.dataset.tag; stepLevel(); });
     el.querySelectorAll('.lvl').forEach((b) => b.onclick = () => {
