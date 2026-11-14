@@ -1,0 +1,37 @@
+{
+ "lang": "en",
+ "entries": {
+  "pomme": {
+   "w": "apple",
+   "ex": "I eat an apple.",
+   "ok": [
+    "wikt",
+    "deepl"
+   ]
+  },
+  "chien": {
+   "w": "dog",
+   "ex": "The dog is sleeping.",
+   "ok": [
+    "wikt",
+    "deepl"
+   ]
+  },
+  "bus": {
+   "w": "bus",
+   "ex": "I take the bus.",
+   "ok": [
+    "wikt",
+    "deepl"
+   ]
+  },
+  "maison": {
+   "w": "house",
+   "ex": "Our house is small.",
+   "ok": [
+    "wikt",
+    "deepl"
+   ]
+  }
+ }
+}

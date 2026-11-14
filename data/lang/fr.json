@@ -1,0 +1,29 @@
+{
+ "lang": "fr",
+ "entries": {
+  "pomme": {
+   "w": "pomme",
+   "g": "f",
+   "art": "la",
+   "ex": "Je mange une pomme."
+  },
+  "chien": {
+   "w": "chien",
+   "g": "m",
+   "art": "le",
+   "ex": "Le chien dort."
+  },
+  "bus": {
+   "w": "bus",
+   "g": "m",
+   "art": "le",
+   "ex": "Je prends le bus."
+  },
+  "maison": {
+   "w": "maison",
+   "g": "f",
+   "art": "la",
+   "ex": "Notre maison est petite."
+  }
+ }
+}

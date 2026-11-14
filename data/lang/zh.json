@@ -1,0 +1,41 @@
+{
+ "lang": "zh",
+ "entries": {
+  "pomme": {
+   "w": "苹果",
+   "py": "píngguǒ",
+   "ex": "我吃苹果。",
+   "ok": [
+    "cfdict",
+    "deepl"
+   ]
+  },
+  "chien": {
+   "w": "狗",
+   "py": "gǒu",
+   "ex": "狗在睡觉。",
+   "ok": [
+    "cfdict",
+    "deepl"
+   ]
+  },
+  "bus": {
+   "w": "公共汽车",
+   "py": "gōnggòng qìchē",
+   "ex": "我坐公共汽车。",
+   "ok": [
+    "cfdict",
+    "deepl"
+   ]
+  },
+  "maison": {
+   "w": "房子",
+   "py": "fángzi",
+   "ex": "这是我的房子。",
+   "ok": [
+    "cfdict",
+    "deepl"
+   ]
+  }
+ }
+}
