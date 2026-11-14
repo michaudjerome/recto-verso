@@ -21,8 +21,11 @@ export async function render(el) {
     <button class="set-row native">${flag(profile.native)}<span>${esc(endonym(profile.native))}</span>${icon('chevron')}</button>
     <p class="hint small">${esc(t('set.nativeHint'))}</p>
 
+    <div class="set-label">${esc(t('set.theme'))}</div>
+    <div class="seg wide theme">${['auto', 'light', 'dark'].map((x) => `<button data-t="${x}" class="${(profile.theme || 'auto') === x ? 'on' : ''}">${esc(t(`theme.${x}`))}</button>`).join('')}</div>
+
     <div class="set-label">${esc(t('set.anim'))}</div>
-    <div class="seg wide">
+    <div class="seg wide anim">
       <button data-a="full" class="${profile.anim !== 'calm' ? 'on' : ''}">${esc(t('anim.full'))}</button>
       <button data-a="calm" class="${profile.anim === 'calm' ? 'on' : ''}">${esc(t('anim.calm'))}</button>
     </div>
@@ -40,9 +43,13 @@ export async function render(el) {
   const nm = el.querySelector('#nm');
   nm.onchange = async () => { await saveProfile({ name: nm.value.trim() }); toast(t('set.saved')); };
 
-  el.querySelectorAll('.seg button').forEach((b) => b.onclick = async () => {
+  el.querySelectorAll('.seg.anim button').forEach((b) => b.onclick = async () => {
     await saveProfile({ anim: b.dataset.a });
-    el.querySelectorAll('.seg button').forEach((x) => x.classList.toggle('on', x === b));
+    el.querySelectorAll('.seg.anim button').forEach((x) => x.classList.toggle('on', x === b));
+  });
+  el.querySelectorAll('.seg.theme button').forEach((b) => b.onclick = async () => {
+    await saveProfile({ theme: b.dataset.t });
+    el.querySelectorAll('.seg.theme button').forEach((x) => x.classList.toggle('on', x === b));
   });
 
   // Retirer une langue : deux touchers, sans fenêtre de confirmation
