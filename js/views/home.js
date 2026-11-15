@@ -1,13 +1,12 @@
-// Accueil (esthétique « J'apprends le chinois ») : salutation, parcours, bloc du jour avec objectif, quatre modes, compteurs
+// Accueil (esthétique « J'apprends le chinois ») : salutation, parcours, bloc du jour, quatre modes, compteurs
 import { flag, base } from '../langs.js';
 import { t, langName } from '../i18n.js';
 import { profile } from '../profile.js';
 import { listCourses, activeCourse, setActive, streakOf } from '../courses.js';
 import { greeting } from '../greet.js';
-import { esc, logo, icon, flip, sheet, closeSheet, dayKey } from '../ui.js';
+import { esc, logo, icon, flip, sheet, closeSheet } from '../ui.js';
 import { cardsOf } from '../cards.js';
-import { todayQueue, isNew, State } from '../srs.js';
-import { getAllByIndex } from '../db.js';
+import { State } from '../srs.js';
 import { pickNotice, noticeHTML, bindNotice } from '../notice.js';
 
 const MODES = [
@@ -20,16 +19,9 @@ export async function render(el) {
   const g = greeting(profile.name);
   const streak = streakOf(course);
   const cards = await cardsOf(course.id);
-  const queue = await todayQueue(cards, course);
-  const due = queue.length, fresh = queue.filter(isNew).length;
-  const logs = await getAllByIndex('logs', 'day', dayKey());
-  const doneToday = logs.filter((l) => l.course === course.id && l.mode === 'review').length;
-  const goal = course.goal || 20;
   const mastered = cards.filter((c) => c.fsrs && c.fsrs.state === State.Review && (c.fsrs.scheduled_days || 0) >= 21).length;
   const notice = await pickNotice();
   const zh = base(course.target) === 'zh';
-  const minutes = Math.max(1, Math.ceil(due * 10 / 60));
-  const sub = [fresh ? t('today.new', { n: fresh }) : '', due ? t('today.min', { n: minutes }) : ''].filter(Boolean).join(' · ');
 
   el.innerHTML = `<div class="home enter">
     <header class="home-top">
@@ -41,11 +33,8 @@ export async function render(el) {
       <span class="in"><span class="face front">${pillInner(course)}</span><span class="face back">${pillInner(course)}</span></span>
     </button>
     <section class="today">
-      ${due ? `<div class="n">${due}</div><div class="l">${esc(t(due > 1 ? 'today.lbl' : 'today.lbl1'))}${sub ? ` ${esc(sub)}` : ''}</div>
-        <a class="btn accent go" href="#/reviser">${esc(t('today.start'))}</a>`
-      : `<div class="l done">${esc(t(cards.length ? 'today.done' : 'today.first'))}</div><a class="btn accent go" href="#/decouvrir">${esc(t('today.discover'))}</a>`}
-      <div class="goal"><div class="goal-bar"><i style="width:${Math.min(100, Math.round(100 * doneToday / goal))}%"></i></div>
-        <small>${esc(t('today.goal', { a: Math.min(doneToday, 999), b: goal }))}</small></div>
+      ${cards.length ? `<div class="l">${esc(t('today.ready'))}</div><a class="btn accent go" href="#/reviser">${esc(t('today.start'))}</a>`
+      : `<div class="l done">${esc(t('today.first'))}</div><a class="btn accent go" href="#/decouvrir">${esc(t('today.discover'))}</a>`}
     </section>
     <div class="modes">${MODES.map(([k, route]) => `<button class="mode flip" data-route="${route}" aria-label="${esc(t(`home.${k}`))}">
       <span class="in"><span class="face front">${zh ? `<span class="zh glyph">${GLYPH[k]}</span>` : icon(k)}<b>${esc(t(`home.${k}`))}</b></span>

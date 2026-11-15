@@ -102,7 +102,7 @@ export async function render(el) {
   deal();
 }
 
-// Par thème : un toucher ajoute tout le lot (sauf les mots déjà pris) ; Réviser en présente quelques-uns par jour
+// Par thème : un toucher ajoute tout le lot (sauf les mots déjà pris)
 function renderLots(el, course, lots, have) {
   const lang = base(locale());
   const thName = (th) => th.names?.[lang] || th.names?.fr || th.id;
@@ -112,7 +112,7 @@ function renderLots(el, course, lots, have) {
     html += `<button class="row lot" data-i="${i}"></button>`;
   });
   el.innerHTML = `<div class="page lots-page">${topBar(t('disc.title'))}${segHTML()}
-    <p class="hint lots-hint">${esc(t('disc.lotHint', { n: course.newPerDay ?? 10 }))}</p>${html}</div></div>`;
+    <p class="hint lots-hint">${esc(t('disc.lotHint'))}</p>${html}</div></div>`;
   bindSeg(el);
   const paint = (b) => {
     const lot = lots[+b.dataset.i], k = lot.items.filter((p) => have.has(p.n.id)).length, n = lot.items.length;

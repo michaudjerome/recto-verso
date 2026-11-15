@@ -4,40 +4,44 @@ import { t } from '../i18n.js';
 import { log, Rating } from '../srs.js';
 import { word, visual, pinyinHtml, frontHTML, cardShell } from '../face.js';
 import { strip } from '../pinyin.js';
-import { pool, shuffle, requireCourse, topBar, emptyState, victory } from '../play-kit.js';
+import { pool, shuffle, requireCourse, topBar } from '../play-kit.js';
 import { esc, icon, flip, logo, later } from '../ui.js';
+import { markActivity } from '../courses.js';
+import { filterScreen, myItems, savedFilter, applyFilter, endless } from '../filter.js';
+import { cheer, oops } from '../fx.js';
 
 export async function render(el, params) {
   const course = await requireCourse();
   if (!course) return;
   const game = params.jeu;
-  if (game === 'quiz') return quiz(el, course);
-  if (game === 'memory') return memory(el, course);
-  if (game === 'ecris') return write(el, course);
+  const G = { quiz: ['play.quiz', 1, false, quiz], memory: ['play.memory', 3, false, memory], ecris: ['play.write', 1, true, write] }[game];
+  if (G) {
+    const [title, min, withPicto, run] = G;
+    if (!params.go) return filterScreen(el, course, { title: t(title), back: '#/jouer', min, withPicto, startHref: `#/jouer?jeu=${game}&go=${Date.now()}` });
+    const { items } = await myItems(course, { withPicto });
+    const picked = applyFilter(items, savedFilter(course));
+    if (picked.length < min) { location.hash = `#/jouer?jeu=${game}`; return; }
+    markActivity(course);
+    return run(el, course, picked, `#/jouer?jeu=${game}`);
+  }
   el.innerHTML = `<div class="page enter">${topBar(t('play.title'))}
     <div class="games">${[['quiz', 'play.quiz', 'play.quizSub', 'review'], ['memory', 'play.memory', 'play.memorySub', 'play'], ['ecris', 'play.write', 'play.writeSub', 'create']]
       .map(([k, n, s, ic]) => `<a class="game-row" href="#/jouer?jeu=${k}">${icon(ic)}<span><b>${esc(t(n))}</b><small>${esc(t(s))}</small></span>${icon('chevron')}</a>`).join('')}</div></div>`;
 }
 
-const notEnough = (el, n, title) => { el.innerHTML = `<div class="page">${topBar(title, '#/jouer')}${emptyState(t('play.notEnough', { n }), '', `<a class="btn primary" href="#/decouvrir">${esc(t('home.discover'))}</a>`)}</div>`; };
 const logIt = (i, ok, mode) => i.card && log(i.card, ok ? Rating.Good : Rating.Again, mode);
 
 // ---------- Quiz : un mot au recto, trois traductions ; la carte touchée se retourne sur ✓ ou ✗ ----------
-async function quiz(el, course) {
+async function quiz(el, course, picked, back) {
   const { mine, extra } = await pool(course);
   const all = [...mine, ...extra];
-  if (all.length < 3) return notEnough(el, 3, t('play.quiz'));
-  const rounds = (mine.length >= 3 ? mine : all).slice(0, 10);
-  let k = 0, good = 0;
-  const done = [];
+  const nextQ = endless(picked, shuffle);
 
   function round() {
-    const q = rounds[k];
-    if (!q) return victory(el, course, done, { sub: t('quiz.score', { n: good, t: rounds.length }), againHref: '#/jouer?jeu=quiz&r=' + Date.now() });
-    const wrong = shuffle(all.filter((x) => x !== q && x.txt.back.w !== q.txt.back.w)).slice(0, 2);
+    const q = nextQ();
+    const wrong = shuffle(all.filter((x) => x.txt.back.w !== q.txt.back.w)).slice(0, 2);
     const opts = shuffle([q, ...wrong]);
-    el.innerHTML = `<div class="page quiz">${topBar(t('play.quiz'), '#/jouer')}
-      <div class="meta"><span>${k + 1} / ${rounds.length}</span></div><div class="bar"><i style="width:${(k / rounds.length) * 100}%"></i></div>
+    el.innerHTML = `<div class="page quiz">${topBar(t('play.quiz'), back)}
       <div class="q-card enter">${frontHTML(q.txt, course, { showPy: false })}</div>
       <p class="hint center">${esc(t('quiz.pick'))}</p>
       <div class="answers">${opts.map((o, i) => `<div class="answer flip" data-i="${i}"><div class="in">
@@ -49,53 +53,56 @@ async function quiz(el, course) {
       answered = true;
       const o = opts[+a.dataset.i], ok = o === q;
       flip(a, true);
-      if (ok) good++;
-      else later(() => flip(el.querySelector(`.answer[data-i="${opts.indexOf(q)}"]`), true), 450);
+      later(() => (ok ? cheer(a) : oops(a)), 300);
+      if (!ok) later(() => flip(el.querySelector(`.answer[data-i="${opts.indexOf(q)}"]`), true), 650);
       logIt(q, ok, 'quiz');
-      if (ok) done.push(q);
-      later(() => { k++; round(); }, ok ? 1100 : 1800);
+      later(round, ok ? 1200 : 2000);
     });
   }
   round();
 }
 
 // ---------- Memory : retrouver les paires mot ↔ traduction, cartes faces cachées ----------
-async function memory(el, course) {
-  const { mine, extra } = await pool(course);
-  const all = [...mine, ...extra];
-  if (all.length < 3) return notEnough(el, 3, t('play.memory'));
-  const pairs = all.slice(0, 6);
-  const deck = shuffle(pairs.flatMap((p, i) => [{ i, side: 'f', p }, { i, side: 'b', p }]));
-  let moves = 0, found = 0, open = [], lock = false;
+async function memory(el, course, picked, back) {
+  const nextP = endless(picked, shuffle);
+  const size = Math.min(6, picked.length);
   const face = (d) => d.side === 'f'
     ? `${word(d.p.txt.front, course.target)}${base(course.target) === 'zh' ? pinyinHtml(d.p.txt.front) : ''}`
     : `${visual(d.p.txt, 'm-pict')}${word(d.p.txt.back, course.native)}`;
 
-  el.innerHTML = `<div class="page memory">${topBar(t('play.memory'), '#/jouer')}
-    <div class="meta"><span class="mv">${esc(t('memory.moves', { n: 0 }))}</span><span class="pf">${esc(t('memory.pairs', { n: 0 }))}</span></div>
-    <div class="m-grid c${deck.length > 8 ? 4 : 3}">${deck.map((d, k) => `<div class="m-card flip" data-k="${k}"><div class="in">
-      <div class="face front">${logo('m-logo')}</div><div class="face back ${d.side}">${face(d)}</div></div></div>`).join('')}</div></div>`;
-
-  el.querySelectorAll('.m-card').forEach((c) => c.onclick = () => {
-    if (lock || c.classList.contains('flipped')) return;
-    flip(c, true);
-    open.push(c);
-    if (open.length < 2) return;
-    moves++; lock = true;
-    const [a, b] = open.map((x) => deck[+x.dataset.k]);
-    const ok = a.i === b.i;
-    el.querySelector('.mv').textContent = t('memory.moves', { n: moves });
-    later(() => {
-      if (ok) {
-        open.forEach((x) => x.classList.add('matched'));
-        found++;
-        logIt(a.p, true, 'memory');
-        el.querySelector('.pf').textContent = t('memory.pairs', { n: found });
-        if (found === pairs.length) later(() => victory(el, course, pairs, { sub: t('memory.moves', { n: moves }), againHref: '#/jouer?jeu=memory&r=' + Date.now() }), 700);
-      } else open.forEach((x) => flip(x, false));
-      open = []; lock = false;
-    }, ok ? 450 : 1000);
-  });
+  // Une grille gagnée laisse place à une nouvelle, sans fin
+  function grid() {
+    const pairs = [];
+    while (pairs.length < size) { const p = nextP(); if (!pairs.includes(p)) pairs.push(p); }
+    const deck = shuffle(pairs.flatMap((p, i) => [{ i, side: 'f', p }, { i, side: 'b', p }]));
+    let found = 0, open = [], lock = false;
+    el.innerHTML = `<div class="page memory">${topBar(t('play.memory'), back)}
+      <div class="m-grid enter c${deck.length > 8 ? 4 : 3}">${deck.map((d, k) => `<div class="m-card flip" data-k="${k}"><div class="in">
+        <div class="face front">${logo('m-logo')}</div><div class="face back ${d.side}">${face(d)}</div></div></div>`).join('')}</div></div>`;
+    el.querySelectorAll('.m-card').forEach((c) => c.onclick = () => {
+      if (lock || c.classList.contains('flipped')) return;
+      flip(c, true);
+      open.push(c);
+      if (open.length < 2) return;
+      lock = true;
+      const [a, b] = open.map((x) => deck[+x.dataset.k]);
+      const ok = a.i === b.i, pair = open;
+      later(() => {
+        if (ok) {
+          pair.forEach((x) => x.classList.add('matched'));
+          cheer(pair[1]);
+          found++;
+          logIt(a.p, true, 'memory');
+          if (found === pairs.length) later(() => { cheer(el.querySelector('.m-grid')); later(grid, 900); }, 500);
+          open = []; lock = false;
+        } else {
+          pair.forEach((x) => oops(x));
+          later(() => { pair.forEach((x) => flip(x, false)); open = []; lock = false; }, 650);
+        }
+      }, ok ? 420 : 500);
+    });
+  }
+  grid();
 }
 
 // ---------- Écris ce que tu vois : une image au recto, on écrit le mot, la carte se retourne ----------
@@ -119,27 +126,24 @@ export function judge(answer, e, tag) {
   return targets.some((x) => x.length > 3 && lev(u, x) <= 1) ? 'near' : 'ko';
 }
 
-async function write(el, course) {
-  const { mine, extra } = await pool(course, { withPicto: true });
-  const items = [...mine, ...extra].slice(0, 10);
-  if (!items.length) { el.innerHTML = `<div class="page">${topBar(t('play.write'), '#/jouer')}${emptyState(t('write.noPicto'), '', `<a class="btn primary" href="#/decouvrir">${esc(t('home.discover'))}</a>`)}</div>`; return; }
+async function write(el, course, picked, back) {
   const zh = base(course.target) === 'zh';
-  let k = 0;
-  const done = [];
+  const nextI = endless(picked, shuffle);
 
   function next() {
-    const it = items[k];
-    if (!it) return victory(el, course, done, { sub: t('win.cards', { n: done.length }), againHref: '#/jouer?jeu=ecris&r=' + Date.now() });
+    const it = nextI();
     const p = visual(it.txt);
-    el.innerHTML = `<div class="page write">${topBar(t('play.write'), '#/jouer')}
-      <div class="meta"><span>${k + 1} / ${items.length}</span></div><div class="bar"><i style="width:${(k / items.length) * 100}%"></i></div>
+    el.innerHTML = `<div class="page write">${topBar(t('play.write'), back)}
       <div class="stage tall">${cardShell(`<div class="corner">Recto</div><div class="pict huge">${p}</div>
         <input class="field center" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${esc(t(zh ? 'write.phZh' : 'write.ph'))}">
         <button class="btn primary go">${esc(t('write.check'))}</button>`, '<div class="corner r">Verso</div><div class="verdict-box"></div>')}</div>
       <button class="btn ghost nextb" hidden>${esc(t('write.next'))}</button></div>`;
     const card = el.querySelector('.card'), input = card.querySelector('input');
     later(() => input.focus(), 300);
+    let done = false;
     const go = () => {
+      if (done) return;
+      done = true;
       const v = judge(input.value, it.txt.front, course.target);
       const L = { ok: ['write.ok', '好'], near: ['write.near', '棒'], ko: ['write.ko', '学'] }[v];
       card.querySelector('.verdict-box').innerHTML = `<div class="stamp s-${v}">${L[1]}</div><div class="verdict v-${v}">${esc(t(L[0]))}</div>
@@ -148,14 +152,14 @@ async function write(el, course) {
         <div class="tr small">${word(it.txt.back, course.native)}</div>`;
       input.blur();
       flip(card, true);
+      later(() => (v === 'ko' ? oops(card) : cheer(card)), 420);
       logIt(it, v !== 'ko', 'write');
-      if (v !== 'ko') done.push(it);
       el.querySelector('.nextb').hidden = false;
     };
     card.querySelector('.go').onclick = (e) => { e.stopPropagation(); go(); };
     input.onkeydown = (e) => { if (e.key === 'Enter') go(); };
     input.onclick = (e) => e.stopPropagation();
-    el.querySelector('.nextb').onclick = () => { k++; next(); };
+    el.querySelector('.nextb').onclick = next;
   }
   next();
 }

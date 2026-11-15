@@ -36,9 +36,6 @@ export async function render(el) {
       <button data-a="calm" class="${profile.anim === 'calm' ? 'on' : ''}">${esc(t('anim.calm'))}</button>
     </div>
 
-${cur ? `<div class="set-label">${esc(t('set.goal'))}</div>
-    <div class="seg wide goal-seg">${[10, 20, 30, 50].map((x) => `<button data-g="${x}" class="${(cur.goal || 20) === x ? 'on' : ''}">${x}</button>`).join('')}</div>
-    <p class="hint small">${esc(t('set.goalHint'))}</p>` : ''}
 
     <div class="set-label">${esc(t('courses.title'))}</div>
     <div class="course-list">${courses.map((c) => `<div class="course-row static">${flag(c.target, 'big')}<span><b>${esc(cap(langName(c.target)))}</b></span>
@@ -65,10 +62,6 @@ ${isInstalled() ? '' : `
   el.querySelectorAll('.seg.anim button').forEach((b) => b.onclick = async () => {
     await saveProfile({ anim: b.dataset.a });
     el.querySelectorAll('.seg.anim button').forEach((x) => x.classList.toggle('on', x === b));
-  });
-  el.querySelectorAll('.goal-seg button').forEach((b) => b.onclick = async () => {
-    await put('courses', { ...(await activeCourse()), goal: +b.dataset.g });
-    el.querySelectorAll('.goal-seg button').forEach((x) => x.classList.toggle('on', x === b));
   });
   el.querySelectorAll('.seg.theme button').forEach((b) => b.onclick = async () => {
     await saveProfile({ theme: b.dataset.t });
