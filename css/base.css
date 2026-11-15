@@ -458,3 +458,19 @@ body { background-image: radial-gradient(var(--dots) 1px, transparent 1px); back
 .list.lots .row .grow small.have { color: var(--accent); white-space: normal; }
 .list.lots .row:disabled .tag { color: var(--ink2); }
 .list.lots { margin-bottom: 4px; }
+
+/* 0.9.0 : choix thème et niveau, séances sans fin, effets de réponse */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 6px; }
+.chip { display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 999px; padding: 9px 14px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+.chip small { font-size: 12px; font-weight: 600; color: var(--ink2); }
+.chip.on { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.chip.on small { color: var(--inv-sub); }
+.chip:disabled { opacity: .38; cursor: default; }
+.filter .sticky-act .need { margin: 0 0 8px; text-align: center; }
+.btn.off { opacity: .4; pointer-events: none; }
+.rates.two { grid-template-columns: 1fr 1fr; gap: 10px; }
+.rates.two .rate { padding: 15px 4px; }
+.rates.two .rate b { font-size: 16px; }
+.fx-burst { position: fixed; width: 0; height: 0; pointer-events: none; z-index: 70; }
+.fx-burst i { position: absolute; left: 0; top: 0; width: 8px; height: 8px; border-radius: 2px; }
+.fx-veil { position: fixed; inset: 0; pointer-events: none; z-index: 69; background: radial-gradient(ellipse at center, transparent 45%, rgba(192,57,43,.28) 100%); background: radial-gradient(ellipse at center, transparent 45%, color-mix(in srgb, var(--t1) 28%, transparent) 100%); }
