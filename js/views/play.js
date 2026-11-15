@@ -6,9 +6,11 @@ import { word, visual, pinyinHtml, frontHTML, cardShell } from '../face.js';
 import { strip } from '../pinyin.js';
 import { pool, shuffle, requireCourse, topBar } from '../play-kit.js';
 import { esc, icon, flip, logo, later } from '../ui.js';
+import { locale } from '../i18n.js';
+import { notions as allNotions, cardText } from '../content.js';
 import { markActivity } from '../courses.js';
 import { filterScreen, myItems, savedFilter, applyFilter, endless } from '../filter.js';
-import { cheer, oops } from '../fx.js';
+import { cheer, oops, nudge } from '../fx.js';
 
 export async function render(el, params) {
   const course = await requireCourse();
@@ -126,35 +128,66 @@ export function judge(answer, e, tag) {
   return targets.some((x) => x.length > 3 && lev(u, x) <= 1) ? 'near' : 'ko';
 }
 
+// Les autres mots de l'app, pour reconnaître une réponse juste… mais pas celle attendue (« lapin » au lieu de « rapide »)
+async function otherWords(course) {
+  const map = new Map();
+  for (const n of (await allNotions()).notions) {
+    const txt = await cardText({ notion: n.id }, course);
+    if (!txt.front?.w) continue;
+    for (const w of [txt.front.w, txt.front.py, ...String(txt.front.w).split(/[;,]/)].filter(Boolean)) {
+      const k = norm(w.replace(/\(.*?\)/g, ''));
+      if (k && !map.has(k)) map.set(k, { id: n.id, txt });
+    }
+  }
+  return map;
+}
+
 async function write(el, course, picked, back) {
   const zh = base(course.target) === 'zh';
   const nextI = endless(picked, shuffle);
+  const others = await otherWords(course);
+  const themes = (await allNotions()).themes, lang = base(locale());
+  const clue = (n) => (n ? [t(`pos.${n.pos}`), themes.find((x) => x.id === n.theme)?.names?.[lang]].filter((x) => x && !x.startsWith('pos.')).join(' · ') : '');
 
   function next() {
     const it = nextI();
     const p = visual(it.txt);
+    const line = clue(it.txt.notion);
     el.innerHTML = `<div class="page write">${topBar(t('play.write'), back)}
       <div class="stage tall">${cardShell(`<div class="corner">Recto</div><div class="pict huge">${p}</div>
+        ${line ? `<div class="clue">${esc(line)}</div>` : ''}
+        <div class="clue-word" hidden>${word(it.txt.back, course.native)}</div>
         <input class="field center" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${esc(t(zh ? 'write.phZh' : 'write.ph'))}">
-        <button class="btn primary go">${esc(t('write.check'))}</button>`, '<div class="corner r">Verso</div><div class="verdict-box"></div>')}</div>
+        <div class="duo"><button class="btn ghost hint-b">${esc(t('write.hint'))}</button><button class="btn primary go">${esc(t('write.check'))}</button></div>`, '<div class="corner r">Verso</div><div class="verdict-box"></div>')}</div>
       <button class="btn ghost nextb" hidden>${esc(t('write.next'))}</button></div>`;
     const card = el.querySelector('.card'), input = card.querySelector('input');
     later(() => input.focus(), 300);
-    let done = false;
+    let done = false, helped = false;
     const go = () => {
       if (done) return;
       done = true;
-      const v = judge(input.value, it.txt.front, course.target);
-      const L = { ok: ['write.ok', '好'], near: ['write.near', '棒'], ko: ['write.ko', '学'] }[v];
+      let v = judge(input.value, it.txt.front, course.target);
+      if (v === 'ok' && helped) v = 'near'; // avec l'indice, c'est « presque »
+      let other = null;
+      if (v === 'ko') { const o = others.get(norm(input.value)); if (o && o.id !== it.txt.notion?.id) { other = o; v = 'other'; } }
+      const L = { ok: ['write.ok', '好'], near: ['write.near', '棒'], ko: ['write.ko', '学'], other: ['write.vOther', '换'] }[v];
       card.querySelector('.verdict-box').innerHTML = `<div class="stamp s-${v}">${L[1]}</div><div class="verdict v-${v}">${esc(t(L[0]))}</div>
+        ${other ? `<div class="yours">${esc(t('write.other', { w: input.value.trim(), m: other.txt.back?.w || '' }))}</div>` : ''}
         ${word(it.txt.front, course.target, { big: true })}${zh ? `<div>${pinyinHtml(it.txt.front)}</div>` : ''}
-        ${v !== 'ok' && input.value.trim() ? `<div class="yours">${esc(t('write.yours', { w: input.value.trim() }))}</div>` : ''}
+        ${!other && v !== 'ok' && input.value.trim() ? `<div class="yours">${esc(t('write.yours', { w: input.value.trim() }))}</div>` : ''}
         <div class="tr small">${word(it.txt.back, course.native)}</div>`;
       input.blur();
       flip(card, true);
-      later(() => (v === 'ko' ? oops(card) : cheer(card)), 420);
-      logIt(it, v !== 'ko', 'write');
+      later(() => (v === 'ko' ? oops(card) : v === 'other' ? nudge(card) : cheer(card)), 420);
+      logIt(it, v === 'ok' || v === 'near', 'write');
       el.querySelector('.nextb').hidden = false;
+    };
+    card.querySelector('.hint-b').onclick = (e) => {
+      e.stopPropagation();
+      helped = true;
+      card.querySelector('.clue-word').hidden = false;
+      e.currentTarget.disabled = true;
+      input.focus();
     };
     card.querySelector('.go').onclick = (e) => { e.stopPropagation(); go(); };
     input.onkeydown = (e) => { if (e.key === 'Enter') go(); };
