@@ -474,3 +474,12 @@ body { background-image: radial-gradient(var(--dots) 1px, transparent 1px); back
 .fx-burst { position: fixed; width: 0; height: 0; pointer-events: none; z-index: 70; }
 .fx-burst i { position: absolute; left: 0; top: 0; width: 8px; height: 8px; border-radius: 2px; }
 .fx-veil { position: fixed; inset: 0; pointer-events: none; z-index: 69; background: radial-gradient(ellipse at center, transparent 45%, rgba(192,57,43,.28) 100%); background: radial-gradient(ellipse at center, transparent 45%, color-mix(in srgb, var(--t1) 28%, transparent) 100%); }
+
+/* 0.10.0 : indices dans Écris ce que tu vois */
+.write .clue { font-size: 13px; color: var(--ink2); text-align: center; margin: -4px 0 8px; }
+.write .clue-word { text-align: center; margin: 0 0 8px; color: var(--t2); }
+.write .card .duo .btn { flex: 1; }
+.stamp.s-other { background: var(--t0); }
+.verdict.v-other { color: var(--ink2); }
+.write .card .duo { width: 100%; }
+[hidden] { display: none !important; }
