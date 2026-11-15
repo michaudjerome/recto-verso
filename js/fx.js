@@ -1,6 +1,7 @@
 // Effets de réponse : petite gerbe de confettis quand c'est juste, secousse et lueur rouge brèves quand c'est faux.
-// Pas de vibration du téléphone : tout se passe à l'écran. Animations réduites : seulement un changement de couleur.
-const calm = () => document.documentElement.classList.contains('calm') || matchMedia('(prefers-reduced-motion: reduce)').matches;
+// Pas de vibration du téléphone : tout se passe à l'écran. Animations calmes : seulement un changement de couleur.
+// Le réglage de l'app décide (Réglages › Animations) : au premier lancement, l'app le propose si le téléphone demande des animations réduites
+const calm = () => document.documentElement.classList.contains('calm');
 const COLORS = ['--t1', '--t2', '--t3', '--t4', '--seal'];
 
 function glow(el, color, ms = 450) {
