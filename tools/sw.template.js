@@ -26,7 +26,10 @@ self.addEventListener('message', (e) => { if (e.data === 'skip') self.skipWaitin
 
 self.addEventListener('fetch', (e) => {
   const req = e.request;
-  if (req.method !== 'GET' || new URL(req.url).origin !== location.origin) return;
+  const url = new URL(req.url);
+  if (req.method !== 'GET' || url.origin !== location.origin) return;
+  // Le serveur (comptes, synchronisation, installation) n'est jamais mis en cache
+  if (/\/api\//.test(url.pathname)) return;
   if (req.mode === 'navigate') {
     e.respondWith(caches.match('index.html').then((r) => r || fetch(req)));
     return;
