@@ -483,3 +483,33 @@ body { background-image: radial-gradient(var(--dots) 1px, transparent 1px); back
 .verdict.v-other { color: var(--ink2); }
 .write .card .duo { width: 100%; }
 [hidden] { display: none !important; }
+
+/* 0.11.0 : compte et synchronisation */
+.acc h1 { text-align: center; }
+.acc .hint { text-align: center; }
+.acc-form { display: flex; flex-direction: column; }
+.acc-form .set-label:first-child { margin-top: 4px; }
+.acc-err { margin: 12px 0 0; padding: 10px 14px; border-radius: 12px; background: color-mix(in srgb, var(--seal) 12%, transparent); color: var(--seal); font-size: 14px; font-weight: 600; }
+.link-btn { display: block; margin: 16px auto 0; background: none; border: 0; color: var(--ink2); font-size: 14px; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; padding: 6px; }
+.acc-alt { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--line); }
+.acc-privacy { margin-top: 18px; text-align: left !important; }
+.acc-card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 14px; }
+.acc-mail { display: flex; align-items: center; gap: 10px; }
+.acc-mail .i { color: var(--accent); flex: none; }
+.acc-mail span { display: flex; flex-direction: column; min-width: 0; }
+.acc-mail b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.acc-mail small { color: var(--ink2); font-size: 13px; }
+.acc-card .duo { display: flex; gap: 10px; }
+.acc-card .duo .btn { flex: 1; margin-top: 12px; padding: 11px; font-size: 14px; }
+.acc-card .btn.logout.armed { border-color: var(--seal); color: var(--seal); }
+.acc-links { display: flex; justify-content: space-between; gap: 8px; margin-top: 4px; }
+.acc-links .link-btn { margin: 8px 0 0; font-size: 13px; }
+.btn.danger { background: var(--seal); border-color: var(--seal); color: #fff; }
+.inv-out { margin-top: 14px; }
+.inv-link { padding: 12px; border-radius: 12px; background: var(--field); border: 1px dashed var(--line); word-break: break-all; font-size: 13px; }
+.inv-out .duo { display: flex; gap: 10px; }
+.inv-out .duo .btn { flex: 1; }
+.inv-row { display: flex; align-items: center; gap: 8px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.inv-row span { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+.inv-row small { color: var(--ink2); font-size: 12px; overflow: hidden; text-overflow: ellipsis; }
+@supports not (color: color-mix(in srgb, red 10%, white)) { .acc-err { background: rgba(192, 57, 43, .12); } }
