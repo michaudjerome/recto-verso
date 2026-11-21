@@ -1,6 +1,6 @@
 <?php
 // Recto Verso : socle commun de l'API (configuration, base, sessions, réponses).
-// Compatible PHP 7.4 et plus. Aucun identifiant ici : ils sont dans un fichier hors du dossier web.
+// Compatible PHP 7.3 et plus. Aucun identifiant ici : ils sont dans un fichier hors du dossier web.
 
 declare(strict_types=1);
 
