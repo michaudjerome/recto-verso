@@ -47,7 +47,8 @@ export async function pickNotice() {
   const snooze = (await kvGet('noticeSnooze')) || {};
   const free = (k) => !snooze[k] || snooze[k] < now;
   const last = await kvGet('lastBackup');
-  if (free('backup')) {
+  // Avec un compte, les cartes sont déjà sauvegardées sur le serveur : plus de rappel de sauvegarde par fichier
+  if (false && free('backup')) {
     const n = (await getAll('cards')).length;
     if (n >= 15 && now - (last || first) > 14 * DAY) return 'backup';
   }
