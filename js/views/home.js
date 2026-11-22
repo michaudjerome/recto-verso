@@ -9,6 +9,7 @@ import { cardsOf } from '../cards.js';
 import { State } from '../srs.js';
 import { pickNotice, noticeHTML, bindNotice, install, isInstalled, platform } from '../notice.js';
 import { kvGet, kvSet } from '../db.js';
+import { courseLevel, levelName, levelSub } from '../levels.js';
 
 const MODES = [
   ['review', 'reviser'], ['play', 'jouer'], ['discover', 'decouvrir'], ['create', 'creer'],
@@ -83,11 +84,5 @@ async function openCourses(el) {
   });
 }
 
-function levelLabel(c) {
-  const x = c.level;
-  if (x === 'beginner') return t('lvl.beginner');
-  if (x === 'HSK7') return t('lvl.HSK7');
-  if (x.startsWith('HSK')) return t('lvl.HSK', { n: x.slice(3) });
-  return t(`lvl.${x}`);
-}
+const levelLabel = (c) => `${levelName(courseLevel(c))} · ${levelSub(courseLevel(c), c.target)}`;
 

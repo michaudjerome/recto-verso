@@ -179,10 +179,10 @@ async function editSheet(id, lang, done, ref = 'fr') {
       <label class="set-label" for="et">Autres sens, séparés par des virgules</label><input id="et" class="field" value="${esc((e.alt || []).join(', '))}" maxlength="200">
       <button class="btn primary">Enregistrer pour tous</button>
     </form>
-    ${n?.picto ? `<div class="set-label">Image</div><div class="pic-edit">${visual({ notion: n })}
-      <label class="check"><input type="checkbox" id="clair" ${n.clair === false ? '' : 'checked'}> Assez claire pour « Écris ce que tu vois »</label>
+    ${n?.picto || n?.img ? `<div class="set-label">Image</div><div class="pic-edit">${visual({ notion: n })}
+      ${n.img ? '' : `<label class="check"><input type="checkbox" id="clair" ${n.clair === false ? '' : 'checked'}> Assez claire pour « Écris ce que tu vois »</label>`}
       <button class="mini-btn nopic">Retirer l’image</button></div>` : ''}
-    ${orig?.picto && !n?.picto ? '<button class="mini-btn restorepic">Remettre l’image</button>' : ''}
+    ${(orig?.picto && !n?.picto) || (orig?.img && !n?.img) ? '<button class="mini-btn restorepic">Remettre l’image</button>' : ''}
     <button class="btn ghost revert">Revenir au mot publié</button>`);
   const val = (k) => sh.querySelector(`#${k}`)?.value.trim() ?? undefined;
   const after = async (msg) => { const c = await api('content', {}); setEdits(c.edits, c.crev); toast(msg); closeSheet(); done?.(); };
@@ -198,10 +198,10 @@ async function editSheet(id, lang, done, ref = 'fr') {
     try { await api('content_edit', { lang: '_n', notion: id, data: { clair: ev.target.checked } }); toast('Image mise à jour'); const c = await api('content', {}); setEdits(c.edits, c.crev); } catch (ex) { toast(errText(ex.code)); }
   });
   sh.querySelector('.nopic')?.addEventListener('click', async () => {
-    try { await api('content_edit', { lang: '_n', notion: id, data: { picto: '' } }); await after('Image retirée'); } catch (ex) { toast(errText(ex.code)); }
+    try { await api('content_edit', { lang: '_n', notion: id, data: { picto: '', img: '' } }); await after('Image retirée'); } catch (ex) { toast(errText(ex.code)); }
   });
   sh.querySelector('.restorepic')?.addEventListener('click', async () => {
-    try { await api('content_edit', { lang: '_n', notion: id, data: { picto: orig.picto } }); await after('Image remise'); } catch (ex) { toast(errText(ex.code)); }
+    try { await api('content_edit', { lang: '_n', notion: id, data: { picto: orig.picto || '', img: orig.img || '' } }); await after('Image remise'); } catch (ex) { toast(errText(ex.code)); }
   });
   sh.querySelector('.revert').onclick = async () => {
     try { await api('content_edit', { lang, notion: id, data: null }); await after('Mot publié rétabli'); } catch (ex) { toast(errText(ex.code)); }

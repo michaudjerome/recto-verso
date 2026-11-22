@@ -1,33 +1,39 @@
-// Réviser : on choisit un thème et un niveau, puis les cartes défilent sans fin.
+// Réviser : les cartes du niveau de la plateforme défilent sans fin, sans écran de choix.
 // On retourne la carte, puis « Je savais » ou « À revoir » ; la répétition espacée continue en arrière-plan.
 import { base } from '../langs.js';
 import { t } from '../i18n.js';
 import { grade, Rating } from '../srs.js';
 import { getCard } from '../cards.js';
 import { frontHTML, backHTML, cardShell } from '../face.js';
-import { requireCourse, topBar } from '../play-kit.js';
+import { requireCourse, topBar, emptyState } from '../play-kit.js';
 import { esc, flip, later } from '../ui.js';
 import { reportButton } from '../report.js';
 import { markActivity } from '../courses.js';
-import { filterScreen, myItems, savedFilter, applyFilter } from '../filter.js';
+import { myItems, atLevel } from '../filter.js';
+import { courseLevel, levelName } from '../levels.js';
 import { cheer, nudge } from '../fx.js';
 
 export async function render(el, params) {
   const course = await requireCourse();
   if (!course) return;
-  if (!params.go) return filterScreen(el, course, { title: t('home.review'), startHref: `#/reviser?go=${Date.now()}` });
-
+  const lv = courseLevel(course);
   const { items } = await myItems(course);
-  const picked = applyFilter(items, savedFilter(course));
-  if (!picked.length) { location.hash = '#/reviser'; return; }
+  // Toutes les cartes de la personne passent en révision (une carte d'un autre niveau ne doit pas rester en souffrance) :
+  // celles du niveau courant d'abord, puis les autres, chacune par échéance
+  const picked = items;
+  const atCur = new Set(atLevel(items, lv).map((i) => i.card.id));
+  if (!picked.length) {
+    el.innerHTML = `<div class="page fill">${topBar(t('home.review'))}${emptyState(t('rev.emptyLevel', { l: levelName(lv) }), t('rev.emptyLevelHint'), `<a class="btn primary" href="#/decouvrir">${esc(t('home.discover'))}</a>`)}</div>`;
+    return;
+  }
   const zh = base(course.target) === 'zh';
   const txtOf = new Map(picked.map((i) => [i.card.id, i.txt]));
   // Les plus fragiles d'abord : échéance la plus ancienne en tête (les nouvelles cartes en font partie)
-  const order = async () => (await Promise.all(picked.map((i) => getCard(i.card.id)))).filter(Boolean).sort((a, b) => (a.due || 0) - (b.due || 0));
+  const order = async () => (await Promise.all(picked.map((i) => getCard(i.card.id)))).filter(Boolean).sort((a, b) => (atCur.has(b.id) - atCur.has(a.id)) || (a.due || 0) - (b.due || 0));
   let queue = await order();
   let cur, stage = 0, busy = false, started = false, lastId = null;
 
-  el.innerHTML = `<div class="page review">${topBar(t('home.review'), '#/reviser')}
+  el.innerHTML = `<div class="page review">${topBar(t('home.review'))}
     <div class="stage"><div class="stack g2"></div><div class="stack g1"></div></div>
     <div class="rates two"><button class="rate r-again" data-g="${Rating.Again}"><b>${esc(t('rev.again'))}</b></button>
       <button class="rate r-good" data-g="${Rating.Good}"><b>${esc(t('rev.knew'))}</b></button></div></div>`;

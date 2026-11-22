@@ -1,5 +1,6 @@
 // Premier lancement (et ajout d'une langue) : ta langue, les langues à apprendre, le niveau, le prénom
-import { LANGS, lang, flag, endonym, learnable, levelsFor, base, ready, hasContent } from '../langs.js';
+import { LANGS, lang, flag, endonym, learnable, base, ready, hasContent } from '../langs.js';
+import { LEVELS, levelName, levelSub } from '../levels.js';
 import { t, setLocale, langName } from '../i18n.js';
 import { profile, saveProfile, prefersReducedMotion } from '../profile.js';
 import { addCourse, listCourses, setActive } from '../courses.js';
@@ -81,20 +82,19 @@ export async function render(el, params = {}) {
     const l = lang(code);
     const tag = st.variants[code] || (l.variants ? l.variants[0].tag : code);
     st.variants[code] = tag;
-    const lv = st.levels[code] || 'beginner';
-    const label = (x) => x === 'beginner' ? t('lvl.beginner') : x === 'HSK7' ? t('lvl.HSK7') : x.startsWith('HSK') ? t('lvl.HSK', { n: x.slice(3) }) : t(`lvl.${x}`);
+    const lv = st.levels[code] || 1;
     go(`${backBtn()}<div class="lvl-flag">${flag(tag, 'huge')}</div><h1>${t('ob.level', { lang: langName(code) })}</h1>
       ${l.variants ? `<div class="seg">${l.variants.map((v) => `<button data-tag="${v.tag}" class="${v.tag === tag ? 'on' : ''}">${flag(v.tag)}${esc(v.name)}</button>`).join('')}</div>` : ''}
-      <div class="levels">${levelsFor(code).map((x) => `<button class="lvl ${x === lv ? 'on' : ''}" data-l="${x}">${esc(label(x))}</button>`).join('')}</div>
+      <div class="levels">${LEVELS.map((x) => `<button class="lvl opt ${x === lv ? 'on' : ''}" data-l="${x}"><b>${esc(levelName(x))}</b><small>${esc(levelSub(x, code))}</small></button>`).join('')}</div>
       <div class="sticky-act"><button class="btn primary next">${t('ob.next')}</button></div>`);
     el.querySelector('.back').onclick = () => (st.i ? (st.i--, stepLevel()) : stepTargets());
     el.querySelectorAll('.seg button').forEach((b) => b.onclick = () => { st.variants[code] = b.dataset.tag; stepLevel(); });
     el.querySelectorAll('.lvl').forEach((b) => b.onclick = () => {
-      st.levels[code] = b.dataset.l;
+      st.levels[code] = +b.dataset.l;
       el.querySelectorAll('.lvl').forEach((x) => x.classList.toggle('on', x === b));
     });
     el.querySelector('.next').onclick = () => {
-      st.levels[code] ||= 'beginner';
+      st.levels[code] ||= 1;
       if (st.i < st.targets.length - 1) { st.i++; stepLevel(); } else if (adding) finish(); else stepName();
     };
   }
@@ -126,7 +126,8 @@ export async function render(el, params = {}) {
     if (!adding) await saveProfile({ native: st.native, name: st.name, anim: anim || profile.anim || 'full', created: profile.created || Date.now() });
     let first;
     for (const code of st.targets) {
-      const c = await addCourse(st.variants[code] || code, st.levels[code] || 'beginner');
+      const lvx = st.levels[code] || 1;
+      const c = await addCourse(st.variants[code] || code, base(code) === 'zh' ? ['', 'HSK1', 'HSK3', 'HSK4', 'HSK5'][lvx] : ['', 'A1', 'A2', 'B1', 'B2'][lvx], lvx);
       first ||= c;
     }
     if (first) await setActive(first.id);

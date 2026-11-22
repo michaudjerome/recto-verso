@@ -9,6 +9,7 @@ import { notions } from '../content.js';
 import { streakOf } from '../courses.js';
 import { fsrs, createEmptyCard, Rating, State } from '../vendor/ts-fsrs.mjs';
 import { esc, dayKey } from '../ui.js';
+import { LEVELS, levelOf, levelName } from '../levels.js';
 
 const MASTERED = 21; // une carte est maîtrisée quand son intervalle atteint 21 jours
 const DAY = 864e5;
@@ -75,11 +76,10 @@ export async function render(el) {
   }
 
   // Répartition par niveau : cartes possédées et maîtrisées, sur le total du contenu
-  const RANK = { beginner: 1, A1: 1, A2: 2, B1: 3, B2: 3 };
-  const tier = (n) => Math.max(1, Math.min(zh ? n.hsk || 3 : RANK[n.cefr] ?? 3, 3));
-  const name = (k) => (zh ? `HSK ${k}` : ['', 'A1', 'A2', 'B1'][k]) + (k === 3 ? '+' : '');
+  const tier = (n) => levelOf(n, course.target);
+  const name = (k) => levelName(k);
   const byId = new Map(cards.map((c) => [c.notion, c]));
-  const rows = [1, 2, 3].map((k) => {
+  const rows = LEVELS.map((k) => {
     const all = data.notions.filter((n) => tier(n) === k);
     const own = all.filter((n) => byId.has(n.id));
     const mas = own.filter((n) => isMastered(byId.get(n.id)));

@@ -9,7 +9,7 @@ import { esc, icon, flip, logo, later } from '../ui.js';
 import { locale } from '../i18n.js';
 import { notions as allNotions, cardText } from '../content.js';
 import { markActivity } from '../courses.js';
-import { filterScreen, myItems, savedFilter, applyFilter, endless } from '../filter.js';
+import { levelScreen, myItems, atLevel, endless } from '../filter.js';
 import { cheer, oops, nudge } from '../fx.js';
 import { reportButton } from '../report.js';
 
@@ -17,17 +17,17 @@ export async function render(el, params) {
   const course = await requireCourse();
   if (!course) return;
   const game = params.jeu;
-  // Duo pioche dans tout le niveau (mots découverts ou non) et garde son propre choix de filtres
+  // Duo pioche dans tous les mots du niveau choisi, découverts ou non
   const G = { quiz: ['play.quiz', 1, false, quiz], memory: ['play.memory', 3, false, memory], ecris: ['play.write', 1, true, write], duo: ['play.duo', DUO_SIZE, false, duo, true] }[game];
   if (G) {
     const [title, min, withPicto, run, all = false] = G;
-    const fkey = all ? game : '';
-    if (!params.go) return filterScreen(el, course, { title: t(title), back: '#/jouer', min, withPicto, all, fkey, startHref: `#/jouer?jeu=${game}&go=${Date.now()}` });
+    const lv = +params.lv;
+    if (!lv) return levelScreen(el, course, { title: t(title), back: '#/jouer', min, withPicto, all, href: (l) => `#/jouer?jeu=${game}&lv=${l}` });
     const { items } = await myItems(course, { withPicto, all });
-    const picked = applyFilter(items, savedFilter(course, fkey));
+    const picked = atLevel(items, lv);
     if (picked.length < min) { location.hash = `#/jouer?jeu=${game}`; return; }
     markActivity(course);
-    return run(el, course, picked, `#/jouer?jeu=${game}`);
+    return run(el, course, picked, `#/jouer?jeu=${game}`, `#/jouer?jeu=${game}&lv=${lv}&go=${Date.now()}`);
   }
   el.innerHTML = `<div class="page enter">${topBar(t('play.title'))}
     <div class="games">${[['quiz', 'play.quiz', 'play.quizSub', 'review'], ['memory', 'play.memory', 'play.memorySub', 'play'], ['duo', 'play.duo', 'play.duoSub', 'duo'], ['ecris', 'play.write', 'play.writeSub', 'create']]
@@ -209,7 +209,7 @@ async function write(el, course, picked, back) {
 // Une paire trouvée laisse sa place à un nouveau mot ; 50 paires pour finir le niveau. Duo ne touche pas à Réviser.
 const DUO_SIZE = 5, DUO_GOAL = 50;
 const keyOf = (e) => strip(String(e?.w || '')).toLowerCase().trim();
-async function duo(el, course, picked, back) {
+async function duo(el, course, picked, back, replay) {
   const next = endless(picked, shuffle);
   const zh = base(course.target) === 'zh';
   const left = [], right = []; // un mot par case ; null pendant le remplacement
@@ -256,14 +256,7 @@ async function duo(el, course, picked, back) {
         found++;
         paintCount();
         if (found >= DUO_GOAL) { lock = true; later(finish, 700); return; }
-        later(() => {
-          const nt = draw();
-          if (!nt) return;
-          left[lk] = nt;
-          right[rk] = nt;
-          fill('l', lk, nt);
-          fill('r', rk, nt);
-        }, 380);
+        refill();
       } else {
         errors++;
         lock = true;
@@ -273,6 +266,26 @@ async function duo(el, course, picked, back) {
     };
   }
   grid.querySelectorAll('.duo-cell').forEach(bind);
+  // Renouvellement par vagues : quand il ne reste qu'une paire, 4 nouvelles arrivent ensemble,
+  // mélangées indépendamment dans chaque colonne (impossible de deviner une paire à sa position ou à son arrivée)
+  function refill() {
+    const onBoard = left.filter(Boolean).length;
+    if (onBoard > 1) return;
+    const want = Math.min(DUO_SIZE - onBoard, DUO_GOAL - found - onBoard, left.filter((x) => !x).length);
+    if (want <= 0) return;
+    lock = true;
+    later(() => { try {
+      const fresh = [];
+      for (let k = 0; k < want; k++) { const it = draw(); if (!it) break; fresh.push(it); left[left.indexOf(null)] = it; } // réserve la place pour l'anti-doublon
+      fresh.forEach((it) => { left[left.indexOf(it)] = null; });
+      const freeL = shuffle(left.map((x, k) => (x ? -1 : k)).filter((k) => k >= 0));
+      const freeR = shuffle(right.map((x, k) => (x ? -1 : k)).filter((k) => k >= 0));
+      fresh.forEach((it, i) => { left[freeL[i]] = it; right[freeR[i]] = it; });
+      fresh.forEach((it, i) => { fill('l', freeL[i], it); fill('r', freeR[i], it); });
+    } finally { lock = false; }
+      if (!left.some(Boolean)) finish(); // réserve de mots épuisée : on termine proprement
+    }, 520);
+  }
   function finish() {
     const s = Math.round((Date.now() - t0) / 1000);
     const time = `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
@@ -280,7 +293,7 @@ async function duo(el, course, picked, back) {
     el.innerHTML = `<div class="win enter duo-win">${logo('win-logo')}
       <h2>${esc(t('duo.done'))}</h2>
       <div class="duo-stats"><div><b>${esc(time)}</b><small>${esc(t('duo.time'))}</small></div><div><b>${errors}</b><small>${esc(t(errors === 1 ? 'duo.error1' : 'duo.errors'))}</small></div></div>
-      <a class="btn ghost" href="${back}&go=${Date.now()}">${esc(t('win.again'))}</a>
+      <a class="btn ghost" href="${replay.replace(/go=\d+/, `go=${Date.now()}`)}">${esc(t('win.again'))}</a>
       <a class="btn primary" href="#/jouer">${esc(t('play.title'))}</a></div>`;
     cheer(el.querySelector('.win-logo'));
   }

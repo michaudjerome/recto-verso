@@ -10,6 +10,7 @@ import { isInstalled, install } from '../notice.js';
 import { APP_VERSION } from '../version.js';
 import { esc, icon, toast, sheet, closeSheet } from '../ui.js';
 import { api } from '../api.js';
+import { LEVELS, courseLevel, setCourseLevel, levelName, levelSub } from '../levels.js';
 import { currentAccount, syncNow, syncState, pendingCount, signOut } from '../sync.js';
 
 const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
@@ -41,6 +42,10 @@ export async function render(el) {
     </div>
 
 
+    ${cur ? `<div class="set-label">${esc(t('lv.title', { lang: langName(cur.target) }))}</div>
+    <div class="seg wide lv-seg">${LEVELS.map((lv) => `<button data-lv="${lv}" class="${courseLevel(cur) === lv ? 'on' : ''}">${esc(levelName(lv))}<small>${esc(levelSub(lv, cur.target))}</small></button>`).join('')}</div>
+    <p class="hint small">${esc(t('lv.hint'))}</p>` : ''}
+
     <div class="set-label">${esc(t('courses.title'))}</div>
     <div class="course-list">${courses.map((c) => `<div class="course-row static">${flag(c.target, 'big')}<span><b>${esc(cap(langName(c.target)))}</b></span>
       <button class="mini-btn rm" data-id="${esc(c.id)}">${esc(t('courses.remove'))}</button></div>`).join('')}</div>
@@ -61,6 +66,11 @@ ${isInstalled() ? '' : `
   </div>`;
 
   bindAccount(el);
+  el.querySelectorAll('.lv-seg button').forEach((b) => b.onclick = async () => {
+    await setCourseLevel(cur, +b.dataset.lv);
+    toast(t('set.saved'));
+    render(el);
+  });
 
   const nm = el.querySelector('#nm');
   nm.onchange = async () => { await saveProfile({ name: nm.value.trim() }); toast(t('set.saved')); };

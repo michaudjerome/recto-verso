@@ -7,29 +7,20 @@ import { shuffle, requireCourse, topBar, emptyState } from '../play-kit.js';
 import { esc, flip, logo, toast, later } from '../ui.js';
 import { locale } from '../i18n.js';
 import { base } from '../langs.js';
+import { courseLevel, levelOf as lvOf, levelName } from '../levels.js';
 
-const RANK = { beginner: 0, A1: 1, A2: 2, B1: 3, B2: 4 };
-const levelOf = (n, course) => (course.target.startsWith('zh') ? `HSK${n.hsk || 9}` : n.cefr || 'B2');
-const LOT_MAX = 30, LOT_MIN = 8;
+const LOT_MAX = 30;
 let mode = 'one';
 try { mode = localStorage.getItem('rv-disc-mode') || 'one'; } catch { /* stockage indisponible */ }
 
-// Lots par thème : un petit thème reste entier ; un grand est coupé par niveau (1, 2, 3 et plus), puis en lots de 30 au plus
-function lotsOf(all, themes, zh) {
-  const tier = (n) => Math.min(zh ? n.hsk || 3 : RANK[n.cefr] ?? 3, 3) || 1;
-  const name = (k, merged) => (zh ? `HSK ${k}` : ['', 'A1', 'A2', 'B1'][k]) + (k === 3 || merged ? '+' : '');
+// Lots par thème, dans le niveau de la plateforme : un petit thème reste entier, un grand est coupé en lots de 30 au plus
+function lotsOf(all, themes) {
   const lots = [];
   for (const th of themes) {
     const items = all.filter((p) => p.n.theme === th.id);
     if (!items.length) continue;
-    if (items.length <= LOT_MAX) { lots.push({ th, label: '', items }); continue; }
-    let groups = [1, 2, 3].map((k) => ({ k, merged: false, items: items.filter((p) => tier(p.n) === k) })).filter((g) => g.items.length);
-    // Un niveau trop petit rejoint le niveau d'avant
-    for (let i = groups.length - 1; i > 0; i--) if (groups[i].items.length < LOT_MIN) { groups[i - 1].items.push(...groups[i].items); groups[i - 1].merged = true; groups.splice(i, 1); }
-    for (const g of groups) {
-      const parts = Math.ceil(g.items.length / LOT_MAX), size = Math.ceil(g.items.length / parts);
-      for (let i = 0; i < parts; i++) lots.push({ th, label: name(g.k, g.merged) + (parts > 1 ? ` · ${i + 1}/${parts}` : ''), items: g.items.slice(i * size, (i + 1) * size) });
-    }
+    const parts = Math.ceil(items.length / LOT_MAX), size = Math.ceil(items.length / parts);
+    for (let i = 0; i < parts; i++) lots.push({ th, label: parts > 1 ? `${i + 1}/${parts}` : '', items: items.slice(i * size, (i + 1) * size) });
   }
   return lots;
 }
@@ -48,17 +39,16 @@ export async function render(el) {
   if (!course) return;
   const have = new Set((await cardsOf(course.id)).map((c) => c.notion));
   const zh = course.target.startsWith('zh');
-  const rank = (lv) => (zh ? +String(lv).replace(/\D/g, '') || 0 : RANK[lv] ?? 9);
+  // Seulement les mots du niveau de la plateforme : pas de mots basiques quand on est en intermédiaire
+  const lvNow = courseLevel(course);
   const data = await notions(), all = [];
   for (const n of data.notions) {
+    if (lvOf(n, course.target) !== lvNow) continue;
     const txt = await cardText({ notion: n.id }, course);
-    if (txt.front?.w && txt.back?.w) all.push({ n, txt, r: rank(levelOf(n, course)) });
+    if (txt.front?.w && txt.back?.w) all.push({ n, txt });
   }
-  if (mode === 'theme') return renderLots(el, course, lotsOf(all, data.themes, zh), have, levelsOf(all, zh));
-  const pile = all.filter((p) => !have.has(p.n.id));
-  // Les mots du niveau choisi et des niveaux en dessous d'abord, dans un ordre varié
-  const mine = rank(course.level === 'beginner' ? (zh ? 'HSK1' : 'A1') : course.level);
-  const order = [...shuffle(pile.filter((p) => p.r <= mine)), ...shuffle(pile.filter((p) => p.r > mine)).sort((a, b) => a.r - b.r)];
+  if (mode === 'theme') return renderLots(el, course, lotsOf(all, data.themes), have, [{ label: levelName(lvNow), items: all, level: true }]);
+  const order = shuffle(all.filter((p) => !have.has(p.n.id)));
 
   if (!order.length) {
     el.innerHTML = `<div class="page">${topBar(t('disc.title'))}${segHTML()}${emptyState(t('disc.empty'), t('disc.emptyHint'), `<a class="btn primary" href="#/reviser">${esc(t('home.review'))}</a>`)}</div>`;
@@ -102,20 +92,13 @@ export async function render(el) {
   deal();
 }
 
-// Niveaux entiers (HSK 1, 2, 3+ ou A1, A2, B1+), proposés en tête de « Par thème »
-function levelsOf(all, zh) {
-  const tier = (n) => Math.min(zh ? n.hsk || 3 : RANK[n.cefr] ?? 3, 3) || 1;
-  return [1, 2, 3].map((k) => ({ label: (zh ? `HSK ${k}` : ['', 'A1', 'A2', 'B1'][k]) + (k === 3 ? '+' : ''), items: all.filter((p) => tier(p.n) === k), level: true }))
-    .filter((g) => g.items.length);
-}
-
 // Par thème : un toucher ajoute tout le lot (sauf les mots déjà pris) ; « Retirer » enlève le lot en deux touchers
 function renderLots(el, course, lots, have, levels) {
   const lang = base(locale());
   const thName = (th) => th.names?.[lang] || th.names?.fr || th.id;
   const groups = [...levels, ...lots];
   const row = (i) => `<div class="row lot" data-i="${i}"></div>`;
-  let html = `<div class="set-label">${esc(t('disc.byLevel'))}</div><div class="list lots levels">${levels.map((_, i) => row(i)).join('')}</div>`;
+  let html = `<div class="set-label">${esc(t('disc.levelHead'))}</div><div class="list lots levels">${levels.map((_, i) => row(i)).join('')}</div>`;
   let last = null;
   lots.forEach((lot, j) => {
     if (lot.th !== last) { html += `${last ? '</div>' : ''}<div class="set-label">${esc(thName(lot.th))}</div><div class="list lots">`; last = lot.th; }
@@ -127,7 +110,7 @@ function renderLots(el, course, lots, have, levels) {
   const paint = (r) => {
     const lot = groups[+r.dataset.i], k = lot.items.filter((p) => have.has(p.n.id)).length, n = lot.items.length;
     const sample = lot.items.slice(0, 4).map((p) => p.txt.front.w).join(', ');
-    const title = lot.level ? t('disc.levelAll', { l: lot.label, n }) : lot.label || t('disc.lotWords', { n });
+    const title = lot.level ? t('disc.levelAll', { l: lot.label, n }) : `${t('disc.lotWords', { n })}${lot.label ? ` · ${lot.label}` : ''}`;
     r.classList.toggle('full', k === n);
     r.innerHTML = `<span class="grow"><b>${esc(title)}</b><small>${esc(sample)}${n > 4 ? '…' : ''}</small>
       ${k ? `<small class="have">${esc(t('disc.lotHave', { k, n }))}</small>` : ''}</span>
