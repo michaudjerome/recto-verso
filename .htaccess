@@ -6,6 +6,7 @@ AddType application/manifest+json .webmanifest
 AddType font/woff2 .woff2
 # Modules JavaScript : sans ce type, le navigateur refuse ts-fsrs.mjs et l'app reste vide
 AddType text/javascript .js .mjs
+AddType image/webp .webp
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -33,7 +34,7 @@ Header set Cache-Control "no-cache"
 <FilesMatch "\.(js|css|json)$">
 Header set Cache-Control "public, max-age=604800"
 </FilesMatch>
-<FilesMatch "\.(svg|png|woff2|ico)$">
+<FilesMatch "\.(svg|png|webp|woff2|ico)$">
 Header set Cache-Control "public, max-age=2592000"
 </FilesMatch>
 <FilesMatch "^sw\.js$">
