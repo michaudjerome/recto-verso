@@ -1,0 +1,643 @@
+﻿langue;notion;avant;mot;précision;autres sens;doublon
+fr;bonjour-poli;bonjour (forme polie);bonjour;forme polie;;doublon
+fr;bonjour-matin;bonjour (le matin);bonjour;le matin;;doublon
+fr;pardon;pardon, désolé;pardon;;désolé;
+fr;s-il-vous-plait;"s'il vous plaît ; inviter";s'il vous plaît;;inviter;
+fr;etre;"être ; oui";être;;oui;
+fr;ne-pas;"ne… pas ; non";ne… pas;;non;doublon
+fr;famille;"famille ; maison";famille;;maison;doublon
+fr;fille-enfant;fille (enfant);fille;enfant;;doublon
+fr;grand-pere;grand-père (paternel);grand-père;paternel;;
+fr;grand-mere;grand-mère (paternelle);grand-mère;paternelle;;
+fr;ami;ami, amie;ami;;amie;
+fr;deux-devant-nom;deux (devant un nom);deux;devant un nom;;doublon
+fr;combien-petit;"combien ? ; quelques";combien ?;quelques;quelques;doublon
+fr;matin;matin (tôt);matin;tôt;;
+fr;mois;"mois ; lune";mois;;lune;
+fr;heure;heure (… heures);heure;… heures;;doublon
+fr;riz;riz (cuit);riz;cuit;;
+fr;plat;"plat ; légume";plat;;légume;
+fr;bon-a-manger;bon (à manger);bon;à manger;;doublon
+fr;restaurant;"restaurant ; hôtel";restaurant;;hôtel;
+fr;se-trouver;être à, se trouver;être à;;se trouver;
+fr;je;je, moi;je;;moi;
+fr;tu;tu, toi;tu;;toi;
+fr;il;il, lui;il;;lui;doublon
+fr;personne;personne, gens;personne;;gens;
+fr;eleve;élève, étudiant;élève;;étudiant;
+fr;nom;nom, prénom;nom;;prénom;
+fr;s-appeler;"s'appeler ; appeler";s'appeler;;appeler;
+fr;regarder;"regarder ; lire";regarder;;lire;
+fr;parler;parler, dire;parler;;dire;
+fr;lire-voix-haute;lire (à voix haute);lire;à voix haute;;
+fr;etudier;étudier, apprendre;étudier;apprendre;apprendre;doublon
+fr;travailler;"travailler ; travail";travailler;;travail;
+fr;s-asseoir;"s'asseoir ; prendre (un transport)";s'asseoir;;prendre (un transport);doublon
+fr;penser;"penser ; avoir envie de";penser;;avoir envie de;
+fr;vouloir;"vouloir ; falloir";vouloir;;falloir;
+fr;corps;"corps ; santé";corps;;santé;
+fr;maladie;"maladie ; être malade";maladie;;être malade;
+fr;piece;pièce, chambre;pièce;;chambre;
+fr;table;table, bureau;table;;bureau;
+fr;verre;verre, tasse;verre;;tasse;
+fr;chose;chose, objet;chose;;objet;
+fr;cuisine;cuisine (pièce);cuisine;pièce;;
+fr;porter;porter, mettre (un vêtement);porter;un vêtement;mettre;doublon
+fr;chapeau;chapeau, bonnet;chapeau;;bonnet;
+fr;vache;vache, bœuf;vache;;bœuf;
+fr;mouton;mouton, chèvre;mouton;;chèvre;
+fr;meteo;temps (météo);temps;météo;;doublon
+fr;beaucoup;beaucoup, nombreux;beaucoup;;nombreux;
+fr;haut;grand (taille), haut;grand;taille;haut;doublon
+fr;nouveau;nouveau, neuf;nouveau;;neuf;
+fr;vieux;vieux, usé;vieux;usé;usé;doublon
+fr;joli;joli, beau;joli;;beau;
+fr;content;content, heureux;content;;heureux;
+fr;morceau;"morceau ; yuan (à l'oral)";morceau;;yuan (à l'oral);
+fr;monnaie;monnaie (pièces);monnaie;pièces;;
+fr;demander;demander, poser une question;demander;;poser une question;doublon
+fr;connaitre;"connaître (qqn) ; reconnaître";connaître;qqn;reconnaître;
+fr;chinois-langue;chinois (langue);chinois;langue;;
+fr;caractere;caractère, mot écrit;caractère;;mot écrit;
+fr;s-amuser;s'amuser, jouer;s'amuser;;jouer;
+fr;voyager;"voyager ; tourisme";voyager;;tourisme;
+fr;sport;"sport ; faire du sport";sport;;faire du sport;
+fr;tous;"tous ; tout";tous;;tout;
+fr;encore;"encore ; aussi";encore;;aussi;
+fr;et;et (entre deux noms);et;entre deux noms;;
+fr;donc;donc, c'est pourquoi;donc;;c'est pourquoi;
+fr;pouvoir;pouvoir (permission);pouvoir;permission;;doublon
+fr;savoir-faire;"savoir faire ; (futur) aller faire";savoir faire;;(futur) aller faire;
+fr;ne-pas-avoir;"ne pas avoir ; il n'y a pas";ne pas avoir;;il n'y a pas;
+fr;avoir;"avoir ; il y a";avoir;;il y a;
+fr;descendre-vehicule;descendre (d'un véhicule);descendre;d'un véhicule;;
+fr;trouver-que;trouver (que);trouver;que;;doublon
+fr;voler;voler (dans les airs);voler;dans les airs;;
+fr;raconter;raconter, dire à;raconter;;dire à;
+fr;tout-en;tout en (faisant);tout en;faisant;;
+fr;heure-duree;heure (durée);heure;durée;;doublon
+fr;bon;bon, bien;bon;;bien;doublon
+fr;monter-vehicule;monter (dans un véhicule);monter;dans un véhicule;;doublon
+fr;tout-droit;"tout droit ; toujours";tout droit;;toujours;
+fr;desole-gene;désolé, je suis gêné;désolé;;je suis gêné;
+fr;ne-fais-pas;ne… pas (défense);ne… pas;défense;;doublon
+fr;taille-personne;taille (d'une personne);taille;d'une personne;;
+fr;lever-soulever;lever, soulever;lever;;soulever;
+fr;organiser-evenement;organiser (un événement);organiser;un événement;;
+fr;remettre;remettre, rendre;remettre;;rendre;
+fr;au-dessus-de;plus de, au-dessus de;plus de;;au-dessus de;
+fr;en-dessous-de;moins de, en dessous de;moins de;;en dessous de;
+fr;croire-a-tort;croire (à tort);croire;à tort;;doublon
+fr;avant;avant, autrefois;avant;;autrefois;
+fr;plus-tard;plus tard, ensuite;plus tard;;ensuite;
+fr;a-part;à part, sauf;à part;;sauf;
+fr;vous-pluriel;vous (pluriel);vous;pluriel;;doublon
+fr;signal;signal (réseau);signal;réseau;;
+fr;tomber;tomber, renverser;tomber;;renverser;doublon
+fr;emprunter-preter;"emprunter ; prêter";emprunter;;prêter;
+fr;faux-falsifie;faux (falsifié);faux;falsifié;;doublon
+fr;y-arriver;y arriver, réussir;y arriver;;réussir;
+fr;arreter;arrêter, s'arrêter;arrêter;;s'arrêter;
+fr;tout-entier;tout, entier;tout;;entier;
+fr;la-totalite;totalité, tout;totalité;;tout;
+fr;juste-equitable;juste, équitable;juste;;équitable;
+fr;eteindre;éteindre (un appareil);éteindre;un appareil;;
+fr;parmi-eux;parmi eux, dont;parmi eux;;dont;
+fr;elever-animal;élever (un animal);élever;un animal;;
+fr;exact-precis;exact, précis;exact;;précis;
+fr;sortir-dehors;sortir (dehors);sortir;dehors;;doublon
+fr;partir;partir (en route);partir;en route;;doublon
+fr;louer-a-quelqu-un;louer (à quelqu'un);louer;à quelqu'un;;doublon
+fr;note-scolaire;note (scolaire);note;scolaire;;
+fr;tout-a-l-heure;tout à l'heure (passé);tout à l'heure;passé;;
+fr;devant;"devant ; avant";devant;;avant;doublon
+fr;s-occuper-de;s'occuper de, faire;s'occuper de;;faire;doublon
+fr;bureau-piece;bureau (pièce);bureau;pièce;;
+fr;moyen-solution;le moyen, la solution;le moyen;;la solution;
+fr;ajouter;"ajouter ; plus";ajouter;;plus;
+fr;geste-mouvement;le geste, le mouvement;le geste;;le mouvement;
+fr;tres-tout-a-fait;tout à fait, très;tout à fait;;très;
+fr;demi;demi, et demie;demi;;et demie;
+fr;longtemps;"longtemps ; une demi-journée";longtemps;;une demi-journée;
+fr;occuper;occuper (une place);occuper;une place;;
+fr;raison-cause;la raison, la cause;la raison;la cause;la cause;doublon
+fr;en-fait;"en fait ; au départ";en fait;;au départ;
+fr;prendre-retirer;prendre, retirer;prendre;;retirer;doublon
+fr;possible-peut-etre;"possible ; peut-être";possible;;peut-être;
+fr;liste-de-noms;liste (de noms);liste;de noms;;
+fr;anniversaire-evenement;anniversaire (d'un événement);anniversaire;d'un événement;;doublon
+fr;nous-inclusif;nous (toi et moi);nous;toi et moi;;doublon
+fr;sonner;sonner, retentir;sonner;;retentir;
+fr;discuter-se-concerter;discuter, se concerter;discuter;se concerter;se concerter;doublon
+fr;rentrer;rentrer, retourner;rentrer;;retourner;
+fr;carte-geographique;carte (géographique);carte;géographique;;doublon
+fr;mauvais-casse;"mauvais ; cassé";mauvais;;cassé;
+fr;s-asseoir-se-poser;s'asseoir (bouger);s'asseoir;bouger;;doublon
+fr;son-voix;le son, la voix;le son;;la voix;
+fr;la-nuit;la nuit, pendant la nuit;la nuit;;pendant la nuit;
+fr;assez;assez, suffisant;assez;;suffisant;
+fr;taille-dimension;la taille, la dimension;la taille;;la dimension;
+fr;feminin;féminin, femme;féminin;;femme;
+fr;fille-eleve;fille (élève);fille;élève;;doublon
+fr;beau-joli;beau, joli;beau;;joli;
+fr;si-condition;si (condition);si;condition;;
+fr;faculte-institut;la faculté, l'institut;la faculté;;l'institut;
+fr;il-chose;il, elle (chose, animal);il;chose, animal;elle;doublon
+fr;calme;calme, silencieux;calme;;silencieux;
+fr;finir;finir, terminer;finir;;terminer;
+fr;accomplir;accomplir, achever;accomplir;;achever;
+fr;vraiment-franchement;vraiment, franchement;vraiment;franchement;franchement;doublon
+fr;realiser;réaliser (un rêve);réaliser;un rêve;;
+fr;reel;réel, concret;réel;;concret;
+fr;membre-de-la-famille;famille (les proches);famille;les proches;;doublon
+fr;parents-d-eleves;parents (d'élève);parents;d'élève;;
+fr;petit-enfant;enfant (petit);enfant;petit;;doublon
+fr;ans-age;… ans (âge);… ans;âge;;
+fr;presque;presque, à peu près;presque;;à peu près;
+fr;emporter;emporter, emmener;emporter;;emmener;
+fr;courant-usuel;courant, usuel;courant;;usuel;doublon
+fr;sante-trinquer;santé ! (trinquer);santé !;trinquer;;
+fr;classe-annee;classe (année scolaire);classe;année scolaire;;doublon
+fr;place-publique;place (publique);place;publique;;doublon
+fr;devoir-falloir;devoir (il faut);devoir;il faut;;
+fr;place-assise;place (assise);place;assise;;doublon
+fr;joyeux;joyeux, content;joyeux;;content;
+fr;allumer-appareil;allumer (un appareil);allumer;un appareil;;
+fr;a-l-epoque;à l'époque, alors;à l'époque;;alors;
+fr;recevoir-obtenir;recevoir, obtenir;recevoir;obtenir;obtenir;doublon
+fr;presse-urgent;pressé, urgent;pressé;;urgent;
+fr;vous-poli;vous (politesse);vous;politesse;;doublon
+fr;penser-a;penser à, avoir l'idée de;penser à;;avoir l'idée de;
+fr;sens;le sens, la signification;le sens;;la signification;
+fr;emouvoir;émouvoir, être ému;émouvoir;;être ému;
+fr;ou-bien;ou (bien);ou;bien;;doublon
+fr;prendre-en-main;prendre (en main);prendre;en main;;doublon
+fr;sortir-objet;sortir (un objet);sortir;un objet;;doublon
+fr;changer-echanger;changer, échanger;changer;échanger;échanger;doublon
+fr;tomber-objet;tomber (objet);tomber;objet;;doublon
+fr;aller-chercher;aller chercher (qqn);aller chercher;qqn;;
+fr;porter-a-la-main;porter (à la main);porter;à la main;;doublon
+fr;proposer;proposer, soulever;proposer;;soulever;
+fr;ameliorer;améliorer, augmenter;améliorer;;augmenter;
+fr;recevoir;recevoir, ranger;recevoir;ranger;ranger;doublon
+fr;corriger-modifier;modifier, corriger;modifier;;corriger;
+fr;poser;poser, mettre;poser;;mettre;
+fr;sortie-de-l-ecole;sortir de l'école (fin des cours);sortir de l'école;fin des cours;;
+fr;histoire-recit;histoire (récit);histoire;récit;;
+fr;chiffre-nombre;le chiffre, le nombre;le chiffre;;le nombre;
+fr;livre-poids;livre (500 g);livre;500 g;;
+fr;jour-date;jour (date);jour;date;;doublon
+fr;jours-vie;les jours, la vie;les jours;;la vie;
+fr;temps-duree;temps (durée);temps;durée;;doublon
+fr;saisir;saisir, comprendre clairement;saisir;;comprendre clairement;
+fr;tard;"tard ; le soir";tard;;le soir;
+fr;soiree;soirée (fête);soirée;fête;;
+fr;ensoleille;ensoleillé, dégagé;ensoleillé;;dégagé;
+fr;finalement;finalement, en dernier;finalement;;en dernier;
+fr;le-mieux;le mieux, mieux vaut;le mieux;;mieux vaut;
+fr;recemment;récemment, ces temps-ci;récemment;;ces temps-ci;
+fr;un-peu-trop;un peu (trop);un peu;trop;;doublon
+fr;verifier-chercher;vérifier, chercher (une info);vérifier;une info;chercher;
+fr;directeur-ecole;directeur (d'école);directeur;d'école;;
+fr;controler;contrôler, examiner;contrôler;;examiner;
+fr;en-haut-etage;en haut (à l'étage);en haut;à l'étage;;
+fr;en-bas-etage;en bas (au rez-de-chaussée);en bas;au rez-de-chaussée;;
+fr;justement;justement, pile;justement;;pile;
+fr;temperature-air;température (de l'air);température;de l'air;;doublon
+fr;demander-supplier;demander (une faveur);demander;une faveur;;doublon
+fr;ce-n-est-rien-ca-va;ce n'est rien, ça va;ce n'est rien;ça va;ça va;doublon
+fr;prendre-une-douche;prendre un bain, une douche;prendre un bain;;une douche;
+fr;couramment;courant (langue);courant;langue;;doublon
+fr;clair;clair, net;clair;;net;
+fr;puis;puis, ensuite;puis;;ensuite;
+fr;s-occuper-de-qqn;s'occuper de (qqn);s'occuper de;qqn;;doublon
+fr;mur-cuit;"mûr ; cuit";mûr;;cuit;
+fr;grimper;grimper, ramper;grimper;;ramper;
+fr;loisir-passion;le loisir, la passion;le loisir;;la passion;
+fr;classe-groupe;classe (groupe d'élèves);classe;groupe d'élèves;;doublon
+fr;vie-quotidienne;vie (quotidienne);vie;quotidienne;;
+fr;masculin;masculin, homme;masculin;;homme;
+fr;garcon-eleve;garçon (élève);garçon;élève;;
+fr;dessiner;dessiner, peindre;dessiner;;peindre;
+fr;dessin-tableau;le dessin, le tableau;le dessin;;le tableau;
+fr;rester-laisser;"rester ; laisser";rester;;laisser;
+fr;croire;croire (qqn, en);croire;qqn, en;;doublon
+fr;toucher-heurter;toucher, heurter;toucher;;heurter;
+fr;croiser-qqn;croiser (qqn);croiser;qqn;;
+fr;billet;le billet, le ticket;le billet;;le ticket;
+fr;loin-de;loin de (distance);loin de;distance;;
+fr;quitter;quitter, partir;quitter;;partir;
+fr;louer;louer (prendre en location);louer;prendre en location;;doublon
+fr;se-tenir-debout;"être debout ; la station";être debout;;la station;
+fr;rire-sourire;rire, sourire;rire;;sourire;
+fr;notes;notes (de cours);notes;de cours;;
+fr;carnet-portable;"le carnet ; l'ordinateur portable";le carnet;;l'ordinateur portable;
+fr;egaler;égaler (=);égaler;=;;
+fr;accepter-promettre;accepter, promettre;accepter;promettre;promettre;doublon
+fr;riz-cru;"le riz (cru) ; le mètre";le riz;cru;le mètre;
+fr;s-exercer;"s'exercer ; l'exercice";s'exercer;;l'exercice;
+fr;composer;composer, former;composer;;former;
+fr;directeur-manager;le directeur, le manager;le directeur;;le manager;
+fr;donner;"donner ; pour";donner;;pour;
+fr;vieux-age;vieux, âgé;vieux;âgé;âgé;doublon
+fr;candidat;candidat (examen);candidat;examen;;
+fr;en-plus;en plus, de plus;en plus;;de plus;
+fr;pouvoir-capacite;pouvoir (être capable de);pouvoir;être capable de;;doublon
+fr;confortable;confortable, bien;confortable;;bien;
+fr;menu;le menu, la carte;le menu;;la carte;
+fr;exiger;exiger, demander;exiger;;demander;
+fr;rencontrer-voir;voir (qqn), rencontrer;voir;qqn;rencontrer;doublon
+fr;projet-plan;le projet, le plan;le projet;;le plan;
+fr;penser-estimer;estimer, penser;estimer;;penser;
+fr;serieux-applique;sérieux, appliqué;sérieux;;appliqué;
+fr;laisser-faire;laisser, faire (faire);laisser;faire;faire;
+fr;retenir;retenir (par cœur);retenir;par cœur;;
+fr;expliquer;expliquer, raconter;expliquer;raconter;raconter;doublon
+fr;langue-langage;la langue, le langage;la langue;;le langage;
+fr;expliquer-preciser;expliquer, préciser;expliquer;préciser;préciser;doublon
+fr;inviter-payer;inviter (payer pour les autres);inviter;payer pour les autres;;
+fr;etudier-lire;étudier, lire;étudier;lire;lire;doublon
+fr;texte-lecon;texte (de la leçon);texte;de la leçon;;
+fr;partir-s-en-aller;partir, s'en aller;partir;;s'en aller;doublon
+fr;se-lever-du-lit;se lever (du lit);se lever;du lit;;
+fr;chemin-route;le chemin, la route;le chemin;;la route;
+fr;billet-train-bus;billet (de train, de bus);billet;de train, de bus;;
+fr;arret-station;l'arrêt (de bus), la station;l'arrêt;de bus;la station;
+fr;bord;le bord, le côté;le bord;;le côté;
+fr;venir-par-ici;venir (par ici);venir;par ici;;doublon
+fr;proche;proche, près;proche;;près;
+fr;ou-bien-question;ou (dans une question);ou;dans une question;;doublon
+fr;et-aussi;et aussi, en plus;et aussi;;en plus;
+fr;ce-ceci;ce, ceci;ce;;ceci;
+fr;tellement;tellement, si;tellement;;si;
+fr;ainsi;ainsi, comme ça;ainsi;;comme ça;
+fr;entrer-par-ici;entrer (vers ici);entrer;vers ici;;doublon
+fr;offrir-raccompagner;"offrir ; raccompagner";offrir;;raccompagner;
+fr;prevenir-avis;prévenir, informer;prévenir;;informer;
+fr;reussir-passer;"réussir (un examen) ; passer par";réussir;un examen;passer par;
+fr;raison-logique;la raison, la logique;la raison;la logique;la logique;doublon
+fr;alors-comme-ca;"alors ; si, tellement";alors;;si, tellement;
+fr;comme-ca;comme ça, de cette façon;comme ça;;de cette façon;
+fr;erreur-faux;"faux, erroné ; l'erreur";faux;erroné;erroné | l'erreur;doublon
+fr;entree-pas-de-porte;entrée (devant la porte);entrée;devant la porte;;doublon
+fr;question-probleme;la question, le problème;la question;;le problème;
+fr;sentir-odeur;sentir (une odeur);sentir;une odeur;;
+fr;capitaine;capitaine (d'équipe);capitaine;d'équipe;;
+fr;couvert-temps;couvert (temps);couvert;temps;;
+fr;se-sentir-mal;mal (se sentir mal);mal;se sentir mal;;
+fr;devant-qqn;devant (qqn);devant;qqn;;doublon
+fr;monter-a-cheval-velo;monter (à vélo, à cheval);monter;à vélo, à cheval;;doublon
+fr;avance-superieur;supérieur, avancé;supérieur;;avancé;
+fr;tableau-noir;tableau (noir);tableau;noir;;
+en;bonjour-poli;hello (polite);hello;polite;;doublon
+en;s-il-vous-plait;"please; to invite";please;;to invite;
+en;etre;"to be; yes";to be;;yes;
+en;ne-pas;"not; no";not;;no;
+en;famille;"family; home";family;;home;
+en;grand-pere;grandfather (paternal);grandfather;paternal;;
+en;grand-mere;grandmother (paternal);grandmother;paternal;;
+en;deux-devant-nom;two (before a noun);two;before a noun;;doublon
+en;combien-petit;"how many?; a few";how many?;;a few;
+en;mois;"month; moon";month;;moon;
+en;plat;"dish; vegetable";dish;;vegetable;
+en;restaurant;"restaurant; hotel";restaurant;;hotel;
+en;je;I, me;I;;me;
+en;il;he, him;he;;him;
+en;elle;she, her;she;;her;
+en;nous;we, us;we;;us;doublon
+en;personne;person, people;person;;people;
+en;s-appeler;"to be called; to call";to be called;;to call;
+en;combien;how much?, how many?;how much?;;how many?;
+en;faire;to do, to make;to do;;to make;
+en;regarder;"to look, to watch; to read";to look;;to watch | to read;
+en;parler;to speak, to say;to speak;;to say;
+en;lire-voix-haute;to read (aloud);to read;aloud;;
+en;etudier;to study, to learn;to study;to learn;to learn;doublon
+en;travailler;"to work; job";to work;;job;
+en;s-asseoir;"to sit; to take (transport)";to sit;;to take (transport);
+en;penser;"to think; to want to";to think;to want to;to want to;doublon
+en;vouloir;"to want; must";to want;;must;
+en;corps;"body; health";body;;health;
+en;maladie;"illness; to be ill";illness;;to be ill;
+en;table;table, desk;table;;desk;
+en;verre;glass, cup;glass;;cup;
+en;porter;to wear, to put on;to wear;;to put on;
+en;chapeau;hat, cap;hat;;cap;
+en;vache;cow, ox;cow;;ox;
+en;mouton;sheep, goat;sheep;;goat;
+en;beaucoup;many, much;many;;much;
+en;peu;few, little;few;;little;
+en;haut;tall, high;tall;;high;
+en;vieux;old, worn;old;worn;worn;doublon
+en;joli;pretty, beautiful;pretty;;beautiful;
+en;content;happy, glad;happy;glad;glad;doublon
+en;morceau;"piece; yuan (spoken)";piece;;yuan (spoken);
+en;monnaie;change (coins);change;coins;;
+en;connaitre;"to know (someone); to recognise";to know;someone;to recognise;doublon
+en;chinois-langue;Chinese (language);Chinese;language;;
+en;caractere;character, written word;character;;written word;
+en;s-amuser;to play, to have fun;to play;;to have fun;
+en;voyager;"to travel; tourism";to travel;;tourism;
+en;sport;"sport; to exercise";sport;;to exercise;
+en;aussi;also, too;also;too;too;doublon
+en;encore;"still; also";still;;also;
+en;et;and (between nouns);and;between nouns;;
+en;donc;so, therefore;so;;therefore;doublon
+en;pouvoir;can, may;can;;may;doublon
+en;savoir-faire;"can (know how to); will";can;know how to;will;doublon
+en;ne-pas-avoir;"not to have; there is not";not to have;;there is not;
+en;avoir;"to have; there is";to have;;there is;
+en;elles;they (women);they;women;;doublon
+en;monsieur;"Mr; sir";Mr;;sir;
+en;trouver-que;to feel (that);to feel;that;;doublon
+en;baozi;bao (steamed bun);bao;steamed bun;;
+en;billet-entree;ticket (admission);ticket;admission;;doublon
+en;tout-en;while (doing);while;doing;;
+en;tout-droit;"straight on; all along";straight on;;all along;
+en;desole-gene;sorry, I'm embarrassed;sorry;I'm embarrassed;I'm embarrassed;doublon
+en;taille-personne;height (of a person);height;of a person;;
+en;organiser-evenement;to hold (an event);to hold;an event;;
+en;au-dessus-de;over, above;over;;above;
+en;en-dessous-de;under, below;under;;below;
+en;croire-a-tort;to think (wrongly);to think;wrongly;;doublon
+en;habiter;to live (somewhere);to live;somewhere;;
+en;vous-pluriel;you (plural);you;plural;;doublon
+en;emprunter-preter;"to borrow; to lend";to borrow;;to lend;
+en;y-arriver;to manage (to do);to manage;to do;;
+en;elever-animal;to raise (an animal);to raise;an animal;;
+en;sortir-de-chez-soi;to go out (of the house);to go out;of the house;;doublon
+en;note-scolaire;mark (grade);mark;grade;;
+en;d-autre;other, else;other;else;else;doublon
+en;devant;"in front; before";in front;;before;
+en;moyen-solution;way, solution;way;;solution;
+en;ajouter;"to add; plus";to add;;plus;
+en;tres-tout-a-fait;completely, very;completely;very;very;doublon
+en;longtemps;"a long time; half a day";a long time;;half a day;
+en;raison-cause;reason, cause;reason;cause;cause;doublon
+en;en-fait;"so actually; originally";so actually;;originally;
+en;visiter;to visit (a place);to visit;a place;;
+en;prendre-retirer;to take, to collect;to take;to collect;to collect;doublon
+en;possible-peut-etre;"possible; maybe";possible;;maybe;
+en;entendre-dire;to hear (that);to hear;that;;doublon
+en;nous-inclusif;we (including you);we;including you;;doublon
+en;mauvais-casse;"bad; broken";bad;;broken;
+en;son-voix;sound, voice;sound;;voice;
+en;fille-eleve;girl (student);girl;student;;
+en;faculte-institut;college, institute;college;;institute;
+en;realiser;to realize (a dream);to realize;a dream;;
+en;etage;floor (storey);floor;storey;;
+en;emporter;to take (along);to take;along;;doublon
+en;classe-annee;school year, grade;school year;;grade;
+en;presse-urgent;"urgent; in a hurry";urgent;;in a hurry;
+en;vous-poli;you (polite);you;polite;;doublon
+en;emouvoir;to move (emotionally);to move;emotionally;;doublon
+en;resultats-notes;results, grades;results;;grades;
+en;prendre-en-main;to take, to hold;to take;to hold;to hold;doublon
+en;changer-echanger;to change, to exchange;to change;to exchange;to exchange;doublon
+en;aller-chercher;to pick up (someone);to pick up;someone;;
+en;porter-a-la-main;to carry (in the hand);to carry;in the hand;;
+en;corriger-modifier;to change, to correct;to change;to correct;to correct;doublon
+en;sortie-de-l-ecole;to finish school (for the day);to finish school;for the day;;
+en;chiffre-nombre;number, digit;number;;digit;
+en;livre-poids;jin (half a kilo);jin;half a kilo;;
+en;jour-date;day (date);day;date;;doublon
+en;jours-vie;days, life;days;;life;
+en;moment;time, moment;time;moment;moment;doublon
+en;star;star (celebrity);star;celebrity;;doublon
+en;saisir;to get it, to understand;to get it;;to understand;
+en;ensoleille;sunny, clear;sunny;;clear;
+en;le-mieux;best, had better;best;;had better;
+en;occasion-chance;chance, opportunity;chance;;opportunity;
+en;verifier-chercher;to check, to look up;to check;to look up;to look up;doublon
+en;fois;time (occurrence);time;occurrence;;doublon
+en;en-train-de;in the middle of (doing);in the middle of;doing;;
+en;populaire-a-la-mode;popular, trendy;popular;;trendy;
+en;lampe;lamp, light;lamp;;light;
+en;chaleureux;warm, enthusiastic;warm;;enthusiastic;
+en;mur-cuit;"ripe; cooked";ripe;;cooked;
+en;grimper;to climb, to crawl;to climb;;to crawl;
+en;classe-groupe;class (group);class;group;;doublon
+en;ideal-reve;ideal, dream;ideal;;dream;
+en;garcon-eleve;boy (student);boy;student;;
+en;dessin-tableau;picture, painting;picture;painting;painting;doublon
+en;rester-laisser;"to stay; to leave (sth)";to stay;;to leave (sth);
+en;point-de-vue;view, opinion;view;;opinion;
+en;veritable;real, genuine;real;;genuine;
+en;toucher-heurter;to touch, to bump;to touch;;to bump;
+en;loin-de;from (distance);from;distance;;
+en;se-tenir-debout;"to stand; station";to stand;;station;
+en;rire-sourire;to laugh, to smile;to laugh;;to smile;
+en;carnet-portable;"notebook; laptop";notebook;laptop;laptop;doublon
+en;accepter-promettre;to agree, to promise;to agree;;to promise;
+en;riz-cru;"rice (uncooked); metre";rice;uncooked;metre;
+en;s-exercer;"to practise; exercise";to practise;;exercise;
+en;donner;"to give; for";to give;for;for;doublon
+en;dos-porter-sur-le-dos;back (body);back;body;;
+en;pouvoir-capacite;can (be able to);can;be able to;;doublon
+en;fete;festival, holiday;festival;;holiday;
+en;emission;programme (TV);programme;TV;;
+en;comprime;tablet (pill);tablet;pill;;
+en;rencontrer-voir;to see (someone);to see;someone;;doublon
+en;penser-estimer;to think, to consider;to think;to consider;to consider;doublon
+en;paroles;words (spoken);words;spoken;;
+en;inviter-payer;to treat (someone);to treat;someone;;
+en;texte-lecon;text (of a lesson);text;of a lesson;;
+en;partir-s-en-aller;to leave, to go;to leave;to go;to go;doublon
+en;chemin-route;road, way;road;way;way;doublon
+en;billet-train-bus;ticket (train, bus);ticket;train, bus;;doublon
+en;arret-station;stop, station;stop;;station;
+en;leger;light (weight);light;weight;;
+en;bord;side, edge;side;;edge;
+en;ou-bien-question;or (in a question);or;in a question;;doublon
+en;et-aussi;also, and;also;and;and;doublon
+en;tellement;so (this much);so;this much;;doublon
+en;offrir-raccompagner;"to give; to see off";to give;to see off;to see off;doublon
+en;raison-logique;reason, sense;reason;sense;sense;doublon
+en;alors-comme-ca;"then; so";then;so;so;doublon
+en;erreur-faux;"wrong; mistake";wrong;mistake;mistake;doublon
+en;question-probleme;question, problem;question;;problem;
+en;se-sentir-mal;unwell, upset;unwell;;upset;
+en;rassasie;full (after eating);full;after eating;;doublon
+es;ne-fais-pas;no (prohibición);no;prohibición;;doublon
+es;croire-a-tort;creer (equivocadamente);creer;equivocadamente;;doublon
+es;mauvais-casse;"malo; roto";malo;;roto;
+es;avoir-l-intention;pensar (hacer);pensar;hacer;;doublon
+es;loin-de;de (distancia);de;distancia;;
+es;pouvoir-capacite;poder (ser capaz);poder;ser capaz;;doublon
+es;offrir-raccompagner;"regalar; acompañar";regalar;;acompañar;
+es;question-probleme;la pregunta, el problema;la pregunta;;el problema;
+es;bonjour-poli;buenos días (formal);buenos días;formal;;doublon
+es;pardon;perdón, lo siento;perdón;;lo siento;
+es;s-il-vous-plait;"por favor ; invitar";por favor;;invitar;
+es;etre;"ser ; sí";ser;;sí;
+es;famille;"la familia ; la casa";la familia;;la casa;
+es;grand-pere;abuelo (paterno);abuelo;paterno;;
+es;grand-mere;abuela (paterna);abuela;paterna;;
+es;ami;el amigo, la amiga;el amigo;;la amiga;
+es;deux-devant-nom;dos (delante de un nombre);dos;delante de un nombre;;doublon
+es;combien-petit;"¿cuántos? ; unos";¿cuántos?;;unos;
+es;matin;mañana (temprano);mañana;temprano;;doublon
+es;mois;"el mes ; la luna";el mes;;la luna;
+es;heure;hora (… horas);hora;… horas;;doublon
+es;riz;arroz (cocido);arroz;cocido;;doublon
+es;plat;"el plato ; la verdura";el plato;;la verdura;
+es;restaurant;"el restaurante ; el hotel";el restaurante;;el hotel;
+es;personne;la persona, la gente;la persona;;la gente;
+es;eleve;el alumno, el estudiante;el alumno;;el estudiante;
+es;s-appeler;"llamarse ; llamar";llamarse;;llamar;
+es;regarder;"mirar ; leer";mirar;;leer;
+es;parler;hablar, decir;hablar;;decir;
+es;lire-voix-haute;leer (en voz alta);leer;en voz alta;;
+es;etudier;estudiar, aprender;estudiar;aprender;aprender;doublon
+es;travailler;"trabajar ; el trabajo";trabajar;;el trabajo;
+es;s-asseoir;"sentarse ; tomar (un transporte)";sentarse;tomar (un transporte);tomar (un transporte);doublon
+es;penser;"pensar ; tener ganas de";pensar;;tener ganas de;doublon
+es;vouloir;"querer ; tener que";querer;;tener que;
+es;corps;"el cuerpo ; la salud";el cuerpo;;la salud;
+es;maladie;"enfermedad ; estar enfermo";enfermedad;;estar enfermo;
+es;table;la mesa, el escritorio;la mesa;;el escritorio;
+es;verre;el vaso, la taza;el vaso;;la taza;
+es;porter;llevar, ponerse (ropa);llevar;ropa;ponerse;doublon
+es;chapeau;el sombrero, el gorro;el sombrero;;el gorro;
+es;vache;la vaca, el buey;la vaca;;el buey;
+es;mouton;la oveja, la cabra;la oveja;;la cabra;
+es;meteo;tiempo (meteorología);tiempo;meteorología;;doublon
+es;chaud;caliente, caluroso;caliente;;caluroso;
+es;vieux;viejo, usado;viejo;usado;usado;doublon
+es;content;contento, feliz;contento;feliz;feliz;doublon
+es;morceau;"trozo ; yuan (oral)";trozo;;yuan (oral);
+es;monnaie;cambio (monedas);cambio;monedas;;
+es;connaitre;"conocer ; reconocer";conocer;;reconocer;
+es;chinois-langue;chino (idioma);chino;idioma;;
+es;caractere;el carácter, la palabra escrita;el carácter;;la palabra escrita;
+es;s-amuser;divertirse, jugar;divertirse;;jugar;
+es;voyager;"viajar ; el turismo";viajar;;el turismo;
+es;sport;"deporte ; hacer deporte";deporte;;hacer deporte;
+es;tous;"todos ; todo";todos;todo;todo;doublon
+es;encore;"todavía ; también";todavía;;también;
+es;et;y (entre dos nombres);y;entre dos nombres;;
+es;donc;así que, por eso;así que;;por eso;
+es;pouvoir;poder (permiso);poder;permiso;;doublon
+es;savoir-faire;"saber hacer ; ir a (futuro)";saber hacer;;ir a (futuro);
+es;ne-pas-avoir;"no tener ; no hay";no tener;;no hay;
+es;avoir;"tener ; hay";tener;;hay;
+it;elles;loro (donne);loro;donne;;doublon
+it;ne-fais-pas;non (divieto);non;divieto;;doublon
+it;croire-a-tort;credere (a torto);credere;a torto;;doublon
+it;mauvais-casse;"cattivo; rotto";cattivo;;rotto;
+it;bord-de-mer;mare (la riva);mare;la riva;;doublon
+it;loin-de;da (distanza);da;distanza;;
+it;offrir-raccompagner;"regalare; accompagnare";regalare;;accompagnare;
+it;question-probleme;la domanda, il problema;la domanda;;il problema;
+it;monter-a-cheval-velo;andare (in bici, a cavallo);andare;in bici, a cavallo;;doublon
+it;bonjour-poli;buongiorno (formale);buongiorno;formale;;doublon
+it;s-il-vous-plait;"per favore ; invitare";per favore;;invitare;
+it;etre;"essere ; sì";essere;;sì;
+it;famille;"la famiglia ; la casa";la famiglia;;la casa;
+it;grand-pere;nonno (paterno);nonno;paterno;;
+it;grand-mere;nonna (paterna);nonna;paterna;;
+it;ami;l'amico, l'amica;l'amico;;l'amica;
+it;deux-devant-nom;due (davanti a un nome);due;davanti a un nome;;doublon
+it;combien-petit;"quanti? ; alcuni";quanti?;;alcuni;
+it;mois;"il mese ; la luna";il mese;;la luna;
+it;heure;ora (le … );ora;le …;;doublon
+it;riz;riso (cotto);riso;cotto;;doublon
+it;plat;"il piatto ; la verdura";il piatto;;la verdura;
+it;bon-a-manger;buono (da mangiare);buono;da mangiare;;doublon
+it;restaurant;"il ristorante ; l'hotel";il ristorante;;l'hotel;
+it;personne;la persona, la gente;la persona;;la gente;
+it;s-appeler;"chiamarsi ; chiamare";chiamarsi;;chiamare;
+it;regarder;"guardare ; leggere";guardare;;leggere;
+it;parler;parlare, dire;parlare;;dire;
+it;lire-voix-haute;leggere (ad alta voce);leggere;ad alta voce;;
+it;etudier;studiare, imparare;studiare;imparare;imparare;doublon
+it;travailler;"lavorare ; il lavoro";lavorare;;il lavoro;
+it;s-asseoir;"sedersi ; prendere (un mezzo)";sedersi;prendere (un mezzo);prendere (un mezzo);doublon
+it;penser;"pensare ; avere voglia di";pensare;avere voglia di;avere voglia di;doublon
+it;vouloir;"volere ; dovere";volere;;dovere;
+it;corps;"il corpo ; la salute";il corpo;;la salute;
+it;maladie;"malattia ; essere malato";malattia;;essere malato;
+it;table;il tavolo, la scrivania;il tavolo;;la scrivania;
+it;verre;il bicchiere, la tazza;il bicchiere;;la tazza;
+it;porter;indossare, mettersi;indossare;;mettersi;
+it;vache;la mucca, il bue;la mucca;;il bue;
+it;mouton;la pecora, la capra;la pecora;;la capra;
+it;meteo;tempo (meteo);tempo;meteo;;doublon
+it;vieux;vecchio, usato;vecchio;usato;usato;doublon
+it;content;contento, felice;contento;felice;felice;doublon
+it;morceau;"pezzo ; yuan (parlato)";pezzo;;yuan (parlato);
+it;connaitre;"conoscere ; riconoscere";conoscere;;riconoscere;
+it;chinois-langue;cinese (lingua);cinese;lingua;;
+it;s-amuser;divertirsi, giocare;divertirsi;;giocare;
+it;voyager;"viaggiare ; il turismo";viaggiare;;il turismo;
+it;sport;"sport ; fare sport";sport;;fare sport;
+it;tous;"tutti ; tutto";tutti;tutto;tutto;doublon
+it;encore;"ancora ; anche";ancora;;anche;
+it;et;e (tra due nomi);e;tra due nomi;;
+it;pouvoir;potere (permesso);potere;permesso;;
+it;savoir-faire;"sapere fare ; stare per";sapere fare;;stare per;
+it;ne-pas-avoir;"non avere ; non c'è";non avere;;non c'è;
+it;avoir;"avere ; c'è";avere;;c'è;
+de;elles;sie (Frauen);sie;Frauen;;doublon
+de;ne-fais-pas;nicht (Verbot);nicht;Verbot;;doublon
+de;croire-a-tort;glauben (fälschlich);glauben;fälschlich;;doublon
+de;elever-animal;halten (Tiere);halten;Tiere;;
+de;entendre;hören (vernehmen);hören;vernehmen;;doublon
+de;entendre-dire;hören, dass;hören;dass;dass;doublon
+de;mauvais-casse;"schlecht; kaputt";schlecht;;kaputt;
+de;jour-date;Tag (Datum);Tag;Datum;;doublon
+de;dessin-tableau;Bild (Gemälde);Bild;Gemälde;;doublon
+de;pouvoir-capacite;können (fähig sein);können;fähig sein;;doublon
+de;etudier-lire;lernen, lesen;lernen;lesen;lesen;doublon
+de;billet-train-bus;Fahrkarte (Zug, Bus);Fahrkarte;Zug, Bus;;doublon
+de;offrir-raccompagner;"schenken; begleiten";schenken;;begleiten;
+de;repeter;wiederholen (sagen);wiederholen;sagen;;doublon
+de;entree-pas-de-porte;Eingang (an der Tür);Eingang;an der Tür;;doublon
+de;question-probleme;die Frage, das Problem;die Frage;;das Problem;
+de;monter-a-cheval-velo;reiten, fahren;reiten;;fahren;
+de;bonjour-poli;guten Tag (höflich);guten Tag;höflich;;
+de;s-il-vous-plait;"bitte ; einladen";bitte;;einladen;
+de;etre;"sein ; ja";sein;;ja;
+de;ne-pas;"nicht ; nein";nicht;;nein;doublon
+de;famille;"die Familie ; das Zuhause";die Familie;;das Zuhause;
+de;grand-pere;Großvater (väterlicherseits);Großvater;väterlicherseits;;
+de;grand-mere;Großmutter (väterlicherseits);Großmutter;väterlicherseits;;
+de;ami;der Freund, die Freundin;der Freund;;die Freundin;
+de;deux-devant-nom;zwei (vor einem Nomen);zwei;vor einem Nomen;;doublon
+de;combien-petit;"wie viele? ; einige";wie viele?;;einige;
+de;mois;"der Monat ; der Mond";der Monat;;der Mond;
+de;heure;Uhr (… Uhr);Uhr;… Uhr;;
+de;riz;Reis (gekocht);Reis;gekocht;;doublon
+de;plat;"das Gericht ; das Gemüse";das Gericht;;das Gemüse;
+de;restaurant;"das Restaurant ; das Hotel";das Restaurant;;das Hotel;
+de;personne;der Mensch, die Leute;der Mensch;;die Leute;
+de;eleve;der Schüler, der Student;der Schüler;;der Student;
+de;s-appeler;"heißen ; rufen";heißen;;rufen;
+de;regarder;"schauen ; lesen";schauen;;lesen;
+de;parler;sprechen, sagen;sprechen;;sagen;
+de;lire-voix-haute;(laut) lesen;lesen;laut;;
+de;travailler;"arbeiten ; die Arbeit";arbeiten;;die Arbeit;
+de;s-asseoir;"sich setzen ; fahren mit";sich setzen;;fahren mit;
+de;penser;"denken ; Lust haben";denken;;Lust haben;
+de;vouloir;"wollen ; müssen";wollen;;müssen;
+de;corps;"der Körper ; die Gesundheit";der Körper;;die Gesundheit;
+de;maladie;"Krankheit ; krank sein";Krankheit;;krank sein;
+de;verre;das Glas, die Tasse;das Glas;;die Tasse;
+de;chose;die Sache, das Ding;die Sache;;das Ding;
+de;porter;tragen, anziehen;tragen;anziehen;anziehen;doublon
+de;chapeau;der Hut, die Mütze;der Hut;;die Mütze;
+de;vache;die Kuh, der Ochse;die Kuh;;der Ochse;
+de;mouton;das Schaf, die Ziege;das Schaf;;die Ziege;
+de;haut;hoch, groß;hoch;;groß;
+de;morceau;"Stück ; Yuan (mündlich)";Stück;;Yuan (mündlich);
+de;connaitre;"kennen ; erkennen";kennen;;erkennen;
+de;s-amuser;spielen, Spaß haben;spielen;;Spaß haben;
+de;voyager;"reisen ; der Tourismus";reisen;;der Tourismus;
+de;sport;"Sport ; Sport treiben";Sport;;Sport treiben;
+de;tous;"alle ; alles";alle;alles;alles;doublon
+de;encore;"noch ; auch";noch;;auch;
+de;et;und (zwischen Nomen);und;zwischen Nomen;;
+de;pouvoir;dürfen, können;dürfen;;können;
+de;savoir-faire;"können ; werden";können;;werden;doublon
+de;ne-pas-avoir;"nicht haben ; es gibt nicht";nicht haben;;es gibt nicht;
+de;avoir;"haben ; es gibt";haben;;es gibt;

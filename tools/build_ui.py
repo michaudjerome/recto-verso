@@ -360,6 +360,48 @@ T.update({
  'move.install':['Pense à supprimer l\'ancienne icône de ton écran d\'accueil et à installer la nouvelle.', 'Remember to remove the old icon from your home screen and install the new one.', 'Recuerda quitar el icono antiguo de tu pantalla de inicio e instalar el nuevo.', 'Ricordati di togliere la vecchia icona dalla schermata Home e di installare la nuova.', 'Lembra-te de retirar o ícone antigo do ecrã principal e de instalar o novo.', 'Denk daran, das alte Symbol vom Startbildschirm zu entfernen und das neue zu installieren.', '记得删除主屏幕上的旧图标，并安装新的。'],
 })
 
+# 0.12.0 : Duo, Découvrir par niveau, Progrès, signalements, lancement, installation
+T.update({
+ 'card.also':      ['aussi : {w}', 'also: {w}', 'también: {w}', 'anche: {w}', 'também: {w}', 'auch: {w}', '也指：{w}'],
+ 'disc.byLevel':   ['Par niveau', 'By level', 'Por nivel', 'Per livello', 'Por nível', 'Nach Niveau', '按级别'],
+ 'disc.levelAll':  ['Tout le niveau {l} · {n} mots', 'Whole level {l} · {n} words', 'Todo el nivel {l} · {n} palabras', 'Tutto il livello {l} · {n} parole', 'Todo o nível {l} · {n} palavras', 'Ganzes Niveau {l} · {n} Wörter', '{l} 全部 · {n} 个词'],
+ 'disc.remove':    ['Retirer', 'Remove', 'Quitar', 'Togli', 'Retirar', 'Entfernen', '移除'],
+ 'disc.removeConfirm':['Retirer {n} ? Touche encore', 'Remove {n}? Tap again', '¿Quitar {n}? Toca otra vez', 'Togliere {n}? Tocca ancora', 'Retirar {n}? Toca outra vez', '{n} entfernen? Nochmal tippen', '移除 {n} 个？再点一次'],
+ 'disc.removed':   ['{n} cartes retirées', '{n} cards removed', '{n} cartas quitadas', '{n} carte tolte', '{n} cartas retiradas', '{n} Karten entfernt', '已移除 {n} 张卡片'],
+ 'play.duo':       ['Duo', 'Duo', 'Dúo', 'Duo', 'Duo', 'Duo', '连连看'],
+ 'play.duoSub':    ['Relie chaque mot à sa traduction', 'Match each word with its translation', 'Une cada palabra con su traducción', 'Collega ogni parola alla sua traduzione', 'Liga cada palavra à sua tradução', 'Verbinde jedes Wort mit seiner Übersetzung', '把词语和翻译配成对'],
+ 'duo.count':      ['{n} / {total} paires', '{n} / {total} pairs', '{n} / {total} parejas', '{n} / {total} coppie', '{n} / {total} pares', '{n} / {total} Paare', '{n} / {total} 对'],
+ 'duo.done':       ['Niveau terminé 🎉', 'Level complete 🎉', '¡Nivel terminado! 🎉', 'Livello completato 🎉', 'Nível concluído 🎉', 'Level geschafft 🎉', '本关完成 🎉'],
+ 'duo.time':       ['temps', 'time', 'tiempo', 'tempo', 'tempo', 'Zeit', '用时'],
+ 'duo.errors':     ['erreurs', 'mistakes', 'errores', 'errori', 'erros', 'Fehler', '次错误'],
+ 'duo.error1':     ['erreur', 'mistake', 'error', 'errore', 'erro', 'Fehler', '次错误'],
+ 'prog.title':     ['Progrès', 'Progress', 'Progreso', 'Progressi', 'Progresso', 'Fortschritt', '进度'],
+ 'prog.course':    ['En {lang}', 'In {lang}', 'En {lang}', 'In {lang}', 'Em {lang}', 'Auf {lang}', '{lang}'],
+ 'prog.answers30': ['réponses en 30 jours', 'answers in 30 days', 'respuestas en 30 días', 'risposte in 30 giorni', 'respostas em 30 dias', 'Antworten in 30 Tagen', '30 天内作答'],
+ 'prog.curve':     ['Mots maîtrisés', 'Mastered words', 'Palabras dominadas', 'Parole padroneggiate', 'Palavras dominadas', 'Gemeisterte Wörter', '已掌握的词'],
+ 'prog.curveHint': ['Sur 90 jours. Un mot est maîtrisé quand Réviser ne te le redemande pas avant 3 semaines.', 'Over 90 days. A word is mastered when Review won\'t ask it again for 3 weeks.', 'En 90 días. Una palabra está dominada cuando Repasar no te la vuelve a pedir antes de 3 semanas.', 'In 90 giorni. Una parola è padroneggiata quando Ripassa non te la richiede prima di 3 settimane.', 'Em 90 dias. Uma palavra está dominada quando Rever não ta pede antes de 3 semanas.', 'Über 90 Tage. Ein Wort gilt als gemeistert, wenn Wiederholen es frühestens in 3 Wochen wieder abfragt.', '近 90 天。若复习在 3 周内不再出现某词，即视为已掌握。'],
+ 'prog.calendar':  ['Jours de révision', 'Practice days', 'Días de repaso', 'Giorni di ripasso', 'Dias de revisão', 'Lerntage', '学习日'],
+ 'prog.less':      ['moins', 'less', 'menos', 'meno', 'menos', 'weniger', '少'],
+ 'prog.more':      ['plus', 'more', 'más', 'più', 'mais', 'mehr', '多'],
+ 'prog.levels':    ['Par niveau', 'By level', 'Por nivel', 'Per livello', 'Por nível', 'Nach Niveau', '按级别'],
+ 'prog.levelLine': ['{m} maîtrisés · {o} dans tes cartes · {n} au total', '{m} mastered · {o} in your cards · {n} in all', '{m} dominadas · {o} en tus cartas · {n} en total', '{m} padroneggiate · {o} nelle tue carte · {n} in tutto', '{m} dominadas · {o} nas tuas cartas · {n} no total', '{m} gemeistert · {o} in deinen Karten · {n} insgesamt', '已掌握 {m} · 卡片中 {o} · 共 {n}'],
+ 'prog.owned':     ['dans tes cartes', 'in your cards', 'en tus cartas', 'nelle tue carte', 'nas tuas cartas', 'in deinen Karten', '在卡片中'],
+ 'launch.sync':    ['Synchronisation…', 'Syncing…', 'Sincronizando…', 'Sincronizzazione…', 'A sincronizar…', 'Wird synchronisiert…', '正在同步…'],
+ 'launch.updated': ['Recto Verso est à jour ✨ ({v})', 'Recto Verso is up to date ✨ ({v})', 'Recto Verso está actualizado ✨ ({v})', 'Recto Verso è aggiornato ✨ ({v})', 'O Recto Verso está atualizado ✨ ({v})', 'Recto Verso ist aktuell ✨ ({v})', 'Recto Verso 已更新 ✨（{v}）'],
+ 'rep.title':      ['Signaler ce mot', 'Report this word', 'Señalar esta palabra', 'Segnala questa parola', 'Assinalar esta palavra', 'Dieses Wort melden', '报告这个词'],
+ 'rep.hint':       ['Ton signalement aide à corriger l\'app pour tout le monde.', 'Your report helps fix the app for everyone.', 'Tu aviso ayuda a corregir la app para todos.', 'La tua segnalazione aiuta a correggere l\'app per tutti.', 'O teu aviso ajuda a corrigir a aplicação para todos.', 'Deine Meldung hilft, die App für alle zu verbessern.', '你的反馈能帮助大家改进应用。'],
+ 'rep.translation':['Traduction fausse', 'Wrong translation', 'Traducción errónea', 'Traduzione sbagliata', 'Tradução errada', 'Falsche Übersetzung', '翻译错误'],
+ 'rep.picture':    ['Image pas claire', 'Unclear picture', 'Imagen confusa', 'Immagine poco chiara', 'Imagem pouco clara', 'Unklares Bild', '图片不清楚'],
+ 'rep.other':      ['Autre', 'Other', 'Otro', 'Altro', 'Outro', 'Sonstiges', '其他'],
+ 'rep.ph':         ['Un mot d\'explication (facultatif)', 'A word of explanation (optional)', 'Una explicación (opcional)', 'Una spiegazione (facoltativa)', 'Uma explicação (opcional)', 'Eine kurze Erklärung (optional)', '补充说明（可选）'],
+ 'rep.send':       ['Envoyer', 'Send', 'Enviar', 'Invia', 'Enviar', 'Senden', '发送'],
+ 'rep.thanks':     ['Merci, c\'est noté ✨', 'Thanks, noted ✨', 'Gracias, anotado ✨', 'Grazie, ricevuto ✨', 'Obrigado, anotado ✨', 'Danke, notiert ✨', '谢谢，已记录 ✨'],
+ 'rep.perso':      ['C\'est une de tes cartes : tu peux la modifier dans Créer.', 'This is one of your own cards: edit it in Create.', 'Es una de tus cartas: puedes cambiarla en Crear.', 'È una tua carta: puoi modificarla in Crea.', 'É uma carta tua: podes alterá-la em Criar.', 'Das ist eine eigene Karte: Ändere sie unter Erstellen.', '这是你自己的卡片，可在“创建”中修改。'],
+ 'inst.inapp':     ['Ce lien s\'est ouvert dans une autre app. Copie l\'adresse et ouvre-la dans Chrome pour installer Recto Verso.', 'This link opened inside another app. Copy the address and open it in Chrome to install Recto Verso.', 'Este enlace se abrió dentro de otra app. Copia la dirección y ábrela en Chrome para instalar Recto Verso.', 'Questo link si è aperto in un\'altra app. Copia l\'indirizzo e aprilo in Chrome per installare Recto Verso.', 'Esta ligação abriu noutra aplicação. Copia o endereço e abre-o no Chrome para instalar o Recto Verso.', 'Dieser Link wurde in einer anderen App geöffnet. Kopiere die Adresse und öffne sie in Chrome, um Recto Verso zu installieren.', '此链接在其他应用中打开。请复制地址并在 Chrome 中打开以安装。'],
+ 'inst.inappIos':  ['Ce lien s\'est ouvert dans une autre app. Copie l\'adresse et ouvre-la dans Safari pour installer Recto Verso.', 'This link opened inside another app. Copy the address and open it in Safari to install Recto Verso.', 'Este enlace se abrió dentro de otra app. Copia la dirección y ábrela en Safari para instalar Recto Verso.', 'Questo link si è aperto in un\'altra app. Copia l\'indirizzo e aprilo in Safari per installare Recto Verso.', 'Esta ligação abriu noutra aplicação. Copia o endereço e abre-o no Safari para instalar o Recto Verso.', 'Dieser Link wurde in einer anderen App geöffnet. Kopiere die Adresse und öffne sie in Safari, um Recto Verso zu installieren.', '此链接在其他应用中打开。请复制地址并在 Safari 中打开以安装。'],
+ 'inst.copy':      ['Copier l\'adresse', 'Copy the address', 'Copiar la dirección', 'Copia l\'indirizzo', 'Copiar o endereço', 'Adresse kopieren', '复制地址'],
+})
+
 root = pathlib.Path(__file__).resolve().parent.parent
 out = root / 'data' / 'ui'
 out.mkdir(parents=True, exist_ok=True)
