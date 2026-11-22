@@ -578,9 +578,10 @@ body { background-image: radial-gradient(var(--dots) 1px, transparent 1px); back
 .c2 { background: color-mix(in srgb, var(--t3) 55%, var(--paper2)) !important; }
 .c3 { background: color-mix(in srgb, var(--t3) 78%, var(--paper2)) !important; }
 .c4 { background: var(--t3) !important; }
-.lvl-row { display: grid; grid-template-columns: 64px 1fr; gap: 4px 10px; align-items: center; margin-bottom: 12px; }
-.lvl-row b { font-size: 14px; }
+.lvl-row { display: grid; grid-template-columns: 7.2em 1fr; gap: 4px 10px; align-items: center; margin-bottom: 12px; }
+.lvl-row b { margin: 0; line-height: 1.2; font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .lvl-row small { grid-column: 2; font-size: 12px; color: var(--ink2); }
+.lvl-row .bar { margin: 0; }
 .bar { position: relative; height: 10px; border-radius: 99px; background: var(--paper2); overflow: hidden; }
 .bar span { position: absolute; left: 0; top: 0; bottom: 0; border-radius: inherit; }
 .bar .own, .cal-legend i.own { background: color-mix(in srgb, var(--t4) 45%, var(--paper2)); }
@@ -625,3 +626,65 @@ body { background-image: radial-gradient(var(--dots) 1px, transparent 1px); back
 .btn.danger-t.armed { background: var(--seal); color: #fff; border-color: var(--seal); }
 .word-q { margin: 8px 0 4px; }
 .cal { max-width: 330px; margin: 0 auto; }
+
+/* 0.13.0 : niveaux plein écran, Duo par vagues, pages sans défilement */
+.page.fill { display: flex; flex-direction: column; min-height: calc(100dvh - max(14px, env(safe-area-inset-top)) - max(24px, env(safe-area-inset-bottom))); }
+.lvl-grid { flex: 1; display: grid; grid-template-rows: repeat(4, 1fr); gap: 12px; min-height: 0; }
+.lvl-tile { position: relative; display: grid; grid-template-columns: auto 1fr; grid-template-rows: 1fr auto; align-items: center; column-gap: 16px; padding: 16px 20px; border-radius: 22px; border: 1.5px solid var(--line); background: var(--card); color: var(--ink); text-decoration: none; box-shadow: 0 6px 16px var(--shadow); min-height: 84px; transition: transform .12s ease; }
+.lvl-tile:active { transform: scale(.98); }
+.lvl-tile .lvl-n { grid-row: 1 / span 2; font-family: var(--serif); font-weight: 700; font-size: clamp(34px, 8dvh, 56px); line-height: 1; color: var(--ink2); width: 1.1em; text-align: center; }
+.lvl-tile .lvl-txt b { display: block; font-family: var(--serif); font-size: clamp(20px, 3.4dvh, 28px); }
+.lvl-tile .lvl-txt small { color: var(--ink2); font-size: 14px; font-weight: 600; }
+.lvl-tile .lvl-c { grid-column: 2; font-size: 13px; color: var(--ink2); }
+.lvl-tile.cur { border: 2px solid var(--accent); background: color-mix(in srgb, var(--accent) 9%, var(--card)); }
+.lvl-tile.cur .lvl-n { color: var(--accent); }
+.lvl-tile.off { opacity: .45; box-shadow: none; pointer-events: none; }
+.lvl-badge { position: absolute; top: 12px; right: 14px; font-size: 11.5px; font-weight: 700; color: var(--on-accent); background: var(--accent); border-radius: 99px; padding: 3px 9px; }
+.lv-seg { flex-wrap: wrap; }
+.lv-seg button { flex: 1 1 40%; display: flex; flex-direction: column; align-items: center; }
+.lv-seg button small { font-size: 11px; opacity: .7; font-weight: 500; }
+
+/* Duo : la grille occupe la hauteur disponible */
+.duo-page { display: flex; flex-direction: column; min-height: calc(100dvh - 40px); }
+.duo-grid { flex: 1; align-content: start; }
+.duo-cell { min-height: clamp(52px, 10dvh, 84px); }
+
+/* Petits écrans : on resserre plutôt que de faire défiler */
+@media (max-height: 700px) {
+  #app { padding-top: max(8px, env(safe-area-inset-top)); padding-bottom: max(12px, env(safe-area-inset-bottom)); }
+  .hello h1 { font-size: 24px; margin-top: 6px; }
+  .hello p { margin-bottom: 8px; }
+  .today { padding: 14px 16px; margin-top: 10px; }
+  .today .btn { margin-top: 10px; padding: 11px; }
+  .modes { margin-top: 10px; }
+  .mode { height: 92px; }
+  .stats { margin-top: 10px; padding: 10px; }
+  .stage { height: min(52dvh, 400px); }
+  .top { margin-bottom: 6px; }
+}
+/* Progrès : tout sur un écran de téléphone courant */
+.progress .kpis { margin: 2px 0; }
+.progress .kpis div { padding: 7px 4px; }
+.progress .kpis b { font-size: 20px; }
+.progress .set-label { margin-top: 10px; margin-bottom: 4px; }
+.progress .panel { padding: 10px 12px; }
+.progress .chart { max-height: 120px; }
+.progress .panel .hint.small { margin: 4px 0 0; font-size: 12px; }
+.progress .cal { max-width: 250px; gap: 2px; }
+.progress .cal-legend { margin-top: 6px; }
+.progress .lvl-row { margin-bottom: 6px; }
+.progress .hint.center { margin: 0 0 4px; }
+@media (max-height: 900px) { .progress .panel .hint.small { display: none; } .progress .chart { max-height: 96px; } }
+@media (max-height: 700px) { .progress .cal { max-width: 200px; } .progress .kpis small { font-size: 10.5px; } }
+/* 0.13 : page Progrès sans défilement sur les petits écrans */
+@media (max-height: 940px) {
+  .progress .hint.center { display: none; }
+  .progress .set-label { margin-top: 6px; margin-bottom: 2px; }
+  .progress .panel { padding: 8px 10px; }
+  .progress .chart { max-height: 72px; }
+  .progress .panel:not(.levels-bars) .cal-legend { display: none; }
+  .progress .cal { max-width: 190px; }
+  .progress .lvl-row { margin-bottom: 2px; }
+}
+@media (max-height: 700px) { .progress .cal { max-width: 170px; } .progress .chart { max-height: 60px; } .progress .kpis small { font-size: 10px; line-height: 1.1; } .progress .kpis div { padding: 4px 3px; } .progress .kpis b { font-size: 18px; } }
+.vis.ai { border-radius: 18%; object-fit: cover; background: #f7ecd9; }
