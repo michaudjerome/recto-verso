@@ -11,7 +11,7 @@ header('Referrer-Policy: no-referrer');
 $r = preg_replace('/[^a-z_\/]/', '', (string) ($_GET['r'] ?? ''));
 $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
 
-if ($r === 'health') rv_json(['ok' => true, 'configured' => (bool) rv_config()]);
+if ($r === 'health') rv_json(['ok' => true, 'configured' => (bool) rv_config(), 'php' => PHP_MAJOR_VERSION . '.' . PHP_MINOR_VERSION, 'bits' => PHP_INT_SIZE * 8]);
 
 // Les actions d'écriture exigent l'en-tête maison et une origine identique
 if ($method === 'POST') {
@@ -23,6 +23,7 @@ if ($method === 'POST') {
 }
 
 try {
+    rv_repair_32bit();
     switch ($r) {
         case 'me': me(); break;
         case 'login': login(); break;
@@ -76,7 +77,7 @@ function invite_row(string $code): ?array
     $q = rv_db()->prepare('SELECT * FROM invites WHERE code = ?');
     $q->execute([$code]);
     $i = $q->fetch();
-    if (!$i || $i['used_by'] !== null || (int) $i['expires'] < rv_now()) return null;
+    if (!$i || $i['used_by'] !== null || ((int) $i['expires'] >= RV_MS_MIN && (int) $i['expires'] < rv_now())) return null;
     return $i;
 }
 
@@ -103,7 +104,7 @@ function signup(): void
     $q = $db->prepare('SELECT * FROM invites WHERE code = ? FOR UPDATE');
     $q->execute([$code]);
     $i = $q->fetch();
-    if (!$i || $i['used_by'] !== null || (int) $i['expires'] < rv_now()) { $db->rollBack(); rv_attempt('signup'); rv_fail(404, 'invite'); }
+    if (!$i || $i['used_by'] !== null || ((int) $i['expires'] >= RV_MS_MIN && (int) $i['expires'] < rv_now())) { $db->rollBack(); rv_attempt('signup'); rv_fail(404, 'invite'); }
     $q = $db->prepare('SELECT id FROM users WHERE email = ?');
     $q->execute([$email]);
     if ($q->fetch()) { $db->rollBack(); rv_fail(409, 'email_taken'); }
@@ -268,12 +269,12 @@ function sync(): void
             $rid = (string) ($c['k'] ?? '');
             $ts = (int) ($c['u'] ?? 0);
             $del = !empty($c['x']);
-            if (!isset($stores[$s]) || $rid === '' || strlen($rid) > 160 || $ts <= 0) continue;
+            if (!isset($stores[$s]) || $rid === '' || strlen($rid) > 160 || $ts < RV_MS_MIN) continue;
             $data = $del ? null : json_encode($c['d'] ?? null, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
             if ($data !== null && strlen($data) > RV_MAX_RECORD) continue;
             $sel->execute([$u['id'], $s, $rid]);
             $cur = $sel->fetchColumn();
-            if ($cur !== false && (int) $cur >= $ts) continue;
+            if ($cur !== false && (int) $cur >= RV_MS_MIN && (int) $cur >= $ts) continue;
             $bump->execute([$u['id']]);
             $rev = (int) $db->lastInsertId();
             $ins->execute([$u['id'], $s, $rid, $data, $ts, $del ? 1 : 0, $rev]);
@@ -297,4 +298,17 @@ function sync(): void
     }
     if (!$more && $written) $cursor = max($cursor, max(array_keys($written)));
     rv_json(['rev' => $cursor, 'more' => $more, 'changes' => $out, 'accepted' => $accepted, 'user' => rv_public_user($u)]);
+}
+
+// Réparation des dates écrites par le PHP 32 bits (avant le 22/11/2026) : horodatages débordés, donc faux
+function rv_repair_32bit(): void
+{
+    if (!rv_config()) return;
+    $db = rv_db();
+    $now = rv_now();
+    $db->prepare('UPDATE invites SET expires = ? WHERE expires < ? AND used_by IS NULL')->execute([$now + 30 * 86400000, RV_MS_MIN]);
+    $db->prepare('UPDATE sessions SET expires = ?, last_seen = ? WHERE expires < ?')->execute([$now + RV_SESSION_DAYS * 86400000, $now, RV_MS_MIN]);
+    $db->prepare('UPDATE resets SET used = 1 WHERE expires < ?')->execute([RV_MS_MIN]);
+    $db->prepare('UPDATE users SET created = ? WHERE created < ?')->execute([$now, RV_MS_MIN]);
+    $db->prepare('DELETE FROM attempts WHERE ts < ?')->execute([RV_MS_MIN]);
 }

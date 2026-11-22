@@ -8,6 +8,8 @@ const RV_COOKIE = 'rv_s';
 const RV_SESSION_DAYS = 365;
 const RV_MAX_RECORD = 2000000;   // 2 Mo par enregistrement (photo comprise)
 const RV_PULL_LIMIT = 400;
+// Horodatages en millisecondes : en dessous, la valeur vient du PHP 32 bits d'avant le 22/11/2026 et ne vaut rien
+const RV_MS_MIN = 1000000000000;
 
 function rv_config_path(): string
 {
@@ -127,7 +129,12 @@ function rv_input(): array
     return is_array($d) ? $d : [];
 }
 
-function rv_now(): int { return (int) round(microtime(true) * 1000); }
+function rv_now(): int
+{
+    // Les horodatages en millisecondes exigent un PHP 64 bits (en 32 bits ils débordent et la synchronisation se dérègle)
+    if (PHP_INT_SIZE < 8) rv_fail(500, 'php32');
+    return (int) round(microtime(true) * 1000);
+}
 
 function rv_ip(): string { return substr((string) ($_SERVER['REMOTE_ADDR'] ?? ''), 0, 64); }
 
@@ -212,8 +219,10 @@ function rv_user(): ?array
     $q->execute([rv_hash($t)]);
     $r = $q->fetch();
     $now = rv_now();
-    if (!$r || (int) $r['expires'] < $now) return null;
-    if ($now - (int) $r['last_seen'] > 86400000) {
+    if (!$r) return null;
+    $broken = (int) $r['expires'] < RV_MS_MIN; // session ouverte sous PHP 32 bits : on la répare au lieu de la fermer
+    if (!$broken && (int) $r['expires'] < $now) return null;
+    if ($broken || $now - (int) $r['last_seen'] > 86400000) {
         $db->prepare('UPDATE sessions SET last_seen = ?, expires = ? WHERE token_hash = ?')->execute([$now, $now + RV_SESSION_DAYS * 86400000, $r['token_hash']]);
         $db->prepare('UPDATE users SET last_seen = ? WHERE id = ?')->execute([$now, $r['id']]);
         rv_set_cookie($t, RV_SESSION_DAYS * 86400);
