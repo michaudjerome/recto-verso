@@ -15,7 +15,7 @@ self.addEventListener('activate', (e) => {
     // On garde les fichiers lourds déjà téléchargés (police chinoise, pictos, dictionnaires) d'une version à l'autre
     for (const k of keep) if (k !== CACHE) {
       const old = await caches.open(k);
-      for (const r of await old.keys()) if (/\/(fonts\/kai|pictos\/|dict\/)/.test(r.url) && !(await cur.match(r))) await cur.put(r, await old.match(r));
+      for (const r of await old.keys()) if (/\/(fonts\/kai|pictos\/|img\/|dict\/)/.test(r.url) && !(await cur.match(r))) await cur.put(r, await old.match(r));
       await caches.delete(k);
     }
     await self.clients.claim();

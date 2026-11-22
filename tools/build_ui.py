@@ -402,6 +402,23 @@ T.update({
  'inst.copy':      ['Copier l\'adresse', 'Copy the address', 'Copiar la dirección', 'Copia l\'indirizzo', 'Copiar o endereço', 'Adresse kopieren', '复制地址'],
 })
 
+# 0.13.0 : 4 niveaux de plateforme
+T.update({
+ 'lv.1':           ['Débutant', 'Beginner', 'Principiante', 'Principiante', 'Iniciante', 'Anfänger', '入门'],
+ 'lv.2':           ['Élémentaire', 'Elementary', 'Elemental', 'Elementare', 'Elementar', 'Grundstufe', '初级'],
+ 'lv.3':           ['Intermédiaire', 'Intermediate', 'Intermedio', 'Intermedio', 'Intermédio', 'Mittelstufe', '中级'],
+ 'lv.4':           ['Avancé', 'Advanced', 'Avanzado', 'Avanzato', 'Avançado', 'Fortgeschritten', '高级'],
+ 'lv.mine':        ['Ton niveau', 'Your level', 'Tu nivel', 'Il tuo livello', 'O teu nível', 'Dein Niveau', '你的级别'],
+ 'lv.title':       ['Ton niveau en {lang}', 'Your level in {lang}', 'Tu nivel de {lang}', 'Il tuo livello di {lang}', 'O teu nível de {lang}', 'Dein Niveau in {lang}', '你的{lang}级别'],
+ 'lv.hint':        ['Découvrir, Réviser et les jeux te proposent les mots de ce niveau.', 'Discover, Review and the games offer you words from this level.', 'Descubrir, Repasar y los juegos te proponen palabras de este nivel.', 'Scopri, Ripassa e i giochi ti propongono parole di questo livello.', 'Descobrir, Rever e os jogos propõem-te palavras deste nível.', 'Entdecken, Wiederholen und die Spiele bieten dir Wörter dieses Niveaus.', '发现、复习和游戏都会使用这个级别的词。'],
+ 'f.words':        ['{n} mots', '{n} words', '{n} palabras', '{n} parole', '{n} palavras', '{n} Wörter', '{n} 个词'],
+ 'f.words1':       ['1 mot', '1 word', '1 palabra', '1 parola', '1 palavra', '1 Wort', '1 个词'],
+ 'f.noneLevel':    ['Pas encore de mots ici', 'No words here yet', 'Aún no hay palabras', 'Ancora nessuna parola', 'Ainda sem palavras', 'Noch keine Wörter', '暂时还没有词'],
+ 'rev.emptyLevel': ['Pas encore de cartes en {l}', 'No cards yet at {l} level', 'Aún no tienes cartas de nivel {l}', 'Ancora nessuna carta di livello {l}', 'Ainda sem cartas de nível {l}', 'Noch keine Karten auf Niveau {l}', '{l}级别还没有卡片'],
+ 'rev.emptyLevelHint':['Ajoute des mots de ton niveau dans Découvrir, ou change de niveau dans les Réglages.', 'Add words from your level in Discover, or change level in Settings.', 'Añade palabras de tu nivel en Descubrir, o cambia de nivel en Ajustes.', 'Aggiungi parole del tuo livello in Scopri, o cambia livello nelle Impostazioni.', 'Adiciona palavras do teu nível em Descobrir, ou muda de nível nas Definições.', 'Füge unter Entdecken Wörter deines Niveaus hinzu oder ändere dein Niveau in den Einstellungen.', '在“发现”中添加本级别的词，或在设置中更改级别。'],
+ 'disc.levelHead': ['Ton niveau', 'Your level', 'Tu nivel', 'Il tuo livello', 'O teu nível', 'Dein Niveau', '你的级别'],
+})
+
 root = pathlib.Path(__file__).resolve().parent.parent
 out = root / 'data' / 'ui'
 out.mkdir(parents=True, exist_ok=True)
