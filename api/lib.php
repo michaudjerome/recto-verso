@@ -11,7 +11,7 @@ const RV_PULL_LIMIT = 400;
 // Horodatages en millisecondes : en dessous, la valeur vient du PHP 32 bits d'avant le 22/11/2026 et ne vaut rien
 const RV_MS_MIN = 1000000000000;
 const RV_SCHEMA = '2';
-const RV_VERSION = '0.13.0';
+const RV_VERSION = '0.13.1';
 
 function rv_config_path(): string
 {
