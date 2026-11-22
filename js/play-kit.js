@@ -2,7 +2,7 @@
 import { cardsOf } from './cards.js';
 import { notions, cardText } from './content.js';
 import { activeCourse, markActivity } from './courses.js';
-import { visual, hasVisual, word } from './face.js';
+import { visual, hasClearVisual, word } from './face.js';
 import { t } from './i18n.js';
 import { esc, icon, later } from './ui.js';
 
@@ -22,7 +22,7 @@ export async function pool(course, { withPicto = false } = {}) {
     const txt = await cardText({ notion: n.id }, course);
     if (txt.front?.w && txt.back?.w) extra.push({ card: null, txt });
   }
-  const keep = (i) => !withPicto || hasVisual(i.txt);
+  const keep = (i) => !withPicto || hasClearVisual(i.txt);
   return { mine: shuffle(mine.filter(keep)), extra: shuffle(extra.filter(keep)) };
 }
 

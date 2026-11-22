@@ -15,9 +15,15 @@ export const isInstalled = () => matchMedia('(display-mode: standalone)').matche
 export function platform() {
   const ua = navigator.userAgent;
   const ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  // Navigateur intégré à une autre app (Gmail, Facebook, Instagram, LinkedIn…) : l'installation y est impossible
+  if (/GSA\/|FBAN|FBAV|Instagram|LinkedInApp|Line\/|MicroMessenger|Snapchat|; wv\)/.test(ua)) return ios ? 'ios-inapp' : 'inapp';
   if (ios) return /CriOS|FxiOS|EdgiOS|OPiOS/.test(ua) ? 'ios-other' : 'ios';
   return /Android/.test(ua) ? 'android' : 'desktop';
 }
+
+// Gestes illustrés pour l'iPhone : le bouton Partager de Safari, puis « Sur l'écran d'accueil »
+const SHARE = '<svg class="i" viewBox="0 0 24 24"><path d="M12 3v12M8 7l4-4 4 4M6 11v9h12v-9"/></svg>';
+const ADDHOME = '<svg class="i" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M12 8v8M8 12h8"/></svg>';
 
 // Installation : la vraie fenêtre du navigateur quand il la propose (Android), sinon les gestes à faire
 export async function install() {
@@ -29,13 +35,16 @@ export async function install() {
     return false;
   }
   const p = platform();
-  const steps = p === 'ios' ? [t('inst.ios1'), t('inst.ios2')] : p === 'android' ? [t('inst.android1'), t('inst.android2')] : null;
+  const steps = p === 'ios' ? [[SHARE, t('inst.ios1')], [ADDHOME, t('inst.ios2')]] : p === 'android' ? [['⋮', t('inst.android1')], [ADDHOME, t('inst.android2')]] : null;
+  const inapp = p === 'inapp' || p === 'ios-inapp';
   const body = steps
-    ? `<ol class="steps">${steps.map((s, i) => `<li><span class="n">${i + 1}</span><span>${esc(s)}</span></li>`).join('')}</ol>`
-    : `<p class="hint">${esc(t(p === 'ios-other' ? 'inst.iosOther' : 'inst.desktop'))}</p>`;
+    ? `<ol class="steps">${steps.map(([ic, s], i) => `<li><span class="n">${i + 1}</span><span class="st-ic">${ic}</span><span>${esc(s)}</span></li>`).join('')}</ol>`
+    : inapp ? `<p class="hint">${esc(t(p === 'ios-inapp' ? 'inst.inappIos' : 'inst.inapp'))}</p><button class="btn ghost cp">${esc(t('inst.copy'))}</button>`
+      : `<p class="hint">${esc(t(p === 'ios-other' ? 'inst.iosOther' : 'inst.desktop'))}</p>`;
   const sh = sheet(`<h2>${esc(t('inst.title'))}</h2><p class="hint">${esc(t('inst.hint'))}</p>${body}
     <button class="btn primary ok">${esc(t('ob.next'))}</button>`);
   sh.querySelector('.ok').onclick = closeSheet;
+  sh.querySelector('.cp')?.addEventListener('click', async () => { try { await navigator.clipboard.writeText(location.origin + '/'); toast(t('acc.copied')); } catch { prompt('', location.origin + '/'); } });
   return false;
 }
 

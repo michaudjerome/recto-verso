@@ -10,9 +10,27 @@ const json = (path) => {
   return cache.get(path);
 };
 
+// Corrections faites par l'administrateur (page Admin), reçues du serveur et gardées hors ligne.
+// edits = { fr: { pomme: { w, note, alt } }, _n: { pomme: { picto } } } ; une entrée vide = retour au contenu publié
+let edits = {};
+try { edits = JSON.parse(localStorage.getItem('rv-edits') || '{}'); } catch { edits = {}; }
+export const editsRev = () => { try { return +localStorage.getItem('rv-edits-rev') || 0; } catch { return 0; } };
+export function setEdits(e, rev = 0) {
+  edits = e || {};
+  try { localStorage.setItem('rv-edits', JSON.stringify(edits)); localStorage.setItem('rv-edits-rev', String(rev)); } catch { /* stockage indisponible : on redemandera */ }
+  const d = cache.get('data/notions.json');
+  if (d) d.then((x) => { delete x._byId; }).catch(() => {});
+  dispatchEvent(new Event('rv-content'));
+}
+const patch = (obj, e) => (e && Object.keys(e).length ? { ...obj, ...e } : obj);
+
 export async function notions() {
   const d = await json('data/notions.json');
-  if (!d._byId) d._byId = new Map(d.notions.map((n) => [n.id, n]));
+  if (!d._byId) {
+    d._orig ||= d.notions;
+    d.notions = d._orig.map((n) => patch(n, edits._n?.[n.id]));
+    d._byId = new Map(d.notions.map((n) => [n.id, n]));
+  }
   return d;
 }
 export const notion = async (id) => (await notions())._byId.get(id);
@@ -20,10 +38,11 @@ export const notion = async (id) => (await notions())._byId.get(id);
 // Mot d'une notion dans une langue, variante appliquée (« appartement » → flat / apartment)
 export async function entry(id, tag) {
   const d = await json(`data/lang/${base(tag)}.json`).catch(() => ({ entries: {} }));
-  const e = d.entries[id];
-  if (!e) return null;
-  const { var: variants, ...rest } = e;
-  return { ...rest, ...(variants?.[tag] || {}) };
+  const raw = d.entries[id];
+  if (!raw) return null;
+  const { var: variants, ...rest } = raw;
+  const e = patch({ ...rest, ...(variants?.[tag] || {}) }, edits[base(tag)]?.[id]); // la correction de l'admin passe en dernier
+  return e.w ? e : null;
 }
 
 // Une paire est « vérifiée » si les deux mots ont au moins deux sources concordantes

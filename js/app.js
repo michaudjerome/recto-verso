@@ -1,6 +1,11 @@
 import { openDb, askPersistence } from './db.js';
 import { initSync, syncNow, currentAccount } from './sync.js';
 import * as account from './views/account.js';
+import * as admin from './views/admin.js';
+import * as progress from './views/progress.js';
+import { kvGet, kvSet } from './db.js';
+import { APP_VERSION } from './version.js';
+import { logo, toast } from './ui.js';
 import { loadProfile, profile, isSetUp } from './profile.js';
 import { setLocale, t } from './i18n.js';
 import { registerSW } from './update.js';
@@ -14,7 +19,7 @@ import * as play from './views/play.js';
 import * as discover from './views/discover.js';
 import * as create from './views/create.js';
 
-const routes = { compte: account, '': home, bienvenue: onboarding, ajouter: onboarding, reglages: settingsView, sources, reviser: review, jouer: play, decouvrir: discover, creer: create };
+const routes = { compte: account, admin, progres: progress, '': home, bienvenue: onboarding, ajouter: onboarding, reglages: settingsView, sources, reviser: review, jouer: play, decouvrir: discover, creer: create };
 
 const el = document.getElementById('app');
 let cleanup;
@@ -74,10 +79,18 @@ async function movedPanel() {
   });
   addEventListener('rv-signed-in', () => { needLogin = false; });
   askPersistence();
+  registerSW();
+  // Au lancement : d'abord la synchronisation (2 s au plus), pour que l'accueil montre l'état de tous les appareils
+  if (currentAccount() && navigator.onLine !== false) {
+    el.innerHTML = `<div class="splash">${logo('splash-logo')}<p>${esc(t('launch.sync'))}</p></div>`;
+    await Promise.race([syncNow(), new Promise((r) => setTimeout(r, 2000))]);
+  }
   addEventListener('hashchange', route);
   route();
-  registerSW();
-  if (currentAccount()) syncNow();
+  // Nouvelle version appliquée depuis la dernière ouverture : on le dit, discrètement
+  const seen = await kvGet('seenVersion');
+  if (seen && seen !== APP_VERSION) setTimeout(() => toast(t('launch.updated', { v: APP_VERSION })), 900);
+  if (seen !== APP_VERSION) kvSet('seenVersion', APP_VERSION);
   // Pictos des cartes déjà gardées : préchargés quand le téléphone est libre
   setTimeout(async () => {
     try { const { activeCourse } = await import('./courses.js'); const { cardsOf } = await import('./cards.js'); const { warmPictos } = await import('./content.js');

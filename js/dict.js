@@ -21,6 +21,7 @@ const plain = (s) => strip(s).replace(/\(.*?\)/g, ' ').replace(/[!?¡¿.…,;:]/
 
 /* ---------- Notions de l'app ---------- */
 let idx = null, idxKey = '';
+addEventListener('rv-content', () => { idx = null; }); // mots corrigés par l'administrateur
 async function notionIndex(course) {
   const key = course.id;
   if (idx && idxKey === key) return idx;
@@ -29,7 +30,9 @@ async function notionIndex(course) {
   for (const n of d.notions) {
     const [tg, nt, zh] = await Promise.all([entry(n.id, course.target), entry(n.id, course.native), entry(n.id, 'zh')]);
     if (!tg || !nt) continue;
-    const keys = [...new Set([tg.w, nt.w].flatMap((w) => String(w).split(/[;,]/)).map(plain).filter(Boolean))];
+    // Les autres sens viennent du mot chinois : utiles seulement pour un parcours avec le chinois
+    const withZh = base(course.target) === 'zh' || base(course.native) === 'zh';
+    const keys = [...new Set([tg.w, nt.w, ...(withZh ? [...(tg.alt || []), ...(nt.alt || [])] : [])].map(plain).filter(Boolean))];
     idx.push({ n, tg, nt, keys, py: zh?.py ? flat(zh.py) : '', hz: zh?.w || '' });
   }
   idxKey = key;

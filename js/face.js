@@ -8,6 +8,9 @@ import { toneHtml } from './pinyin.js';
 // sinon l'émoji du téléphone si le picto ne charge pas, ou un émoji saisi à la main
 const emoji = (code) => { try { return String.fromCodePoint(...code.split('-').map((h) => parseInt(h, 16))); } catch { return ''; } };
 export const hasVisual = (txt) => !!(txt?.photoUrl || txt?.picto || txt?.notion?.picto);
+// Image assez parlante pour deviner le mot sans aide (Écris ce que tu vois) : photo perso, ou picto jugé clair
+// (« clair: false » dans les notions : un lapin pour « rapide », une chaise pour « s'asseoir »…)
+export const hasClearVisual = (txt) => !!(txt?.photoUrl || txt?.picto || (txt?.notion?.picto && txt.notion.clair !== false));
 export function visual(txt, cls = '') {
   if (txt?.photoUrl) return `<img class="vis ph ${cls}" src="${esc(txt.photoUrl)}" alt="">`;
   const code = txt?.picto || txt?.notion?.picto;
@@ -17,13 +20,18 @@ export function visual(txt, cls = '') {
 }
 
 // Mot avec son article coloré selon le genre (der Apfel, la pomme), ou caractères chinois
-export function word(e, tag, { big = false } = {}) {
+// La précision (« le matin » pour bonjour) s'affiche en petit sous le mot
+export function word(e, tag, { big = false, note = true } = {}) {
   if (!e?.w) return '';
   if (base(tag) === 'zh') return `<span class="hz zh ${big ? 'big' : ''}">${esc(e.w)}</span>`;
   const elided = /['’]$/.test(e.art || ''); // l'école : pas d'espace après l'apostrophe
   const art = e.art ? `<span class="art g-${esc(e.g || '')}">${esc(e.art)}</span>${elided ? '' : ' '}` : '';
-  return `<span class="w ${big ? 'big' : ''}">${art}${esc(e.w)}</span>`;
+  const n = note && e.note ? `<span class="wnote">${esc(e.note)}</span>` : '';
+  return `<span class="w ${big ? 'big' : ''}">${art}${esc(e.w)}${n}</span>`;
 }
+
+// Autres sens d'un mot chinois (家 : famille, mais aussi maison), montrés seulement quand on apprend le chinois
+export const altLine = (e) => (e?.alt?.length ? `<div class="alt-line">${esc(t('card.also', { w: e.alt.join(', ') }))}</div>` : '');
 
 export const pinyinHtml = (e) => (e?.py ? `<span class="py">${toneHtml(e.py)}</span>` : '');
 
@@ -42,6 +50,7 @@ export function backHTML(txt, course) {
   return `<div class="corner r">Verso</div>
     ${p ? `<div class="pict">${p}</div>` : ''}
     <div class="tr">${word(txt.back, course.native)}</div>
+    ${zh ? altLine(txt.back) : ''}
     <div class="recall">${word(txt.front, course.target)}${zh ? ` ${pinyinHtml(txt.front)}` : ''}</div>
     ${ex ? `<div class="ex ${zh ? 'zh' : ''}">${esc(ex)}</div>` : ''}
     ${txt.check?.label === 'unreviewed' ? `<div class="badge">${esc(t('card.unreviewed'))}</div>` : ''}`;

@@ -3,6 +3,8 @@
 // Règle de fusion : pour chaque enregistrement, la version la plus récente l'emporte ; l'historique s'additionne.
 import { api, ApiError } from './api.js';
 import { kvGet, kvSet, get, getAll, putRaw, delRaw, watchChanges, clearAll, SYNCED, ridOf } from './db.js';
+import { setEdits, editsRev } from './content.js';
+import { APP_VERSION } from './version.js';
 
 const BATCH = 150;
 const MAX_BYTES = 3_500_000;
@@ -99,6 +101,21 @@ async function apply(changes) {
   return { n, profile };
 }
 
+// En plus des cartes : corrections de contenu, annonce de l'administrateur, nouvelle version de l'app
+async function extras(res) {
+  try {
+    if (res.crev !== undefined && res.crev !== editsRev()) {
+      const c = await api('content', {});
+      setEdits(c.edits, c.crev);
+    }
+    if (res.announce !== undefined) {
+      await kvSet('announce', res.announce || null);
+      emit('rv-announce', res.announce || null);
+    }
+    if (res.version && res.version !== APP_VERSION) import('./update.js').then((m) => m.checkForUpdate()).catch(() => {});
+  } catch { /* le reste de la synchronisation n'en dépend pas */ }
+}
+
 async function cycle({ keepalive = false } = {}) {
   let total = 0, profile = false;
   for (let round = 0; round < 50; round++) {
@@ -110,6 +127,7 @@ async function cycle({ keepalive = false } = {}) {
     total += a.n; profile ||= a.profile;
     rev = res.rev; await kvSet('syncRev', rev);
     if (res.user && account && (res.user.admin !== account.admin || res.user.name !== account.name)) { account = { ...account, ...res.user }; await kvSet('account', account); }
+    if (round === 0) await extras(res);
     if (!res.more && !dirty.size) break;
     if (keepalive) break;
   }
