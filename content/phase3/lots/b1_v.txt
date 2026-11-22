@@ -1,0 +1,211 @@
+abandon|verbe|verbes|abandonner|abandonar|abbandonare|aufgeben|放弃
+accompany|verbe|verbes|accompagner|acompañar|accompagnare|begleiten|陪
+accuse|verbe|societe|accuser|acusar|accusare|beschuldigen|指责
+achieve|verbe|travail|réaliser|lograr|raggiungere|erreichen|实现
+adapt|verbe|verbes|s'adapter|adaptarse|adattarsi|sich anpassen|适应
+admire|verbe|emotions|admirer|admirar|ammirare|bewundern|佩服
+admit|verbe|verbes|admettre|admitir|ammettere|zugeben|承认
+adopt|verbe|famille|adopter|adoptar|adottare|adoptieren|收养
+advertise|verbe|medias|faire de la publicité|anunciar|pubblicizzare|werben|做广告
+afford|verbe|argent|avoir les moyens|permitirse|permettersi|sich leisten|买得起
+announce|verbe|medias|annoncer|anunciar|annunciare|ankündigen|宣布
+apologize|verbe|salutations|s'excuser|disculparse|scusarsi|sich entschuldigen|道歉
+appear|verbe|verbes|apparaître|aparecer|apparire|erscheinen|出现
+apply|verbe|travail|postuler|solicitar|candidarsi|sich bewerben|申请
+approve|verbe|travail|approuver|aprobar|approvare|genehmigen|批准
+argue|verbe|emotions|se disputer|discutir|litigare|streiten|争吵
+arrange|verbe|verbes|organiser|organizar|organizzare|organisieren|安排
+arrest|verbe|societe|arrêter|detener|arrestare|verhaften|逮捕
+attach|verbe|verbes|attacher|sujetar|attaccare|befestigen|系
+attack|verbe|societe|attaquer|atacar|attaccare|angreifen|攻击
+attempt|verbe|verbes|tenter|intentar|tentare|versuchen|尝试
+attend|verbe|ecole|assister à|asistir a|frequentare|besuchen|参加
+attract|verbe|verbes|attirer|atraer|attirare|anziehen|吸引
+avoid|verbe|verbes|éviter|evitar|evitare|vermeiden|避免
+bake|verbe|manger|cuire au four|hornear|cuocere al forno|backen|烤
+behave|verbe|verbes|se comporter|comportarse|comportarsi|sich verhalten|表现
+bend|verbe|corps|plier|doblar|piegare|biegen|弯
+bet|verbe|loisirs|parier|apostar|scommettere|wetten|打赌
+bite|verbe|animaux|mordre|morder|mordere|beißen|咬
+bleed|verbe|corps|saigner|sangrar|sanguinare|bluten|流血
+blow|verbe|meteo|souffler|soplar|soffiare|blasen|吹
+boil|verbe|manger|bouillir|hervir|bollire|kochen|煮
+burn|verbe|maison|brûler|quemar|bruciare|brennen|烧
+bury|verbe|verbes|enterrer|enterrar|seppellire|begraben|埋
+calculate|verbe|chiffres|calculer|calcular|calcolare|berechnen|计算
+cancel|verbe|verbes|annuler|cancelar|annullare|absagen|取消
+celebrate|verbe|loisirs|fêter|celebrar|festeggiare|feiern|庆祝
+challenge|verbe|verbes|défier|desafiar|sfidare|herausfordern|挑战
+charge|verbe|argent|faire payer|cobrar|far pagare|berechnen|收费
+cheat|verbe|ecole|tricher|hacer trampa|imbrogliare|betrügen|作弊
+chop|verbe|manger|hacher|picar|tritare|hacken|切
+combine|verbe|verbes|combiner|combinar|combinare|kombinieren|结合
+compete|verbe|loisirs|rivaliser|competir|competere|konkurrieren|竞争
+complain|verbe|emotions|se plaindre|quejarse|lamentarsi|sich beschweren|抱怨
+confirm|verbe|travail|confirmer|confirmar|confermare|bestätigen|确认
+congratulate|verbe|salutations|féliciter|felicitar|congratularsi|gratulieren|祝贺
+connect|verbe|medias|connecter|conectar|collegare|verbinden|连接
+consider|verbe|idees|envisager|considerar|considerare|in Betracht ziehen|考虑
+contain|verbe|verbes|contenir|contener|contenere|enthalten|包含
+continue|verbe|verbes|continuer|continuar|continuare|fortsetzen|继续
+convince|verbe|idees|convaincre|convencer|convincere|überzeugen|说服
+cough|verbe|corps|tousser|toser|tossire|husten|咳嗽
+crash|verbe|lieux|s'écraser|estrellarse|schiantarsi|abstürzen|撞
+create|verbe|verbes|créer|crear|creare|schaffen|创造
+damage|verbe|verbes|endommager|dañar|danneggiare|beschädigen|损坏
+deal with|verbe|travail|gérer|ocuparse de|occuparsi di|sich kümmern um|处理
+defend|verbe|societe|défendre|defender|difendere|verteidigen|保卫
+delay|verbe|temps|retarder|retrasar|ritardare|verzögern|推迟
+delete|verbe|medias|supprimer|borrar|cancellare|löschen|删除
+deliver|verbe|argent|livrer|entregar|consegnare|liefern|送
+demand|verbe|verbes|exiger|exigir|esigere|verlangen|要求
+deny|verbe|verbes|nier|negar|negare|leugnen|否认
+depend|verbe|liens|dépendre|depender|dipendere|abhängen|依靠
+deserve|verbe|verbes|mériter|merecer|meritare|verdienen|值得
+destroy|verbe|verbes|détruire|destruir|distruggere|zerstören|破坏
+determine|verbe|idees|déterminer|determinar|determinare|bestimmen|决定
+develop|verbe|travail|développer|desarrollar|sviluppare|entwickeln|发展
+dig|verbe|nature|creuser|cavar|scavare|graben|挖
+disappear|verbe|verbes|disparaître|desaparecer|scomparire|verschwinden|消失
+discuss|verbe|idees|discuter|discutir|discutere|besprechen|讨论
+dive|verbe|loisirs|plonger|bucear|tuffarsi|tauchen|潜水
+divide|verbe|chiffres|diviser|dividir|dividere|teilen|分
+download|verbe|medias|télécharger|descargar|scaricare|herunterladen|下载
+drown|verbe|nature|se noyer|ahogarse|annegare|ertrinken|淹死
+earn|verbe|argent|gagner|ganar|guadagnare|verdienen|挣
+educate|verbe|ecole|éduquer|educar|educare|erziehen|教育
+encourage|verbe|emotions|encourager|animar|incoraggiare|ermutigen|鼓励
+entertain|verbe|loisirs|divertir|entretener|intrattenere|unterhalten|娱乐
+escape|verbe|verbes|s'échapper|escapar|scappare|entkommen|逃
+estimate|verbe|chiffres|estimer|estimar|stimare|schätzen|估计
+examine|verbe|corps|examiner|examinar|esaminare|untersuchen|检查
+exist|verbe|idees|exister|existir|esistere|existieren|存在
+expand|verbe|travail|développer|ampliar|espandere|erweitern|扩大
+explore|verbe|lieux|explorer|explorar|esplorare|erkunden|探索
+express|verbe|idees|exprimer|expresar|esprimere|ausdrücken|表达
+fail|verbe|ecole|échouer|fracasar|fallire|scheitern|失败
+fasten|verbe|lieux|attacher|abrochar|allacciare|anschnallen|系
+feed|verbe|animaux|nourrir|alimentar|nutrire|füttern|喂
+fight|verbe|societe|se battre|luchar|combattere|kämpfen|打架
+fix|verbe|maison|réparer|arreglar|aggiustare|reparieren|修理
+float|verbe|nature|flotter|flotar|galleggiare|schwimmen|漂浮
+flood|verbe|meteo|inonder|inundar|inondare|überschwemmen|淹没
+fold|verbe|maison|plier|doblar|piegare|falten|折
+forgive|verbe|emotions|pardonner|perdonar|perdonare|verzeihen|原谅
+freeze|verbe|meteo|geler|congelar|gelare|frieren|冻
+frighten|verbe|emotions|effrayer|asustar|spaventare|erschrecken|吓
+fry|verbe|manger|frire|freír|friggere|braten|炸
+gain|verbe|verbes|gagner|ganar|guadagnare|gewinnen|获得
+greet|verbe|salutations|saluer|saludar|salutare|grüßen|问候
+hang|verbe|maison|accrocher|colgar|appendere|aufhängen|挂
+hate|verbe|emotions|détester|odiar|odiare|hassen|恨
+heal|verbe|corps|guérir|curar|guarire|heilen|治愈
+heat|verbe|maison|chauffer|calentar|riscaldare|heizen|加热
+hesitate|verbe|emotions|hésiter|dudar|esitare|zögern|犹豫
+hire|verbe|travail|embaucher|contratar|assumere|einstellen|雇
+hunt|verbe|animaux|chasser|cazar|cacciare|jagen|打猎
+ignore|verbe|verbes|ignorer|ignorar|ignorare|ignorieren|忽视
+improve|verbe|verbes|améliorer|mejorar|migliorare|verbessern|改善
+include|verbe|liens|inclure|incluir|includere|einschließen|包括
+increase|verbe|chiffres|augmenter|aumentar|aumentare|steigen|增加
+inform|verbe|medias|informer|informar|informare|informieren|通知
+insist|verbe|verbes|insister|insistir|insistere|bestehen|坚持
+inspire|verbe|idees|inspirer|inspirar|ispirare|inspirieren|启发
+install|verbe|medias|installer|instalar|installare|installieren|安装
+intend|verbe|idees|avoir l'intention de|tener la intención de|avere intenzione di|beabsichtigen|打算
+interrupt|verbe|verbes|interrompre|interrumpir|interrompere|unterbrechen|打断
+invest|verbe|argent|investir|invertir|investire|investieren|投资
+involve|verbe|liens|impliquer|implicar|coinvolgere|einbeziehen|涉及
+iron|verbe|maison|repasser|planchar|stirare|bügeln|熨
+jog|verbe|loisirs|faire du jogging|hacer footing|fare jogging|joggen|慢跑
+kiss|verbe|famille|embrasser|besar|baciare|küssen|吻
+knock|verbe|maison|frapper|llamar|bussare|klopfen|敲
+lead|verbe|travail|diriger|dirigir|guidare|führen|领导
+lock|verbe|maison|fermer à clé|cerrar con llave|chiudere a chiave|abschließen|锁
+manage|verbe|travail|gérer|gestionar|gestire|leiten|管理
+measure|verbe|chiffres|mesurer|medir|misurare|messen|量
+melt|verbe|meteo|fondre|derretirse|sciogliersi|schmelzen|融化
+negotiate|verbe|travail|négocier|negociar|negoziare|verhandeln|谈判
+notice|verbe|verbes|remarquer|notar|notare|bemerken|注意
+observe|verbe|verbes|observer|observar|osservare|beobachten|观察
+obtain|verbe|verbes|obtenir|obtener|ottenere|erhalten|获得
+occur|verbe|verbes|se produire|ocurrir|accadere|geschehen|发生
+owe|verbe|argent|devoir|deber|dovere|schulden|欠
+own|verbe|argent|posséder|poseer|possedere|besitzen|拥有
+participate|verbe|loisirs|participer|participar|partecipare|teilnehmen|参与
+persuade|verbe|idees|persuader|persuadir|persuadere|überreden|劝
+plant|verbe|nature|planter|plantar|piantare|pflanzen|种
+predict|verbe|idees|prédire|predecir|prevedere|vorhersagen|预测
+prefer|verbe|emotions|préférer|preferir|preferire|bevorzugen|更喜欢
+pretend|verbe|verbes|faire semblant|fingir|fingere|so tun als ob|假装
+prevent|verbe|verbes|empêcher|impedir|impedire|verhindern|防止
+produce|verbe|travail|produire|producir|produrre|herstellen|生产
+promise|verbe|verbes|promettre|prometer|promettere|versprechen|答应
+protect|verbe|societe|protéger|proteger|proteggere|schützen|保护
+prove|verbe|idees|prouver|demostrar|dimostrare|beweisen|证明
+publish|verbe|medias|publier|publicar|pubblicare|veröffentlichen|出版
+punish|verbe|societe|punir|castigar|punire|bestrafen|惩罚
+react|verbe|verbes|réagir|reaccionar|reagire|reagieren|反应
+realize|verbe|idees|se rendre compte|darse cuenta|rendersi conto|erkennen|意识到
+recognize|verbe|verbes|reconnaître|reconocer|riconoscere|erkennen|认出
+recommend|verbe|verbes|recommander|recomendar|raccomandare|empfehlen|推荐
+recover|verbe|corps|se rétablir|recuperarse|guarire|sich erholen|恢复
+reduce|verbe|chiffres|réduire|reducir|ridurre|reduzieren|减少
+refuse|verbe|verbes|refuser|negarse|rifiutare|ablehnen|拒绝
+reject|verbe|verbes|rejeter|rechazar|respingere|zurückweisen|拒绝
+relax|verbe|loisirs|se détendre|relajarse|rilassarsi|sich entspannen|放松
+rely on|verbe|liens|compter sur|contar con|contare su|sich verlassen auf|依靠
+remove|verbe|verbes|enlever|quitar|togliere|entfernen|去掉
+rent|verbe|maison|louer|alquilar|affittare|mieten|租
+replace|verbe|verbes|remplacer|reemplazar|sostituire|ersetzen|代替
+reply|verbe|verbes|répondre|responder|rispondere|antworten|回复
+represent|verbe|societe|représenter|representar|rappresentare|vertreten|代表
+require|verbe|verbes|exiger|requerir|richiedere|erfordern|需要
+rescue|verbe|societe|secourir|rescatar|salvare|retten|营救
+reserve|verbe|lieux|réserver|reservar|prenotare|reservieren|预订
+resist|verbe|verbes|résister|resistir|resistere|widerstehen|抵抗
+respect|verbe|emotions|respecter|respetar|rispettare|respektieren|尊重
+respond|verbe|verbes|répondre|responder|rispondere|reagieren|回应
+rob|verbe|societe|voler|robar|derubare|ausrauben|抢
+rush|verbe|temps|se précipiter|apresurarse|affrettarsi|eilen|赶
+scare|verbe|emotions|faire peur|asustar|spaventare|erschrecken|吓
+scream|verbe|emotions|hurler|gritar|urlare|schreien|尖叫
+search|verbe|verbes|chercher|buscar|cercare|suchen|搜索
+select|verbe|verbes|sélectionner|seleccionar|selezionare|auswählen|选择
+shake|verbe|verbes|secouer|sacudir|scuotere|schütteln|摇
+shave|verbe|corps|se raser|afeitarse|radersi|sich rasieren|刮胡子
+shoot|verbe|societe|tirer|disparar|sparare|schießen|射
+sign|verbe|travail|signer|firmar|firmare|unterschreiben|签
+sink|verbe|nature|couler|hundirse|affondare|sinken|沉
+skate|verbe|loisirs|patiner|patinar|pattinare|Schlittschuh laufen|滑冰
+ski|verbe|loisirs|skier|esquiar|sciare|Ski fahren|滑雪
+solve|verbe|idees|résoudre|resolver|risolvere|lösen|解决
+spill|verbe|maison|renverser|derramar|versare|verschütten|洒
+spoil|verbe|verbes|gâcher|estropear|rovinare|verderben|宠坏
+stare|verbe|verbes|fixer du regard|mirar fijamente|fissare|anstarren|盯
+steal|verbe|societe|voler|robar|rubare|stehlen|偷
+stick|verbe|maison|coller|pegar|incollare|kleben|粘
+stir|verbe|manger|remuer|remover|mescolare|umrühren|搅拌
+strike|verbe|travail|faire grève|hacer huelga|scioperare|streiken|罢工
+succeed|verbe|travail|réussir|tener éxito|riuscire|Erfolg haben|成功
+suffer|verbe|corps|souffrir|sufrir|soffrire|leiden|受苦
+suggest|verbe|idees|suggérer|sugerir|suggerire|vorschlagen|建议
+supply|verbe|argent|fournir|suministrar|fornire|liefern|供应
+support|verbe|liens|soutenir|apoyar|sostenere|unterstützen|支持
+suppose|verbe|idees|supposer|suponer|supporre|annehmen|假设
+surround|verbe|lieux|entourer|rodear|circondare|umgeben|包围
+survive|verbe|nature|survivre|sobrevivir|sopravvivere|überleben|生存
+swear|verbe|verbes|jurer|jurar|giurare|schwören|发誓
+tear|verbe|verbes|déchirer|rasgar|strappare|zerreißen|撕
+tie|verbe|vetements|nouer|atar|legare|binden|系
+translate|verbe|ecole|traduire|traducir|tradurre|übersetzen|翻译
+trust|verbe|emotions|faire confiance|confiar|fidarsi|vertrauen|信任
+type|verbe|medias|taper|teclear|digitare|tippen|打字
+update|verbe|medias|mettre à jour|actualizar|aggiornare|aktualisieren|更新
+upload|verbe|medias|mettre en ligne|subir|caricare|hochladen|上传
+vote|verbe|societe|voter|votar|votare|wählen|投票
+warn|verbe|societe|avertir|advertir|avvertire|warnen|警告
+waste|verbe|argent|gaspiller|malgastar|sprecare|verschwenden|浪费
+wave|verbe|salutations|faire signe|saludar con la mano|salutare con la mano|winken|挥手
+whisper|verbe|questions|chuchoter|susurrar|sussurrare|flüstern|低语
+wrap|verbe|maison|emballer|envolver|incartare|einpacken|包

@@ -1,0 +1,16 @@
+make a decision|expr|idees|prendre une décision|tomar una decisión|prendere una decisione|eine Entscheidung treffen|做决定
+take part|expr|loisirs|participer|participar|partecipare|teilnehmen|参加
+get used to|expr|verbes|s'habituer à|acostumbrarse a|abituarsi a|sich gewöhnen an|习惯
+it's up to you|expr|idees|c'est à toi de décider|depende de ti|decidi tu|das liegt bei dir|由你决定
+change one's mind|expr|idees|changer d'avis|cambiar de opinión|cambiare idea|seine Meinung ändern|改变主意
+keep in touch|expr|salutations|rester en contact|mantenerse en contacto|tenersi in contatto|in Kontakt bleiben|保持联系
+on the other hand|expr|liens|d'un autre côté|por otro lado|d'altra parte|andererseits|另一方面
+pay attention|expr|ecole|faire attention|prestar atención|fare attenzione|aufpassen|注意
+take care of|expr|famille|s'occuper de|cuidar de|prendersi cura di|sich kümmern um|照顾
+in advance|expr|temps|à l'avance|por adelantado|in anticipo|im Voraus|提前
+by chance|expr|liens|par hasard|por casualidad|per caso|zufällig|偶然
+make fun of|expr|emotions|se moquer de|burlarse de|prendere in giro|sich lustig machen über|取笑
+in any case|expr|liens|en tout cas|en cualquier caso|in ogni caso|auf jeden Fall|无论如何
+have a good time|expr|loisirs|bien s'amuser|pasarlo bien|divertirsi|Spaß haben|玩得开心
+lose weight|expr|corps|perdre du poids|adelgazar|dimagrire|abnehmen|减肥
+make progress|expr|ecole|faire des progrès|hacer progresos|fare progressi|Fortschritte machen|进步

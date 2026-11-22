@@ -1,0 +1,378 @@
+ability|nom|travail|la capacité|la capacidad|la capacità|die Fähigkeit|能力
+accident|nom|lieux|l'accident|m|el accidente|l'incidente|m|der Unfall|事故
+adventure|nom|loisirs|l'aventure|f|la aventura|l'avventura|f|das Abenteuer|冒险
+advice|nom|idees|le conseil|el consejo|il consiglio|der Rat|建议
+alarm clock|nom|maison|le réveil|el despertador|la sveglia|der Wecker|闹钟
+ancestor|nom|famille|l'ancêtre|m|el antepasado|l'antenato|m|der Vorfahr|祖先
+angel|nom|idees|l'ange|m|el ángel|l'angelo|m|der Engel|天使
+ankle|nom|corps|la cheville|el tobillo|la caviglia|der Knöchel|脚踝
+apartment|nom|maison|l'appartement|m|el piso|l'appartamento|m|die Wohnung|公寓
+appointment|nom|temps|le rendez-vous|la cita|l'appuntamento|m|der Termin|约会
+architecture|nom|lieux|l'architecture|f|la arquitectura|l'architettura|f|die Architektur|建筑
+argument|nom|emotions|la dispute|la discusión|la lite|der Streit|争论
+armchair|nom|maison|le fauteuil|el sillón|la poltrona|der Sessel|扶手椅
+astronaut|nom|travail|l'astronaute|m|el astronauta|l'astronauta|m|der Astronaut|宇航员
+athlete|nom|loisirs|l'athlète|m|el atleta|l'atleta|m|der Athlet|运动员
+author|nom|loisirs|l'auteur|m|el autor|l'autore|m|der Autor|作者
+award|nom|loisirs|la récompense|el premio|il premio|die Auszeichnung|奖
+background|nom|idees|le contexte|el contexto|lo sfondo|der Hintergrund|背景
+balcony|nom|maison|le balcon|el balcón|il balcone|der Balkon|阳台
+balloon|nom|loisirs|le ballon|el globo|il palloncino|der Luftballon|气球
+battery|nom|maison|la pile|la pila|la batteria|die Batterie|电池
+beauty|nom|adjectifs|la beauté|la belleza|la bellezza|die Schönheit|美
+beer|nom|manger|la bière|la cerveza|la birra|das Bier|啤酒
+beginner|nom|ecole|le débutant|el principiante|il principiante|der Anfänger|初学者
+belt|nom|vetements|la ceinture|el cinturón|la cintura|der Gürtel|腰带
+bench|nom|lieux|le banc|el banco|la panchina|die Bank|长椅
+bill|nom|argent|la facture|la factura|la bolletta|die Rechnung|账单
+blanket|nom|maison|la couverture|la manta|la coperta|die Decke|毯子
+blood|nom|corps|le sang|la sangre|il sangue|das Blut|血
+board game|nom|loisirs|le jeu de société|el juego de mesa|il gioco da tavolo|das Brettspiel|桌游
+boss|nom|travail|le patron|el jefe|il capo|der Chef|老板
+branch|nom|nature|la branche|la rama|il ramo|der Ast|树枝
+brand|nom|argent|la marque|la marca|la marca|die Marke|品牌
+bride|nom|famille|la mariée|la novia|la sposa|die Braut|新娘
+bus stop|nom|lieux|l'arrêt de bus|m|la parada de autobús|la fermata dell'autobus|die Bushaltestelle|公交车站
+bush|nom|nature|le buisson|el arbusto|il cespuglio|der Busch|灌木
+businessman|nom|travail|l'homme d'affaires|m|el hombre de negocios|l'uomo d'affari|m|der Geschäftsmann|商人
+calendar|nom|temps|le calendrier|el calendario|il calendario|der Kalender|日历
+camping|nom|loisirs|le camping|la acampada|il campeggio|das Camping|露营
+capital|nom|lieux|la capitale|la capital|la capitale|die Hauptstadt|首都
+carrot|nom|manger|la carotte|la zanahoria|la carota|die Karotte|胡萝卜
+cash|nom|argent|l'argent liquide|m|el efectivo|i contanti|das Bargeld|现金
+castle|nom|lieux|le château|el castillo|il castello|die Burg|城堡
+century|nom|temps|le siècle|el siglo|il secolo|das Jahrhundert|世纪
+chain|nom|maison|la chaîne|la cadena|la catena|die Kette|链子
+championship|nom|loisirs|le championnat|el campeonato|il campionato|die Meisterschaft|锦标赛
+chapter|nom|ecole|le chapitre|el capítulo|il capitolo|das Kapitel|章
+cheek|nom|corps|la joue|la mejilla|la guancia|die Wange|脸颊
+chef|nom|travail|le chef cuisinier|el chef|lo chef|der Koch|厨师
+chess|nom|loisirs|les échecs|el ajedrez|gli scacchi|das Schach|国际象棋
+chest|nom|corps|la poitrine|el pecho|il petto|die Brust|胸
+childhood|nom|famille|l'enfance|f|la infancia|l'infanzia|f|die Kindheit|童年
+chin|nom|corps|le menton|la barbilla|il mento|das Kinn|下巴
+choice|nom|idees|le choix|la elección|la scelta|die Wahl|选择
+citizen|nom|societe|le citoyen|el ciudadano|il cittadino|der Bürger|公民
+coast|nom|nature|la côte|la costa|la costa|die Küste|海岸
+coin|nom|argent|la pièce|la moneda|la moneta|die Münze|硬币
+competition|nom|loisirs|la compétition|la competición|la competizione|der Wettbewerb|比赛
+complaint|nom|argent|la réclamation|la queja|il reclamo|die Beschwerde|投诉
+composer|nom|loisirs|le compositeur|el compositor|il compositore|der Komponist|作曲家
+consequence|nom|idees|la conséquence|la consecuencia|la conseguenza|die Folge|后果
+continent|nom|lieux|le continent|el continente|il continente|der Kontinent|大陆
+cost|nom|argent|le coût|el coste|il costo|die Kosten|成本
+countryside|nom|nature|la campagne|el campo|la campagna|die Landschaft|农村
+couple|nom|famille|le couple|la pareja|la coppia|das Paar|夫妻
+crowd|nom|lieux|la foule|la multitud|la folla|die Menge|人群
+crown|nom|societe|la couronne|la corona|la corona|die Krone|王冠
+cupboard|nom|maison|le placard|el armario|la credenza|der Schrank|橱柜
+custom|nom|societe|la coutume|la costumbre|l'usanza|f|der Brauch|习俗
+danger|nom|societe|le danger|el peligro|il pericolo|die Gefahr|危险
+death|nom|famille|la mort|la muerte|la morte|der Tod|死亡
+dentist|nom|corps|le dentiste|el dentista|il dentista|der Zahnarzt|牙医
+department store|nom|argent|le grand magasin|los grandes almacenes|il grande magazzino|das Kaufhaus|百货商店
+desert|nom|nature|le désert|el desierto|il deserto|die Wüste|沙漠
+dessert|nom|manger|le dessert|el postre|il dessert|der Nachtisch|甜点
+diamond|nom|vetements|le diamant|el diamante|il diamante|der Diamant|钻石
+diary|nom|ecole|le journal intime|el diario|il diario|das Tagebuch|日记
+diet|nom|manger|le régime|la dieta|la dieta|die Diät|饮食
+dinosaur|nom|animaux|le dinosaure|el dinosaurio|il dinosauro|der Dinosaurier|恐龙
+director|nom|travail|le directeur|el director|il direttore|der Direktor|主任
+drawer|nom|maison|le tiroir|el cajón|il cassetto|die Schublade|抽屉
+driving licence|nom|lieux|le permis de conduire|el carné de conducir|la patente|der Führerschein|驾照
+duck|nom|animaux|le canard|el pato|l'anatra|f|die Ente|鸭子
+dust|nom|maison|la poussière|el polvo|la polvere|der Staub|灰尘
+earring|nom|vetements|la boucle d'oreille|el pendiente|l'orecchino|m|der Ohrring|耳环
+earthquake|nom|nature|le tremblement de terre|el terremoto|il terremoto|das Erdbeben|地震
+elephant|nom|animaux|l'éléphant|m|el elefante|l'elefante|m|der Elefant|大象
+emergency|nom|corps|l'urgence|f|la emergencia|l'emergenza|f|der Notfall|紧急情况
+envelope|nom|ecole|l'enveloppe|f|el sobre|la busta|der Umschlag|信封
+error|nom|ecole|l'erreur|f|el error|l'errore|m|der Fehler|错误
+escalator|nom|lieux|l'escalator|m|la escalera mecánica|la scala mobile|die Rolltreppe|自动扶梯
+evidence|nom|societe|la preuve|la evidencia|la prova|der Beweis|证据
+exhibition|nom|loisirs|l'exposition|f|la exposición|la mostra|die Ausstellung|展览
+expert|nom|travail|l'expert|m|el experto|l'esperto|m|der Experte|专家
+explanation|nom|ecole|l'explication|f|la explicación|la spiegazione|die Erklärung|解释
+fashion|nom|vetements|la mode|la moda|la moda|die Mode|时尚
+fear|nom|emotions|la peur|el miedo|la paura|die Angst|恐惧
+feather|nom|animaux|la plume|la pluma|la piuma|die Feder|羽毛
+fence|nom|maison|la clôture|la valla|la recinzione|der Zaun|篱笆
+flight|nom|lieux|le vol|el vuelo|il volo|der Flug|航班
+flour|nom|manger|la farine|la harina|la farina|das Mehl|面粉
+fog|nom|meteo|le brouillard|la niebla|la nebbia|der Nebel|雾
+forest|nom|nature|la forêt|el bosque|la foresta|der Wald|森林
+fork|nom|manger|la fourchette|el tenedor|la forchetta|die Gabel|叉子
+fridge|nom|maison|le frigo|la nevera|il frigo|der Kühlschrank|冰箱
+friendship|nom|famille|l'amitié|f|la amistad|l'amicizia|f|die Freundschaft|友谊
+furniture|nom|maison|les meubles|los muebles|i mobili|die Möbel|家具
+gallery|nom|loisirs|la galerie|la galería|la galleria|die Galerie|画廊
+garage|nom|maison|le garage|el garaje|il garage|die Garage|车库
+garlic|nom|manger|l'ail|m|el ajo|l'aglio|m|der Knoblauch|大蒜
+gate|nom|maison|le portail|la puerta|il cancello|das Tor|大门
+generation|nom|famille|la génération|la generación|la generazione|die Generation|一代
+glove|nom|vetements|le gant|el guante|il guanto|der Handschuh|手套
+gold|nom|argent|l'or|m|el oro|l'oro|m|das Gold|金子
+government|nom|societe|le gouvernement|el gobierno|il governo|die Regierung|政府
+grandchild|nom|famille|le petit-enfant|el nieto|il nipote|das Enkelkind|孙子
+guard|nom|travail|le gardien|el guardia|la guardia|der Wächter|警卫
+guidebook|nom|lieux|le guide touristique|la guía turística|la guida turistica|der Reiseführer|旅游指南
+gun|nom|societe|le pistolet|la pistola|la pistola|die Pistole|枪
+ham|nom|manger|le jambon|el jamón|il prosciutto|der Schinken|火腿
+handbag|nom|vetements|le sac à main|el bolso|la borsetta|die Handtasche|手提包
+happiness|nom|emotions|le bonheur|la felicidad|la felicità|das Glück|幸福
+harvest|nom|nature|la moisson|la cosecha|il raccolto|die Ernte|收获
+headphones|nom|medias|le casque audio|los auriculares|le cuffie|die Kopfhörer|耳机
+hero|nom|loisirs|le héros|el héroe|l'eroe|m|der Held|英雄
+highway|nom|lieux|l'autoroute|f|la carretera|l'autostrada|f|die Schnellstraße|公路
+hiking|nom|loisirs|la randonnée|el senderismo|l'escursionismo|m|das Wandern|徒步
+honey|nom|manger|le miel|la miel|il miele|der Honig|蜂蜜
+horror|nom|loisirs|l'horreur|f|el horror|l'orrore|m|der Horror|恐怖
+imagination|nom|idees|l'imagination|f|la imaginación|l'immaginazione|f|die Fantasie|想象力
+importance|nom|idees|l'importance|f|la importancia|l'importanza|f|die Bedeutung|重要性
+independence|nom|societe|l'indépendance|f|la independencia|l'indipendenza|f|die Unabhängigkeit|独立
+insect|nom|animaux|l'insecte|m|el insecto|l'insetto|m|das Insekt|昆虫
+instrument|nom|loisirs|l'instrument|m|el instrumento|lo strumento|das Instrument|乐器
+intelligence|nom|ecole|l'intelligence|f|la inteligencia|l'intelligenza|f|die Intelligenz|智力
+invention|nom|idees|l'invention|f|el invento|l'invenzione|f|die Erfindung|发明
+jam|nom|manger|la confiture|la mermelada|la marmellata|die Marmelade|果酱
+journey|nom|lieux|le voyage|el viaje|il viaggio|die Reise|旅程
+joy|nom|emotions|la joie|la alegría|la gioia|die Freude|欢乐
+kingdom|nom|societe|le royaume|el reino|il regno|das Königreich|王国
+landscape|nom|nature|le paysage|el paisaje|il paesaggio|die Landschaft|风景
+law|nom|societe|la loi|la ley|la legge|das Gesetz|法律
+lawyer|nom|travail|l'avocat|m|el abogado|l'avvocato|m|der Anwalt|律师
+leather|nom|vetements|le cuir|el cuero|la pelle|das Leder|皮革
+lemon|nom|manger|le citron|el limón|il limone|die Zitrone|柠檬
+lifestyle|nom|loisirs|le mode de vie|el estilo de vida|lo stile di vita|der Lebensstil|生活方式
+lip|nom|corps|la lèvre|el labio|il labbro|die Lippe|嘴唇
+make-up|nom|vetements|le maquillage|el maquillaje|il trucco|das Make-up|化妆品
+material|nom|maison|le matériau|el material|il materiale|das Material|材料
+medal|nom|loisirs|la médaille|la medalla|la medaglia|die Medaille|奖牌
+melon|nom|manger|le melon|el melón|il melone|die Melone|甜瓜
+metal|nom|maison|le métal|el metal|il metallo|das Metall|金属
+mirror|nom|maison|le miroir|el espejo|lo specchio|der Spiegel|镜子
+mosque|nom|lieux|la mosquée|la mezquita|la moschea|die Moschee|清真寺
+murder|nom|societe|le meurtre|el asesinato|l'omicidio|m|der Mord|谋杀
+mushroom|nom|manger|le champignon|el champiñón|il fungo|der Pilz|蘑菇
+mystery|nom|loisirs|le mystère|el misterio|il mistero|das Rätsel|谜
+napkin|nom|manger|la serviette|la servilleta|il tovagliolo|die Serviette|餐巾
+nation|nom|societe|la nation|la nación|la nazione|die Nation|国家
+onion|nom|manger|l'oignon|m|la cebolla|la cipolla|die Zwiebel|洋葱
+orphan|nom|famille|l'orphelin|m|el huérfano|l'orfano|m|die Waise|孤儿
+oven|nom|maison|le four|el horno|il forno|der Ofen|烤箱
+pan|nom|maison|la poêle|la sartén|la padella|die Pfanne|平底锅
+passenger|nom|lieux|le passager|el pasajero|il passeggero|der Passagier|乘客
+path|nom|nature|le chemin|el camino|il sentiero|der Weg|小路
+pear|nom|manger|la poire|la pera|la pera|die Birne|梨
+pepper|nom|manger|le poivre|la pimienta|il pepe|der Pfeffer|胡椒
+perfume|nom|vetements|le parfum|el perfume|il profumo|das Parfüm|香水
+permission|nom|societe|la permission|el permiso|il permesso|die Erlaubnis|许可
+personality|nom|emotions|la personnalité|la personalidad|la personalità|die Persönlichkeit|性格
+petrol|nom|lieux|l'essence|f|la gasolina|la benzina|das Benzin|汽油
+photographer|nom|travail|le photographe|el fotógrafo|il fotografo|der Fotograf|摄影师
+pill|nom|corps|la pilule|la pastilla|la pillola|die Tablette|药片
+pilot|nom|travail|le pilote|el piloto|il pilota|der Pilot|飞行员
+planet|nom|nature|la planète|el planeta|il pianeta|der Planet|行星
+plate|nom|manger|l'assiette|f|el plato|il piatto|der Teller|盘子
+playground|nom|ecole|la cour de récréation|el patio de recreo|il parco giochi|der Spielplatz|操场
+pride|nom|emotions|la fierté|el orgullo|l'orgoglio|m|der Stolz|自豪
+printer|nom|medias|l'imprimante|f|la impresora|la stampante|der Drucker|打印机
+product|nom|argent|le produit|el producto|il prodotto|das Produkt|产品
+queen|nom|societe|la reine|la reina|la regina|die Königin|女王
+raincoat|nom|vetements|l'imperméable|m|el impermeable|l'impermeabile|m|der Regenmantel|雨衣
+receipt|nom|argent|le reçu|el recibo|lo scontrino|die Quittung|收据
+research|nom|ecole|la recherche|la investigación|la ricerca|die Forschung|研究
+roof|nom|maison|le toit|el tejado|il tetto|das Dach|屋顶
+rope|nom|maison|la corde|la cuerda|la corda|das Seil|绳子
+salt|nom|manger|le sel|la sal|il sale|das Salz|盐
+sauce|nom|manger|la sauce|la salsa|la salsa|die Soße|酱
+sausage|nom|manger|la saucisse|la salchicha|la salsiccia|die Wurst|香肠
+scarf|nom|vetements|l'écharpe|f|la bufanda|la sciarpa|der Schal|围巾
+scenery|nom|nature|le paysage|el paisaje|lo scenario|die Landschaft|景色
+scissors|nom|maison|les ciseaux|las tijeras|le forbici|die Schere|剪刀
+seafood|nom|manger|les fruits de mer|el marisco|i frutti di mare|die Meeresfrüchte|海鲜
+secretary|nom|travail|la secrétaire|la secretaria|la segretaria|die Sekretärin|秘书
+seed|nom|nature|la graine|la semilla|il seme|der Samen|种子
+shadow|nom|nature|l'ombre|f|la sombra|l'ombra|f|der Schatten|影子
+shampoo|nom|maison|le shampooing|el champú|lo shampoo|das Shampoo|洗发水
+shell|nom|nature|le coquillage|la concha|la conchiglia|die Muschel|贝壳
+silence|nom|idees|le silence|el silencio|il silenzio|die Stille|安静
+silver|nom|argent|l'argent|m|la plata|l'argento|m|das Silber|银
+skiing|nom|loisirs|le ski|el esquí|lo sci|das Skifahren|滑雪
+snack|nom|manger|l'en-cas|m|el tentempié|lo spuntino|der Imbiss|零食
+soap|nom|maison|le savon|el jabón|il sapone|die Seife|肥皂
+society|nom|societe|la société|la sociedad|la società|die Gesellschaft|社会
+sock|nom|vetements|la chaussette|el calcetín|il calzino|die Socke|袜子
+soldier|nom|societe|le soldat|el soldado|il soldato|der Soldat|士兵
+spaceship|nom|lieux|le vaisseau spatial|la nave espacial|l'astronave|f|das Raumschiff|宇宙飞船
+spoon|nom|manger|la cuillère|la cuchara|il cucchiaio|der Löffel|勺子
+staff|nom|travail|le personnel|el personal|il personale|das Personal|员工
+stamp|nom|ecole|le timbre|el sello|il francobollo|die Briefmarke|邮票
+statue|nom|lieux|la statue|la estatua|la statua|die Statue|雕像
+stomach|nom|corps|l'estomac|m|el estómago|lo stomaco|der Magen|胃
+storm|nom|meteo|la tempête|la tormenta|la tempesta|der Sturm|暴风雨
+stranger|nom|questions|l'inconnu|m|el desconocido|lo sconosciuto|der Fremde|陌生人
+strength|nom|corps|la force|la fuerza|la forza|die Kraft|力量
+success|nom|travail|le succès|el éxito|il successo|der Erfolg|成功
+suitcase|nom|lieux|la valise|la maleta|la valigia|der Koffer|行李箱
+sunglasses|nom|vetements|les lunettes de soleil|las gafas de sol|gli occhiali da sole|die Sonnenbrille|太阳镜
+sweater|nom|vetements|le pull|el jersey|il maglione|der Pullover|毛衣
+swimsuit|nom|vetements|le maillot de bain|el bañador|il costume da bagno|der Badeanzug|泳衣
+symbol|nom|idees|le symbole|el símbolo|il simbolo|das Symbol|符号
+talent|nom|loisirs|le talent|el talento|il talento|das Talent|才能
+task|nom|travail|la tâche|la tarea|il compito|die Aufgabe|任务
+thief|nom|societe|le voleur|el ladrón|il ladro|der Dieb|小偷
+thunderstorm|nom|meteo|l'orage|m|la tormenta|il temporale|das Gewitter|雷雨
+timetable|nom|ecole|l'emploi du temps|m|el horario|l'orario|m|der Stundenplan|时间表
+toe|nom|corps|l'orteil|m|el dedo del pie|il dito del piede|der Zeh|脚趾
+toothbrush|nom|maison|la brosse à dents|el cepillo de dientes|lo spazzolino|die Zahnbürste|牙刷
+tour guide|nom|lieux|le guide|el guía turístico|la guida turistica|der Reiseleiter|导游
+tradition|nom|societe|la tradition|la tradición|la tradizione|die Tradition|传统
+traffic light|nom|lieux|le feu rouge|el semáforo|il semaforo|die Ampel|红绿灯
+tram|nom|lieux|le tramway|el tranvía|il tram|die Straßenbahn|有轨电车
+treasure|nom|loisirs|le trésor|el tesoro|il tesoro|der Schatz|宝藏
+truth|nom|idees|la vérité|la verdad|la verità|die Wahrheit|真相
+uniform|nom|vetements|l'uniforme|m|el uniforme|l'uniforme|f|die Uniform|制服
+valley|nom|nature|la vallée|el valle|la valle|das Tal|山谷
+village|nom|lieux|le village|el pueblo|il villaggio|das Dorf|村
+violin|nom|loisirs|le violon|el violín|il violino|die Geige|小提琴
+visitor|nom|lieux|le visiteur|el visitante|il visitatore|der Besucher|游客
+vocabulary|nom|ecole|le vocabulaire|el vocabulario|il vocabolario|der Wortschatz|词汇
+wealth|nom|argent|la richesse|la riqueza|la ricchezza|der Reichtum|财富
+wedding|nom|famille|le mariage|la boda|le nozze|die Hochzeit|婚礼
+weight|nom|corps|le poids|el peso|il peso|das Gewicht|体重
+wheelchair|nom|corps|le fauteuil roulant|la silla de ruedas|la sedia a rotelle|der Rollstuhl|轮椅
+wine|nom|manger|le vin|el vino|il vino|der Wein|葡萄酒
+winner|nom|loisirs|le gagnant|el ganador|il vincitore|der Gewinner|赢家
+wisdom|nom|idees|la sagesse|la sabiduría|la saggezza|die Weisheit|智慧
+wood|nom|nature|le bois|la madera|il legno|das Holz|木头
+wool|nom|vetements|la laine|la lana|la lana|die Wolle|羊毛
+youth|nom|famille|la jeunesse|la juventud|la giovinezza|die Jugend|青年
+advise|verbe|idees|conseiller|aconsejar|consigliare|raten|劝告
+allow|verbe|verbes|permettre|permitir|permettere|erlauben|允许
+annoy|verbe|emotions|agacer|molestar|infastidire|ärgern|使恼火
+appreciate|verbe|emotions|apprécier|apreciar|apprezzare|schätzen|欣赏
+belong|verbe|liens|appartenir|pertenecer|appartenere|gehören|属于
+blame|verbe|idees|reprocher|culpar|incolpare|beschuldigen|责怪
+bother|verbe|emotions|déranger|molestar|disturbare|stören|打扰
+chat|verbe|questions|bavarder|charlar|chiacchierare|plaudern|聊天
+cheer|verbe|loisirs|acclamer|animar|applaudire|jubeln|欢呼
+communicate|verbe|questions|communiquer|comunicar|comunicare|kommunizieren|交流
+compare|verbe|idees|comparer|comparar|confrontare|vergleichen|比较
+concentrate|verbe|ecole|se concentrer|concentrarse|concentrarsi|sich konzentrieren|集中
+criticize|verbe|idees|critiquer|criticar|criticare|kritisieren|批评
+disagree|verbe|idees|ne pas être d'accord|no estar de acuerdo|non essere d'accordo|nicht zustimmen|不同意
+disturb|verbe|verbes|déranger|molestar|disturbare|stören|打扰
+gather|verbe|verbes|rassembler|reunir|raccogliere|sammeln|聚集
+hug|verbe|famille|serrer dans ses bras|abrazar|abbracciare|umarmen|拥抱
+injure|verbe|corps|blesser|herir|ferire|verletzen|伤害
+invent|verbe|idees|inventer|inventar|inventare|erfinden|发明
+marry|verbe|famille|épouser|casarse con|sposare|heiraten|结婚
+mix|verbe|manger|mélanger|mezclar|mescolare|mischen|混合
+pack|verbe|lieux|faire sa valise|hacer la maleta|fare la valigia|packen|收拾行李
+pollute|verbe|nature|polluer|contaminar|inquinare|verschmutzen|污染
+pour|verbe|manger|verser|verter|versare|gießen|倒
+pronounce|verbe|ecole|prononcer|pronunciar|pronunciare|aussprechen|发音
+provide|verbe|verbes|fournir|proporcionar|fornire|bereitstellen|提供
+quit|verbe|travail|quitter|dejar|lasciare|kündigen|辞职
+recycle|verbe|nature|recycler|reciclar|riciclare|recyceln|回收
+regret|verbe|emotions|regretter|lamentar|rimpiangere|bereuen|后悔
+remind|verbe|temps|rappeler|recordar|ricordare|erinnern|提醒
+repair|verbe|maison|réparer|reparar|riparare|reparieren|修理
+retire|verbe|travail|prendre sa retraite|jubilarse|andare in pensione|in Rente gehen|退休
+reveal|verbe|idees|révéler|revelar|rivelare|enthüllen|揭示
+ruin|verbe|verbes|ruiner|arruinar|rovinare|ruinieren|毁
+shine|verbe|meteo|briller|brillar|splendere|scheinen|照耀
+smoke|verbe|corps|fumer|fumar|fumare|rauchen|抽烟
+swallow|verbe|corps|avaler|tragar|ingoiare|schlucken|吞
+tidy|verbe|maison|ranger|ordenar|riordinare|aufräumen|收拾
+wander|verbe|lieux|errer|vagar|vagare|umherwandern|闲逛
+weigh|verbe|chiffres|peser|pesar|pesare|wiegen|称
+worry|verbe|emotions|s'inquiéter|preocuparse|preoccuparsi|sich Sorgen machen|担心
+alive|adj|corps|vivant|vivo|vivo|lebendig|活
+ancient|adj|societe|ancien|antiguo|antico|antik|古代
+anxious|adj|emotions|anxieux|ansioso|ansioso|ängstlich|焦虑
+attractive|adj|adjectifs|séduisant|atractivo|attraente|attraktiv|有吸引力
+automatic|adj|medias|automatique|automático|automatico|automatisch|自动
+basic|adj|adjectifs|de base|básico|di base|grundlegend|基本
+bored|adj|emotions|qui s'ennuie|aburrido|annoiato|gelangweilt|无聊
+brave|adj|emotions|courageux|valiente|coraggioso|mutig|勇敢
+brilliant|adj|adjectifs|génial|brillante|geniale|brillant|杰出
+confused|adj|emotions|perplexe|confundido|confuso|verwirrt|困惑
+crazy|adj|emotions|fou|loco|pazzo|verrückt|疯狂
+creative|adj|loisirs|créatif|creativo|creativo|kreativ|有创造力
+crowded|adj|lieux|bondé|abarrotado|affollato|überfüllt|拥挤
+dangerous|adj|adjectifs|dangereux|peligroso|pericoloso|gefährlich|危险
+dead|adj|corps|mort|muerto|morto|tot|死
+deep|adj|nature|profond|profundo|profondo|tief|深
+disappointed|adj|emotions|déçu|decepcionado|deluso|enttäuscht|失望
+dizzy|adj|corps|étourdi|mareado|stordito|schwindlig|头晕
+empty|adj|adjectifs|vide|vacío|vuoto|leer|空
+enormous|adj|adjectifs|énorme|enorme|enorme|riesig|巨大
+familiar|adj|idees|familier|familiar|familiare|vertraut|熟悉
+fantastic|adj|adjectifs|fantastique|fantástico|fantastico|fantastisch|极好
+fresh|adj|manger|frais|fresco|fresco|frisch|新鲜
+frightened|adj|emotions|effrayé|asustado|spaventato|verängstigt|害怕
+grateful|adj|emotions|reconnaissant|agradecido|grato|dankbar|感激
+greedy|adj|emotions|gourmand|codicioso|avido|gierig|贪婪
+illegal|adj|societe|illégal|ilegal|illegale|illegal|非法
+impossible|adj|idees|impossible|imposible|impossibile|unmöglich|不可能
+intelligent|adj|ecole|intelligent|inteligente|intelligente|intelligent|聪明
+lively|adj|emotions|animé|animado|vivace|lebhaft|活泼
+local|adj|lieux|local|local|locale|örtlich|当地
+loose|adj|vetements|ample|holgado|largo|locker|松
+married|adj|famille|marié|casado|sposato|verheiratet|已婚
+modern|adj|temps|moderne|moderno|moderno|modern|现代
+mysterious|adj|loisirs|mystérieux|misterioso|misterioso|geheimnisvoll|神秘
+national|adj|societe|national|nacional|nazionale|national|国家
+natural|adj|nature|naturel|natural|naturale|natürlich|自然
+necessary|adj|idees|nécessaire|necesario|necessario|notwendig|必要
+nervous|adj|emotions|nerveux|nervioso|nervoso|nervös|紧张
+noisy|adj|adjectifs|bruyant|ruidoso|rumoroso|laut|吵
+peaceful|adj|emotions|paisible|tranquilo|tranquillo|friedlich|和平
+perfect|adj|adjectifs|parfait|perfecto|perfetto|perfekt|完美
+pleasant|adj|adjectifs|agréable|agradable|piacevole|angenehm|令人愉快
+polite|adj|salutations|poli|educado|educato|höflich|礼貌
+powerful|adj|adjectifs|puissant|poderoso|potente|mächtig|强大
+private|adj|societe|privé|privado|privato|privat|私人
+raw|adj|manger|cru|crudo|crudo|roh|生
+romantic|adj|emotions|romantique|romántico|romantico|romantisch|浪漫
+royal|adj|societe|royal|real|reale|königlich|皇家
+safe|adj|societe|sûr|seguro|sicuro|sicher|安全
+silly|adj|emotions|idiot|tonto|sciocco|albern|傻
+similar|adj|idees|semblable|similar|simile|ähnlich|相似
+simple|adj|adjectifs|simple|sencillo|semplice|einfach|简单
+slim|adj|corps|mince|delgado|snello|schlank|苗条
+smooth|adj|adjectifs|lisse|liso|liscio|glatt|光滑
+soft|adj|adjectifs|doux|suave|morbido|weich|软
+surprised|adj|emotions|surpris|sorprendido|sorpreso|überrascht|惊讶
+unfair|adj|idees|injuste|injusto|ingiusto|unfair|不公平
+unhappy|adj|emotions|malheureux|infeliz|infelice|unglücklich|不快乐
+unknown|adj|idees|inconnu|desconocido|sconosciuto|unbekannt|未知
+unusual|adj|adjectifs|inhabituel|inusual|insolito|ungewöhnlich|不寻常
+violent|adj|societe|violent|violento|violento|gewalttätig|暴力
+weak|adj|corps|faible|débil|debole|schwach|弱
+wet|adj|meteo|mouillé|mojado|bagnato|nass|湿
+wide|adj|adjectifs|large|ancho|largo|breit|宽
+wild|adj|animaux|sauvage|salvaje|selvaggio|wild|野生
+wise|adj|idees|sage|sabio|saggio|weise|聪明
+wooden|adj|maison|en bois|de madera|di legno|hölzern|木制
+worried|adj|emotions|inquiet|preocupado|preoccupato|besorgt|担心
+actually|adv|liens|en fait|en realidad|in realtà|eigentlich|其实
+anyway|adv|liens|de toute façon|de todos modos|comunque|sowieso|无论如何
+apparently|adv|liens|apparemment|aparentemente|a quanto pare|anscheinend|显然
+badly|adv|adjectifs|mal|mal|male|schlecht|糟
+certainly|adv|liens|certainement|ciertamente|certamente|sicherlich|当然
+fortunately|adv|liens|heureusement|afortunadamente|fortunatamente|glücklicherweise|幸运的是
+gradually|adv|temps|peu à peu|gradualmente|gradualmente|allmählich|逐渐
+hardly|adv|liens|à peine|apenas|appena|kaum|几乎不
+instead|adv|liens|à la place|en su lugar|invece|stattdessen|代替
+mainly|adv|liens|principalement|principalmente|principalmente|hauptsächlich|主要
+nearly|adv|chiffres|presque|casi|quasi|fast|几乎
+nowadays|adv|temps|de nos jours|hoy en día|oggigiorno|heutzutage|现在
+probably|adv|liens|probablement|probablemente|probabilmente|wahrscheinlich|可能
+quite|adv|liens|assez|bastante|abbastanza|ziemlich|相当
+rather|adv|liens|plutôt|más bien|piuttosto|eher|宁愿
+recently|adv|temps|récemment|recientemente|recentemente|kürzlich|最近
+regularly|adv|temps|régulièrement|regularmente|regolarmente|regelmäßig|定期
+twice|adv|chiffres|deux fois|dos veces|due volte|zweimal|两次

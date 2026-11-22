@@ -1,0 +1,170 @@
+absent|adj|ecole|absent|ausente|assente|abwesend|缺席
+absolutely|adv|liens|absolument|absolutamente|assolutamente|absolut|绝对
+academic|adj|ecole|universitaire|académico|accademico|akademisch|学术
+accidentally|adv|liens|accidentellement|accidentalmente|accidentalmente|versehentlich|意外地
+active|adj|adjectifs|actif|activo|attivo|aktiv|积极
+aggressive|adj|emotions|agressif|agresivo|aggressivo|aggressiv|好斗
+allergic|adj|corps|allergique|alérgico|allergico|allergisch|过敏
+aloud|adv|ecole|à voix haute|en voz alta|ad alta voce|laut|大声
+amazed|adj|emotions|stupéfait|asombrado|stupito|erstaunt|吃惊
+amazing|adj|adjectifs|incroyable|increíble|incredibile|erstaunlich|惊人
+ambitious|adj|emotions|ambitieux|ambicioso|ambizioso|ehrgeizig|有雄心
+annoyed|adj|emotions|agacé|molesto|infastidito|verärgert|生气
+annual|adj|temps|annuel|anual|annuale|jährlich|每年
+approximately|adv|chiffres|environ|aproximadamente|circa|ungefähr|大约
+ashamed|adj|emotions|honteux|avergonzado|vergognoso|beschämt|惭愧
+available|adj|adjectifs|disponible|disponible|disponibile|verfügbar|可用
+aware|adj|idees|conscient|consciente|consapevole|bewusst|意识到
+awful|adj|adjectifs|affreux|horrible|orribile|furchtbar|糟糕
+bald|adj|corps|chauve|calvo|calvo|kahl|秃
+bitter|adj|manger|amer|amargo|amaro|bitter|苦
+blind|adj|corps|aveugle|ciego|cieco|blind|瞎
+brief|adj|temps|bref|breve|breve|kurz|简短
+calm|adj|emotions|calme|tranquilo|calmo|ruhig|平静
+capable|adj|travail|capable|capaz|capace|fähig|能干
+careless|adj|emotions|négligent|descuidado|distratto|nachlässig|粗心
+casual|adj|vetements|décontracté|informal|casual|lässig|随便
+cheerful|adj|emotions|joyeux|alegre|allegro|fröhlich|快乐
+complicated|adj|adjectifs|compliqué|complicado|complicato|kompliziert|复杂
+confident|adj|emotions|confiant|seguro|sicuro di sé|selbstbewusst|自信
+constantly|adv|temps|constamment|constantemente|costantemente|ständig|不断
+cruel|adj|emotions|cruel|cruel|crudele|grausam|残酷
+cultural|adj|societe|culturel|cultural|culturale|kulturell|文化
+curious|adj|emotions|curieux|curioso|curioso|neugierig|好奇
+curly|adj|corps|bouclé|rizado|riccio|lockig|卷曲
+current|adj|temps|actuel|actual|attuale|aktuell|当前
+deaf|adj|corps|sourd|sordo|sordo|taub|聋
+definitely|adv|liens|certainement|definitivamente|sicuramente|bestimmt|一定
+delighted|adj|emotions|ravi|encantado|felicissimo|hocherfreut|高兴
+depressed|adj|emotions|déprimé|deprimido|depresso|deprimiert|沮丧
+digital|adj|medias|numérique|digital|digitale|digital|数字
+directly|adv|liens|directement|directamente|direttamente|direkt|直接
+disabled|adj|corps|handicapé|discapacitado|disabile|behindert|残疾
+disgusting|adj|adjectifs|dégoûtant|asqueroso|disgustoso|ekelhaft|恶心
+distant|adj|lieux|lointain|lejano|lontano|fern|遥远
+divorced|adj|famille|divorcé|divorciado|divorziato|geschieden|离婚
+dull|adj|adjectifs|ennuyeux|aburrido|noioso|langweilig|乏味
+eager|adj|emotions|impatient|ansioso|desideroso|eifrig|渴望
+economic|adj|travail|économique|económico|economico|wirtschaftlich|经济
+effective|adj|travail|efficace|eficaz|efficace|wirksam|有效
+electronic|adj|medias|électronique|electrónico|elettronico|elektronisch|电子
+embarrassed|adj|emotions|gêné|avergonzado|imbarazzato|verlegen|尴尬
+emotional|adj|emotions|émotif|emocional|emotivo|emotional|情绪化
+enjoyable|adj|loisirs|agréable|agradable|piacevole|angenehm|愉快
+entire|adj|chiffres|entier|entero|intero|ganz|整个
+environmental|adj|nature|environnemental|ambiental|ambientale|ökologisch|环境
+equally|adv|chiffres|également|igualmente|ugualmente|gleich|同样
+essential|adj|idees|essentiel|esencial|essenziale|wesentlich|必要
+eventually|adv|temps|finalement|finalmente|alla fine|schließlich|最终
+exact|adj|chiffres|exact|exacto|esatto|genau|准确
+exhausted|adj|corps|épuisé|agotado|esausto|erschöpft|筋疲力尽
+experienced|adj|travail|expérimenté|experimentado|esperto|erfahren|有经验
+extinct|adj|animaux|disparu|extinto|estinto|ausgestorben|灭绝
+extraordinary|adj|adjectifs|extraordinaire|extraordinario|straordinario|außergewöhnlich|非凡
+extreme|adj|adjectifs|extrême|extremo|estremo|extrem|极端
+faithful|adj|emotions|fidèle|fiel|fedele|treu|忠实
+fashionable|adj|vetements|à la mode|de moda|alla moda|modisch|时髦
+financial|adj|argent|financier|financiero|finanziario|finanziell|财务
+fluently|adv|ecole|couramment|con fluidez|correntemente|fließend|流利
+foolish|adj|emotions|stupide|tonto|sciocco|töricht|愚蠢
+formal|adj|vetements|formel|formal|formale|förmlich|正式
+former|adj|temps|ancien|antiguo|ex|ehemalig|以前
+fortunate|adj|emotions|chanceux|afortunado|fortunato|glücklich|幸运
+frequently|adv|temps|fréquemment|frecuentemente|frequentemente|häufig|经常
+frozen|adj|meteo|gelé|congelado|congelato|gefroren|冻
+full-time|adj|travail|à plein temps|a tiempo completo|a tempo pieno|Vollzeit|全职
+generous|adj|emotions|généreux|generoso|generoso|großzügig|大方
+gorgeous|adj|adjectifs|magnifique|precioso|stupendo|wunderschön|华丽
+guilty|adj|emotions|coupable|culpable|colpevole|schuldig|有罪
+helpless|adj|emotions|impuissant|indefenso|indifeso|hilflos|无助
+historical|adj|societe|historique|histórico|storico|historisch|历史
+homeless|adj|societe|sans abri|sin hogar|senzatetto|obdachlos|无家可归
+honest|adj|emotions|honnête|honesto|onesto|ehrlich|诚实
+horrible|adj|adjectifs|horrible|horrible|orribile|schrecklich|可怕
+huge|adj|adjectifs|énorme|enorme|enorme|riesig|巨大
+humid|adj|meteo|humide|húmedo|umido|feucht|潮湿
+immediately|adv|temps|immédiatement|inmediatamente|immediatamente|sofort|立即
+impressive|adj|adjectifs|impressionnant|impresionante|impressionante|beeindruckend|令人印象深刻
+incorrect|adj|ecole|incorrect|incorrecto|scorretto|falsch|不正确
+incredible|adj|adjectifs|incroyable|increíble|incredibile|unglaublich|难以置信
+independent|adj|adjectifs|indépendant|independiente|indipendente|unabhängig|独立
+industrial|adj|travail|industriel|industrial|industriale|industriell|工业
+innocent|adj|societe|innocent|inocente|innocente|unschuldig|无辜
+jealous|adj|emotions|jaloux|celoso|geloso|eifersüchtig|嫉妒
+legal|adj|societe|légal|legal|legale|legal|合法
+loyal|adj|emotions|loyal|leal|leale|treu|忠诚
+magnificent|adj|adjectifs|magnifique|magnífico|magnifico|prächtig|壮丽
+mental|adj|corps|mental|mental|mentale|geistig|精神
+messy|adj|maison|en désordre|desordenado|disordinato|unordentlich|凌乱
+mild|adj|meteo|doux|suave|mite|mild|温和
+miserable|adj|emotions|malheureux|desgraciado|infelice|elend|痛苦
+narrow|adj|adjectifs|étroit|estrecho|stretto|eng|窄
+nearby|adj|lieux|proche|cercano|vicino|nahe gelegen|附近
+nevertheless|adv|liens|néanmoins|sin embargo|tuttavia|trotzdem|然而
+nuclear|adj|nature|nucléaire|nuclear|nucleare|nuklear|核
+obvious|adj|idees|évident|obvio|ovvio|offensichtlich|明显
+occasionally|adv|temps|de temps en temps|de vez en cuando|ogni tanto|gelegentlich|偶尔
+old-fashioned|adj|adjectifs|démodé|anticuado|antiquato|altmodisch|过时
+organic|adj|manger|biologique|ecológico|biologico|biologisch|有机
+otherwise|adv|liens|sinon|de lo contrario|altrimenti|sonst|否则
+outdoor|adj|loisirs|en plein air|al aire libre|all'aperto|im Freien|户外
+painful|adj|corps|douloureux|doloroso|doloroso|schmerzhaft|痛苦
+pale|adj|couleurs|pâle|pálido|pallido|blass|苍白
+part-time|adj|travail|à temps partiel|a tiempo parcial|part-time|Teilzeit|兼职
+permanent|adj|temps|permanent|permanente|permanente|dauerhaft|永久
+personally|adv|questions|personnellement|personalmente|personalmente|persönlich|亲自
+positive|adj|emotions|positif|positivo|positivo|positiv|积极
+practical|adj|adjectifs|pratique|práctico|pratico|praktisch|实用
+precious|adj|argent|précieux|precioso|prezioso|wertvoll|宝贵
+pregnant|adj|famille|enceinte|embarazada|incinta|schwanger|怀孕
+previous|adj|temps|précédent|anterior|precedente|vorherig|以前
+proud|adj|emotions|fier|orgulloso|orgoglioso|stolz|骄傲
+public|adj|societe|public|público|pubblico|öffentlich|公共
+pure|adj|adjectifs|pur|puro|puro|rein|纯
+rapid|adj|adjectifs|rapide|rápido|rapido|schnell|迅速
+rare|adj|adjectifs|rare|raro|raro|selten|稀有
+rarely|adv|temps|rarement|raramente|raramente|selten|很少
+reasonable|adj|idees|raisonnable|razonable|ragionevole|vernünftig|合理
+reliable|adj|emotions|fiable|fiable|affidabile|zuverlässig|可靠
+religious|adj|idees|religieux|religioso|religioso|religiös|宗教
+remarkable|adj|adjectifs|remarquable|notable|notevole|bemerkenswert|显著
+responsible|adj|travail|responsable|responsable|responsabile|verantwortlich|负责
+ridiculous|adj|adjectifs|ridicule|ridículo|ridicolo|lächerlich|荒谬
+rough|adj|adjectifs|rugueux|áspero|ruvido|rau|粗糙
+secret|adj|idees|secret|secreto|segreto|geheim|秘密
+selfish|adj|emotions|égoïste|egoísta|egoista|egoistisch|自私
+serious|adj|emotions|sérieux|serio|serio|ernst|严肃
+severe|adj|adjectifs|sévère|severo|severo|streng|严厉
+shallow|adj|nature|peu profond|poco profundo|poco profondo|flach|浅
+sharp|adj|maison|tranchant|afilado|affilato|scharf|锋利
+shocked|adj|emotions|choqué|conmocionado|scioccato|schockiert|震惊
+silent|adj|adjectifs|silencieux|silencioso|silenzioso|still|沉默
+slightly|adv|chiffres|légèrement|ligeramente|leggermente|leicht|稍微
+solid|adj|adjectifs|solide|sólido|solido|fest|固体
+sore|adj|corps|douloureux|dolorido|indolenzito|wund|疼
+sour|adj|manger|acide|agrio|aspro|sauer|酸
+spicy|adj|manger|épicé|picante|piccante|scharf|辣
+steep|adj|nature|raide|empinado|ripido|steil|陡
+stressful|adj|emotions|stressant|estresante|stressante|stressig|有压力
+stubborn|adj|emotions|têtu|terco|testardo|stur|固执
+stupid|adj|emotions|bête|estúpido|stupido|dumm|笨
+sudden|adj|temps|soudain|repentino|improvviso|plötzlich|突然
+talented|adj|loisirs|talentueux|talentoso|talentuoso|talentiert|有才华
+temporary|adj|temps|temporaire|temporal|temporaneo|vorübergehend|临时
+tiny|adj|adjectifs|minuscule|diminuto|minuscolo|winzig|极小
+totally|adv|liens|totalement|totalmente|totalmente|völlig|完全
+traditional|adj|societe|traditionnel|tradicional|tradizionale|traditionell|传统
+tropical|adj|meteo|tropical|tropical|tropicale|tropisch|热带
+typical|adj|adjectifs|typique|típico|tipico|typisch|典型
+unemployed|adj|travail|au chômage|desempleado|disoccupato|arbeitslos|失业
+unexpected|adj|idees|inattendu|inesperado|inaspettato|unerwartet|意外
+unfortunately|adv|liens|malheureusement|desafortunadamente|purtroppo|leider|不幸
+unique|adj|adjectifs|unique|único|unico|einzigartig|独特
+unlikely|adj|idees|peu probable|improbable|improbabile|unwahrscheinlich|不太可能
+useless|adj|adjectifs|inutile|inútil|inutile|nutzlos|没用
+valuable|adj|argent|précieux|valioso|prezioso|wertvoll|有价值
+various|adj|chiffres|divers|varios|vari|verschieden|各种
+vast|adj|adjectifs|immense|vasto|vasto|riesig|广阔
+visible|adj|adjectifs|visible|visible|visibile|sichtbar|可见
+weird|adj|adjectifs|bizarre|raro|strano|seltsam|奇怪
+worth|adj|argent|qui vaut|que vale|che vale|wert|值得

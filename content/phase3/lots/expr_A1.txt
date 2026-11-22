@@ -1,0 +1,8 @@
+nice to meet you|expr|salutations|enchanté|encantado|piacere|freut mich|很高兴认识你
+see you soon|expr|salutations|à bientôt|hasta pronto|a presto|bis bald|回头见
+happy birthday|expr|salutations|joyeux anniversaire|feliz cumpleaños|buon compleanno|alles Gute zum Geburtstag|生日快乐
+good luck|expr|salutations|bonne chance|buena suerte|buona fortuna|viel Glück|祝你好运
+no problem|expr|salutations|pas de problème|no hay problema|nessun problema|kein Problem|没问题
+how much is it|expr|argent|combien ça coûte ?|¿cuánto cuesta?|quanto costa?|was kostet das?|多少钱
+what time is it|expr|temps|quelle heure est-il ?|¿qué hora es?|che ore sono?|wie spät ist es?|几点了
+enjoy your meal|expr|manger|bon appétit|buen provecho|buon appetito|guten Appetit|请慢用

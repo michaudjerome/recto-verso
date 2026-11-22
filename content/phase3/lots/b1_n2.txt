@@ -1,0 +1,209 @@
+percent|nom|chiffres|le pourcentage|el porcentaje|la percentuale|das Prozent|百分比
+performer|nom|loisirs|l'artiste|m|el intérprete|l'interprete|m|der Künstler|表演者
+philosophy|nom|idees|la philosophie|la filosofía|la filosofia|die Philosophie|哲学
+phrase|nom|ecole|l'expression|f|la frase|la frase|der Ausdruck|短语
+physics|nom|ecole|la physique|la física|la fisica|die Physik|物理
+pillow|nom|maison|l'oreiller|m|la almohada|il cuscino|das Kopfkissen|枕头
+pineapple|nom|manger|l'ananas|m|la piña|l'ananas|m|die Ananas|菠萝
+plastic|nom|maison|le plastique|el plástico|la plastica|das Plastik|塑料
+platform|nom|lieux|le quai|el andén|il binario|der Bahnsteig|站台
+plug|nom|maison|la prise|el enchufe|la spina|der Stecker|插头
+pocket money|nom|argent|l'argent de poche|m|la paga|la paghetta|das Taschengeld|零花钱
+poet|nom|loisirs|le poète|el poeta|il poeta|der Dichter|诗人
+poetry|nom|loisirs|la poésie|la poesía|la poesia|die Poesie|诗歌
+poison|nom|corps|le poison|el veneno|il veleno|das Gift|毒药
+policy|nom|societe|la politique|la política|la politica|die Politik|政策
+politician|nom|societe|l'homme politique|m|el político|il politico|der Politiker|政治家
+politics|nom|societe|la politique|la política|la politica|die Politik|政治
+pond|nom|nature|l'étang|m|el estanque|lo stagno|der Teich|池塘
+pork|nom|manger|le porc|el cerdo|il maiale|das Schweinefleisch|猪肉
+possibility|nom|idees|la possibilité|la posibilidad|la possibilità|die Möglichkeit|可能性
+postcard|nom|lieux|la carte postale|la postal|la cartolina|die Postkarte|明信片
+pot|nom|maison|la casserole|la olla|la pentola|der Topf|锅
+poverty|nom|societe|la pauvreté|la pobreza|la povertà|die Armut|贫穷
+powder|nom|maison|la poudre|el polvo|la polvere|das Pulver|粉末
+praise|nom|emotions|les éloges|el elogio|la lode|das Lob|表扬
+prayer|nom|idees|la prière|la oración|la preghiera|das Gebet|祈祷
+preparation|nom|ecole|la préparation|la preparación|la preparazione|die Vorbereitung|准备
+prescription|nom|corps|l'ordonnance|f|la receta|la ricetta|das Rezept|处方
+presentation|nom|travail|la présentation|la presentación|la presentazione|die Präsentation|演示
+president|nom|societe|le président|el presidente|il presidente|der Präsident|总统
+priest|nom|societe|le prêtre|el sacerdote|il prete|der Priester|牧师
+principle|nom|idees|le principe|el principio|il principio|das Prinzip|原则
+prison|nom|societe|la prison|la prisión|la prigione|das Gefängnis|监狱
+prisoner|nom|societe|le prisonnier|el prisionero|il prigioniero|der Gefangene|囚犯
+privacy|nom|societe|la vie privée|la privacidad|la privacy|die Privatsphäre|隐私
+prize|nom|loisirs|le prix|el premio|il premio|der Preis|奖品
+process|nom|idees|le processus|el proceso|il processo|der Prozess|过程
+producer|nom|medias|le producteur|el productor|il produttore|der Produzent|制片人
+profession|nom|travail|la profession|la profesión|la professione|der Beruf|职业
+professor|nom|ecole|le professeur|el catedrático|il professore|der Professor|教授
+progress|nom|idees|le progrès|el progreso|il progresso|der Fortschritt|进步
+promotion|nom|travail|la promotion|el ascenso|la promozione|die Beförderung|晋升
+proof|nom|idees|la preuve|la prueba|la prova|der Beweis|证据
+property|nom|maison|la propriété|la propiedad|la proprietà|das Eigentum|财产
+proposal|nom|travail|la proposition|la propuesta|la proposta|der Vorschlag|建议
+protection|nom|societe|la protection|la protección|la protezione|der Schutz|保护
+protest|nom|societe|la manifestation|la protesta|la protesta|der Protest|抗议
+proverb|nom|ecole|le proverbe|el refrán|il proverbio|das Sprichwort|谚语
+public transport|nom|lieux|les transports en commun|el transporte público|i mezzi pubblici|die öffentlichen Verkehrsmittel|公共交通
+publisher|nom|medias|l'éditeur|m|el editor|l'editore|m|der Verleger|出版商
+punishment|nom|societe|la punition|el castigo|la punizione|die Strafe|惩罚
+puppy|nom|animaux|le chiot|el cachorro|il cucciolo|der Welpe|小狗
+purse|nom|argent|le porte-monnaie|el monedero|il borsellino|das Portemonnaie|钱包
+puzzle|nom|loisirs|le casse-tête|el rompecabezas|il rompicapo|das Rätsel|谜
+quantity|nom|chiffres|la quantité|la cantidad|la quantità|die Menge|数量
+questionnaire|nom|ecole|le questionnaire|el cuestionario|il questionario|der Fragebogen|问卷
+race|nom|loisirs|la course|la carrera|la corsa|das Rennen|赛跑
+railway|nom|lieux|le chemin de fer|el ferrocarril|la ferrovia|die Eisenbahn|铁路
+rainforest|nom|nature|la forêt tropicale|la selva tropical|la foresta pluviale|der Regenwald|雨林
+razor|nom|maison|le rasoir|la cuchilla de afeitar|il rasoio|der Rasierer|剃刀
+reality|nom|idees|la réalité|la realidad|la realtà|die Wirklichkeit|现实
+reception|nom|lieux|la réception|la recepción|la reception|die Rezeption|前台
+recipe|nom|manger|la recette|la receta|la ricetta|das Rezept|食谱
+recording|nom|medias|l'enregistrement|m|la grabación|la registrazione|die Aufnahme|录音
+recycling|nom|nature|le recyclage|el reciclaje|il riciclaggio|das Recycling|回收
+referee|nom|loisirs|l'arbitre|m|el árbitro|l'arbitro|m|der Schiedsrichter|裁判
+refund|nom|argent|le remboursement|el reembolso|il rimborso|die Rückerstattung|退款
+region|nom|lieux|la région|la región|la regione|die Region|地区
+relationship|nom|famille|la relation|la relación|la relazione|die Beziehung|关系
+relative|nom|famille|le parent|el pariente|il parente|der Verwandte|亲戚
+religion|nom|idees|la religion|la religión|la religione|die Religion|宗教
+remote control|nom|maison|la télécommande|el mando a distancia|il telecomando|die Fernbedienung|遥控器
+rescue|nom|societe|le sauvetage|el rescate|il salvataggio|die Rettung|救援
+researcher|nom|travail|le chercheur|el investigador|il ricercatore|der Forscher|研究人员
+reservation|nom|lieux|la réservation|la reserva|la prenotazione|die Reservierung|预订
+resource|nom|nature|la ressource|el recurso|la risorsa|die Ressource|资源
+respect|nom|emotions|le respect|el respeto|il rispetto|der Respekt|尊重
+responsibility|nom|travail|la responsabilité|la responsabilidad|la responsabilità|die Verantwortung|责任
+reward|nom|idees|la récompense|la recompensa|la ricompensa|die Belohnung|奖励
+risk|nom|idees|le risque|el riesgo|il rischio|das Risiko|风险
+robot|nom|medias|le robot|el robot|il robot|der Roboter|机器人
+routine|nom|temps|la routine|la rutina|la routine|die Routine|日常
+rubbish|nom|maison|les ordures|la basura|la spazzatura|der Müll|垃圾
+sadness|nom|emotions|la tristesse|la tristeza|la tristezza|die Traurigkeit|悲伤
+salmon|nom|manger|le saumon|el salmón|il salmone|der Lachs|三文鱼
+sand|nom|nature|le sable|la arena|la sabbia|der Sand|沙子
+sandal|nom|vetements|la sandale|la sandalia|il sandalo|die Sandale|凉鞋
+satellite|nom|medias|le satellite|el satélite|il satellite|der Satellit|卫星
+satisfaction|nom|emotions|la satisfaction|la satisfacción|la soddisfazione|die Zufriedenheit|满意
+saucepan|nom|maison|la casserole|el cazo|la pentola|der Kochtopf|锅
+scholarship|nom|ecole|la bourse|la beca|la borsa di studio|das Stipendium|奖学金
+science fiction|nom|loisirs|la science-fiction|la ciencia ficción|la fantascienza|die Science-Fiction|科幻
+score|nom|loisirs|le score|el resultado|il punteggio|der Spielstand|比分
+sculpture|nom|loisirs|la sculpture|la escultura|la scultura|die Skulptur|雕塑
+season|nom|meteo|la saison|la estación|la stagione|die Jahreszeit|季节
+secondary school|nom|ecole|le collège|la escuela secundaria|la scuola secondaria|die weiterführende Schule|中学
+security|nom|societe|la sécurité|la seguridad|la sicurezza|die Sicherheit|安全
+selection|nom|argent|la sélection|la selección|la selezione|die Auswahl|选择
+series|nom|medias|la série|la serie|la serie|die Serie|系列
+shame|nom|emotions|la honte|la vergüenza|la vergogna|die Scham|羞耻
+shelter|nom|maison|l'abri|m|el refugio|il riparo|der Unterschlupf|避难所
+shortage|nom|argent|la pénurie|la escasez|la carenza|der Mangel|短缺
+shrimp|nom|manger|la crevette|la gamba|il gambero|die Garnele|虾
+signature|nom|travail|la signature|la firma|la firma|die Unterschrift|签名
+silk|nom|vetements|la soie|la seda|la seta|die Seide|丝绸
+similarity|nom|idees|la ressemblance|la similitud|la somiglianza|die Ähnlichkeit|相似
+skeleton|nom|corps|le squelette|el esqueleto|lo scheletro|das Skelett|骨架
+skin|nom|corps|la peau|la piel|la pelle|die Haut|皮肤
+skyscraper|nom|lieux|le gratte-ciel|el rascacielos|il grattacielo|der Wolkenkratzer|摩天大楼
+sleeve|nom|vetements|la manche|la manga|la manica|der Ärmel|袖子
+slogan|nom|medias|le slogan|el eslogan|lo slogan|der Slogan|口号
+slope|nom|nature|la pente|la pendiente|il pendio|der Hang|斜坡
+smoker|nom|corps|le fumeur|el fumador|il fumatore|der Raucher|吸烟者
+soap opera|nom|medias|le feuilleton|la telenovela|la telenovela|die Seifenoper|肥皂剧
+soul|nom|idees|l'âme|f|el alma|f|l'anima|f|die Seele|灵魂
+souvenir|nom|lieux|le souvenir|el recuerdo|il souvenir|das Andenken|纪念品
+specialist|nom|travail|le spécialiste|el especialista|lo specialista|der Spezialist|专家
+spectator|nom|loisirs|le spectateur|el espectador|lo spettatore|der Zuschauer|观众
+spelling|nom|ecole|l'orthographe|f|la ortografía|l'ortografia|f|die Rechtschreibung|拼写
+spice|nom|manger|l'épice|f|la especia|la spezia|das Gewürz|香料
+spider|nom|animaux|l'araignée|f|la araña|il ragno|die Spinne|蜘蛛
+spinach|nom|manger|les épinards|las espinacas|gli spinaci|der Spinat|菠菜
+spirit|nom|idees|l'esprit|m|el espíritu|lo spirito|der Geist|精神
+sponsor|nom|travail|le sponsor|el patrocinador|lo sponsor|der Sponsor|赞助商
+standard|nom|idees|la norme|el estándar|lo standard|der Standard|标准
+steam|nom|maison|la vapeur|el vapor|il vapore|der Dampf|蒸汽
+steel|nom|maison|l'acier|m|el acero|l'acciaio|m|der Stahl|钢
+strawberry|nom|manger|la fraise|la fresa|la fragola|die Erdbeere|草莓
+stream|nom|nature|le ruisseau|el arroyo|il ruscello|der Bach|小溪
+stress|nom|emotions|le stress|el estrés|lo stress|der Stress|压力
+studio|nom|medias|le studio|el estudio|lo studio|das Studio|工作室
+submarine|nom|lieux|le sous-marin|el submarino|il sottomarino|das U-Boot|潜艇
+sunrise|nom|meteo|le lever du soleil|el amanecer|l'alba|f|der Sonnenaufgang|日出
+sunset|nom|meteo|le coucher du soleil|la puesta de sol|il tramonto|der Sonnenuntergang|日落
+supply|nom|argent|l'approvisionnement|m|el suministro|la fornitura|die Versorgung|供应
+supporter|nom|loisirs|le supporter|el aficionado|il tifoso|der Fan|支持者
+surface|nom|nature|la surface|la superficie|la superficie|die Oberfläche|表面
+surgeon|nom|corps|le chirurgien|el cirujano|il chirurgo|der Chirurg|外科医生
+surgery|nom|corps|la chirurgie|la cirugía|la chirurgia|die Chirurgie|手术
+survival|nom|nature|la survie|la supervivencia|la sopravvivenza|das Überleben|生存
+survivor|nom|societe|le survivant|el superviviente|il sopravvissuto|der Überlebende|幸存者
+suspect|nom|societe|le suspect|el sospechoso|il sospettato|der Verdächtige|嫌疑人
+sweat|nom|corps|la sueur|el sudor|il sudore|der Schweiß|汗
+sweatshirt|nom|vetements|le sweat-shirt|la sudadera|la felpa|das Sweatshirt|运动衫
+swimmer|nom|loisirs|le nageur|el nadador|il nuotatore|der Schwimmer|游泳者
+switch|nom|maison|l'interrupteur|m|el interruptor|l'interruttore|m|der Schalter|开关
+sword|nom|loisirs|l'épée|f|la espada|la spada|das Schwert|剑
+sympathy|nom|emotions|la compassion|la compasión|la compassione|das Mitgefühl|同情
+symptom|nom|corps|le symptôme|el síntoma|il sintomo|das Symptom|症状
+tax|nom|argent|l'impôt|m|el impuesto|la tassa|die Steuer|税
+teammate|nom|loisirs|le coéquipier|el compañero de equipo|il compagno di squadra|der Mitspieler|队友
+technique|nom|travail|la technique|la técnica|la tecnica|die Technik|技术
+tendency|nom|idees|la tendance|la tendencia|la tendenza|die Tendenz|倾向
+tension|nom|emotions|la tension|la tensión|la tensione|die Spannung|紧张
+tent|nom|loisirs|la tente|la tienda de campaña|la tenda|das Zelt|帐篷
+terrorism|nom|societe|le terrorisme|el terrorismo|il terrorismo|der Terrorismus|恐怖主义
+theft|nom|societe|le vol|el robo|il furto|der Diebstahl|盗窃
+theory|nom|idees|la théorie|la teoría|la teoria|die Theorie|理论
+threat|nom|societe|la menace|la amenaza|la minaccia|die Drohung|威胁
+thriller|nom|loisirs|le thriller|el thriller|il thriller|der Thriller|惊悚片
+thumb|nom|corps|le pouce|el pulgar|il pollice|der Daumen|大拇指
+thunder|nom|meteo|le tonnerre|el trueno|il tuono|der Donner|雷
+tide|nom|nature|la marée|la marea|la marea|die Gezeiten|潮
+tobacco|nom|corps|le tabac|el tabaco|il tabacco|der Tabak|烟草
+tongue|nom|corps|la langue|la lengua|la lingua|die Zunge|舌头
+toothpaste|nom|maison|le dentifrice|la pasta de dientes|il dentifricio|die Zahnpasta|牙膏
+tornado|nom|meteo|la tornade|el tornado|il tornado|der Tornado|龙卷风
+tournament|nom|loisirs|le tournoi|el torneo|il torneo|das Turnier|锦标赛
+traffic jam|nom|lieux|l'embouteillage|m|el atasco|l'ingorgo|m|der Stau|堵车
+tragedy|nom|loisirs|la tragédie|la tragedia|la tragedia|die Tragödie|悲剧
+transport|nom|lieux|le transport|el transporte|il trasporto|der Transport|交通
+travel agent|nom|lieux|l'agent de voyages|m|el agente de viajes|l'agente di viaggio|m|der Reisebüroangestellte|旅行社
+treatment|nom|corps|le traitement|el tratamiento|il trattamento|die Behandlung|治疗
+trend|nom|medias|la tendance|la tendencia|la tendenza|der Trend|趋势
+trumpet|nom|loisirs|la trompette|la trompeta|la tromba|die Trompete|喇叭
+tuna|nom|manger|le thon|el atún|il tonno|der Thunfisch|金枪鱼
+turtle|nom|animaux|la tortue|la tortuga|la tartaruga|die Schildkröte|乌龟
+twin|nom|famille|le jumeau|el gemelo|il gemello|der Zwilling|双胞胎
+unemployment|nom|travail|le chômage|el desempleo|la disoccupazione|die Arbeitslosigkeit|失业
+universe|nom|nature|l'univers|m|el universo|l'universo|m|das Universum|宇宙
+van|nom|lieux|la camionnette|la furgoneta|il furgone|der Lieferwagen|面包车
+variety|nom|idees|la variété|la variedad|la varietà|die Vielfalt|多样
+vegetarian|nom|manger|le végétarien|el vegetariano|il vegetariano|der Vegetarier|素食者
+vet|nom|animaux|le vétérinaire|el veterinario|il veterinario|der Tierarzt|兽医
+victim|nom|societe|la victime|la víctima|la vittima|das Opfer|受害者
+victory|nom|loisirs|la victoire|la victoria|la vittoria|der Sieg|胜利
+violence|nom|societe|la violence|la violencia|la violenza|die Gewalt|暴力
+virus|nom|corps|le virus|el virus|il virus|das Virus|病毒
+visa|nom|lieux|le visa|el visado|il visto|das Visum|签证
+volcano|nom|nature|le volcan|el volcán|il vulcano|der Vulkan|火山
+volume|nom|chiffres|le volume|el volumen|il volume|das Volumen|体积
+vowel|nom|ecole|la voyelle|la vocal|la vocale|der Vokal|元音
+wardrobe|nom|maison|l'armoire|f|el armario|l'armadio|m|der Kleiderschrank|衣柜
+warmth|nom|meteo|la chaleur|el calor|il calore|die Wärme|温暖
+warning|nom|societe|l'avertissement|m|la advertencia|l'avvertimento|m|die Warnung|警告
+waste|nom|nature|les déchets|los residuos|i rifiuti|der Abfall|废物
+waterfall|nom|nature|la cascade|la cascada|la cascata|der Wasserfall|瀑布
+weakness|nom|corps|la faiblesse|la debilidad|la debolezza|die Schwäche|弱点
+weapon|nom|societe|l'arme|f|el arma|f|l'arma|f|die Waffe|武器
+whale|nom|animaux|la baleine|la ballena|la balena|der Wal|鲸鱼
+whisper|nom|questions|le chuchotement|el susurro|il sussurro|das Flüstern|耳语
+whistle|nom|loisirs|le sifflet|el silbato|il fischietto|die Pfeife|哨子
+wildlife|nom|animaux|la faune|la fauna|la fauna|die Tierwelt|野生动物
+wing|nom|animaux|l'aile|f|el ala|f|l'ala|f|der Flügel|翅膀
+wire|nom|maison|le fil|el cable|il filo|der Draht|电线
+workshop|nom|travail|l'atelier|m|el taller|il laboratorio|die Werkstatt|车间
+wound|nom|corps|la blessure|la herida|la ferita|die Wunde|伤口
+wrist|nom|corps|le poignet|la muñeca|il polso|das Handgelenk|手腕
+yoga|nom|loisirs|le yoga|el yoga|lo yoga|das Yoga|瑜伽
