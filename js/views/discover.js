@@ -1,7 +1,7 @@
 // Découvrir : une pile face cachée ; on retourne la carte du dessus, on la garde ou on la passe
 import { t } from '../i18n.js';
 import { notions, cardText } from '../content.js';
-import { cardsOf, addNotion } from '../cards.js';
+import { cardsOf, addNotion, deleteCard, cardId } from '../cards.js';
 import { frontHTML, backHTML } from '../face.js';
 import { shuffle, requireCourse, topBar, emptyState } from '../play-kit.js';
 import { esc, flip, logo, toast, later } from '../ui.js';
@@ -54,7 +54,7 @@ export async function render(el) {
     const txt = await cardText({ notion: n.id }, course);
     if (txt.front?.w && txt.back?.w) all.push({ n, txt, r: rank(levelOf(n, course)) });
   }
-  if (mode === 'theme') return renderLots(el, course, lotsOf(all, data.themes, zh), have);
+  if (mode === 'theme') return renderLots(el, course, lotsOf(all, data.themes, zh), have, levelsOf(all, zh));
   const pile = all.filter((p) => !have.has(p.n.id));
   // Les mots du niveau choisi et des niveaux en dessous d'abord, dans un ordre varié
   const mine = rank(course.level === 'beginner' ? (zh ? 'HSK1' : 'A1') : course.level);
@@ -102,36 +102,69 @@ export async function render(el) {
   deal();
 }
 
-// Par thème : un toucher ajoute tout le lot (sauf les mots déjà pris)
-function renderLots(el, course, lots, have) {
+// Niveaux entiers (HSK 1, 2, 3+ ou A1, A2, B1+), proposés en tête de « Par thème »
+function levelsOf(all, zh) {
+  const tier = (n) => Math.min(zh ? n.hsk || 3 : RANK[n.cefr] ?? 3, 3) || 1;
+  return [1, 2, 3].map((k) => ({ label: (zh ? `HSK ${k}` : ['', 'A1', 'A2', 'B1'][k]) + (k === 3 ? '+' : ''), items: all.filter((p) => tier(p.n) === k), level: true }))
+    .filter((g) => g.items.length);
+}
+
+// Par thème : un toucher ajoute tout le lot (sauf les mots déjà pris) ; « Retirer » enlève le lot en deux touchers
+function renderLots(el, course, lots, have, levels) {
   const lang = base(locale());
   const thName = (th) => th.names?.[lang] || th.names?.fr || th.id;
-  let html = '', last = null;
-  lots.forEach((lot, i) => {
+  const groups = [...levels, ...lots];
+  const row = (i) => `<div class="row lot" data-i="${i}"></div>`;
+  let html = `<div class="set-label">${esc(t('disc.byLevel'))}</div><div class="list lots levels">${levels.map((_, i) => row(i)).join('')}</div>`;
+  let last = null;
+  lots.forEach((lot, j) => {
     if (lot.th !== last) { html += `${last ? '</div>' : ''}<div class="set-label">${esc(thName(lot.th))}</div><div class="list lots">`; last = lot.th; }
-    html += `<button class="row lot" data-i="${i}"></button>`;
+    html += row(levels.length + j);
   });
   el.innerHTML = `<div class="page lots-page">${topBar(t('disc.title'))}${segHTML()}
     <p class="hint lots-hint">${esc(t('disc.lotHint'))}</p>${html}</div></div>`;
   bindSeg(el);
-  const paint = (b) => {
-    const lot = lots[+b.dataset.i], k = lot.items.filter((p) => have.has(p.n.id)).length, n = lot.items.length;
+  const paint = (r) => {
+    const lot = groups[+r.dataset.i], k = lot.items.filter((p) => have.has(p.n.id)).length, n = lot.items.length;
     const sample = lot.items.slice(0, 4).map((p) => p.txt.front.w).join(', ');
-    b.disabled = k === n;
-    b.innerHTML = `<span class="grow"><b>${esc(lot.label || t('disc.lotWords', { n }))}</b><small>${esc(sample)}${n > 4 ? '…' : ''}</small>
+    const title = lot.level ? t('disc.levelAll', { l: lot.label, n }) : lot.label || t('disc.lotWords', { n });
+    r.classList.toggle('full', k === n);
+    r.innerHTML = `<span class="grow"><b>${esc(title)}</b><small>${esc(sample)}${n > 4 ? '…' : ''}</small>
       ${k ? `<small class="have">${esc(t('disc.lotHave', { k, n }))}</small>` : ''}</span>
-      <span class="tag">${esc(k === n ? t('disc.lotFull') : t('disc.lotAdd', { n: n - k }))}</span>`;
+      <span class="lot-acts">${k < n ? `<button class="mini-btn add">${esc(t('disc.lotAdd', { n: n - k }))}</button>` : `<span class="tag">${esc(t('disc.lotFull'))}</span>`}
+      ${k ? `<button class="mini-btn rm">${esc(t('disc.remove'))}</button>` : ''}</span>`;
+    r.querySelector('.add')?.addEventListener('click', () => add(r));
+    r.querySelector('.rm')?.addEventListener('click', (e) => remove(r, e.currentTarget));
   };
-  el.querySelectorAll('.lot').forEach((b) => {
-    paint(b);
-    b.onclick = async () => {
-      const lot = lots[+b.dataset.i], todo = lot.items.filter((p) => !have.has(p.n.id));
-      if (!todo.length) return;
-      b.disabled = true;
-      for (const p of todo) { await addNotion(course, p.n.id, p.n.theme || 'default'); have.add(p.n.id); }
-      toast(todo.length === 1 ? t('disc.kept') : t('disc.lotAdded', { n: todo.length }));
-      if (!el.querySelector('.lots-page')) return;
-      el.querySelectorAll('.lot').forEach(paint); // un même mot ne figure que dans un lot, mais on repeint tout par sécurité
-    };
-  });
+  const repaint = () => { if (el.querySelector('.lots-page')) el.querySelectorAll('.lot').forEach(paint); };
+  let busy = false;
+  async function add(r) {
+    if (busy) return;
+    const todo = groups[+r.dataset.i].items.filter((p) => !have.has(p.n.id));
+    if (!todo.length) return;
+    busy = true;
+    r.classList.add('busy');
+    try { for (const p of todo) { await addNotion(course, p.n.id, p.n.theme || 'default'); have.add(p.n.id); } }
+    finally { busy = false; r.classList.remove('busy'); }
+    toast(todo.length === 1 ? t('disc.kept') : t('disc.lotAdded', { n: todo.length }));
+    repaint();
+  }
+  // Retirer efface aussi la progression : premier toucher pour armer, second pour confirmer
+  async function remove(r, b) {
+    if (busy) return;
+    const owned = groups[+r.dataset.i].items.filter((p) => have.has(p.n.id));
+    if (!b.classList.contains('armed')) {
+      b.classList.add('armed');
+      b.textContent = t('disc.removeConfirm', { n: owned.length });
+      later(() => { if (b.isConnected) { b.classList.remove('armed'); b.textContent = t('disc.remove'); } }, 4000);
+      return;
+    }
+    busy = true;
+    r.classList.add('busy');
+    try { for (const p of owned) { await deleteCard(cardId(course.id, p.n.id)); have.delete(p.n.id); } }
+    finally { busy = false; r.classList.remove('busy'); }
+    toast(t('disc.removed', { n: owned.length }));
+    repaint();
+  }
+  el.querySelectorAll('.lot').forEach(paint);
 }

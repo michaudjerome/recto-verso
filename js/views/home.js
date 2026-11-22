@@ -7,7 +7,8 @@ import { greeting } from '../greet.js';
 import { esc, logo, icon, flip, sheet, closeSheet } from '../ui.js';
 import { cardsOf } from '../cards.js';
 import { State } from '../srs.js';
-import { pickNotice, noticeHTML, bindNotice } from '../notice.js';
+import { pickNotice, noticeHTML, bindNotice, install, isInstalled, platform } from '../notice.js';
+import { kvGet, kvSet } from '../db.js';
 
 const MODES = [
   ['review', 'reviser'], ['play', 'jouer'], ['discover', 'decouvrir'], ['create', 'creer'],
@@ -21,13 +22,15 @@ export async function render(el) {
   const cards = await cardsOf(course.id);
   const mastered = cards.filter((c) => c.fsrs && c.fsrs.state === State.Review && (c.fsrs.scheduled_days || 0) >= 21).length;
   const notice = await pickNotice();
-  const zh = base(course.target) === 'zh';
+  const announce = await kvGet('announce'), annSeen = await kvGet('annSeen');
 
   el.innerHTML = `<div class="home enter">
     <header class="home-top">
       <div class="brandline">${logo('mini-logo')}<span>Recto Verso</span></div>
-      <a class="icon-btn" href="#/reglages" aria-label="${esc(t('set.title'))}">${icon('gear')}</a>
+      <span class="top-acts"><a class="icon-btn" href="#/progres" aria-label="${esc(t('prog.title'))}">${icon('chart')}</a>
+      <a class="icon-btn" href="#/reglages" aria-label="${esc(t('set.title'))}">${icon('gear')}</a></span>
     </header>
+    ${announce && announce.id !== annSeen ? `<section class="announce">${icon('flag')}<p>${esc(announce.text)}</p><button class="icon-btn ann-x" aria-label="${esc(t('ui.close'))}">${icon('close')}</button></section>` : ''}
     <section class="hello"><h1>${esc(g.title)}</h1><p>${esc(g.line)}</p></section>
     <button class="course-pill flip" aria-label="${esc(t('courses.title'))}">
       <span class="in"><span class="face front">${pillInner(course)}</span><span class="face back">${pillInner(course)}</span></span>
@@ -37,19 +40,21 @@ export async function render(el) {
       : `<div class="l done">${esc(t('today.first'))}</div><a class="btn accent go" href="#/decouvrir">${esc(t('today.discover'))}</a>`}
     </section>
     <div class="modes">${MODES.map(([k, route]) => `<button class="mode flip" data-route="${route}" aria-label="${esc(t(`home.${k}`))}">
-      <span class="in"><span class="face front">${zh ? `<span class="zh glyph">${GLYPH[k]}</span>` : icon(k)}<b>${esc(t(`home.${k}`))}</b></span>
+      <span class="in"><span class="face front">${icon(k)}<b>${esc(t(`home.${k}`))}</b></span>
       <span class="face back">${logo('mode-logo')}</span></span></button>`).join('')}</div>
     <div class="stats"><div><b>${streak}</b>${esc(t('stats.streak'))}</div><div><b>${cards.length}</b>${esc(t('stats.cards'))}</div><div><b>${mastered}</b>${esc(t('stats.mastered'))}</div></div>
     ${noticeHTML(notice)}
   </div>`;
 
-  // La carte du mode se retourne, puis on entre dans le mode
-  el.querySelectorAll('.mode').forEach((b) => b.onclick = () => { flip(b, true); setTimeout(() => (location.hash = `#/${b.dataset.route}`), 420); });
+  // La tuile s'enfonce brièvement, puis on entre dans le mode (plus de demi-retournement coupé par le changement d'écran)
+  el.querySelectorAll('.mode').forEach((b) => b.onclick = () => { b.classList.add('pressed'); setTimeout(() => (location.hash = `#/${b.dataset.route}`), 160); });
+  el.querySelector('.ann-x')?.addEventListener('click', (e) => { e.currentTarget.closest('.announce').remove(); kvSet('annSeen', announce.id); });
   el.querySelector('.course-pill').onclick = () => openCourses(el);
   bindNotice(el);
+  // Juste après le premier lancement sur un téléphone : le guide d'installation s'ouvre une fois de lui-même
+  if (!isInstalled() && platform() !== 'desktop' && !(await kvGet('installAsked'))) { await kvSet('installAsked', Date.now()); setTimeout(() => { if (el.querySelector('.home')) install(); }, 700); }
 }
 
-const GLYPH = { review: '复', play: '玩', discover: '探', create: '写' };
 
 const pillInner = (c) => `${flag(c.native)}<span class="arrow">→</span>${flag(c.target)}
   <span class="pill-txt"><small>${esc(t('home.learning'))}</small><b>${esc(cap(langName(c.target)))}</b></span>${icon('chevron')}`;

@@ -142,7 +142,7 @@ function accountBlock() {
     <div class="acc-card">
       <div class="acc-mail">${icon('check')}<span><b>${esc(a.email)}</b><small class="sync-line">${esc(syncLine())}</small></span></div>
       <div class="duo"><button class="btn ghost sync-now">${esc(t('acc.syncNow'))}</button><button class="btn ghost logout">${esc(t('acc.logout'))}</button></div>
-      ${a.admin ? `<button class="btn accent invite">${icon('plus')} ${esc(t('acc.inviteBtn'))}</button>` : ''}
+      ${a.admin ? `<div class="duo"><a class="btn accent" href="#/admin">${icon('shield')} Admin</a><button class="btn ghost invite">${icon('plus')} ${esc(t('acc.inviteBtn'))}</button></div>` : ''}
       <div class="acc-links"><button class="link-btn chpw">${esc(t('acc.changePw'))}</button><button class="link-btn delacc">${esc(t('acc.delete'))}</button></div>
     </div>
     <p class="hint small">${esc(t('acc.syncHint'))}</p>`;

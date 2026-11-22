@@ -1,4 +1,4 @@
-// Jouer : Quiz, Memory, Écris ce que tu vois. Tout se joue en retournant des cartes.
+// Jouer : Quiz, Memory, Écris ce que tu vois, Duo. Tout se joue en retournant des cartes.
 import { base } from '../langs.js';
 import { t } from '../i18n.js';
 import { log, Rating } from '../srs.js';
@@ -11,23 +11,26 @@ import { notions as allNotions, cardText } from '../content.js';
 import { markActivity } from '../courses.js';
 import { filterScreen, myItems, savedFilter, applyFilter, endless } from '../filter.js';
 import { cheer, oops, nudge } from '../fx.js';
+import { reportButton } from '../report.js';
 
 export async function render(el, params) {
   const course = await requireCourse();
   if (!course) return;
   const game = params.jeu;
-  const G = { quiz: ['play.quiz', 1, false, quiz], memory: ['play.memory', 3, false, memory], ecris: ['play.write', 1, true, write] }[game];
+  // Duo pioche dans tout le niveau (mots découverts ou non) et garde son propre choix de filtres
+  const G = { quiz: ['play.quiz', 1, false, quiz], memory: ['play.memory', 3, false, memory], ecris: ['play.write', 1, true, write], duo: ['play.duo', DUO_SIZE, false, duo, true] }[game];
   if (G) {
-    const [title, min, withPicto, run] = G;
-    if (!params.go) return filterScreen(el, course, { title: t(title), back: '#/jouer', min, withPicto, startHref: `#/jouer?jeu=${game}&go=${Date.now()}` });
-    const { items } = await myItems(course, { withPicto });
-    const picked = applyFilter(items, savedFilter(course));
+    const [title, min, withPicto, run, all = false] = G;
+    const fkey = all ? game : '';
+    if (!params.go) return filterScreen(el, course, { title: t(title), back: '#/jouer', min, withPicto, all, fkey, startHref: `#/jouer?jeu=${game}&go=${Date.now()}` });
+    const { items } = await myItems(course, { withPicto, all });
+    const picked = applyFilter(items, savedFilter(course, fkey));
     if (picked.length < min) { location.hash = `#/jouer?jeu=${game}`; return; }
     markActivity(course);
     return run(el, course, picked, `#/jouer?jeu=${game}`);
   }
   el.innerHTML = `<div class="page enter">${topBar(t('play.title'))}
-    <div class="games">${[['quiz', 'play.quiz', 'play.quizSub', 'review'], ['memory', 'play.memory', 'play.memorySub', 'play'], ['ecris', 'play.write', 'play.writeSub', 'create']]
+    <div class="games">${[['quiz', 'play.quiz', 'play.quizSub', 'review'], ['memory', 'play.memory', 'play.memorySub', 'play'], ['duo', 'play.duo', 'play.duoSub', 'duo'], ['ecris', 'play.write', 'play.writeSub', 'create']]
       .map(([k, n, s, ic]) => `<a class="game-row" href="#/jouer?jeu=${k}">${icon(ic)}<span><b>${esc(t(n))}</b><small>${esc(t(s))}</small></span>${icon('chevron')}</a>`).join('')}</div></div>`;
 }
 
@@ -115,14 +118,17 @@ function lev(a, b) {
   return m[b.length];
 }
 // ok : juste ; near : accent, ton ou une lettre près ; ko : à revoir
-export function judge(answer, e, tag) {
+export function judge(answer, e, tag, fromZh = false) {
   const raw = answer.trim();
   if (!raw) return 'ko';
   const zh = base(tag) === 'zh';
-  const exact = [e.w, e.art ? `${e.art} ${e.w}` : ''].filter(Boolean).map((x) => x.toLowerCase());
+  // Le mot, avec ou sans article ; ses autres sens viennent du mot chinois (家 : famille et maison),
+  // ils ne sont donc acceptés que si l'on part du chinois
+  const words = [e.w, ...(fromZh ? e.alt || [] : [])];
+  const exact = words.flatMap((w) => [w, e.art ? `${e.art} ${w}` : '']).filter(Boolean).map((x) => x.toLowerCase());
   if (exact.includes(raw.toLowerCase())) return 'ok';
   if (zh && e.py && raw.replace(/\s+/g, '') === e.py.replace(/\s+/g, '')) return 'ok';
-  const targets = [e.w, e.art ? `${e.art} ${e.w}` : '', zh ? e.py : ''].filter(Boolean).map(norm);
+  const targets = [...words.flatMap((w) => [w, e.art ? `${e.art} ${w}` : '']), zh ? e.py : ''].filter(Boolean).map(norm);
   const u = norm(raw);
   if (targets.includes(u)) return zh ? 'ok' : 'near'; // en chinois, le pinyin sans les tons est accepté
   return targets.some((x) => x.length > 3 && lev(u, x) <= 1) ? 'near' : 'ko';
@@ -134,7 +140,7 @@ async function otherWords(course) {
   for (const n of (await allNotions()).notions) {
     const txt = await cardText({ notion: n.id }, course);
     if (!txt.front?.w) continue;
-    for (const w of [txt.front.w, txt.front.py, ...String(txt.front.w).split(/[;,]/)].filter(Boolean)) {
+    for (const w of [txt.front.w, txt.front.py, ...(base(course.native) === 'zh' ? txt.front.alt || [] : [])].filter(Boolean)) {
       const k = norm(w.replace(/\(.*?\)/g, ''));
       if (k && !map.has(k)) map.set(k, { id: n.id, txt });
     }
@@ -160,18 +166,20 @@ async function write(el, course, picked, back) {
         <input class="field center" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="${esc(t(zh ? 'write.phZh' : 'write.ph'))}">
         <div class="duo"><button class="btn ghost hint-b">${esc(t('write.hint'))}</button><button class="btn primary go">${esc(t('write.check'))}</button></div>`, '<div class="corner r">Verso</div><div class="verdict-box"></div>')}</div>
       <button class="btn ghost nextb" hidden>${esc(t('write.next'))}</button></div>`;
+    reportButton(el, course, () => it.txt.notion?.id);
     const card = el.querySelector('.card'), input = card.querySelector('input');
     later(() => input.focus(), 300);
     let done = false, helped = false;
     const go = () => {
       if (done) return;
       done = true;
-      let v = judge(input.value, it.txt.front, course.target);
+      let v = judge(input.value, it.txt.front, course.target, base(course.native) === 'zh');
       if (v === 'ok' && helped) v = 'near'; // avec l'indice, c'est « presque »
       let other = null;
       if (v === 'ko') { const o = others.get(norm(input.value)); if (o && o.id !== it.txt.notion?.id) { other = o; v = 'other'; } }
-      const L = { ok: ['write.ok', '好'], near: ['write.near', '棒'], ko: ['write.ko', '学'], other: ['write.vOther', '换'] }[v];
-      card.querySelector('.verdict-box').innerHTML = `<div class="stamp s-${v}">${L[1]}</div><div class="verdict v-${v}">${esc(t(L[0]))}</div>
+      // Le tampon porte le logo Recto Verso, plus les caractères chinois de l'ancienne app
+      const L = { ok: 'write.ok', near: 'write.near', ko: 'write.ko', other: 'write.vOther' }[v];
+      card.querySelector('.verdict-box').innerHTML = `<div class="stamp s-${v}">${logo('stamp-logo')}</div><div class="verdict v-${v}">${esc(t(L))}</div>
         ${other ? `<div class="yours">${esc(t('write.other', { w: input.value.trim(), m: other.txt.back?.w || '' }))}</div>` : ''}
         ${word(it.txt.front, course.target, { big: true })}${zh ? `<div>${pinyinHtml(it.txt.front)}</div>` : ''}
         ${!other && v !== 'ok' && input.value.trim() ? `<div class="yours">${esc(t('write.yours', { w: input.value.trim() }))}</div>` : ''}
@@ -195,4 +203,85 @@ async function write(el, course, picked, back) {
     el.querySelector('.nextb').onclick = next;
   }
   next();
+}
+
+// ---------- Duo : deux colonnes de 5, langue apprise à gauche, langue maternelle à droite ; on relie les paires ----------
+// Une paire trouvée laisse sa place à un nouveau mot ; 50 paires pour finir le niveau. Duo ne touche pas à Réviser.
+const DUO_SIZE = 5, DUO_GOAL = 50;
+const keyOf = (e) => strip(String(e?.w || '')).toLowerCase().trim();
+async function duo(el, course, picked, back) {
+  const next = endless(picked, shuffle);
+  const zh = base(course.target) === 'zh';
+  const left = [], right = []; // un mot par case ; null pendant le remplacement
+  let found = 0, errors = 0, sel = null, lock = false;
+  const t0 = Date.now();
+  // Jamais deux mots identiques (ou deux traductions identiques) dans la même grille
+  const clash = (it) => [...left, ...right].some((x) => x && (x === it || keyOf(x.txt.front) === keyOf(it.txt.front) || keyOf(x.txt.back) === keyOf(it.txt.back)));
+  const draw = () => { for (let k = 0; k < 60; k++) { const it = next(); if (!clash(it)) return it; } return null; };
+  for (let k = 0; k < DUO_SIZE; k++) { const it = draw(); if (it) left.push(it); }
+  shuffle(left).forEach((it) => right.push(it));
+  const cell = (it, side, k) => `<button class="duo-cell ${side}" data-side="${side}" data-k="${k}" data-id="${esc(it?.txt.notion?.id || '')}">${it
+    ? side === 'l' ? `${word(it.txt.front, course.target)}${zh ? pinyinHtml(it.txt.front) : ''}` : word(it.txt.back, course.native) : ''}</button>`;
+  el.innerHTML = `<div class="page duo-page">${topBar(t('play.duo'), back)}
+    <div class="duo-bar"><span class="duo-fill"></span></div><p class="duo-count"></p>
+    <div class="duo-grid enter"><div class="duo-col l">${left.map((it, k) => cell(it, 'l', k)).join('')}</div>
+      <div class="duo-col r">${right.map((it, k) => cell(it, 'r', k)).join('')}</div></div></div>`;
+  const grid = el.querySelector('.duo-grid');
+  const paintCount = () => {
+    el.querySelector('.duo-fill').style.width = `${(found / DUO_GOAL) * 100}%`;
+    el.querySelector('.duo-count').textContent = t('duo.count', { n: found, total: DUO_GOAL });
+  };
+  paintCount();
+  const btn = (side, k) => grid.querySelector(`.duo-cell[data-side="${side}"][data-k="${k}"]`);
+  const fill = (side, k, it) => { const b = btn(side, k); b.outerHTML = cell(it, side, k); const nb = btn(side, k); nb.classList.add('arrive'); bind(nb); };
+  function bind(b) {
+    b.onclick = () => {
+      const side = b.dataset.side, k = +b.dataset.k, it = (side === 'l' ? left : right)[k];
+      if (lock || !it) return;
+      if (!sel || sel.side === side) { // premier mot, ou on change d'avis dans la même colonne
+        grid.querySelectorAll('.duo-cell.on').forEach((x) => x.classList.remove('on'));
+        if (sel && sel.side === side && sel.k === k) { sel = null; return; }
+        sel = { side, k, it };
+        b.classList.add('on');
+        return;
+      }
+      const a = btn(sel.side, sel.k), ok = sel.it === it;
+      if (ok) {
+        const [lk, rk] = side === 'l' ? [k, sel.k] : [sel.k, k];
+        left[lk] = right[rk] = null;
+        sel = null;
+        a.classList.remove('on');
+        [a, b].forEach((x) => x.classList.add('gone'));
+        cheer(b);
+        found++;
+        paintCount();
+        if (found >= DUO_GOAL) { lock = true; later(finish, 700); return; }
+        later(() => {
+          const nt = draw();
+          if (!nt) return;
+          left[lk] = nt;
+          right[rk] = nt;
+          fill('l', lk, nt);
+          fill('r', rk, nt);
+        }, 380);
+      } else {
+        errors++;
+        lock = true;
+        [a, b].forEach((x) => oops(x));
+        later(() => { a.classList.remove('on'); sel = null; lock = false; }, 450);
+      }
+    };
+  }
+  grid.querySelectorAll('.duo-cell').forEach(bind);
+  function finish() {
+    const s = Math.round((Date.now() - t0) / 1000);
+    const time = `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+    markActivity(course);
+    el.innerHTML = `<div class="win enter duo-win">${logo('win-logo')}
+      <h2>${esc(t('duo.done'))}</h2>
+      <div class="duo-stats"><div><b>${esc(time)}</b><small>${esc(t('duo.time'))}</small></div><div><b>${errors}</b><small>${esc(t(errors === 1 ? 'duo.error1' : 'duo.errors'))}</small></div></div>
+      <a class="btn ghost" href="${back}&go=${Date.now()}">${esc(t('win.again'))}</a>
+      <a class="btn primary" href="#/jouer">${esc(t('play.title'))}</a></div>`;
+    cheer(el.querySelector('.win-logo'));
+  }
 }

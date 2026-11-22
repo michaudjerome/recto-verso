@@ -7,6 +7,7 @@ import { getCard } from '../cards.js';
 import { frontHTML, backHTML, cardShell } from '../face.js';
 import { requireCourse, topBar } from '../play-kit.js';
 import { esc, flip, later } from '../ui.js';
+import { reportButton } from '../report.js';
 import { markActivity } from '../courses.js';
 import { filterScreen, myItems, savedFilter, applyFilter } from '../filter.js';
 import { cheer, nudge } from '../fx.js';
@@ -31,6 +32,7 @@ export async function render(el, params) {
     <div class="rates two"><button class="rate r-again" data-g="${Rating.Again}"><b>${esc(t('rev.again'))}</b></button>
       <button class="rate r-good" data-g="${Rating.Good}"><b>${esc(t('rev.knew'))}</b></button></div></div>`;
   const stageEl = el.querySelector('.stage'), rates = el.querySelector('.rates');
+  reportButton(el, course, () => cur?.notion);
 
   async function deal() {
     if (!queue.length) { queue = await order(); if (queue.length > 1 && queue[0].id === lastId) queue.push(queue.shift()); } // nouveau tour
