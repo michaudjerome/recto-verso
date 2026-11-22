@@ -1,0 +1,403 @@
+on time|fr:à l'heure|it:in orario|de:pünktlich
+at least|de:mindestens
+as soon as possible|fr:dès que possible|it:il prima possibile|de:so bald wie möglich
+on the other hand|it:d'altra parte
+pay attention|fr:faire attention|it:fare attenzione|de:aufpassen
+in advance|fr:à l'avance|it:in anticipo|de:im Voraus
+by chance|de:zufällig
+in any case|it:in ogni caso|de:auf jeden Fall
+admire|de:bewundern
+apply|fr:postuler|it:candidarsi|de:sich bewerben
+argue|it:litigare|de:streiten|zh:争吵
+bend|fr:plier
+boil|de:kochen
+congratulate|it:congratularsi
+damage|de:beschädigen
+delay|zh:推迟
+entertain|de:unterhalten
+fasten|it:allacciare|de:anschnallen
+float|it:galleggiare|de:schwimmen
+forgive|de:verzeihen
+include|de:einschließen
+inform|de:informieren
+insist|de:bestehen
+inspire|de:inspirieren|zh:启发
+jog|it:fare jogging|de:joggen|zh:慢跑
+manage|it:gestire
+negotiate|de:verhandeln
+represent|de:vertreten
+require|de:erfordern
+respond|de:reagieren
+rob|it:derubare|de:ausrauben
+ski|de:Ski fahren
+spoil|zh:宠坏
+steal|de:stehlen
+stick|it:incollare
+stir|de:umrühren
+strike|fr:faire grève
+type|it:digitare|zh:打字
+upload|fr:mettre en ligne|it:caricare
+announcement|zh:通知
+belief|de:Glaube
+benefit|it:vantaggio
+blame|it:colpa|de:Schuld
+blog|it:blog
+cave|zh:山洞
+celebrity|de:Star
+choir|zh:合唱团
+customs|de:Zoll
+debt|de:Schuld
+designer|it:designer
+dozen|zh:一打
+equipment|it:attrezzatura
+failure|de:Misserfolg
+fantasy|fr:imaginaire
+forecast|it:previsione|de:Vorhersage
+freezer|zh:冰柜
+gap|fr:écart
+gardening|it:giardinaggio|de:Gartenarbeit|zh:园艺
+gentleman|fr:gentleman
+graduate|it:laureato
+guilt|zh:内疚
+hairdresser|zh:理发师
+headline|fr:gros titre
+instruction|fr:consigne|de:Anweisung|zh:说明
+kettle|de:Wasserkocher
+lamb|zh:羔羊
+lettuce|zh:生菜
+mechanic|zh:机械师
+neighbourhood|zh:社区
+happy birthday|fr:joyeux anniversaire|it:buon compleanno|de:alles Gute zum Geburtstag|zh:生日快乐
+good luck|fr:bonne chance|it:buona fortuna|de:viel Glück|zh:祝你好运
+no problem|fr:pas de problème|it:nessun problema|de:kein Problem|zh:没问题
+what time is it|fr:quelle heure est-il ?|it:che ore sono?|de:wie spät ist es?|zh:几点了
+architecture|zh:建筑
+award|fr:récompense
+balloon|de:Luftballon
+beauty|zh:美
+board game|it:gioco da tavolo|zh:桌游
+crowd|de:Menge
+grandchild|zh:孙子
+guard|zh:警卫
+highway|it:autostrada|de:Schnellstraße
+horror|zh:恐怖
+imagination|de:Fantasie
+lawyer|de:Anwalt
+mystery|zh:谜
+oven|zh:烤箱
+path|zh:小路
+scenery|de:Landschaft
+seafood|de:Meeresfrüchte
+shell|de:Muschel
+snack|fr:en-cas
+spaceship|de:Raumschiff|zh:宇宙飞船
+stranger|de:Fremde|zh:陌生人
+strength|de:Kraft
+suitcase|zh:行李箱
+swimsuit|zh:泳衣
+thunderstorm|zh:雷雨
+timetable|fr:emploi du temps|de:Stundenplan
+toothbrush|it:spazzolino
+tour guide|fr:guide|it:guida turistica|de:Reiseleiter
+visitor|zh:游客
+chat|zh:聊天
+communicate|zh:交流
+criticize|de:kritisieren
+marry|es:casarse con
+provide|de:bereitstellen
+quit|it:lasciare
+retire|fr:prendre sa retraite|de:in Rente gehen
+basic|fr:de base|it:di base
+crowded|de:überfüllt
+disappointed|it:deluso
+enormous|de:riesig
+familiar|de:vertraut
+frightened|de:verängstigt|zh:害怕
+greedy|fr:gourmand
+lively|fr:animé|de:lebhaft
+loose|fr:ample|it:largo|de:locker
+mysterious|de:geheimnisvoll
+silly|fr:idiot|it:sciocco|zh:傻
+wooden|fr:en bois|de:hölzern
+actually|it:in realtà
+instead|fr:à la place|es:en su lugar|de:stattdessen
+mainly|zh:主要
+probably|zh:可能
+quite|de:ziemlich
+absolutely|de:absolut|zh:绝对
+aggressive|zh:好斗
+allergic|it:allergico
+amazed|it:stupito
+ambitious|zh:有雄心
+aware|de:bewusst
+calm|de:ruhig
+casual|it:casual|de:lässig
+constantly|zh:不断
+current|de:aktuell
+definitely|it:sicuramente|zh:一定
+depressed|fr:déprimé|it:depresso|de:deprimiert
+directly|de:direkt
+disgusting|zh:恶心
+embarrassed|fr:gêné|it:imbarazzato
+emotional|fr:émotif|zh:情绪化
+enjoyable|it:piacevole|de:angenehm|zh:愉快
+environmental|de:ökologisch
+exhausted|fr:épuisé|de:erschöpft|zh:筋疲力尽
+extinct|fr:disparu|de:ausgestorben
+fashionable|es:de moda|it:alla moda|de:modisch
+financial|de:finanziell
+fluently|it:correntemente
+foolish|de:töricht
+former|it:ex
+fortunate|fr:chanceux|de:glücklich
+gorgeous|it:stupendo
+helpless|fr:impuissant|it:indifeso|zh:无助
+huge|de:riesig
+humid|it:umido|de:feucht
+impressive|zh:令人印象深刻
+mild|it:mite
+nearby|de:nahe gelegen
+organic|fr:biologique|it:biologico|de:biologisch
+outdoor|fr:en plein air|es:al aire libre
+part-time|de:Teilzeit
+permanent|de:dauerhaft
+precious|de:wertvoll
+previous|de:vorherig
+proud|de:stolz
+remarkable|de:bemerkenswert
+rough|fr:rugueux
+selfish|de:egoistisch
+severe|it:severo|de:streng
+shallow|it:poco profondo
+sharp|it:affilato
+slightly|de:leicht
+totally|de:völlig
+vast|de:riesig
+weird|es:raro|de:seltsam|zh:奇怪
+pancake|zh:煎饼
+participation|de:Teilnahme
+partnership|it:partnership
+peak|zh:山顶
+penalty|it:rigore|de:Elfmeter|zh:点球
+pension|de:Rente
+physician|zh:内科医生
+plumber|zh:水管工
+popularity|zh:知名度
+portion|zh:份
+procedure|de:Verfahren
+regret|it:rimpianto
+relaxation|it:relax
+reminder|it:promemoria|de:Erinnerung|zh:提醒
+saving|de:Ersparnis|zh:储蓄
+sector|de:Sektor|zh:部门
+shield|zh:盾
+skateboard|zh:滑板
+spreadsheet|it:foglio di calcolo|de:Tabelle|zh:电子表格
+stain|zh:污渍
+substance|it:sostanza
+supervisor|de:Vorgesetzte
+tablecloth|zh:桌布
+terrace|zh:露台
+therapist|it:terapeuta|zh:治疗师
+trader|de:Händler
+trainer|de:Trainer
+trait|de:Zug
+trial|de:Prozess
+underwear|fr:sous-vêtements
+upbringing|fr:éducation|de:Erziehung
+viewer|it:telespettatore
+villa|it:villa
+volunteer|de:Freiwillige
+welfare|it:assistenza sociale
+X-ray|zh:X光
+cousin|zh:表兄弟
+grape|de:Traube
+jeans|fr:jean|es:vaqueros|it:jeans|de:Jeans
+memory|de:Erinnerung
+guess|de:raten
+afraid|es:asustado
+angry|de:wütend
+careful|de:vorsichtig
+clever|it:intelligente
+healthy|it:sano
+rude|fr:grossier|zh:粗鲁
+strict|it:severo
+accommodation|it:alloggio
+analyst|de:Analyst
+assumption|fr:supposition|it:presupposto
+athletics|de:Leichtathletik
+badge|zh:徽章
+browser|it:browser
+bruise|zh:瘀伤
+cabinet|fr:placard
+circumstance|de:Umstand
+coincidence|de:Zufall
+complexity|zh:复杂性
+corridor|de:Flur
+data|fr:données|it:dati
+database|it:banca dati
+desktop|de:Desktop
+dispute|it:controversia
+donation|fr:don
+environment|de:Umwelt
+evaluation|de:Auswertung
+feedback|fr:retour
+fingernail|it:unghia|de:Fingernagel
+flexibility|zh:灵活性
+gang|zh:帮派
+human rights|fr:droits de l'homme|es:derechos humanos|it:diritti umani|de:Menschenrechte
+immigrant|fr:immigré
+initiative|zh:主动性
+innovation|it:innovazione
+jaw|zh:下巴
+journalism|zh:新闻业
+laundry|zh:洗衣
+lawsuit|de:Klage
+leaflet|fr:prospectus|it:volantino|de:Flugblatt|zh:传单
+lid|de:Deckel
+lifetime|fr:vie
+lyrics|fr:paroles|it:testo|de:Liedtext
+manufacturer|zh:制造商
+marketing|it:marketing
+media|fr:médias|it:media|de:Medien
+metaphor|zh:隐喻
+missile|de:Rakete
+mist|de:Nebel
+necessity|zh:必要
+abruptly|de:abrupt|zh:突然
+affectionate|it:affettuoso|zh:深情
+arrogant|it:arrogante|de:arrogant
+attentive|zh:专心
+beneficial|fr:bénéfique|it:benefico|de:nützlich
+biological|it:biologico
+charming|it:affascinante|de:charmant
+clumsy|zh:笨拙
+comprehensive|it:completo
+consistent|de:konsequent
+constant|de:ständig
+costly|it:costoso|de:kostspielig
+cosy|zh:舒适
+crucial|fr:crucial
+demanding|de:anspruchsvoll
+dense|it:denso|zh:密集
+determined|fr:déterminé|de:entschlossen
+devoted|de:ergeben
+domestic|de:häuslich
+economical|de:sparsam|zh:节约
+eloquent|it:eloquente|de:redegewandt
+exceptional|zh:特殊
+fabulous|it:favoloso|de:fabelhaft|zh:极好
+furious|it:furioso|zh:狂怒
+gently|fr:doucement|de:sanft|zh:轻轻
+gloomy|it:cupo|de:düster
+harmless|fr:inoffensif|zh:无害
+hazardous|it:pericoloso
+hollow|zh:空心
+icy|de:eisig
+idle|fr:oisif|it:inattivo|de:untätig
+ignorant|fr:ignorant|de:unwissend
+impulsive|it:impulsivo|de:impulsiv|zh:冲动
+inadequate|de:unzureichend
+indifferent|zh:冷漠
+infectious|fr:contagieux|de:ansteckend
+informal|it:informale
+intellectual|de:intellektuell
+intimate|it:intimo
+irresponsible|de:verantwortungslos
+legendary|it:leggendario
+legitimate|fr:légitime|de:legitim
+naughty|fr:vilain|it:cattivo
+overseas|fr:à l'étranger|it:all'estero
+passionate|de:leidenschaftlich
+presumably|de:vermutlich|zh:大概
+priceless|fr:inestimable|de:unbezahlbar
+profitable|fr:rentable
+relevant|de:relevant
+reluctant|it:riluttante|de:widerwillig
+risky|de:riskant
+rusty|de:rostig
+satisfactory|de:zufriedenstellend
+short-term|it:a breve termine|de:kurzfristig
+sophisticated|fr:sophistiqué
+subtle|it:sottile|de:subtil
+superb|fr:superbe|de:hervorragend
+supernatural|zh:超自然
+suspicious|it:sospettoso|de:misstrauisch
+temporarily|zh:暂时
+tender|it:tenero
+thoughtful|fr:attentionné
+tolerant|de:tolerant
+ultimately|de:letztendlich|zh:最终
+unfamiliar|it:sconosciuto
+universal|de:universell
+upside down|fr:à l'envers
+urban|de:städtisch
+vital|de:lebenswichtig
+waterproof|de:wasserdicht
+wealthy|it:ricco
+willing|fr:disposé|de:bereit
+break the ice|fr:briser la glace|it:rompere il ghiaccio|de:das Eis brechen|zh:打破僵局
+beat around the bush|it:menare il can per l'aia|zh:拐弯抹角
+accumulate|de:ansammeln
+adore|zh:崇拜
+alter|it:alterare
+assess|de:beurteilen
+bargain|de:feilschen
+blink|fr:cligner des yeux|de:blinzeln
+browse|fr:naviguer
+clarify|de:klären
+compensate|it:risarcire
+contaminate|de:verseuchen
+cooperate|it:cooperare
+cure|de:heilen
+descend|de:hinabsteigen
+detect|it:rilevare
+discriminate|fr:discriminer|de:diskriminieren
+dominate|de:beherrschen
+donate|fr:faire un don
+edit|it:modificare
+enhance|it:migliorare|de:verbessern
+evaluate|de:bewerten
+evolve|zh:进化
+humiliate|de:demütigen|zh:羞辱
+interfere|de:sich einmischen
+investigate|de:ermitteln
+navigate|de:navigieren
+persist|de:beharren
+quarrel|de:streiten
+rebel|de:rebellieren
+retreat|fr:battre en retraite
+revive|fr:ranimer
+sigh|fr:soupirer
+slice|zh:切片
+sob|zh:抽泣
+sponsor|fr:parrainer|de:sponsern
+sue|fr:poursuivre en justice|it:fare causa|de:verklagen
+testify|de:aussagen
+unlock|it:sbloccare|zh:开锁
+physics|zh:物理
+platform|it:binario
+pocket money|it:paghetta
+pot|fr:casserole
+prescription|de:Rezept
+prisoner|de:Gefangene
+profession|de:Beruf
+publisher|zh:出版商
+puzzle|de:Rätsel|zh:谜
+rainforest|fr:forêt tropicale|it:foresta pluviale|de:Regenwald|zh:雨林
+rescue|it:salvataggio
+routine|zh:日常
+shelter|de:Unterschlupf
+skeleton|zh:骨架
+souvenir|it:souvenir
+sponsor|zh:赞助商
+stream|de:Bach|zh:小溪
+stress|de:Stress
+survivor|zh:幸存者
+sweatshirt|zh:运动衫
+teammate|de:Mitspieler|zh:队友
+thriller|zh:惊悚片
+transport|zh:交通
+van|fr:camionnette|zh:面包车
+warning|de:Warnung
+wire|it:filo|de:Draht

@@ -1,0 +1,280 @@
+it doesn't matter|fr:ce n'est pas grave|it:non importa|de:das macht nichts
+what a pity|fr:quel dommage|es:qué pena|it:che peccato|de:wie schade|zh:真可惜
+it depends|fr:ça dépend|es:depende|it:dipende|de:es kommt darauf an|zh:看情况
+take care|fr:prends soin de toi|es:cuídate|it:abbi cura di te|de:pass auf dich auf
+in my opinion|fr:à mon avis|it:secondo me|de:meiner Meinung nach|zh:我认为
+by the way|it:a proposito|zh:顺便说一下
+have a good trip|fr:bon voyage|es:buen viaje|it:buon viaggio|de:gute Reise|zh:一路平安
+make a decision|fr:prendre une décision|es:tomar una decisión|it:prendere una decisione|de:eine Entscheidung treffen|zh:做决定
+get used to|fr:s'habituer à|es:acostumbrarse a|it:abituarsi a|de:sich gewöhnen an|zh:习惯
+it's up to you|fr:c'est à toi de décider|es:depende de ti|it:decidi tu|de:das liegt bei dir|zh:由你决定
+change one's mind|fr:changer d'avis|es:cambiar de opinión|it:cambiare idea|de:seine Meinung ändern|zh:改变主意
+keep in touch|fr:rester en contact|es:mantenerse en contacto|it:tenersi in contatto|de:in Kontakt bleiben|zh:保持联系
+take care of|es:cuidar de|it:prendersi cura di|de:sich kümmern um
+make fun of|fr:se moquer de|es:burlarse de|it:prendere in giro|de:sich lustig machen über
+have a good time|fr:bien s'amuser|it:divertirsi|de:Spaß haben|zh:玩得开心
+make progress|fr:faire des progrès|es:hacer progresos|it:fare progressi|de:Fortschritte machen|zh:进步
+advertise|fr:faire de la publicité|it:pubblicizzare
+afford|fr:avoir les moyens
+arrange|de:organisieren
+attach|zh:系
+attend|es:asistir a
+bake|fr:cuire au four|it:cuocere al forno
+charge|fr:faire payer|it:far pagare|de:berechnen
+chop|zh:切
+crash|fr:s'écraser|it:schiantarsi|zh:撞
+deal with|fr:gérer|es:ocuparse de|it:occuparsi di|de:sich kümmern um
+intend|fr:avoir l'intention de|es:tener la intención de|it:avere intenzione di|de:beabsichtigen
+realize|fr:se rendre compte|zh:意识到
+recover|fr:se rétablir|it:guarire|de:sich erholen
+rely on|fr:compter sur|es:contar con|it:contare su|de:sich verlassen auf
+scare|fr:faire peur
+stare|fr:fixer du regard
+wave|fr:faire signe|es:saludar con la mano|it:salutare con la mano|zh:挥手
+whisper|zh:低语
+achievement|fr:réussite|de:Leistung
+apology|fr:excuses|es:disculpas|it:scuse
+burglar|it:scassinatore|de:Einbrecher|zh:小偷
+charity|fr:association caritative|it:ente benefico|de:Wohltätigkeitsorganisation
+competitor|it:concorrente|zh:竞争者
+concentration|zh:注意力
+damage|fr:dégâts|es:daños|it:danni
+delivery|zh:送货
+device|zh:设备
+election|it:elezioni
+fireworks|fr:feu d'artifice|it:fuochi d'artificio|de:Feuerwerk
+fitness|fr:forme physique|es:forma física|de:Fitness
+goods|fr:marchandises|es:mercancías|it:merci|de:Waren
+gossip|fr:potins
+graduation|fr:remise des diplômes|it:laurea|de:Abschluss
+gratitude|zh:感激
+growth|zh:增长
+heart attack|it:infarto|de:Herzinfarkt|zh:心脏病
+heater|it:stufa|de:Heizung
+housework|es:tareas domésticas|it:faccende domestiche|de:Hausarbeit
+identity card|fr:carte d'identité|es:documento de identidad
+jewel|zh:珠宝
+kindness|zh:善良
+liar|zh:骗子
+luggage|fr:bagages
+measurement|zh:测量
+membership|es:afiliación|it:iscrizione
+mess|fr:désordre|it:disordine|de:Unordnung|zh:乱
+nonsense|fr:bêtises|es:tonterías|it:sciocchezze
+nice to meet you|fr:enchanté|es:encantado|it:piacere|de:freut mich|zh:很高兴认识你
+see you soon|fr:à bientôt|it:a presto|de:bis bald|zh:回头见
+how much is it|fr:combien ça coûte ?|es:¿cuánto cuesta?|it:quanto costa?|de:was kostet das?|zh:多少钱
+enjoy your meal|fr:bon appétit|it:buon appetito|de:guten Appetit|zh:请慢用
+argument|fr:dispute|it:lite
+background|es:contexto
+bus stop|zh:公交车站
+cash|fr:argent liquide|it:contanti|de:Bargeld
+chef|de:Koch
+countryside|de:Landschaft
+driving licence|es:carné de conducir|it:patente|zh:驾照
+furniture|fr:meubles|it:mobili
+guidebook|fr:guide touristique|es:guía turística|it:guida turistica|zh:旅游指南
+headphones|fr:casque audio|it:cuffie|de:Kopfhörer
+hiking|it:escursionismo|de:Wandern|zh:徒步
+traffic light|fr:feu rouge
+annoy|zh:使恼火
+cheer|fr:acclamer|it:applaudire
+disagree|fr:ne pas être d'accord|es:no estar de acuerdo|it:non essere d'accordo|de:nicht zustimmen
+hug|fr:serrer dans ses bras
+pack|fr:faire sa valise|it:fare la valigia|zh:收拾行李
+wander|de:umherwandern|zh:闲逛
+attractive|fr:séduisant
+bored|fr:qui s'ennuie|it:annoiato|de:gelangweilt
+brilliant|fr:génial|it:geniale
+confused|fr:perplexe
+creative|zh:有创造力
+dizzy|fr:étourdi|it:stordito|de:schwindlig
+fantastic|zh:极好
+peaceful|it:tranquillo
+unhappy|zh:不快乐
+unusual|zh:不寻常
+apparently|it:a quanto pare
+badly|de:schlecht|zh:糟
+fortunately|zh:幸运的是
+regularly|de:regelmäßig|zh:定期
+accidentally|zh:意外地
+amazing|fr:incroyable|it:incredibile|zh:惊人
+annoyed|fr:agacé|it:infastidito|de:verärgert|zh:生气
+ashamed|it:vergognoso
+careless|it:distratto|de:nachlässig
+confident|it:sicuro di sé|de:selbstbewusst
+delighted|fr:ravi|it:felicissimo|de:hocherfreut|zh:高兴
+divorced|it:divorziato|zh:离婚
+eager|fr:impatient|it:desideroso|de:eifrig|zh:渴望
+equally|de:gleich|zh:同样
+eventually|fr:finalement|de:schließlich|zh:最终
+frozen|it:congelato|zh:冻
+full-time|de:Vollzeit|zh:全职
+homeless|fr:sans abri
+incorrect|zh:不正确
+messy|fr:en désordre|it:disordinato|de:unordentlich|zh:凌乱
+miserable|it:infelice|de:elend|zh:痛苦
+shocked|fr:choqué|es:conmocionado|it:scioccato|de:schockiert|zh:震惊
+sore|it:indolenzito|de:wund
+stressful|it:stressante|de:stressig|zh:有压力
+talented|zh:有才华
+tiny|zh:极小
+unlikely|fr:peu probable|zh:不太可能
+various|it:vari|de:verschieden
+worth|fr:qui vaut|es:que vale|it:che vale
+perspective|fr:point de vue
+real estate|it:immobili|de:Immobilien
+recession|zh:经济衰退
+relief|zh:宽慰
+replacement|it:sostituzione|zh:替换
+resignation|zh:辞职
+roommate|es:compañero de piso|de:Mitbewohner|zh:室友
+rush hour|zh:高峰时间
+scheme|it:progetto|de:Programm|zh:计划
+scooter|es:moto|de:Roller|zh:小型摩托车
+self-confidence|it:fiducia in se stessi
+setback|it:battuta d'arresto
+shed|fr:abri de jardin|it:capanno|zh:棚
+shipping|fr:expédition|es:envío|it:spedizione|de:Versand
+soundtrack|fr:bande originale|de:Soundtrack|zh:配乐
+spa|it:spa
+surroundings|fr:environs|it:dintorni
+tuition|it:tasse universitarie|de:Studiengebühren
+tutor|fr:précepteur|it:tutor|de:Nachhilfelehrer|zh:家庭教师
+venue|it:sede|zh:场地
+wilderness|fr:nature sauvage|es:naturaleza salvaje|it:natura selvaggia
+wreck|es:restos
+theatre|zh:剧院
+kick|fr:donner un coup de pied|es:dar una patada
+excited|fr:enthousiaste|it:emozionato|zh:激动
+handsome|de:gut aussehend
+addiction|de:Sucht|zh:上瘾
+belongings|fr:affaires|es:pertenencias|it:effetti personali|de:Habseligkeiten
+bestseller|fr:best-seller|es:éxito de ventas|it:bestseller
+coastline|de:Küste
+compassion|zh:同情心
+cottage|es:casita
+crew|zh:全体船员
+cyclist|zh:骑自行车的人
+deforestation|zh:毁林
+earnings|fr:revenus|it:guadagni|de:Einkünfte|zh:收入
+elegance|de:Eleganz|zh:优雅
+explorer|zh:探险家
+fabric|zh:布料
+fluency|fr:aisance|zh:流利
+gambling|fr:jeux d'argent
+grief|zh:悲痛
+guideline|zh:指南
+herb|fr:herbe aromatique|es:hierba aromática|zh:草药
+mercy|it:pietà|zh:怜悯
+mortgage|fr:prêt immobilier|it:mutuo
+adventurous|zh:爱冒险
+affordable|fr:abordable|it:accessibile|de:erschwinglich|zh:负担得起
+astonishing|fr:stupéfiant
+backward|fr:en arrière|it:all'indietro|zh:向后
+bizarre|zh:怪异
+breathtaking|fr:à couper le souffle|it:mozzafiato|de:atemberaubend|zh:惊人
+calmly|fr:calmement|it:con calma|zh:平静地
+caring|fr:bienveillant|it:premuroso|de:fürsorglich|zh:关怀
+competent|zh:能胜任
+decent|fr:correct|it:decente
+doubtful|it:dubbioso|zh:怀疑
+dynamic|zh:有活力
+exotic|it:esotico|de:exotisch|zh:异国
+fatal|fr:mortel|de:tödlich
+faulty|it:difettoso|zh:有缺陷
+grim|it:cupo|de:grimmig
+hilarious|es:divertidísimo|it:esilarante|de:urkomisch|zh:滑稽
+ideally|zh:理想地
+impatiently|fr:avec impatience|es:con impaciencia|it:con impazienza|de:ungeduldig|zh:不耐烦地
+impolite|zh:不礼貌
+indispensable|zh:不可缺少
+inexperienced|zh:缺乏经验
+influential|de:einflussreich|zh:有影响力
+innovative|fr:innovant|it:innovativo|de:innovativ|zh:创新
+irritating|fr:irritant|de:ärgerlich|zh:恼人
+keen|fr:enthousiaste|it:appassionato|de:begeistert|zh:热衷
+liberal|de:liberal|zh:自由
+literally|zh:字面上
+mighty|zh:强大
+moody|it:lunatico|zh:喜怒无常
+muddy|es:embarrado|de:schlammig
+neat|fr:soigné
+outrageous|fr:scandaleux|es:escandaloso|it:scandaloso|de:empörend|zh:骇人听闻
+picturesque|de:malerisch|zh:风景如画
+pointless|it:inutile
+predictable|zh:可预测
+rebellious|it:ribelle|de:rebellisch|zh:叛逆
+shabby|fr:miteux|it:trasandato|de:schäbig
+significantly|de:erheblich
+solar|de:Sonnen-
+spare|fr:de rechange|it:di ricambio|de:Ersatz-
+straightforward|it:semplice|de:einfach|zh:简单
+strictly|de:streng|zh:严格地
+swift|es:veloz|it:rapido|de:schnell|zh:迅速
+sympathetic|fr:compatissant|it:comprensivo|de:mitfühlend|zh:同情
+technical|zh:技术
+tough|de:zäh|zh:艰难
+tricky|fr:délicat|it:difficile|de:knifflig|zh:棘手
+trivial|fr:insignifiant|it:banale|de:trivial|zh:琐碎
+unacceptable|zh:不可接受
+unaware|fr:inconscient|de:ahnungslos|zh:不知道
+unbearable|it:insopportabile|zh:难以忍受
+uncommon|es:poco común|it:insolito|zh:罕见
+unconscious|zh:昏迷
+unpopular|zh:不受欢迎
+unreliable|fr:peu fiable
+unwilling|fr:peu disposé|it:restio|de:unwillig
+vacant|fr:libre|it:libero|de:frei
+witty|it:spiritoso|zh:机智
+youthful|fr:jeune|de:jugendlich|zh:年轻
+make ends meet|fr:joindre les deux bouts|it:sbarcare il lunario|de:über die Runden kommen|zh:收支平衡
+keep an eye on|fr:garder un œil sur|es:echar un ojo a|it:tenere d'occhio|de:ein Auge haben auf|zh:留意
+take for granted|fr:tenir pour acquis|it:dare per scontato|de:für selbstverständlich halten|zh:认为理所当然
+call it a day|fr:s'arrêter là pour aujourd'hui|es:dar por terminado el día|it:finire per oggi|de:Feierabend machen
+a piece of cake|it:un gioco da ragazzi|de:ein Kinderspiel|zh:小菜一碟
+once in a blue moon|fr:tous les trente-six du mois|it:a ogni morte di papa|de:alle Jubeljahre|zh:千载难逢
+cost an arm and a leg|fr:coûter les yeux de la tête|it:costare un occhio della testa|de:ein Vermögen kosten|zh:贵得要命
+it goes without saying|fr:cela va sans dire|es:ni que decir tiene|it:va da sé|de:das versteht sich von selbst|zh:不言而喻
+get to the point|fr:aller droit au but|it:venire al dunque|de:zur Sache kommen|zh:直奔主题
+the last straw|fr:la goutte d'eau qui fait déborder le vase|es:la gota que colma el vaso|it:la goccia che fa traboccare il vaso|de:der Tropfen, der das Fass zum Überlaufen bringt|zh:最后一根稻草
+under the weather|fr:patraque|it:giù di corda|de:nicht auf dem Damm|zh:不舒服
+in the long run|fr:à long terme|it:a lungo andare|de:auf lange Sicht|zh:从长远来看
+assemble|de:zusammenbauen
+astonish|de:erstaunen|zh:使惊讶
+bully|fr:harceler|it:maltrattare
+carve|fr:sculpter|de:schnitzen
+commute|es:viajar diariamente
+cope|fr:faire face|it:farcela|de:zurechtkommen
+crack|fr:fissurer|de:zerbrechen
+distract|zh:分散注意力
+fulfil|it:adempiere|zh:履行
+haunt|it:infestare|de:heimsuchen|zh:缠绕
+justify|zh:证明
+lack|fr:manquer de|it:mancare di
+overhear|fr:entendre par hasard|de:zufällig hören
+panic|fr:paniquer|es:entrar en pánico|it:farsi prendere dal panico|de:in Panik geraten
+prescribe|it:prescrivere|zh:开处方
+reverse|fr:faire marche arrière|es:dar marcha atrás|it:fare retromarcia|de:rückwärtsfahren
+sail|fr:naviguer à la voile
+shrug|it:alzare le spalle
+starve|es:morirse de hambre|it:morire di fame|zh:挨饿
+tickle|it:fare il solletico|zh:挠痒
+trace|fr:retrouver|it:rintracciare|de:aufspüren
+phrase|de:Ausdruck|zh:短语
+plug|fr:prise|it:spina|de:Stecker|zh:插头
+praise|fr:éloges
+public transport|fr:transports en commun|de:öffentlichen Verkehrsmittel|zh:公共交通
+razor|es:cuchilla de afeitar|de:Rasierer
+researcher|zh:研究人员
+saucepan|zh:锅
+secondary school|es:escuela secundaria|it:scuola secondaria|de:weiterführende Schule
+similarity|fr:ressemblance
+spinach|es:espinacas|it:spinaci
+sunset|fr:coucher du soleil
+supporter|it:tifoso|de:Fan|zh:支持者
+suspect|it:sospettato
+travel agent|fr:agent de voyages|de:Reisebüroangestellte|zh:旅行社
+variety|zh:多样
+warmth|zh:温暖
+waste|fr:déchets|es:residuos|it:rifiuti
