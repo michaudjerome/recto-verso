@@ -354,7 +354,7 @@ function content_edit(): void
         rv_json(['ok' => true]);
     }
     if (!is_array($in['data'])) rv_fail(400, 'bad');
-    $allowed = $lang === '_n' ? ['picto', 'clair'] : ['w', 'art', 'g', 'note', 'alt', 'py', 'ex'];
+    $allowed = $lang === '_n' ? ['picto', 'clair', 'img'] : ['w', 'art', 'g', 'note', 'alt', 'py', 'ex'];
     $data = [];
     foreach ($allowed as $k) {
         if (!array_key_exists($k, $in['data'])) continue;
@@ -362,6 +362,7 @@ function content_edit(): void
         if ($k === 'alt') $v = array_values(array_filter(array_map(function ($x) { return mb_substr(trim((string) $x), 0, 80); }, is_array($v) ? $v : [])));
         elseif ($k === 'clair') $v = (bool) $v;
         elseif ($k === 'picto') $v = preg_match('/^[0-9A-Fa-f-]{0,40}$/', (string) $v) ? strtoupper((string) $v) : '';
+        elseif ($k === 'img') $v = preg_match('/^[a-z0-9-]{0,80}$/', (string) $v) ? (string) $v : '';
         else $v = mb_substr(trim((string) $v), 0, $k === 'ex' ? 300 : 120);
         $data[$k] = $v;
     }
