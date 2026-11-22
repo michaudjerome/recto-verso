@@ -687,4 +687,4 @@ body { background-image: radial-gradient(var(--dots) 1px, transparent 1px); back
   .progress .lvl-row { margin-bottom: 2px; }
 }
 @media (max-height: 700px) { .progress .cal { max-width: 170px; } .progress .chart { max-height: 60px; } .progress .kpis small { font-size: 10px; line-height: 1.1; } .progress .kpis div { padding: 4px 3px; } .progress .kpis b { font-size: 18px; } }
-.vis.ai { border-radius: 18%; object-fit: cover; background: #f7ecd9; }
+.vis.ai { border-radius: 50%; object-fit: contain; background: none; }
