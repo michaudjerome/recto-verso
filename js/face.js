@@ -7,12 +7,14 @@ import { toneHtml } from './pinyin.js';
 // Image d'une carte : photo perso, sinon pictogramme OpenMoji (téléchargé à la demande, gardé hors ligne),
 // sinon l'émoji du téléphone si le picto ne charge pas, ou un émoji saisi à la main
 const emoji = (code) => { try { return String.fromCodePoint(...code.split('-').map((h) => parseInt(h, 16))); } catch { return ''; } };
-export const hasVisual = (txt) => !!(txt?.photoUrl || txt?.picto || txt?.notion?.picto);
+export const hasVisual = (txt) => !!(txt?.photoUrl || txt?.picto || txt?.notion?.img || txt?.notion?.picto);
 // Image assez parlante pour deviner le mot sans aide (Écris ce que tu vois) : photo perso, ou picto jugé clair
 // (« clair: false » dans les notions : un lapin pour « rapide », une chaise pour « s'asseoir »…)
-export const hasClearVisual = (txt) => !!(txt?.photoUrl || txt?.picto || (txt?.notion?.picto && txt.notion.clair !== false));
+// Les illustrations dessinées pour l'app (« img ») ne sont publiées que si elles sont sans ambiguïté
+export const hasClearVisual = (txt) => !!(txt?.photoUrl || txt?.picto || txt?.notion?.img || (txt?.notion?.picto && txt.notion.clair !== false));
 export function visual(txt, cls = '') {
   if (txt?.photoUrl) return `<img class="vis ph ${cls}" src="${esc(txt.photoUrl)}" alt="">`;
+  if (!txt?.picto && txt?.notion?.img) return `<img class="vis ai ${cls}" src="img/${esc(txt.notion.img)}.webp" alt="">`;
   const code = txt?.picto || txt?.notion?.picto;
   if (!code) return '';
   if (!/^[0-9A-F-]+$/i.test(code)) return `<span class="vis em ${cls}">${esc(code)}</span>`;

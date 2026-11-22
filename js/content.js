@@ -64,7 +64,7 @@ export async function cardText(card, course) {
 export async function warmPictos(cards) {
   try {
     const d = await notions();
-    const codes = new Set(cards.map((c) => d._byId.get(c.notion)?.picto).filter(Boolean));
-    for (const code of codes) await fetch(`pictos/${code}.svg`).catch(() => {});
+    const ns = cards.map((c) => d._byId.get(c.notion)).filter(Boolean);
+    for (const f of new Set(ns.map((n) => (n.img ? `img/${n.img}.webp` : n.picto ? `pictos/${n.picto}.svg` : '')).filter(Boolean))) await fetch(f).catch(() => {});
   } catch {}
 }

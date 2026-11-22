@@ -16,7 +16,7 @@ export async function activeCourse() {
   return list.find((c) => c.id === profile.activeCourse) || list[0] || null;
 }
 
-export async function addCourse(target, level = 'beginner') {
+export async function addCourse(target, level = 'beginner', lv = null) {
   const id = courseId(profile.native, target);
   const existing = await get('courses', id);
   const c = existing || {
@@ -24,6 +24,7 @@ export async function addCourse(target, level = 'beginner') {
     goal: 20, newPerDay: 10, streak: { count: 0, last: '' },
   };
   if (existing) c.level = level;
+  if (lv) c.lv = lv; // niveau de la plateforme (1 à 4, voir js/levels.js)
   await put('courses', c);
   return c;
 }
