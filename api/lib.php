@@ -10,6 +10,8 @@ const RV_MAX_RECORD = 2000000;   // 2 Mo par enregistrement (photo comprise)
 const RV_PULL_LIMIT = 400;
 // Horodatages en millisecondes : en dessous, la valeur vient du PHP 32 bits d'avant le 22/11/2026 et ne vaut rien
 const RV_MS_MIN = 1000000000000;
+const RV_SCHEMA = '2';
+const RV_VERSION = '0.12.0';
 
 function rv_config_path(): string
 {
@@ -101,8 +103,71 @@ function rv_schema(PDO $db): void
             PRIMARY KEY (user_id, store, rid),
             KEY by_rev (user_id, rev)
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin",
+        "CREATE TABLE IF NOT EXISTS reports (
+            id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            user_id INT UNSIGNED NOT NULL,
+            notion VARCHAR(120) NOT NULL DEFAULT '',
+            course VARCHAR(20) NOT NULL DEFAULT '',
+            kind VARCHAR(16) NOT NULL,
+            comment VARCHAR(500) NOT NULL DEFAULT '',
+            created BIGINT NOT NULL,
+            done BIGINT NULL,
+            KEY by_done (done)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+        "CREATE TABLE IF NOT EXISTS content_edits (
+            lang VARCHAR(8) NOT NULL,
+            notion VARCHAR(120) NOT NULL,
+            data TEXT NOT NULL,
+            updated BIGINT NOT NULL,
+            by_user INT UNSIGNED NOT NULL,
+            PRIMARY KEY (lang, notion)
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin",
+        "CREATE TABLE IF NOT EXISTS settings (
+            k VARCHAR(40) PRIMARY KEY,
+            v TEXT NOT NULL
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+        "CREATE TABLE IF NOT EXISTS errlog (
+            id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            ts BIGINT NOT NULL,
+            route VARCHAR(30) NOT NULL,
+            msg VARCHAR(500) NOT NULL
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4",
     ];
     foreach ($sql as $q) $db->exec($q);
+    $db->exec("INSERT INTO settings (k, v) VALUES ('schema', '" . RV_SCHEMA . "') ON DUPLICATE KEY UPDATE v = VALUES(v)");
+}
+
+// Mise à niveau de la base quand une version ajoute des tables (une seule fois par version de schéma)
+function rv_migrate(): void
+{
+    if (!rv_config()) return;
+    $db = rv_db();
+    try { $v = $db->query("SELECT v FROM settings WHERE k = 'schema'")->fetchColumn(); } catch (PDOException $e) { $v = false; }
+    if ((string) $v !== RV_SCHEMA) rv_schema($db);
+}
+
+function rv_setting(string $k, $default = null)
+{
+    $q = rv_db()->prepare('SELECT v FROM settings WHERE k = ?');
+    $q->execute([$k]);
+    $v = $q->fetchColumn();
+    return $v === false ? $default : json_decode((string) $v, true);
+}
+
+function rv_set_setting(string $k, $v): void
+{
+    rv_db()->prepare('INSERT INTO settings (k, v) VALUES (?, ?) ON DUPLICATE KEY UPDATE v = VALUES(v)')->execute([$k, json_encode($v, JSON_UNESCAPED_UNICODE)]);
+}
+
+// Trace des erreurs serveur, visible dans l'Admin (50 dernières)
+function rv_log_error(string $route, string $msg): void
+{
+    try {
+        $db = rv_db();
+        if ($db->inTransaction()) $db->rollBack(); // sinon la trace disparaît avec la transaction annulée
+        $db->prepare('INSERT INTO errlog (ts, route, msg) VALUES (?, ?, ?)')->execute([rv_now(), substr($route, 0, 30), substr($msg, 0, 500)]);
+        $db->exec('DELETE FROM errlog WHERE id + 50 < (SELECT m FROM (SELECT MAX(id) AS m FROM errlog) x)');
+    } catch (Throwable $e) { error_log('recto-verso: ' . $msg); }
 }
 
 // ---------- Réponses ----------
