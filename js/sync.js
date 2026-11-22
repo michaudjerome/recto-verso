@@ -24,6 +24,8 @@ export async function initSync() {
   syncState.last = (await kvGet('syncLast')) || 0;
   dirty = new Map(Object.entries((await kvGet('syncDirty')) || {}));
   watchChanges(mark);
+  // 0.11.2 : le serveur a pu ignorer une partie des envois (PHP 32 bits) ; chaque appareil renvoie tout une fois
+  if (account && (await kvGet('syncFull')) !== 2) { await markAll(); await kvSet('syncFull', 2); }
   addEventListener('online', () => syncNow());
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible') syncNow();
@@ -140,17 +142,24 @@ export async function signIn(user) {
     rev = 0;
     await kvSet('syncRev', 0);
     // Données déjà présentes sur l'appareil (avant tout compte) : elles rejoignent le compte
-    if (!prev) for (const s of SYNCED) {
-      if (s === 'kv') { if (await get('kv', 'profile')) dirty.set('kv\tprofile', { s: 'kv', k: 'profile', x: false }); continue; }
-      for (const v of await getAll(s)) dirty.set(`${s}\t${ridOf(s, v)}`, { s, k: ridOf(s, v), x: false });
-    }
+    if (!prev) await markAll(false);
   }
   account = { id: user.id, email: user.email, name: user.name || '', admin: !!user.admin };
   await kvSet('account', account);
+  await kvSet('syncFull', 2);
   emit('rv-signed-in');
   await saveDirty();
   await syncNow();
   if (syncState.state === 'error' || syncState.state === 'offline') throw new ApiError(syncState.error || 'server', 0);
+}
+
+// Marque tout le contenu de l'appareil comme à envoyer (le serveur garde la version la plus récente)
+async function markAll(save = true) {
+  for (const s of SYNCED) {
+    if (s === 'kv') { if (await get('kv', 'profile')) dirty.set('kv\tprofile', { s: 'kv', k: 'profile', x: false }); continue; }
+    for (const v of await getAll(s)) dirty.set(`${s}\t${ridOf(s, v)}`, { s, k: ridOf(s, v), x: false });
+  }
+  if (save) await saveDirty();
 }
 
 // Déconnexion : l'appareil est vidé (les données restent dans le compte)
